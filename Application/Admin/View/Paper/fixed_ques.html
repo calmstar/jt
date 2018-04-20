@@ -1,0 +1,165 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>选择题目</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="__PUBLIC__favicon.ico">
+    <link href="__ADMIN__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__ADMIN__/css/animate.css" rel="stylesheet">
+    <link href="__ADMIN__/css/style.css" rel="stylesheet">
+    <link href="__ADMIN__/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <style type="text/css">
+        /*将多出来的字以省略号形式表示*/
+        table{
+            table-layout:fixed;
+        }
+        td{  
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+        }
+    </style>
+</head>
+
+<body class="gray-bg">
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <!--四种类型题表格-->
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>
+                    正在为试卷 “ {$info.name} ” 分配试题， 请勾选各类型题目后，点击提交    
+                    <span class="glyphicon glyphicon-hand-right"></span>
+                </h5>
+                <div class="ibox-tools">
+                    <a class="btn btn-success" role="button" id="subm">提交</a>
+                </div>
+            </div>
+
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <div class="tabs-container">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#sin" aria-expanded="true">单选题</a>
+                                </li>
+                                <li class=""><a data-toggle="tab" href="#dou" aria-expanded="false">双选题</a>
+                                </li>
+                                <li class=""><a data-toggle="tab" href="#jud" aria-expanded="false">判断题</a>
+                                </li>
+                                <li class=""><a data-toggle="tab" href="#sub" aria-expanded="false">主观题</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="sin" class="tab-pane active">
+                                    <div class="panel-body">
+                                        <table id="sin_table" data-url="__CONTROLLER__/fixed_ques?paper_id={$info.id}&sin=sin"></table>
+                                        <!--必须使用这种方式使其一致才能传值-->
+                                    </div>
+                                </div>
+                                <div id="dou" class="tab-pane">
+                                    <div class="panel-body">
+                                        <table id="dou_table" data-url="__CONTROLLER__/fixed_ques?paper_id={$info.id}&dou=dou"></table>
+                                    </div>
+                                </div>
+                                <div id="jud" class="tab-pane">
+                                    <div class="panel-body">
+                                        <table id="jud_table" data-url="__CONTROLLER__/fixed_ques?paper_id={$info.id}&jud=jud"></table>
+                                    </div>
+                                </div>
+                                <div id="sub" class="tab-pane">
+                                    <div class="panel-body">
+                                        <table id="sub_table" data-url="__CONTROLLER__/fixed_ques?paper_id={$info.id}&sub=sub"></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="__ADMIN__/js/jquery.min.js"></script>
+    <script src="__ADMIN__/js/bootstrap.min.js"></script>
+    <script src="__ADMIN__/js/content.js"></script>
+    <!-- bootstrap-table -->
+    <script src="__ADMIN__/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="__ADMIN__/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <script src="__ADMIN__/js/demo/bootstrap-table-demo.js"></script>
+    <script src="__ADMIN__/js/plugins/layer/layer.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            //提交
+            $('#subm').on('click',function(){
+                //整理数据
+                //单选
+                var sin_idObj = $("#sin_table").bootstrapTable('getSelections');
+                var sin_ids = '';
+                for(var i = 0; i < sin_idObj.length; i++ ){
+                    sin_ids += sin_idObj[i].id + ',';
+                }
+                sin_ids = sin_ids.substring(0,sin_ids.length-1);
+                //双选
+                var dou_idObj = $("#dou_table").bootstrapTable('getSelections');
+                var dou_ids = '';
+                for(var i = 0; i < dou_idObj.length; i++ ){
+                    dou_ids += dou_idObj[i].id + ',';
+                }
+                dou_ids = dou_ids.substring(0,dou_ids.length-1);
+                //判断
+                var jud_idObj = $("#jud_table").bootstrapTable('getSelections');
+                var jud_ids = '';
+                for(var i = 0; i < jud_idObj.length; i++ ){
+                    jud_ids += jud_idObj[i].id + ',';
+                }
+                jud_ids = jud_ids.substring(0,jud_ids.length-1);
+                //主观
+                var sub_idObj = $("#sub_table").bootstrapTable('getSelections');
+                var sub_ids = '';
+                for(var i = 0; i < sub_idObj.length; i++ ){
+                    sub_ids += sub_idObj[i].id + ',';
+                }
+                sub_ids = sub_ids.substring(0,sub_ids.length-1);
+
+                // 将试卷id传过来
+                var paper_id = {$info.id};
+
+                $.post('__SELF__',{'limit_sin':sin_ids,'limit_dou':dou_ids,'limit_jud':jud_ids,'limit_sub':sub_ids,'paper_id':paper_id},function(data){
+                        if(data['status'] == 1){
+                            layer.confirm(data['info'],{btn: ['确定']},
+                                function(){
+                                    window.location.href='__CONTROLLER__/showlist'; 
+                                })
+                        }else{
+                            //返回错误数据打印出来
+                            layer.msg(data['info']);
+                        } 
+                });
+
+            });
+
+            //删除工具栏中的id,有四个表格，每次只能删除一个
+            $("input[data-field='id']").parents("ul").find('li').eq(0).empty();
+            $("input[data-field='id']").parents("ul").find('li').eq(0).empty();
+            $("input[data-field='id']").parents("ul").find('li').eq(0).empty();
+            $("input[data-field='id']").parents("ul").find('li').eq(0).empty();
+            //隐藏course_name
+            $('#sin_table').bootstrapTable('hideColumn','course_name');
+            $('#dou_table').bootstrapTable('hideColumn','course_name');
+            $('#jud_table').bootstrapTable('hideColumn','course_name');
+            $('#sub_table').bootstrapTable('hideColumn','course_name');
+
+        });
+    </script>
+
+</body>
+</html>

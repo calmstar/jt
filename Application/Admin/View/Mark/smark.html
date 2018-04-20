@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>查看试卷 - JMoocTest</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="__PUBLIC__/favicon.ico"> <!--网页图标-->
+    <link href="__ADMIN__/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__ADMIN__/css/font-awesome.min.css?v=4.4.0" rel="stylesheet"> <!--字体矢量图标，引入此行即可-->
+    <link href="__ADMIN__/css/animate.css" rel="stylesheet">  <!--动画效果-->
+    <link href="__ADMIN__/css/style.css?v=4.1.0" rel="stylesheet">
+    <style type="text/css">
+        .bg{
+            margin: 20px 5px 5px 5px;
+            padding: 20px 5px;
+            word-wrap:break-word;
+        }
+        .answ{
+            padding-left: 25px;
+        }
+        .panel{
+            border: none;
+        }
+        body{
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+
+<body class="gray-bg" >
+
+<!-- 正文 -->
+<div class="container-fluid">
+    <form action="__ACTION__/tester_id/{$sid}/paper_id/{$pid}" method="post">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 animated fadeInUp">
+
+            <div class="panel panel-success">
+                <div class="panel-heading" style="padding:20px 15px;font-size: 24px">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div class="text-right">{$stu.pname}</div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="text-right"><button class="btn btn-danger btn-rounded">确定批改</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!-- 提示信息 -->
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h4>姓名：{$stu.name}</h4>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4>学号：{$stu.xuehao} </h4>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4>班级：{$stu.stu_class} </h4>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4>出卷类型：<if condition="$stu.type == 1">随机出卷<else/>指定出卷</if> </h4>
+                            </div>
+                        </div>
+                        <p class="text-danger">
+                            注意：此功能下，教师可随时修改考生客观题分数。
+                        </p>
+                    </div>
+                    <div class="page-header text-success">
+                        <h3>【主观题】<small>每道 {$score_info.sub_score} 分,共 {$score_info.sub_num} 道，<b>总得分：{$score_info.get_score}</b></small></h3>
+                    </div>
+                    <input type="hidden" name="full_score" value="{$score_info.sub_score}">
+
+                    <volist name="subj" id="v" key="k">
+                        <div class="bg-warning bg" >
+                            {$i++}. {$v.descr}
+                        </div>
+                        <div class="answ">
+                            <textarea class="form-control" style="height:250px; border:1px solid #ddd;">{$v.myansw}</textarea>
+                            <br>
+                            <p class="bg-success">
+                                参考答案：{$v.right_answ}
+                            </p>
+                            <p class="text-right">
+                                得分：<input type="text" value="{$v.myscore}" name="{$i-2}">
+                            </p>
+                        </div>
+                    </volist>
+                </div>
+
+                <div class="panel-footer text-center">
+                    <h3>
+                        <i class="fa fa-copyright"></i>
+                        EKA 2017
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </form>
+
+</div>
+
+<script src="__ADMIN__/js/jquery.min.js?v=2.1.4"></script>
+<script src="__ADMIN__/js/bootstrap.min.js?v=3.3.6"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>正在考试 - JMoocTest</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="__PUBLIC__/favicon.ico"> <!--网页图标-->
+    <link href="__ADMIN__/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__ADMIN__/css/animate.css" rel="stylesheet">  <!--动画效果-->
+    <link href="__ADMIN__/css/style.css?v=4.1.0" rel="stylesheet">
+    <!-- 会把navbar原生效果重置掉 -->
+    
+    <style type="text/css">
+        .bg{
+            margin: 20px 5px 5px 5px;
+            padding: 20px 5px;
+            word-wrap:break-word;
+            user-select: none;
+            -moz-user-select:none;   /*火狐浏览器*/
+            -webkit-user-select:none;  /*webkit浏览器*/
+            -ms-user-select:none;  /*IE10*/
+        }
+        .answ{
+            padding-left: 25px;
+        }
+        .panel{
+            border: none;
+        }
+        body{
+            font-size: 15px;
+        }
+        /*重置style里面的css*/
+        .navbar-fixed-top {
+            min-height: 70px;
+            line-height: 70px;
+            position: fixed;
+        }
+        .well{
+            margin-top: 70px;
+        }
+
+    </style>
+
+</head>
+
+<body class="bg-success" >
+
+    <form action="__CONTROLLER__/answ" method="post">
+
+    <!-- 正文 -->
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-default navbar-fixed-top animated fadeInDown">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 text-center text-danger">
+                        <span id="resttime" style="display:none">{$resttime}</span>
+                        <span style="font-size: 20px;">
+                            <span id="hour_show">00</span>:
+                            <span id="minute_show">00</span>:
+                            <span id="second_show">00</span>
+                        </span>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="text-center">
+                            <h2>{$info.name}</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <input type="submit" id="finish" class="btn btn-danger btn-rounded" value="确认交卷">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 animated fadeInUp">
+
+                <div class="panel panel-success">
+
+                    <!--post需要-->
+                    <input type="hidden" name="paper_id" value="{$info.paper_id}">
+                    <input type="hidden" name="sin_num" value="{$info.sin_num}">
+                    <input type="hidden" name="dou_num" value="{$info.dou_num}">
+                    <input type="hidden" name="jud_num" value="{$info.jud_num}">
+                    <input type="hidden" name="sub_num" value="{$info.sub_num}">
+                    <input type="hidden" name="sin_score" value="{$info.sin_score}">
+                    <input type="hidden" name="dou_score" value="{$info.dou_score}">
+                    <input type="hidden" name="jud_score" value="{$info.jud_score}">
+
+                    <div class="panel-body">
+                        <!-- 提示信息 -->
+                        <div class="well">
+                            <div class="row">
+                                <div class="col-sm-6 ">
+                                    <h4>考试限时：{$info.limittime}分钟</h4>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h4>总分：{$info.whole_score}</h4>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h4>所属课程：{$info.course_name}</h4>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h4>出题人：{$info.maker_name}</h4>
+                                </div>
+                            </div>
+                            <p class="text-danger">
+                                考生注意： 请在规定时间内作答完毕，点击右上角「提交考试」，未在规定时间内答题完毕系统将会自动提交试卷。若不小心关闭了本窗口或浏览器，请及时登录账号，并到回来继续进行考试，浪费的时间也算入倒计时中。
+                            </p>
+                        </div>
+                        <!-- 单选题 -->
+                        <div class="page-header text-success">
+                            <h3>【单选题】<small>每道 {$info.sin_score} 分,共 {$info.sin_num} 道</small></h3>
+                        </div>
+
+                       <foreach name="info[sin]"  item="v">
+                        <div class="bg-warning bg">
+                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                        </div>
+                        <div class="answ">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" value="is_op{$n[0]}" name="{$i-1}"  <if condition="$v['myansw'] == $n[0]">checked='checked'</if> 
+                                    >{$v.op$n[0]}
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" value="is_op{$n[1]}" name="{$i-1}" <if condition="$v['myansw'] == $n[1]">checked='checked'</if> >{$v.op$n[1]}
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" value="is_op{$n[2]}" name="{$i-1}" <if condition="$v['myansw'] == $n[2]">checked='checked'</if> >{$v.op$n[2]}
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" value="is_op{$n[3]}"  name="{$i-1}" <if condition="$v['myansw'] == $n[3]">checked='checked'</if> >{$v.op$n[3]}
+                                </label>
+                            </div>
+                        </div>
+                        </foreach>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <!-- 双选题 -->
+                        <div class="page-header text-success">
+                            <h3>【双选题】<small>每道 {$info.dou_score} 分,共 {$info.dou_num}道</small></h3>
+                        </div>
+                       
+                       <foreach name="info[dou]" item="v">
+                        <div class="bg-warning bg" >
+                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                        </div>
+                        <div class="answ">                              
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="is_op{$n[0]}" name="{$i-1}[]"  <if condition="in_array($n['0'],$v[myansw])">checked='checked' </if> >  {$v.op$n[0]}
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="is_op{$n[1]}" name="{$i-1}[]" <if condition="in_array($n[1],$v[myansw])">checked='checked' </if> > {$v.op$n[1]}
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="is_op{$n[2]}" name="{$i-1}[]" <if condition="in_array($n[2],$v[myansw])">checked='checked' </if> > {$v.op$n[2]}
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="is_op{$n[3]}"  name="{$i-1}[]" <if condition="in_array($n[3],$v[myansw])">checked='checked' </if> > {$v.op$n[3]}
+                                </label>
+                            </div>
+                        </div>
+                        </foreach>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <!-- 判断题 -->
+                        <div class="page-header text-success">
+                            <h3>【判断题】<small>每道 {$info.jud_score} 分,共 {$info.jud_num} 道</small></h3>
+                        </div>
+                       
+                        <foreach name="info[jud]" item="v">
+                        <div class="bg-warning bg" >
+                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                        </div>
+                        <div class="answ">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" value="is_true" name="{$i-1}" <if condition="$v['myansw'] == 1">checked='checked'</if> >
+                                    <i class="glyphicon glyphicon-ok"></i>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" value="is_false" name="{$i-1}" <if condition=" $v['myansw'] == '0' ">checked='checked'</if> >
+                                    <i class="glyphicon glyphicon-remove"></i>
+                                </label>
+                            </div>
+                        </div>
+                        </foreach>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <!-- 主观题 -->
+                        <div class="page-header text-success">
+                            <h3>【主观题】<small>每道 {$info.sub_score} 分,共 {$info.sub_num} 道</small></h3>
+                        </div>
+                        
+                        <foreach name="info[sub]" item="v">
+                        <div class="bg-warning bg" >
+                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                        </div>
+                        <div style="padding-left: 25px">
+                            <textarea class="form-control" style="height:250px; border:1px solid #ddd;" name="{$i-1}"><if condition="$v['myansw'] != 'xx' ">{$v['myansw']}</if></textarea>
+                        </div>
+                        </foreach>
+                    </div>
+                    
+
+                    <div class="panel-footer text-center">
+                        <h3>
+                        <i class="fa fa-copyright"></i> 
+                        EKA 2017
+                        </h3>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    </div>
+
+    </form>
+    
+    <script src="__ADMIN__/js/jquery.min.js?v=2.1.4"></script>  
+    <script src="__ADMIN__/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="__ADMIN__/js/plugins/layer/layer.js"></script>
+    <script type="text/javascript">
+
+        //倒计时
+        var exam_time=$('#resttime').text();
+        var intDiff = parseInt(exam_time);//倒计时总秒数,将获得的字符串变为数字型
+
+        function timer(intDiff){
+
+            window.setInterval(function(){
+                var hour=00,
+                    minute=00,
+                    second=00;//时间默认值
+
+                if(intDiff > 0){
+                    // 考试限制为最多五个小时
+                    day = Math.floor(intDiff / (60 * 60 * 24));
+                    hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+                    minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+                    second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+                }else if(intDiff == 0 ){ 
+                      $('#finish').click();     
+                }
+
+                if (hour <= 9) hour = '0' + hour;
+                if (minute <= 9) minute = '0' + minute;
+                if (second <= 9) second = '0' + second;
+
+                $('#hour_show').text(hour);
+                $('#minute_show').text(minute);
+                $('#second_show').text(second);
+                intDiff--;
+
+            },1000);//一秒执行一次
+        }
+
+
+        // 每隔十秒发送答案到数据库中
+        function time_post(){
+            window.setInterval(function(){
+                $.ajax({
+                    type:"POST",
+                    url:"__CONTROLLER__/exam",
+                    data:$("form").serialize(), //获取表单的所有数据
+                });
+            },10000);
+        }
+
+
+        $(function(){
+            timer(intDiff);
+            time_post();
+        });
+        
+
+    </script>
+
+</body>
+
+</html>

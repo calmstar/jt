@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>查看试卷 - JMoocTest</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="__PUBLIC__/favicon.ico"> <!--网页图标-->
+    <link href="__ADMIN__/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__ADMIN__/css/font-awesome.min.css?v=4.4.0" rel="stylesheet"> <!--字体矢量图标，引入此行即可-->
+    <link href="__ADMIN__/css/animate.css" rel="stylesheet">  <!--动画效果-->
+    <link href="__ADMIN__/css/style.css?v=4.1.0" rel="stylesheet">
+    <style type="text/css">
+        .bg{
+            margin: 20px 5px 5px 5px;
+            padding: 20px 5px;
+            word-wrap:break-word;
+        }
+        .answ{
+            padding-left: 25px;
+        }
+        .panel{
+            border: none;
+        }
+        body{
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+
+<body class="gray-bg" >
+
+    <!-- 正文 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 animated fadeInUp">
+
+                <div class="panel panel-success">
+                    <div class="panel-heading text-center" style="padding:20px 15px;font-size: 24px">
+                            {$info.name}
+                    </div>
+
+                    <div class="panel-body">
+                        <!-- 提示信息 -->
+                        <div class="well">
+                            <div class="row">
+                                <div class="col-sm-6 ">
+                                    <h4>考试限时：{$info.limittime}分钟</h4>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h4>总分：{$info.whole_score}，得分：{$my_score.all_score}</h4>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h4>所属课程：{$info.course_name}</h4>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h4>出题人：{$info.maker_name}</h4>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h4>开放时间段：{$info.startdate|date='Y-m-d H:i:s',###}
+                                    ----
+                                    {$info.enddate|date='Y-m-d H:i:s',###}</h4>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h4>出卷类型：<if condition="$info.type == 1">随机出卷<else/>指定出卷</if> </h4>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h4>进入试卷时间：{$my_score.stime} </h4>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h4>提交试卷时间：<if condition="$my_score.etime == '' ">超时提交<else/>{$my_score.etime}</if>
+                                    </h4>
+                                </div>
+                            </div>
+                            <p class="text-danger">
+                                注意：蓝色背景加粗部分为正确答案，选中的为考生答案。
+                            </p>
+                        </div>
+                        <!-- 单选题 -->
+                        <div class="page-header text-success">
+                            <h3>【单选题】<small>每道 {$info.sin_score} 分,共 {$info.sin_num} 道，<b>得分：{$my_score.single_score}</b></small></h3>
+                        </div>
+
+                       <foreach name="info[sin]"  item="v">
+                        <div class="bg-warning bg">
+                            {$i++}. {$v.descr}
+                        </div>
+                        <div class="answ">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio"  <if condition="$v['myansw'] == 1">checked='checked'</if> >
+                                    <if condition="$v[is_op1] == 1">
+                                    <span class="bg-primary">{$v.op1}</span>
+                                    <else/>{$v.op1}</if>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" <if condition="$v['myansw'] == 2">checked='checked'</if> >
+                                    <if condition="$v[is_op2] == 1">
+                                    <span class="bg-primary">{$v.op2}</span>
+                                    <else/>{$v.op2}</if>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" <if condition="$v['myansw'] == 3">checked='checked'</if> >
+                                    <if condition="$v[is_op3] == 1">
+                                    <span class="bg-primary">{$v.op3}</span>
+                                    <else/>{$v.op3}</if>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" <if condition="$v['myansw'] == 4">checked='checked'</if> >
+                                    <if condition="$v[is_op4] == 1">
+                                    <span class="bg-primary">{$v.op4}</span>
+                                    <else/>{$v.op4}</if>
+                                </label>
+                            </div>
+                        </div>
+                        </foreach>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <!-- 双选题 -->
+                        <div class="page-header text-success">
+                            <h3>【双选题】<small>每道 {$info.dou_score} 分,共 {$info.dou_num}道，<b>得分：{$my_score.double_score}</b></small></h3>
+                        </div>
+                       
+                       <foreach name="info[dou]" item="v">
+                        <div class="bg-warning bg" >
+                            {$i++}. {$v.descr}
+                        </div>
+                        <div class="answ">                              
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" <if condition="in_array(1,$v[myansw])">checked='checked'</if> >
+                                    <if condition="$v[is_op1] == 1">
+                                    <span class="bg-primary">{$v.op1}</span>
+                                    <else/>{$v.op1}</if>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" <if condition="in_array(2,$v['myansw'])">checked='checked'</if> >
+                                    <if condition="$v[is_op2] == 1">
+                                    <span class="bg-primary">{$v.op2}</span>
+                                    <else/>{$v.op2}</if>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" <if condition="in_array(3,$v['myansw'])">checked='checked'</if>>
+                                    <if condition="$v[is_op3] == 1">
+                                    <span class="bg-primary">{$v.op3}</span>
+                                    <else/>{$v.op3}</if>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" <if condition="in_array(4,$v['myansw'])">checked='checked'</if>>
+                                    <if condition="$v[is_op4] == 1">
+                                    <span class="bg-primary">{$v.op4}</span>
+                                    <else/>{$v.op4}</if>
+                                </label>
+                            </div>
+                        </div>
+                        </foreach>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <!-- 判断题 -->
+                        <div class="page-header text-success">
+                            <h3>【判断题】<small>每道 {$info.jud_score} 分,共 {$info.jud_num} 道，<b>得分：{$my_score.judge_score}</b></small></h3>
+                        </div>
+                       
+                        <foreach name="info[jud]" item="v">
+                        <div class="bg-warning bg" >
+                            {$i++}. {$v.descr}
+                        </div>
+                        <div class="answ">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" <if condition="$v['myansw'] == 1">checked='checked'</if> >
+
+                                    <if condition="$v[is_true] == 1">
+                                    <span class="bg-primary"><i class="glyphicon glyphicon-ok"></i></span>
+                                    <else/>
+                                    <i class="glyphicon glyphicon-ok"></i>
+                                    </if>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" <if condition=" $v['myansw'] == '0' ">checked='checked'</if>>
+
+                                    <if condition="$v[is_false] == 1">
+                                    <span class="bg-primary"><i class="glyphicon glyphicon-remove"></i></span>
+                                    <else/>
+                                    <i class="glyphicon glyphicon-remove"></i>
+                                    </if>
+                                </label>
+                            </div>
+                        </div>
+                        </foreach>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <!-- 主观题 -->
+                        <div class="page-header text-success">
+                            <h3>【主观题】<small>每道 {$info.sub_score} 分,共 {$info.sub_num} 道，<b>总得分：{$my_score.subj_score}</b></small></h3>
+                        </div>
+                        
+                        <volist name="info[sub]" id="v" key="k">
+                        <div class="bg-warning bg" >
+                            {$i++}. {$v.descr}
+                        </div>
+                        <div class="answ">
+                            <textarea class="form-control" style="height:250px; border:1px solid #ddd;">{$v.myansw}</textarea>
+                            <br>
+                            <p class="bg-success">
+                                参考答案：{$v.right_answ}
+                            </p>
+                            <p class="text-right">
+                                得分：<input type="text" value="{$each_ms[$k-1]}" disabled="disabled">
+                            </p>
+                        </div>
+                        </volist>
+                    </div>
+                    
+                    <div class="panel-footer text-center">
+                        <h3>
+                        <i class="fa fa-copyright"></i> 
+                        EKA 2017
+                        </h3>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    </div>
+
+    <script src="__ADMIN__/js/jquery.min.js?v=2.1.4"></script>  
+    <script src="__ADMIN__/js/bootstrap.min.js?v=3.3.6"></script>
+
+</body>
+
+</html>
