@@ -18,7 +18,7 @@ class PersonalController extends HomeacceController {
     function import_basic(){
     	if(!empty($_POST['password'])){
     		$stu = D('Stu');
-    		$data = $stu->create();
+    		$data = $stu->field('id,xuehao,pwd')->create();
     		$res = $stu->deal_import_basic($data);
     		if($res){
     			$this->success('重新从正方系统导入成功');
@@ -34,7 +34,7 @@ class PersonalController extends HomeacceController {
     function pass_info(){
     	if($_POST['oldPass'] != '' && $_POST['password'] != '' &&  $_POST['checkPass'] != ''){
     		$stu = D('Stu');
-    		$data = $stu->create();
+    		$data = $stu->field('id,pwd')->create();
     		if($data){
     			$data['oldPass'] = I('post.oldPass');
     			$res = $stu->deal_pass($data);
@@ -56,7 +56,8 @@ class PersonalController extends HomeacceController {
     function extra_info(){
     	if($_POST['phone'] != '' || $_POST['mail'] != '' ){
     		$stu = D('Stu');
-    		$data = $stu->create();
+    		$data = $stu->field('id,telphone,email')->create();
+            dump($data);
     		if($data){
     			$res = $stu->save($data);
     			if($res !== false){

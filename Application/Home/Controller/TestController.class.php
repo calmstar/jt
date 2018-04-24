@@ -62,7 +62,7 @@ class TestController extends HomeacceController {
 		}
 
 
-		$id = I('get.id'); //试卷id
+		$id = I('get.id','','int'); //试卷id
 		$sid = session('fg_id'); //学生id
 		$basic = new \Home\Model\Paper_basicModel();
 
@@ -214,6 +214,36 @@ class TestController extends HomeacceController {
 			
 			$answ = new \Home\Model\Stu_answModel();
 			$post = I('post.');
+
+			//18.4.24改进：只依赖paper_id求出各类型题分数和数量，而不依赖页面上的隐藏域表单
+            $paperid = $post['paper_id'];
+            $type = M('Paper_basic')->field('type')->find($paperid);
+            if ($type['type'] == 1) {
+                //随机出卷
+                $random = M('Paper_ques_random')->where("paper_id = $paperid")->find();
+                //分数
+                $post['sin_score'] = $random['sin_score'];
+                $post['dou_score'] = $random['dou_score'];
+                $post['jud_score'] = $random['jud_score'];
+                //数量
+                $post['sin_num'] = $random['sin_easy_num'] + $random['sin_com_num'] + $random['sin_diff_num'];
+                $post['dou_num'] = $random['dou_easy_num'] + $random['dou_com_num'] + $random['dou_diff_num'];
+                $post['jud_num'] = $random['jud_easy_num'] + $random['jud_com_num'] + $random['jud_diff_num'];
+                $post['sub_num'] = $random['sub_easy_num'] + $random['sub_com_num'] + $random['sub_diff_num'];
+
+            } else {
+                //指定出卷
+                $fixed = M('Paper_ques_fixed')->where("paper_id = $paperid")->find();
+                //分数
+                $post['sin_score'] = $fixed['sin_score'];
+                $post['dou_score'] = $fixed['dou_score'];
+                $post['jud_score'] = $fixed['jud_score'];
+                //数量
+                $post['sin_num'] = substr_count($fixed['limit_sin'], ',')+1;
+                $post['dou_num'] = substr_count($fixed['limit_dou'], ',')+1;
+                $post['jud_num'] = substr_count($fixed['limit_jud'], ',')+1;
+                $post['sub_num'] = substr_count($fixed['limit_sub'], ',')+1;
+            }
 
 			//提交时间检验，防止超时提交，禁用js下后端判断
 			$res = $answ->check_finish($post);

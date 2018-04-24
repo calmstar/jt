@@ -1,0 +1,24 @@
+[ 2018-04-24T16:19:55+08:00 ] 127.0.0.1 /index.php/paper/detail/id/55.2
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `jt_stu_score` WHERE ( stu_id=23 and paper_id= ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `jt_stu_score` WHERE ( stu_id=23 and paper_id= ) LIMIT 1  
+
+[ 2018-04-24T16:20:18+08:00 ] 127.0.0.1 /index.php/paper/detail/id/55.2df
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'df ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `jt_stu_score` WHERE ( stu_id=23 and paper_id=55.2df ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'df ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `jt_stu_score` WHERE ( stu_id=23 and paper_id=55.2df ) LIMIT 1  
+
+[ 2018-04-24T16:20:31+08:00 ] 127.0.0.1 /index.php/paper/detail/id/55.2
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `jt_stu_score` WHERE ( stu_id=23 and paper_id= ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `jt_stu_score` WHERE ( stu_id=23 and paper_id= ) LIMIT 1  
+
+[ 2018-04-24T16:25:03+08:00 ] 127.0.0.1 /index.php/test/exam/id/54%E3%80%822
+ERR: 1054:Unknown column '54。2' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `jt_paper_limit` WHERE ( paper_id=54。2 ) LIMIT 1  
+ERR: 1054:Unknown column '54。2' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `jt_paper_limit` WHERE ( paper_id=54。2 ) LIMIT 1  
+

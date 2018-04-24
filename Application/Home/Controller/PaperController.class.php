@@ -30,7 +30,7 @@ class PaperController extends HomeacceController {
 
 	function detail(){
 
-		$id = I('get.id'); //试卷id
+		$id = I('get.id','','int'); //试卷id
 		$sid = session('fg_id'); //学生id
 		$basic = new \Home\Model\Paper_basicModel();
 

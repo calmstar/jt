@@ -126,7 +126,6 @@ class StuModel extends Model{
 		$res['status'] = 0;
 		//验证旧密码
 		$z = $this->field('pwd')->find($data['id']);
-
 		if(password_verify($data['oldPass'], $z['pwd'])){
 			$data['pwd'] = password_hash($data['pwd'],PASSWORD_BCRYPT);
 			$zz = $this->save($data);

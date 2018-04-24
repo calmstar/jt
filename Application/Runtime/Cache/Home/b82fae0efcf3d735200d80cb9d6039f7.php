@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <head>
@@ -11,10 +11,10 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-    <link rel="shortcut icon" href="__PUBLIC__/favicon.ico"> <!--网页图标-->
-    <link href="__ADMIN__/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-    <link href="__ADMIN__/css/animate.css" rel="stylesheet">  <!--动画效果-->
-    <link href="__ADMIN__/css/style.css?v=4.1.0" rel="stylesheet">
+    <link rel="shortcut icon" href="/Public/favicon.ico"> <!--网页图标-->
+    <link href="/Public/Admin/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/Public/Admin/css/animate.css" rel="stylesheet">  <!--动画效果-->
+    <link href="/Public/Admin/css/style.css?v=4.1.0" rel="stylesheet">
     <!-- 会把navbar原生效果重置掉 -->
     
     <style type="text/css">
@@ -52,7 +52,7 @@
 
 <body class="bg-success" >
 
-    <form action="__CONTROLLER__/answ" method="post">
+    <form action="/index.php/test/answ" method="post">
 
     <!-- 正文 -->
     <div class="container-fluid">
@@ -61,7 +61,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-2 text-center text-danger">
-                        <span id="resttime" style="display:none">{$resttime}</span>
+                        <span id="resttime" style="display:none"><?php echo ($resttime); ?></span>
                         <span style="font-size: 20px;">
                             <span id="hour_show">00</span>:
                             <span id="minute_show">00</span>:
@@ -70,7 +70,7 @@
                     </div>
                     <div class="col-sm-8">
                         <div class="text-center">
-                            <h2>{$info.name}</h2>
+                            <h2><?php echo ($info["name"]); ?></h2>
                         </div>
                     </div>
                     <div class="col-sm-2 text-center">
@@ -86,30 +86,30 @@
                 <div class="panel panel-success">
 
                     <!--缓存答案，随意修改后果自负-->
-                    <input type="hidden" name="paper_id" value="{$info.paper_id}">
-                    <input type="hidden" name="sin_num" value="{$info.sin_num}">
-                    <input type="hidden" name="dou_num" value="{$info.dou_num}">
-                    <input type="hidden" name="jud_num" value="{$info.jud_num}">
-                    <input type="hidden" name="sub_num" value="{$info.sub_num}">
-                    <input type="hidden" name="sin_score" value="{$info.sin_score}">
-                    <input type="hidden" name="dou_score" value="{$info.dou_score}">
-                    <input type="hidden" name="jud_score" value="{$info.jud_score}">
+                    <input type="hidden" name="paper_id" value="<?php echo ($info["paper_id"]); ?>">
+                    <input type="hidden" name="sin_num" value="<?php echo ($info["sin_num"]); ?>">
+                    <input type="hidden" name="dou_num" value="<?php echo ($info["dou_num"]); ?>">
+                    <input type="hidden" name="jud_num" value="<?php echo ($info["jud_num"]); ?>">
+                    <input type="hidden" name="sub_num" value="<?php echo ($info["sub_num"]); ?>">
+                    <input type="hidden" name="sin_score" value="<?php echo ($info["sin_score"]); ?>">
+                    <input type="hidden" name="dou_score" value="<?php echo ($info["dou_score"]); ?>">
+                    <input type="hidden" name="jud_score" value="<?php echo ($info["jud_score"]); ?>">
 
                     <div class="panel-body">
                         <!-- 提示信息 -->
                         <div class="well">
                             <div class="row">
                                 <div class="col-sm-6 ">
-                                    <h4>考试限时：{$info.limittime}分钟</h4>
+                                    <h4>考试限时：<?php echo ($info["limittime"]); ?>分钟</h4>
                                 </div>
                                 <div class="col-sm-6 ">
-                                    <h4>总分：{$info.whole_score}</h4>
+                                    <h4>总分：<?php echo ($info["whole_score"]); ?></h4>
                                 </div>
                                 <div class="col-sm-6 ">
-                                    <h4>所属课程：{$info.course_name}</h4>
+                                    <h4>所属课程：<?php echo ($info["course_name"]); ?></h4>
                                 </div>
                                 <div class="col-sm-6 ">
-                                    <h4>出题人：{$info.maker_name}</h4>
+                                    <h4>出题人：<?php echo ($info["maker_name"]); ?></h4>
                                 </div>
                             </div>
                             <p class="text-danger">
@@ -118,115 +118,107 @@
                         </div>
                         <!-- 单选题 -->
                         <div class="page-header text-success">
-                            <h3>【单选题】<small>每道 {$info.sin_score} 分,共 {$info.sin_num} 道</small></h3>
+                            <h3>【单选题】<small>每道 <?php echo ($info["sin_score"]); ?> 分,共 <?php echo ($info["sin_num"]); ?> 道</small></h3>
                         </div>
 
-                       <foreach name="info[sin]"  item="v">
-                        <div class="bg-warning bg">
-                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                       <?php if(is_array($info[sin])): foreach($info[sin] as $key=>$v): ?><div class="bg-warning bg">
+                            <?php echo ($i++); ?>. <?php echo (strip_tags(htmlspecialchars_decode($v["descr"]))); ?>
                         </div>
                         <div class="answ">
                             <div class="radio">
                                 <label>
-                                    <input type="radio" value="is_op{$n[0]}" name="{$i-1}"  <if condition="$v['myansw'] == $n[0]">checked='checked'</if> 
-                                    >{$v.op$n[0]}
+                                    <input type="radio" value="is_op<?php echo ($n[0]); ?>" name="<?php echo ($i-1); ?>"  <?php if($v['myansw'] == $n[0]): ?>checked='checked'<?php endif; ?> 
+                                    ><?php echo ($v["op$n[0]"]); ?>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" value="is_op{$n[1]}" name="{$i-1}" <if condition="$v['myansw'] == $n[1]">checked='checked'</if> >{$v.op$n[1]}
+                                    <input type="radio" value="is_op<?php echo ($n[1]); ?>" name="<?php echo ($i-1); ?>" <?php if($v['myansw'] == $n[1]): ?>checked='checked'<?php endif; ?> ><?php echo ($v["op$n[1]"]); ?>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" value="is_op{$n[2]}" name="{$i-1}" <if condition="$v['myansw'] == $n[2]">checked='checked'</if> >{$v.op$n[2]}
+                                    <input type="radio" value="is_op<?php echo ($n[2]); ?>" name="<?php echo ($i-1); ?>" <?php if($v['myansw'] == $n[2]): ?>checked='checked'<?php endif; ?> ><?php echo ($v["op$n[2]"]); ?>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" value="is_op{$n[3]}"  name="{$i-1}" <if condition="$v['myansw'] == $n[3]">checked='checked'</if> >{$v.op$n[3]}
+                                    <input type="radio" value="is_op<?php echo ($n[3]); ?>"  name="<?php echo ($i-1); ?>" <?php if($v['myansw'] == $n[3]): ?>checked='checked'<?php endif; ?> ><?php echo ($v["op$n[3]"]); ?>
                                 </label>
                             </div>
-                        </div>
-                        </foreach>
+                        </div><?php endforeach; endif; ?>
 
                         <div class="hr-line-dashed"></div>
 
                         <!-- 双选题 -->
                         <div class="page-header text-success">
-                            <h3>【双选题】<small>每道 {$info.dou_score} 分,共 {$info.dou_num}道</small></h3>
+                            <h3>【双选题】<small>每道 <?php echo ($info["dou_score"]); ?> 分,共 <?php echo ($info["dou_num"]); ?>道</small></h3>
                         </div>
                        
-                       <foreach name="info[dou]" item="v">
-                        <div class="bg-warning bg" >
-                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                       <?php if(is_array($info[dou])): foreach($info[dou] as $key=>$v): ?><div class="bg-warning bg" >
+                            <?php echo ($i++); ?>. <?php echo (strip_tags(htmlspecialchars_decode($v["descr"]))); ?>
                         </div>
                         <div class="answ">                              
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" value="is_op{$n[0]}" name="{$i-1}[]"  <if condition="in_array($n['0'],$v[myansw])">checked='checked' </if> >  {$v.op$n[0]}
+                                    <input type="checkbox" value="is_op<?php echo ($n[0]); ?>" name="<?php echo ($i-1); ?>[]"  <?php if(in_array($n['0'],$v[myansw])): ?>checked='checked'<?php endif; ?> >  <?php echo ($v["op$n[0]"]); ?>
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" value="is_op{$n[1]}" name="{$i-1}[]" <if condition="in_array($n[1],$v[myansw])">checked='checked' </if> > {$v.op$n[1]}
+                                    <input type="checkbox" value="is_op<?php echo ($n[1]); ?>" name="<?php echo ($i-1); ?>[]" <?php if(in_array($n[1],$v[myansw])): ?>checked='checked'<?php endif; ?> > <?php echo ($v["op$n[1]"]); ?>
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" value="is_op{$n[2]}" name="{$i-1}[]" <if condition="in_array($n[2],$v[myansw])">checked='checked' </if> > {$v.op$n[2]}
+                                    <input type="checkbox" value="is_op<?php echo ($n[2]); ?>" name="<?php echo ($i-1); ?>[]" <?php if(in_array($n[2],$v[myansw])): ?>checked='checked'<?php endif; ?> > <?php echo ($v["op$n[2]"]); ?>
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" value="is_op{$n[3]}"  name="{$i-1}[]" <if condition="in_array($n[3],$v[myansw])">checked='checked' </if> > {$v.op$n[3]}
+                                    <input type="checkbox" value="is_op<?php echo ($n[3]); ?>"  name="<?php echo ($i-1); ?>[]" <?php if(in_array($n[3],$v[myansw])): ?>checked='checked'<?php endif; ?> > <?php echo ($v["op$n[3]"]); ?>
                                 </label>
                             </div>
-                        </div>
-                        </foreach>
+                        </div><?php endforeach; endif; ?>
 
                         <div class="hr-line-dashed"></div>
 
                         <!-- 判断题 -->
                         <div class="page-header text-success">
-                            <h3>【判断题】<small>每道 {$info.jud_score} 分,共 {$info.jud_num} 道</small></h3>
+                            <h3>【判断题】<small>每道 <?php echo ($info["jud_score"]); ?> 分,共 <?php echo ($info["jud_num"]); ?> 道</small></h3>
                         </div>
                        
-                        <foreach name="info[jud]" item="v">
-                        <div class="bg-warning bg" >
-                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                        <?php if(is_array($info[jud])): foreach($info[jud] as $key=>$v): ?><div class="bg-warning bg" >
+                            <?php echo ($i++); ?>. <?php echo (strip_tags(htmlspecialchars_decode($v["descr"]))); ?>
                         </div>
                         <div class="answ">
                             <div class="radio">
                                 <label>
-                                    <input type="radio" value="is_true" name="{$i-1}" <if condition="$v['myansw'] == 1">checked='checked'</if> >
+                                    <input type="radio" value="is_true" name="<?php echo ($i-1); ?>" <?php if($v['myansw'] == 1): ?>checked='checked'<?php endif; ?> >
                                     <i class="glyphicon glyphicon-ok"></i>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" value="is_false" name="{$i-1}" <if condition=" $v['myansw'] == '0' ">checked='checked'</if> >
+                                    <input type="radio" value="is_false" name="<?php echo ($i-1); ?>" <?php if( $v['myansw'] == '0' ): ?>checked='checked'<?php endif; ?> >
                                     <i class="glyphicon glyphicon-remove"></i>
                                 </label>
                             </div>
-                        </div>
-                        </foreach>
+                        </div><?php endforeach; endif; ?>
 
                         <div class="hr-line-dashed"></div>
 
                         <!-- 主观题 -->
                         <div class="page-header text-success">
-                            <h3>【主观题】<small>每道 {$info.sub_score} 分,共 {$info.sub_num} 道</small></h3>
+                            <h3>【主观题】<small>每道 <?php echo ($info["sub_score"]); ?> 分,共 <?php echo ($info["sub_num"]); ?> 道</small></h3>
                         </div>
                         
-                        <foreach name="info[sub]" item="v">
-                        <div class="bg-warning bg" >
-                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                        <?php if(is_array($info[sub])): foreach($info[sub] as $key=>$v): ?><div class="bg-warning bg" >
+                            <?php echo ($i++); ?>. <?php echo (strip_tags(htmlspecialchars_decode($v["descr"]))); ?>
                         </div>
                         <div style="padding-left: 25px">
-                            <textarea class="form-control" style="height:250px; border:1px solid #ddd;" name="{$i-1}"><if condition="$v['myansw'] != 'xx' ">{$v['myansw']}</if></textarea>
-                        </div>
-                        </foreach>
+                            <textarea class="form-control" style="height:250px; border:1px solid #ddd;" name="<?php echo ($i-1); ?>"><?php if($v['myansw'] != 'xx' ): echo ($v['myansw']); endif; ?></textarea>
+                        </div><?php endforeach; endif; ?>
                     </div>
                     
 
@@ -244,9 +236,9 @@
 
     </form>
     
-    <script src="__ADMIN__/js/jquery.min.js?v=2.1.4"></script>  
-    <script src="__ADMIN__/js/bootstrap.min.js?v=3.3.6"></script>
-    <script src="__ADMIN__/js/plugins/layer/layer.js"></script>
+    <script src="/Public/Admin/js/jquery.min.js?v=2.1.4"></script>  
+    <script src="/Public/Admin/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/Public/Admin/js/plugins/layer/layer.js"></script>
     <script type="text/javascript">
 
         //倒计时
@@ -288,7 +280,7 @@
             window.setInterval(function(){
                 $.ajax({
                     type:"POST",
-                    url:"__CONTROLLER__/exam",
+                    url:"/index.php/test/exam",
                     data:$("form").serialize(), //获取表单的所有数据
                 });
             },10000);

@@ -11,7 +11,7 @@ class PublicController extends Controller {
     		$ver = new \Think\Verify();
 			if($ver->check($code)){
 	    		$stu = D('Stu');
-	    		$data = $stu->create(); //完成字符映射,过滤非数据表字段
+	    		$data = $stu->field('xuehao,pwd')->create(); //完成字符映射,过滤非数据表字段
 				$res = $stu->deal_login($data);
 			}else{
 				$res['status'] = 0;
@@ -64,6 +64,7 @@ class PublicController extends Controller {
 		    	//仅修改密码
 		    	$data['id'] = $z['id'];
 		    	$data['pwd'] = password_hash($_POST['pwd'],PASSWORD_BCRYPT);
+                dump($data);exit;
 		    	$zz = M('Stu')->save($data);
 		    	if($zz){
 		    		$this->success('重置密码成功');
