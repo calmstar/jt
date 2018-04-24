@@ -94,7 +94,16 @@ class Paper_basicModel extends Model{
 
 		//单选题 题目数量验证
 		$sin = M('Ques_single')->field('count(*) as num,difficulty')->where("is_show=0 and course_id=$post[course_id]")->order('difficulty')->group('difficulty')->select();
-		//前面已根据难度顺序排列，所以0为简单，1一般，2困难
+        if (!isset($sin[0]['num'])) {
+            $sin[0]['num'] = 0;
+        }
+        if (!isset($sin[1]['num'])) {
+            $sin[1]['num'] = 0;
+        }
+        if (!isset($sin[2]['num'])) {
+            $sin[2]['num'] = 0;
+        }
+        //前面已根据难度顺序排列，所以0为简单，1一般，2困难
 		if($sin[0]['num'] < $post['sin_easy_num']){
 			$res['info'] = '难度为简单的单选题数量不够';
 			return $res;
@@ -110,7 +119,16 @@ class Paper_basicModel extends Model{
 
 		//双选题 题目数量验证
 		$dou = M('Ques_double')->field('count(*) as num,difficulty')->where("is_show=0 and course_id=$post[course_id]")->order('difficulty')->group('difficulty')->select();
-		//前面已根据难度顺序排列，所以0为简单，1一般，2困难
+        if (!isset($dou[0]['num'])) {
+            $dou[0]['num'] = 0;
+        }
+        if (!isset($dou[1]['num'])) {
+            $dou[1]['num'] = 0;
+        }
+        if (!isset($dou[2]['num'])) {
+            $dou[2]['num'] = 0;
+        }
+        //前面已根据难度顺序排列，所以0为简单，1一般，2困难
 		if($dou[0]['num'] < $post['dou_easy_num']){
 			$res['info'] = '难度为简单的双选题数量不够';
 			return $res;
@@ -126,7 +144,16 @@ class Paper_basicModel extends Model{
 
 		//判断题 题目数量验证
 		$jud = M('Ques_judge')->field('count(*) as num,difficulty')->where("is_show=0 and course_id=$post[course_id]")->order('difficulty')->group('difficulty')->select();
-		//前面已根据难度顺序排列，所以0为简单，1一般，2困难
+        if (!isset($jud[0]['num'])) {
+            $jud[0]['num'] = 0;
+        }
+        if (!isset($jud[1]['num'])) {
+            $jud[1]['num'] = 0;
+        }
+        if (!isset($jud[2]['num'])) {
+            $jud[2]['num'] = 0;
+        }
+        //前面已根据难度顺序排列，所以0为简单，1一般，2困难
 		if($jud[0]['num'] < $post['jud_easy_num']){
 			$res['info'] = '难度为简单的判断题数量不够';
 			return $res;
@@ -142,7 +169,16 @@ class Paper_basicModel extends Model{
 
 		//主观题 题目数量验证
 		$sub = M('Ques_subj')->field('count(*) as num,difficulty')->where("course_id=$post[course_id]")->order('difficulty')->group('difficulty')->select();
-		//前面已根据难度顺序排列，所以0为简单，1一般，2困难
+        if (!isset($sub[0]['num'])) {
+            $sub[0]['num'] = 0;
+        }
+        if (!isset($sub[1]['num'])) {
+            $sub[1]['num'] = 0;
+        }
+        if (!isset($sub[2]['num'])) {
+            $sub[2]['num'] = 0;
+        }
+        //前面已根据难度顺序排列，所以0为简单，1一般，2困难
 		if($sub[0]['num'] < $post['sub_easy_num']){
 			$res['info'] = '难度为简单的主观题数量不够';
 			return $res;
