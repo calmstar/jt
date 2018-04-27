@@ -42,7 +42,7 @@
                             结束时间：<?php echo (date('Y-m-d H:i:s',$v["enddate"])); ?>
                         </p>
                         
-                        <a class="btn btn-default" type="button" href="/index.php/test/exam/id/<?php echo ($v["id"]); ?>" target="_blank">
+                        <a class="btn btn-default" type="button" href="/index.php/Test/exam/id/<?php echo ($v["id"]); ?>" target="_blank">
                             <i class="fa fa-check"></i>&nbsp;
                             <strong>进入考试 </strong>
                         </a>

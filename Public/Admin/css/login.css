@@ -28,16 +28,19 @@ body {
 }
 
 .login .captcha-input {
-    width: 130px;
+    float:left;
+    /*width: 130px;*/
+    width: 50%;
 }
 
 .login .captcha-img {
-    margin-right: 0;
-    width: 118px;
+    float:right;
+    /*width: 120px;*/
+    width: 45%;
 }
 
 .login .captcha-img img {
-    height: 36px;
+    height: 38px;
     width: 100%;
     border: 1px solid #e6e6e6;
     border-radius: 3px;
@@ -49,6 +52,3 @@ body {
     margin-top: 10px;
 }
 
-.login .forget {
-    float:right;
-}

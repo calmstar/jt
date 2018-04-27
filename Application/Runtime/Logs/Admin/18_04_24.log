@@ -1,0 +1,340 @@
+[ 2018-04-24T20:43:18+08:00 ] 127.0.0.1 /manager.php/Mark/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002982s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0098s ]
+SQL: SELECT `paper_id`,count(*) as mark_num FROM `jt_stu_score` WHERE ( mark_status=0 ) GROUP BY paper_id  [ RunTime:0.0005s ]
+SQL: SELECT `paper_id`,count(*) as sco_nums FROM `jt_stu_score` GROUP BY paper_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0128s ]
+SQL: SELECT `paper_id`,count(*) as join_num FROM `jt_stu_paper` GROUP BY paper_id  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0383s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 52 and etime != ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 53 and etime != ''  ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 54 and etime != ''  ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 56 and etime != ''  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0107s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001271s ]
+
+[ 2018-04-24T20:43:19+08:00 ] 127.0.0.1 /manager.php/Mark/showlist.html?sort=xh&order=desc&limit=20&offset=0&_=1524573799269
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002046s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0173s ]
+SQL: SELECT `paper_id`,count(*) as mark_num FROM `jt_stu_score` WHERE ( mark_status=0 ) GROUP BY paper_id  [ RunTime:0.0008s ]
+SQL: SELECT `paper_id`,count(*) as sco_nums FROM `jt_stu_score` GROUP BY paper_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0130s ]
+SQL: SELECT `paper_id`,count(*) as join_num FROM `jt_stu_paper` GROUP BY paper_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0129s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 52 and etime != ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 53 and etime != ''  ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 54 and etime != ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 56 and etime != ''  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0137s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-04-24T20:43:21+08:00 ] 127.0.0.1 /manager.php/Mark/control/paper_id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select stu_id as tester_id,xuehao,name as tester_name,stu_class as tester_class,stime,etime from jt_stu_answ sa join jt_stu s on s.id=sa.stu_id where paper_id=56 order by stu_id [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0095s ]
+SQL: SELECT `stu_id`,`mark_status`,`subj_score` FROM `jt_stu_score` WHERE ( paper_id = 56 ) ORDER BY stu_id  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_score` WHERE ( paper_id = 56 and stu_id = 23 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id = 56 and stu_id = 23 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0083s ]
+SQL: SELECT `name` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2018-04-24T20:43:21+08:00 ] 127.0.0.1 /manager.php/Mark/control/paper_id/56?sort=xh&order=desc&limit=20&offset=0&_=1524573801592
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select stu_id as tester_id,xuehao,name as tester_name,stu_class as tester_class,stime,etime from jt_stu_answ sa join jt_stu s on s.id=sa.stu_id where paper_id=56 order by stu_id [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0115s ]
+SQL: SELECT `stu_id`,`mark_status`,`subj_score` FROM `jt_stu_score` WHERE ( paper_id = 56 ) ORDER BY stu_id  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_score` WHERE ( paper_id = 56 and stu_id = 23 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id = 56 and stu_id = 23 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-04-24T20:43:25+08:00 ] 127.0.0.1 /manager.php/Mark/remove/tester_id/23/paper_id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0099s ]
+SQL: DELETE FROM `jt_stu_paper` WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0094s ]
+SQL: DELETE FROM `jt_stu_answ` WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0097s ]
+SQL: DELETE FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0477s ]
+SQL: DELETE FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001097s ]
+
+[ 2018-04-24T20:43:27+08:00 ] 127.0.0.1 /manager.php/Mark/control/paper_id/56.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select stu_id as tester_id,xuehao,name as tester_name,stu_class as tester_class,stime,etime from jt_stu_answ sa join jt_stu s on s.id=sa.stu_id where paper_id=56 order by stu_id [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0102s ]
+SQL: SELECT `stu_id`,`mark_status`,`subj_score` FROM `jt_stu_score` WHERE ( paper_id = 56 ) ORDER BY stu_id  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0108s ]
+SQL: SELECT `name` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000466s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001805s ]
+
+[ 2018-04-24T20:43:27+08:00 ] 127.0.0.1 /manager.php/Mark/control/paper_id/56?sort=xh&order=desc&limit=20&offset=0&_=1524573807507
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001783s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select stu_id as tester_id,xuehao,name as tester_name,stu_class as tester_class,stime,etime from jt_stu_answ sa join jt_stu s on s.id=sa.stu_id where paper_id=56 order by stu_id [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0106s ]
+SQL: SELECT `stu_id`,`mark_status`,`subj_score` FROM `jt_stu_score` WHERE ( paper_id = 56 ) ORDER BY stu_id  [ RunTime:0.0006s ]
+
+[ 2018-04-24T20:44:07+08:00 ] 127.0.0.1 /manager.php/Mark/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0105s ]
+SQL: SELECT `paper_id`,count(*) as mark_num FROM `jt_stu_score` WHERE ( mark_status=0 ) GROUP BY paper_id  [ RunTime:0.0007s ]
+SQL: SELECT `paper_id`,count(*) as sco_nums FROM `jt_stu_score` GROUP BY paper_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0108s ]
+SQL: SELECT `paper_id`,count(*) as join_num FROM `jt_stu_paper` GROUP BY paper_id  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0089s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 52 and etime != ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 53 and etime != ''  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 54 and etime != ''  ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 56 and etime != ''  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0092s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000458s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002050s ]
+
+[ 2018-04-24T20:44:08+08:00 ] 127.0.0.1 /manager.php/Mark/showlist.html?sort=xh&order=desc&limit=20&offset=0&_=1524573848411
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001701s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0407s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0396s ]
+SQL: SELECT `paper_id`,count(*) as mark_num FROM `jt_stu_score` WHERE ( mark_status=0 ) GROUP BY paper_id  [ RunTime:0.0010s ]
+SQL: SELECT `paper_id`,count(*) as sco_nums FROM `jt_stu_score` GROUP BY paper_id  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.2020s ]
+SQL: SELECT `paper_id`,count(*) as join_num FROM `jt_stu_paper` GROUP BY paper_id  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0335s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 52 and etime != ''  ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 53 and etime != ''  ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 54 and etime != ''  ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' F:\JMoocTest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 56 and etime != ''  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0422s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-04-24T20:44:10+08:00 ] 127.0.0.1 /manager.php/Mark/control/paper_id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: select stu_id as tester_id,xuehao,name as tester_name,stu_class as tester_class,stime,etime from jt_stu_answ sa join jt_stu s on s.id=sa.stu_id where paper_id=56 order by stu_id [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0106s ]
+SQL: SELECT `stu_id`,`mark_status`,`subj_score` FROM `jt_stu_score` WHERE ( paper_id = 56 ) ORDER BY stu_id  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_score` WHERE ( paper_id = 56 and stu_id = 23 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id = 56 and stu_id = 23 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0086s ]
+SQL: SELECT `name` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2018-04-24T20:44:11+08:00 ] 127.0.0.1 /manager.php/Mark/control/paper_id/56?sort=xh&order=desc&limit=20&offset=0&_=1524573851348
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select stu_id as tester_id,xuehao,name as tester_name,stu_class as tester_class,stime,etime from jt_stu_answ sa join jt_stu s on s.id=sa.stu_id where paper_id=56 order by stu_id [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0108s ]
+SQL: SELECT `stu_id`,`mark_status`,`subj_score` FROM `jt_stu_score` WHERE ( paper_id = 56 ) ORDER BY stu_id  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_score` WHERE ( paper_id = 56 and stu_id = 23 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id = 56 and stu_id = 23 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-04-24T20:44:13+08:00 ] 127.0.0.1 /manager.php/Mark/smark/tester_id/23/paper_id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0124s ]
+SQL: SELECT `name`,`type` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_paper_ques_random` [ RunTime:0.0114s ]
+SQL: SELECT `sub_score` FROM `jt_paper_ques_random` WHERE ( paper_id=56 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0092s ]
+SQL: SELECT `subj_ids` FROM `jt_stu_paper` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0108s ]
+SQL: SELECT `subj_score`,`mark_status` FROM `jt_stu_score` WHERE ( stu_id=23 and paper_id=56 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0107s ]
+SQL: SELECT `name`,`xuehao`,`stu_class` FROM `jt_stu` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE ( id in(14) ) ORDER BY field(id,14)  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0084s ]
+SQL: SELECT `subj_answ` FROM `jt_stu_answ` WHERE ( stu_id=23 and paper_id=56 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `each_ms` FROM `jt_stu_score` WHERE ( stu_id=23 and paper_id=56 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000426s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001282s ]
+

@@ -41,7 +41,7 @@
                             <i class="glyphicon glyphicon-pencil"></i> 批改主观题
                         </button>
                     </div>
-                    <table id="tester_list" data-url="/manager.php/mark/control/paper_id/<?php echo ($paper_id); ?>"></table>
+                    <table id="tester_list" data-url="/manager.php/Mark/control/paper_id/<?php echo ($paper_id); ?>"></table>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
                         function(){
                             var paper_id = <?php echo ($paper_id); ?>; //assign进来
                             var tester_id = idObj[0].tester_id;
-                            location.href = '/manager.php/mark/reset/tester_id/'+tester_id+'/paper_id/'+paper_id;
+                            location.href = '/manager.php/Mark/reset/tester_id/'+tester_id+'/paper_id/'+paper_id;
                         });
             }
         });
@@ -86,7 +86,7 @@
                         function(){
                             var paper_id = <?php echo ($paper_id); ?>; //assign进来
                             var tester_id = idObj[0].tester_id;
-                            location.href = '/manager.php/mark/remove/tester_id/'+tester_id+'/paper_id/'+paper_id;
+                            location.href = '/manager.php/Mark/remove/tester_id/'+tester_id+'/paper_id/'+paper_id;
                         });
             }
         });
@@ -102,7 +102,7 @@
                         function(){
                             var paper_id = <?php echo ($paper_id); ?>; //assign进来
                             var tester_id = idObj[0].tester_id;
-                            location.href = '/manager.php/mark/clear/tester_id/'+tester_id+'/paper_id/'+paper_id;
+                            location.href = '/manager.php/Mark/clear/tester_id/'+tester_id+'/paper_id/'+paper_id;
                         });
             }
         });
@@ -116,7 +116,7 @@
             }else{
                 var paper_id = <?php echo ($paper_id); ?>; //assign进来
                 var tester_id = idObj[0].tester_id;
-                window.open('/manager.php/mark/smark/tester_id/'+tester_id+'/paper_id/'+paper_id);
+                window.open('/manager.php/Mark/smark/tester_id/'+tester_id+'/paper_id/'+paper_id);
             }
         });
 

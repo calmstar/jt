@@ -74,7 +74,7 @@
                     layer.msg('没有选中数据');
                 }else{
                     var paper_id = idObj[0].paper_id;
-                    window.open('/manager.php/mark/marking/paper_id/'+paper_id);
+                    window.open('/manager.php/Mark/marking/paper_id/'+paper_id);
                 }
             });
 
@@ -86,7 +86,7 @@
                     layer.msg('没有选中数据');
                 }else{
                     var paper_id = idObj[0].paper_id;
-                    location.href='/manager.php/mark/control/paper_id/'+paper_id;
+                    location.href='/manager.php/Mark/control/paper_id/'+paper_id;
                 }
             });
 

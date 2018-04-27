@@ -52,7 +52,7 @@
 
 <body class="bg-success" >
 
-    <form action="/index.php/test/answ" method="post">
+    <form action="/index.php/Test/answ" method="post">
 
     <!-- 正文 -->
     <div class="container-fluid">
@@ -280,7 +280,7 @@
             window.setInterval(function(){
                 $.ajax({
                     type:"POST",
-                    url:"/index.php/test/exam",
+                    url:"/index.php/Test/exam",
                     data:$("form").serialize(), //获取表单的所有数据
                 });
             },10000);

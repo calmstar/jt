@@ -72,9 +72,9 @@
                     layer.msg('只能选中一条数据');
                 }else{
                     var id = idObj[0].paper_id;
-                    // location.href='/index.php/paper/detail/id/'+id;
+                    // location.href='/index.php/Paper/detail/id/'+id;
                     //打开新窗口
-                    window.open("/index.php/paper/detail/id/"+id);
+                    window.open("/index.php/Paper/detail/id/"+id);
                 }
                 
             });

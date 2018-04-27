@@ -4,6 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>登录 - JMoocTest</title>
+
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
     <link rel="shortcut icon" href="/Public/favicon.ico"> 
     <link rel="stylesheet" href="/Public/Admin/plugins/layui/css/layui.css">
     <link rel="stylesheet" href="/Public/Admin/css/login.css">
@@ -12,38 +20,39 @@
 </head>
 
 <body>
+
     <canvas id="dot"></canvas>
 
     <form class="layui-form login">
-        <h1>JMoocTest</h1>
+            <h1>JMoocTest</h1>
 
-        <div class="layui-form-item">
-            <input type="text" name="stuNumber"  required lay-verify="required|num|xuehao" placeholder="正方学号" autocomplete="off" class="layui-input">
-        </div>
-
-        <div class="layui-form-item">
-            <input type="password" name="password"  required lay-verify="required|pass" placeholder="密码" autocomplete="off" class="layui-input">
-        </div>
-
-        <div class="layui-form-item">
-            <div class="layui-input-inline captcha-input">
-                <input type="text" name="code"  required lay-verify="required" placeholder="验证码" autocomplete="off" class="layui-input">
+            <div class="layui-form-item">
+                <input type="text" name="stuNumber"  required lay-verify="required|num|xuehao" placeholder="正方学号" autocomplete="off" class="layui-input">
             </div>
-            <div class="layui-input-inline captcha-img">
-                <img src="/index.php/public/verifyImg" alt="验证码加载失败" title="点击刷新验证码">
+
+            <div class="layui-form-item">
+                <input type="password" name="password"  required lay-verify="required|pass" placeholder="密码" autocomplete="off" class="layui-input">
             </div>
-        </div>
 
-        <div class="layui-form-item">
-            <button class="layui-btn submit_btn" lay-submit lay-filter="login">登录</button>
-        </div>
+            <div class="layui-form-item">
+                <div class=" captcha-input">
+                    <input type="text" name="code"  required lay-verify="required" placeholder="验证码" autocomplete="off" class="layui-input">
+                </div>
+                <div class="captcha-img">
+                    <img src="/index.php/Public/verifyImg" alt="验证码加载失败" title="点击刷新验证码" >
+                </div>
+            </div>
 
-        <div class="layui-form-item" >
-            <div style="float:left;"> <a id="about"> 关于注册 </a> </div>
-            <div style="float:right;"><a data-toggle="modal" href="#forget"> 忘记密码>>  </a></div>
-        </div>
+            <div class="layui-form-item">
+                <button class="layui-btn submit_btn" lay-submit lay-filter="login">登录</button>
+            </div>
 
-    </form>
+            <div class="layui-form-item" >
+                <div style="float:left;"> <a id="about"> 关于注册 </a> </div>
+                <div style="float:right;"><a data-toggle="modal" href="#forget"> 忘记密码>>  </a></div>
+            </div>
+
+        </form>
 
     <!--弹出表单-->
     <div id="forget" class="modal fade" aria-hidden="true">
@@ -54,7 +63,7 @@
                         <div class="col-sm-6 b-r">
                             <h3 class="m-t-none m-b"> 重置为正方密码</h3>
                             <div class="hr-line-dashed"></div>
-                            <form role="form" method="post" action="/index.php/public/forgetpwd">
+                            <form role="form" method="post" action="/index.php/Public/forgetpwd">
                                 <div class="form-group">
                                     <label>正方学号：</label>
                                     <input type="text" name="fnumb">
@@ -68,6 +77,7 @@
                                     </button>
                                 </div>
                             </form>
+                            <br>
                         </div>
                         <div class="col-sm-6">
                             <h4>请注意</h4>
@@ -116,7 +126,7 @@
 
             // 点击图片刷新验证码
             $('.login .captcha-img img').click(function () {
-                this.src = '/index.php/public/verifyImg/' + Math.random();
+                this.src = '/index.php/Public/verifyImg/' + Math.random();
             });
 
             form.verify({
