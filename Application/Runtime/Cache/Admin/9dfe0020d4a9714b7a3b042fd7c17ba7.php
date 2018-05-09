@@ -31,7 +31,7 @@
                     <div class="ibox-content">
                         <h2>随机出卷向导</h2>
                         <p>请根据步骤及提醒内容按要求填写信息</p>
-                        <form id="paper" action="/manager.php/paper/add_random" class="wizard-big" method="post" enctype="multipart/form-data">
+                        <form id="paper" action="/manager.php/Paper/add_random" class="wizard-big" method="post" enctype="multipart/form-data">
 
                             <h1>试卷基本信息</h1>
                             <fieldset>

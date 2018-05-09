@@ -26,33 +26,34 @@ h1{ font-size: 32px; line-height: 48px; }
 </head>
 <body>
 <div class="error">
-<p class="face">:(</p>
-<h1><?php echo strip_tags($e['message']);?></h1>
+
+
+    <h2 style="width: 300px;margin: 0 auto;text-align: center;">页面错误,请核实输入地址！</h2>
+
 <div class="content">
-<?php if(isset($e['file'])) {?>
-	<div class="info">
-		<div class="title">
-			<h3>错误位置</h3>
-		</div>
-		<div class="text">
-			<p>FILE: <?php echo $e['file'] ;?> &#12288;LINE: <?php echo $e['line'];?></p>
-		</div>
-	</div>
-<?php }?>
-<?php if(isset($e['trace'])) {?>
-	<div class="info">
-		<div class="title">
-			<h3>TRACE</h3>
-		</div>
-		<div class="text">
-			<p><?php echo nl2br($e['trace']);?></p>
-		</div>
-	</div>
-<?php }?>
+    <?php if(isset($e['file'])) {?>
+        <div class="info">
+            <div class="title">
+                <h3>错误位置</h3>
+            </div>
+            <div class="text">
+                <p>FILE: <?php echo $e['file'] ;?> &#12288;LINE: <?php echo $e['line'];?></p>
+            </div>
+        </div>
+    <?php }?>
+    <?php if(isset($e['trace'])) {?>
+        <div class="info">
+            <div class="title">
+                <h3>TRACE</h3>
+            </div>
+            <div class="text">
+                <p><?php echo nl2br($e['trace']);?></p>
+            </div>
+        </div>
+    <?php }?>
+    </div>
 </div>
-</div>
-<div class="copyright">
-<p><a title="官方网站" href="http://www.thinkphp.cn">ThinkPHP</a><sup><?php echo THINK_VERSION ?></sup> { Fast & Simple OOP PHP Framework } -- [ WE CAN DO IT JUST THINK ]</p>
-</div>
+
+
 </body>
 </html>

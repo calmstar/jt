@@ -295,7 +295,7 @@ class TestController extends HomeacceController {
 				//各项数据都提交成功，删除考生临时答题表
 				M('Stu_answ_cache')->where("stu_id=$sid and paper_id=$paperid")->delete();
 
-				echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 试卷提交成功 ʕ•͓͡•ʔ</h1> ';
+				echo ' <h1 style="width:600px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 试卷提交成功，请关闭此页面 ʕ•͓͡•ʔ</h1> ';
 				exit;
 			}
 		}

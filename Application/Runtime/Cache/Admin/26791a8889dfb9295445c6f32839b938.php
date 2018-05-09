@@ -68,12 +68,12 @@
         $(function(){
             //随机出卷
             $('#add_random').on('click',function(){
-                location.href="/manager.php/paper/add_random";
+                location.href="/manager.php/Paper/add_random";
             });
 
             //指定出卷
             $('#add_fixed').on('click',function(){
-                location.href="/manager.php/paper/add_fixed";
+                location.href="/manager.php/Paper/add_fixed";
             });
 
             //删除
@@ -91,7 +91,7 @@
                 }else{
                     layer.confirm('确认删除？', {btn: ['确定', '取消']}, 
                         function(){   
-                            $.post("/manager.php/paper/dele",{ids:ids},
+                            $.post("/manager.php/Paper/dele",{ids:ids},
                                 function(data){
                                     if(data['status'] == 1){
                                         //由于layer.alert无法暂停下面的刷新
@@ -119,7 +119,7 @@
                     layer.msg('编辑只能选中一条数据');
                 }else{
                     var id = idObj[0].id;
-                    location.href='/manager.php/paper/edit/id/'+id;
+                    location.href='/manager.php/Paper/edit/id/'+id;
                 }
                 
             });
@@ -134,7 +134,7 @@
                     layer.msg('监控只能选中一条数据');
                 }else{
                     var id = idObj[0].id;
-                    location.href='/manager.php/paper/answ/id/'+id;
+                    location.href='/manager.php/Paper/answ/id/'+id;
                 }
                 
             });
@@ -152,7 +152,7 @@
                     layer.confirm('若为正在进行中的试卷，随意改变审核状态将影响考生考试，请谨慎操作', {btn: ['确定', '取消']}, 
                         function(){
                             var id = idObj[0].id;
-                            location.href='/manager.php/paper/isable/id/'+id;
+                            location.href='/manager.php/Paper/isable/id/'+id;
                         });
                 }
                 

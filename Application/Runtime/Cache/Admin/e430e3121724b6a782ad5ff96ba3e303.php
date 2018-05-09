@@ -69,7 +69,7 @@
                         <div class="col-sm-6 b-r">
                             <h3 class="m-t-none m-b">请上传文件</h3>
                             <div class="hr-line-dashed"></div>
-                            <form role="form" method="post" action="/manager.php/question/jud_import"  enctype="multipart/form-data">
+                            <form role="form" method="post" action="/manager.php/Question/jud_import"  enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label>请选择：</label>
                                     <input type="file" name="jud_file">
@@ -106,7 +106,7 @@
         $(function(){
             //添加
             $('#add').on('click',function(){
-                location.href="/manager.php/question/jud_add";
+                location.href="/manager.php/Question/jud_add";
             });
 
             //删除
@@ -124,7 +124,7 @@
                 }else{
                     layer.confirm('确认删除？', {btn: ['确定', '取消']}, 
                         function(){   
-                            $.post("/manager.php/question/jud_dele",{ids:ids},
+                            $.post("/manager.php/Question/jud_dele",{ids:ids},
                                 function(data){
                                     if(data['status'] == 1){
                                         //由于layer.alert无法暂停下面的刷新
@@ -152,7 +152,7 @@
                     layer.msg('编辑只能选中一条数据');
                 }else{
                     var id = idObj[0].id;
-                    location.href='/manager.php/question/jud_edit/id/'+id;
+                    location.href='/manager.php/Question/jud_edit/id/'+id;
                 }
                 
             });

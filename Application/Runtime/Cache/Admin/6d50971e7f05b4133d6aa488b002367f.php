@@ -67,7 +67,7 @@
                     layer.msg('没有选中数据');
                 }else{
                     var paper_id = idObj[0].paper_id;
-                    window.location.href='/manager.php/analyze/stu_list/paper_id/'+paper_id;
+                    window.location.href='/manager.php/Analyze/stu_list/paper_id/'+paper_id;
                 }
                 
             });
@@ -83,7 +83,7 @@
                             //idObj是一个二维数组 即json对象(json对象通过序列化后变成json字符串)
                             //由于只能选中一个，所以传递一个一维数组即可
                             idObj = JSON.stringify(idObj[0]);
-                            window.location.href="/manager.php/analyze/export?info="+idObj;
+                            window.location.href="/manager.php/Analyze/export?info="+idObj;
                             layer.close(index); //function中必须有index参数
                     });
                 }
@@ -98,7 +98,7 @@
                     layer.msg('没有选中数据');
                 }else{
                     var paper_id = idObj[0].paper_id;
-                    window.location.href='/manager.php/analyze/graph/paper_id/'+paper_id;
+                    window.location.href='/manager.php/Analyze/graph/paper_id/'+paper_id;
                 }
                 
             });

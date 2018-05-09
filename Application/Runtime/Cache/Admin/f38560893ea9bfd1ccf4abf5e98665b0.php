@@ -32,7 +32,7 @@
 <body class="gray-bg">
     <div class="wrapper wrapper-content animated fadeInRight">
         <!-- 基本信息 -->
-        <form action="/manager.php/paper/edit/id/56" method="post" id="basic">
+        <form action="/manager.php/Paper/edit/id/56" method="post" id="basic">
         <div class="row">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
@@ -87,7 +87,7 @@
 
         <!-- 考试限制对象 -->
         <div class="row">
-            <form action="/manager.php/paper/edit/id/56" method="post" enctype="multipart/form-data" id="limit">
+            <form action="/manager.php/Paper/edit/id/56" method="post" enctype="multipart/form-data" id="limit">
             <div class="col-sm-8">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
@@ -164,7 +164,7 @@
         </div>
 
         <!-- 试题信息 -->
-        <form action="/manager.php/paper/edit/id/56" method="post" id="ques">
+        <form action="/manager.php/Paper/edit/id/56" method="post" id="ques">
         <div class="row">
             <div class="col-sm-8">
                 <div class="ibox float-e-margins">
@@ -314,22 +314,22 @@
                             <div class="tab-content">
                                 <div id="tab_sin" class="tab-pane active">
                                     <div class="panel-body">
-                                        <table id="sin_table" data-url="/manager.php/paper/edit?id=<?php echo ($basic_info["id"]); ?>&sin=sin"></table>
+                                        <table id="sin_table" data-url="/manager.php/Paper/edit?id=<?php echo ($basic_info["id"]); ?>&sin=sin"></table>
                                     </div>
                                 </div>
                                 <div id="tab_dou" class="tab-pane">
                                     <div class="panel-body">
-                                        <table id="dou_table" data-url="/manager.php/paper/edit?id=<?php echo ($basic_info["id"]); ?>&dou=dou"></table>
+                                        <table id="dou_table" data-url="/manager.php/Paper/edit?id=<?php echo ($basic_info["id"]); ?>&dou=dou"></table>
                                     </div>
                                 </div>
                                 <div id="tab_jud" class="tab-pane">
                                     <div class="panel-body">
-                                        <table id="jud_table" data-url="/manager.php/paper/edit?id=<?php echo ($basic_info["id"]); ?>&jud=jud"></table>
+                                        <table id="jud_table" data-url="/manager.php/Paper/edit?id=<?php echo ($basic_info["id"]); ?>&jud=jud"></table>
                                     </div>
                                 </div>
                                 <div id="tab_sub" class="tab-pane">
                                     <div class="panel-body">
-                                        <table id="sub_table" data-url="/manager.php/paper/edit?id=<?php echo ($basic_info["id"]); ?>&sub=sub"></table>
+                                        <table id="sub_table" data-url="/manager.php/Paper/edit?id=<?php echo ($basic_info["id"]); ?>&sub=sub"></table>
                                     </div>
                                 </div>
                             </div>
@@ -480,7 +480,7 @@
                 layer.confirm('清空后，限制学生功能将不启用',{btn: ['确定', '取消']},
                     function(){ 
                         // 清空该试卷的学生名单，修改limit_stu_status,全面修改
-                        $.post("/manager.php/paper/edit/id/56",{'clear_stu':1,'paper_id':paper_id},function(data){
+                        $.post("/manager.php/Paper/edit/id/56",{'clear_stu':1,'paper_id':paper_id},function(data){
                                 if(data){
                                     window.location.reload();
                                 }else{
@@ -499,7 +499,7 @@
                 var paper_id = $('#change_table').attr('value');
                 layer.confirm('需要重新勾选题目',{btn: ['确定', '取消']},
                     function(){ 
-                        window.location.href='/manager.php/paper/fixed_ques/paper_id/'+paper_id;
+                        window.location.href='/manager.php/Paper/fixed_ques/paper_id/'+paper_id;
                 });
                 
             });

@@ -32,7 +32,7 @@
     <div class="wrapper wrapper-content animated fadeInRight">
         <div class="ibox">
             <div class="ibox-title">
-                <h3>单选题</h3>  
+                <h3>双选题</h3>  
             </div> 
             <div class="ibox-content">
                 <div class="row row-lg">
@@ -47,12 +47,12 @@
                             <button id="edit" type="button" class="btn btn-default" title="编辑/查看题目">
                                 <i class="glyphicon glyphicon-edit"></i> 编辑/查看
                             </button>
-                            <a id="import" type="button" class="btn btn-default" title="导入单选题" data-toggle="modal" href="#inputFile">
+                            <a id="import" type="button" class="btn btn-default" title="导入双选题" data-toggle="modal" href="#inputFile">
                                 <i class="glyphicon glyphicon-import"></i> EXCEL导入
                             </a>
                         </div>
                         <!--使用了data-toggle='table' id就没效果-->
-                        <table id="sin_table" data-url="/manager.php/Question/sin_showlist.html"></table>
+                        <table id="dou_table" data-url="/manager.php/Question/dou_showlist.html"></table>
                     </div>
                 </div>
             </div>
@@ -69,10 +69,10 @@
                         <div class="col-sm-6 b-r">
                             <h3 class="m-t-none m-b">请上传文件</h3>
                             <div class="hr-line-dashed"></div>
-                            <form role="form" method="post" action="/manager.php/Question/sin_import"  enctype="multipart/form-data">
+                            <form role="form" method="post" action="/manager.php/Question/dou_import"  enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label>请选择：</label>
-                                    <input type="file" name="sin_file">
+                                    <input type="file" name="dou_file">
                                 </div>
                                 <div>
                                     <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>确定</strong>
@@ -106,13 +106,13 @@
         $(function(){
             //添加
             $('#add').on('click',function(){
-                location.href="/manager.php/Question/sin_add";
+                location.href="/manager.php/Question/dou_add";
             });
 
             //删除
             $('#dele').on('click',function(){
                 //整理数据
-                var idObj = $("#sin_table").bootstrapTable('getSelections');
+                var idObj = $("#dou_table").bootstrapTable('getSelections');
                 var ids = '';
                 for(var i = 0; i < idObj.length; i++ ){
                     ids += idObj[i].id + ',';
@@ -124,7 +124,7 @@
                 }else{
                     layer.confirm('确认删除？', {btn: ['确定', '取消']}, 
                         function(){   
-                            $.post("/manager.php/Question/sin_dele",{ids:ids},
+                            $.post("/manager.php/Question/dou_dele",{ids:ids},
                                 function(data){
                                     if(data['status'] == 1){
                                         //由于layer.alert无法暂停下面的刷新
@@ -145,14 +145,14 @@
             //编辑
             $('#edit').on('click',function(){
                 //整理数据
-                var idObj = $("#sin_table").bootstrapTable('getSelections');
+                var idObj = $("#dou_table").bootstrapTable('getSelections');
                 if(idObj.length == 0){
                     layer.msg('没有选中数据');
                 }else if(idObj.length > 1){
                     layer.msg('编辑只能选中一条数据');
                 }else{
                     var id = idObj[0].id;
-                    location.href='/manager.php/Question/sin_edit/id/'+id;
+                    location.href='/manager.php/Question/dou_edit/id/'+id;
                 }
                 
             });
