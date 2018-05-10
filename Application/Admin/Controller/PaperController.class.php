@@ -197,6 +197,7 @@ class PaperController extends AccessController{
 					//指定出卷（通过发送过来的数据数量来判断）
                     //修改每种类型题的分数信息，也要修改总分
                     $post = $paper->deal_whole_score($post);
+                    unset($post['id']);
                     $res = M('Paper_ques_fixed')->where("paper_id=$paper_id")->save($post);
 				}else{
 					// 随机出卷 （大于六个）

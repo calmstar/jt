@@ -31,7 +31,7 @@
                     <div class="ibox-content">
                         <div class="row">
                             <div class="col-sm-10 col-sm-offset-1">
-                            <form class="form-horizontal m-t" id="login" action="/manager.php/Public/login" method="post">
+                            <form class="form-horizontal m-t" id="login" action="/manager.php/Public/login.html" method="post">
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label" for="mail">邮箱账号：</label>
                                     <div class="col-sm-8">
@@ -83,7 +83,7 @@
             $('#denglu').click(function(){
                 $.ajax({
                     type:"POST",
-                    url:'/manager.php/Public/login',
+                    url:'/manager.php/Public/login.html',
                     data:$('form').serialize(),
                     success:function(res){
                         if(res['status'] == 1){

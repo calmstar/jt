@@ -99,17 +99,31 @@
                         <!-- 提示信息 -->
                         <div class="well">
                             <div class="row">
-                                <div class="col-sm-6 ">
+                                <div class="col-sm-3 ">
                                     <h4>考试限时：<?php echo ($info["limittime"]); ?>分钟</h4>
                                 </div>
-                                <div class="col-sm-6 ">
+                                <div class="col-sm-3 ">
                                     <h4>总分：<?php echo ($info["whole_score"]); ?></h4>
                                 </div>
-                                <div class="col-sm-6 ">
+                                <div class="col-sm-3 ">
                                     <h4>所属课程：<?php echo ($info["course_name"]); ?></h4>
                                 </div>
-                                <div class="col-sm-6 ">
+                                <div class="col-sm-3 ">
                                     <h4>出题人：<?php echo ($info["maker_name"]); ?></h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 ">
+                                    <h4>单选题：<small>每道 <?php echo ($info["sin_score"]); ?> 分,共 <?php echo ($info["sin_num"]); ?> 道</small></h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4>双选题：<small>每道 <?php echo ($info["dou_score"]); ?> 分,共 <?php echo ($info["dou_num"]); ?>道</small></h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4>判断题：<small>每道 <?php echo ($info["jud_score"]); ?> 分,共 <?php echo ($info["jud_num"]); ?> 道</small></h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4>主观题：<small>每道 <?php echo ($info["sub_score"]); ?> 分,共 <?php echo ($info["sub_num"]); ?> 道</small></h4>
                                 </div>
                             </div>
                             <p class="text-danger">

@@ -89,51 +89,179 @@
         </div>
         </form>
 
-        <!-- 考试限制对象 -->
         <div class="row">
-            <form action="__SELF__" method="post" enctype="multipart/form-data" id="limit">
             <div class="col-sm-8">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>试卷限制对象 <small>以下皆为选填</small></h5>
-                        <div class="ibox-tools">
-                            <input class="btn btn-primary" type="submit" name="limit">
+                <div class="row">
+                    <!-- 考试限制对象 -->
+                    <div class="col-sm-12">
+                        <form action="__SELF__" method="post" enctype="multipart/form-data" id="limit">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>试卷限制对象 <small>以下皆为选填</small></h5>
+                                <div class="ibox-tools">
+                                    <input class="btn btn-primary" type="submit" name="limit">
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <input type="hidden" name="id" value="{$basic_info.id}">
+                                <div class="form-group">
+                                    <label>限制班级</label>
+                                    <input id="limit_class" name="limit_class" type="text" class="form-control" placeholder="选填。格式为：计算机1504班+经管1506班" value="{$limit_info.limit_class}">
+                                </div>
+                                <p>
+                                    <i class="fa fa-info-circle"></i> 学院名称格式：数学，物理，化学，文学，外语，生科，政法，地理，经管，电子，计算机，土木，美术，体育，音乐，教科。
+                                    <br>
+                                    请按照<b>所给学院</b>名称添加上班级，可填多个对象，对象之间用 加号 隔开。（对象 = 学院+班级）
+                                </p>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label>限制学生：
+                                        <br>
+                                        <small>
+                                            ( 限制学生名单如右所示，若修改请重新选择文件；修改时系统会自动把之前旧学生名单清空，再导入该新的名单。)
+                                        </small>
+                                    </label>
+                                    <input id="limit_stu_status" name="limit_stu_status" type="file" class="form-control">
+                                </div>
+                                <p>
+                                    <i class="fa fa-info-circle"></i>
+
+                                    选填，该功能需要导入学生名单，请严格按照格式导入
+                                </p>
+                                <div class="hr-line-dashed"></div>
+                                <p>注：如果既限制了班级又限制了考生，则限制效果为两者的逻辑与</p>
+
+                            </div>
                         </div>
+                        </form>
                     </div>
-                    <div class="ibox-content">
-                        <input type="hidden" name="id" value="{$basic_info.id}">
-                        <div class="form-group">
-                            <label>限制班级</label>
-                            <input id="limit_class" name="limit_class" type="text" class="form-control" placeholder="选填。格式为：计算机1504班+经管1506班" value="{$limit_info.limit_class}">
+                    <!-- 试题信息 -->
+                    <div class="col-sm-12">
+                        <form action="__SELF__" method="post" id="ques">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>试题信息 <small>每项必填</small></h5>
+                                <div class="ibox-tools">
+                                    <input class="btn btn-primary" type="submit" name="ques">
+                                </div>
+                            </div>
+                            <div class="ibox-content" id="ques_info">
+                                <input type="hidden" name="id" value="{$basic_info.id}">
+                                <div class="row">
+                                    <div class="col-sm-3" id="sin">
+                                        <div class="form-group">
+                                            <label>每道单选题分数</label>
+                                            <input id="sin_score" name="sin_score" type="text" class="form-control required digits" max="100" value="{$ques_info.sin_score}">
+                                        </div>
+                                        <!-- 判断为随机出卷时才显示 -->
+                                        <if condition="$basic_info['type'] == 1">
+                                            <div class="form-group">
+                                                <label>简单 * 单选题数量</label>
+                                                <input id="sin_easy_num" name="sin_easy_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sin_easy_num}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>一般 * 单选题数量</label>
+                                                <input id="sin_com_num" name="sin_com_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sin_com_num}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>困难 * 单选题数量</label>
+                                                <input id="sin_diff_num" name="sin_diff_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sin_diff_num}">
+                                            </div>
+                                        </if>
+                                    </div>
+
+                                    <div class="col-sm-3" id="dou">
+                                        <div class="form-group">
+                                            <label>每道双选题分数</label>
+                                            <input id="dou_score" name="dou_score" type="text" class="form-control required digits" max="100" value="{$ques_info.dou_score}">
+                                        </div>
+                                        <if condition="$basic_info['type'] == 1">
+                                            <div class="form-group">
+                                                <label>简单 * 双选题数量</label>
+                                                <input id="dou_easy_num" name="dou_easy_num" type="text" class="form-control required digits" max="100" value="{$ques_info.dou_easy_num}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>一般 * 双选题数量</label>
+                                                <input id="dou_com_num" name="dou_com_num" type="text" class="form-control required digits" max="100" value="{$ques_info.dou_com_num}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>困难 * 双选题数量</label>
+                                                <input id="dou_diff_num" name="dou_diff_num" type="text" class="form-control required digits" max="100" value="{$ques_info.dou_diff_num}">
+                                            </div>
+                                        </if>
+                                    </div>
+
+                                    <div class="col-sm-3" id="jud">
+                                        <div class="form-group">
+                                            <label>每道判断题分数</label>
+                                            <input id="jud_score" name="jud_score" type="text" class="form-control required digits" max="100" value="{$ques_info.jud_score}">
+                                        </div>
+                                        <if condition="$basic_info['type'] == 1">
+                                            <div class="form-group">
+                                                <label>简单 * 判断题数量</label>
+                                                <input id="jud_easy_num" name="jud_easy_num" type="text" class="form-control required digits" max="100" value="{$ques_info.jud_easy_num}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>一般 * 判断题数量</label>
+                                                <input id="jud_com_num" name="jud_com_num" type="text" class="form-control required digits" max="100" value="{$ques_info.jud_com_num}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>困难 * 判断题数量</label>
+                                                <input id="jud_diff_num" name="jud_diff_num" type="text" class="form-control required digits" max="100" value="{$ques_info.jud_diff_num}">
+                                            </div>
+                                        </if>
+                                    </div>
+
+                                    <div class="col-sm-3" id="sub">
+                                        <div class="form-group">
+                                            <label>每道主观题分数</label>
+                                            <input id="sub_score" name="sub_score" type="text" class="form-control required digits" max="100" value="{$ques_info.sub_score}">
+                                        </div>
+                                        <!-- 判断为随机出卷时才显示 -->
+                                        <if condition="$basic_info['type'] == 1">
+                                            <div class="form-group">
+                                                <label>简单 * 主观题数量</label>
+                                                <input id="sub_easy_num" name="sub_easy_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sub_easy_num}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>一般 * 主观题数量</label>
+                                                <input id="sub_com_num" name="sub_com_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sub_com_num}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>困难 * 主观题数量</label>
+                                                <input id="sub_diff_num" name="sub_diff_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sub_diff_num}">
+                                            </div>
+                                        </if>
+                                    </div>
+                                </div>
+                                <if condition="$basic_info['type'] == 1">
+                                    <!--随机出卷显示总分-->
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <label>当前总分</label>
+                                                <input id="whole_score" name="whole_score" type="text" class="form-control digits" placeholder="自动得出总分" readonly value="{$ques_info.whole_score}">
+                                            </div>
+                                            <p>若是不需要某种类型题，请将其填写为0</p>
+                                        </div>
+                                    </div>
+                                    <else/>
+                                    <!--指定出卷显示总分-->
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <label>当前总分:</label>
+                                                <span style="color:red;font-size: 18px">{$ques_info.whole_score}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </if>
+                            </div>
                         </div>
-                        <p>
-                            <i class="fa fa-info-circle"></i> 学院名称格式：数学，物理，化学，文学，外语，生科，政法，地理，经管，电子，计算机，土木，美术，体育，音乐，教科。
-                            <br>
-                            请按照<b>所给学院</b>名称添加上班级，可填多个对象，对象之间用 加号 隔开。（对象 = 学院+班级）
-                        </p>
-                        <div class="hr-line-dashed"></div>
-                        <div class="form-group">
-                            <label>限制学生：
-                                <br>
-                                <small>
-                                    ( 限制学生名单如右所示，若修改请重新选择文件；修改时系统会自动把之前旧学生名单清空，再导入该新的名单。)
-                                </small>
-                            </label>
-                            <input id="limit_stu_status" name="limit_stu_status" type="file" class="form-control">
-                        </div>
-                        <p>
-                            <i class="fa fa-info-circle"></i> 
-                            
-                            选填，该功能需要导入学生名单，请严格按照格式导入
-                        </p>
-                        <div class="hr-line-dashed"></div>
-                        <p>注：如果既限制了班级又限制了考生，则限制效果为两者的逻辑与</p>
-                        
+                        </form>
                     </div>
                 </div>
             </div>
-            </form>
-
             <!--学生名单-->
             <div class="col-sm-4">
                 <div class="ibox float-e-margins">
@@ -168,135 +296,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- 试题信息 -->
-        <form action="__SELF__" method="post" id="ques">
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>试题信息 <small>每项必填</small></h5>
-                        <div class="ibox-tools">
-                            <input class="btn btn-primary" type="submit" name="ques">
-                        </div>
-                    </div>
-                    <div class="ibox-content" id="ques_info">
-                    <input type="hidden" name="id" value="{$basic_info.id}">
-                        <div class="row">
-                            <div class="col-sm-3" id="sin">
-                                <div class="form-group">
-                                    <label>每道单选题分数</label>
-                                    <input id="sin_score" name="sin_score" type="text" class="form-control required digits" max="100" value="{$ques_info.sin_score}">
-                                </div>
-                                <!-- 判断为随机出卷时才显示 -->
-                                <if condition="$basic_info['type'] == 1">
-                                <div class="form-group">
-                                    <label>简单 * 单选题数量</label>
-                                    <input id="sin_easy_num" name="sin_easy_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sin_easy_num}">
-                                </div>
-                                <div class="form-group">
-                                    <label>一般 * 单选题数量</label>
-                                    <input id="sin_com_num" name="sin_com_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sin_com_num}">
-                                </div>
-                                <div class="form-group">
-                                    <label>困难 * 单选题数量</label>
-                                    <input id="sin_diff_num" name="sin_diff_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sin_diff_num}">
-                                </div>
-                                </if>
-
-                            </div>
-
-                            <div class="col-sm-3" id="dou">
-                                <div class="form-group">
-                                    <label>每道双选题分数</label>
-                                    <input id="dou_score" name="dou_score" type="text" class="form-control required digits" max="100" value="{$ques_info.dou_score}">
-                                </div>
-                                <if condition="$basic_info['type'] == 1">
-                                <div class="form-group">
-                                    <label>简单 * 双选题数量</label>
-                                    <input id="dou_easy_num" name="dou_easy_num" type="text" class="form-control required digits" max="100" value="{$ques_info.dou_easy_num}">
-                                </div>
-                                <div class="form-group">
-                                    <label>一般 * 双选题数量</label>
-                                    <input id="dou_com_num" name="dou_com_num" type="text" class="form-control required digits" max="100" value="{$ques_info.dou_com_num}">
-                                </div>
-                                <div class="form-group">
-                                    <label>困难 * 双选题数量</label>
-                                    <input id="dou_diff_num" name="dou_diff_num" type="text" class="form-control required digits" max="100" value="{$ques_info.dou_diff_num}">
-                                </div>
-                                </if>
-                            </div>
-
-                            <div class="col-sm-3" id="jud">
-                                <div class="form-group">
-                                    <label>每道判断题分数</label>
-                                    <input id="jud_score" name="jud_score" type="text" class="form-control required digits" max="100" value="{$ques_info.jud_score}">
-                                </div>
-                                <if condition="$basic_info['type'] == 1">
-                                <div class="form-group">
-                                    <label>简单 * 判断题数量</label>
-                                    <input id="jud_easy_num" name="jud_easy_num" type="text" class="form-control required digits" max="100" value="{$ques_info.jud_easy_num}">
-                                </div>
-                                <div class="form-group">
-                                    <label>一般 * 判断题数量</label>
-                                    <input id="jud_com_num" name="jud_com_num" type="text" class="form-control required digits" max="100" value="{$ques_info.jud_com_num}">
-                                </div>
-                                <div class="form-group">
-                                    <label>困难 * 判断题数量</label>
-                                    <input id="jud_diff_num" name="jud_diff_num" type="text" class="form-control required digits" max="100" value="{$ques_info.jud_diff_num}">
-                                </div>
-                                </if>
-                            </div>
-
-                            <div class="col-sm-3" id="sub">
-                                <div class="form-group">
-                                    <label>每道主观题分数</label>
-                                    <input id="sub_score" name="sub_score" type="text" class="form-control required digits" max="100" value="{$ques_info.sub_score}">
-                                </div>
-                                <!-- 判断为随机出卷时才显示 -->
-                                <if condition="$basic_info['type'] == 1">
-                                <div class="form-group">
-                                    <label>简单 * 主观题数量</label>
-                                    <input id="sub_easy_num" name="sub_easy_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sub_easy_num}">
-                                </div>
-                                <div class="form-group">
-                                    <label>一般 * 主观题数量</label>
-                                    <input id="sub_com_num" name="sub_com_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sub_com_num}">
-                                </div>
-                                <div class="form-group">
-                                    <label>困难 * 主观题数量</label>
-                                    <input id="sub_diff_num" name="sub_diff_num" type="text" class="form-control required digits" max="100" value="{$ques_info.sub_diff_num}">
-                                </div>
-                                </if>
-                            </div>
-                        </div>
-                        <if condition="$basic_info['type'] == 1">
-                            <!--随机出卷显示总分-->
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div class="form-group">
-                                    <label>当前总分</label>
-                                    <input id="whole_score" name="whole_score" type="text" class="form-control digits" placeholder="自动得出总分" readonly value="{$ques_info.whole_score}">
-                                </div>
-                                <p>若是不需要某种类型题，请将其填写为0</p>
-                            </div>
-                        </div>
-                        <else/>
-                            <!--指定出卷显示总分-->
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div class="form-group">
-                                    <label>当前总分:</label>
-                                    <span style="color:red;font-size: 18px">{$ques_info.whole_score}</span>
-                                </div>
-                            </div>
-                        </div>
-                        </if>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </form> 
 
         <!-- 判断为 指定出卷 才显示-->
         <if condition="$basic_info['type'] == 2">
