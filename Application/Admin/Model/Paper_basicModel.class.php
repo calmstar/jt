@@ -433,6 +433,7 @@ class Paper_basicModel extends Model{
 			$limit['limit_stu_status'] = 1;
 		}
 		$res = M('Paper_limit')->where("paper_id=$data[id]")->save($limit);
+
 		if($res === false){
 			$info['msg'] = '限制班级修改失败';
 			return $info;

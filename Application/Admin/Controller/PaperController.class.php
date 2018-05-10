@@ -180,7 +180,8 @@ class PaperController extends AccessController{
 					// 修改paper_limit中的 limit_stu_status
 					$limit['limit_stu_status'] = 0;
 					$res = M('Paper_limit')->where("paper_id=$paper_id")->save($limit);
-					if($res){
+
+                    if($res){
 						echo true; //这里使用succcess方法导致前台无法撤销对话框
 					}else{
 						echo false;
@@ -201,6 +202,7 @@ class PaperController extends AccessController{
                     $res = M('Paper_ques_fixed')->where("paper_id=$paper_id")->save($post);
 				}else{
 					// 随机出卷 （大于六个）
+                    unset($post['id']);
 					$res = M('Paper_ques_random')->where("paper_id=$paper_id")->save($post);
 				}
 				if($res !== false){
