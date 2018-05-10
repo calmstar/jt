@@ -42,7 +42,7 @@
                                 <label class="col-sm-3 control-label">名字：</label>
                                 <div class="col-sm-8">
                                     <input id="username" name="username" class="form-control" type="text" value="{$info.name}">
-                                    <span class="help-block m-b-none"><i class="fa fa-info-circle"></i>请输入5个以内的字符</span>
+                                    <span class="help-block m-b-none"><i class="fa fa-info-circle"></i> 请输入5个以内的字符</span>
                                 </div>
                             </div>
 							<div class="hr-line-dashed"></div>
@@ -88,7 +88,7 @@
                                 <label class="col-sm-3 control-label">专业：</label>
                                 <div class="col-sm-8">
                                     <input id="zhuanye" name="zhuanye" class="form-control" type="text" value="{$info.major}">
-                                    <span class="help-block m-b-none"><i class="fa fa-info-circle"></i>如：网络工程</span>
+                                    <span class="help-block m-b-none"><i class="fa fa-info-circle"></i> 如：网络工程</span>
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
@@ -99,11 +99,33 @@
                                     <span class="help-block m-b-none"><i class="fa fa-info-circle"></i> 请输入常用手机号码</span>
                                 </div>
                             </div>
+                            <div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">邮箱：</label>
                                 <div class="col-sm-8">
                                     <input id="mail" name="mail" class="form-control" type="text" value="{$info.email}">
                                     <span class="help-block m-b-none"><i class="fa fa-info-circle"></i> 请输入常用邮箱</span>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">注册时间：</label>
+                                <div class="col-sm-8">
+                                    <span class="help-block m-b-none">{$info.rgdate|date='Y-m-d H:i:s',###}</span>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">上次登录时间：</label>
+                                <div class="col-sm-8">
+                                    <span class="help-block m-b-none">{$info.last_lgdate|date='Y-m-d H:i:s',###}</span>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">上次登录IP：</label>
+                                <div class="col-sm-8">
+                                    <span class="help-block m-b-none">{$info.last_ip}</span>
                                 </div>
                             </div>
 							<div class="hr-line-dashed"></div>
