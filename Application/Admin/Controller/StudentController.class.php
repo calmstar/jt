@@ -6,7 +6,7 @@ class StudentController extends AccessController{
 
 	function showlist(){
 		$this->assign('i',icount());
-		$data = M('Stu')->select();
+		$data = M('Stu')->order('id desc')->select();
 		$this->assign('data',$data);
 		$this->display();
 	}

@@ -128,6 +128,13 @@
                                     <span class="help-block m-b-none"><?php echo ($info["last_ip"]); ?></span>
                                 </div>
                             </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">登录次数：</label>
+                                <div class="col-sm-8">
+                                    <span class="help-block m-b-none"><?php echo ($info["lg_num"]); ?></span>
+                                </div>
+                            </div>
 							<div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">
