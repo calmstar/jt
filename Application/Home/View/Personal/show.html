@@ -79,7 +79,7 @@
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">上次登录时间：</label>
                                 <div class="col-sm-8">
-                                    <p class="form-control-static">{$stu_info.last_lgdate|date='Y-m-d H:i:s',###}
+                                    <p class="form-control-static">{$stu_info.last_lgdate|default='无'|date='Y-m-d H:i:s',###}
                                     </p>
                                 </div>
                             </div>   
