@@ -268,24 +268,18 @@ class MarkController extends AccessController{
     function remove(){
         $sid = I('get.tester_id');
         $pid = I('get.paper_id');
-        //事务
-        M()->startTrans();
+
         //先删除3张表
         $res1 = M('Stu_paper')->where("paper_id=$pid and stu_id=$sid")->delete();
         $res2 = M('Stu_answ')->where("paper_id=$pid and stu_id=$sid")->delete();
         $res3 = M('Stu_score')->where("paper_id=$pid and stu_id=$sid")->delete();
 
         if($res1 && $res2 && $res3 ){
-            //事务提交
-            M()->commit();
-            //可能没有缓存记录
-            M('Stu_answ_cache')->where("paper_id=$pid and stu_id=$sid")->delete();
             $this->success('操作成功',U('control',array('paper_id'=>$pid)));
-        }else{
-            //事务回滚
-            M()->rollback();
-            $this->error('操作失败');
+        } else {
+            $this->success('已清除该生的考试数据',U('control',array('paper_id'=>$pid)));
         }
+
     }
 
     //清除缓存答案
