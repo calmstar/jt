@@ -79,7 +79,7 @@
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">上次登录时间：</label>
                                 <div class="col-sm-8">
-                                    <p class="form-control-static"><?php echo (date('Y-m-d H:i:s',$stu_info["last_lgdate"])); ?>
+                                    <p class="form-control-static"><?php echo (date('Y-m-d H:i:s',(isset($stu_info["last_lgdate"]) && ($stu_info["last_lgdate"] !== ""))?($stu_info["last_lgdate"]):'无')); ?>
                                     </p>
                                 </div>
                             </div>   
@@ -120,7 +120,7 @@
                                 </h3>          
                             </div>
                             <div class="ibox-content">
-                                <form class="form-horizontal m-t" id="changePass" action="/index.php/personal/pass_info" method="post">
+                                <form class="form-horizontal m-t" id="changePass" action="/index.php/Personal/pass_info" method="post">
                                     <input type="hidden" name="sid" value="<?php echo ($stu_info["id"]); ?>">
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label">现有密码：</label>
@@ -167,7 +167,7 @@
                                 </h3>          
                             </div>
                             <div class="ibox-content">
-                                <form class="form-horizontal m-t" id="changeExtra" action="/index.php/personal/extra_info" method="post">
+                                <form class="form-horizontal m-t" id="changeExtra" action="/index.php/Personal/extra_info" method="post">
                                     <input type="hidden" name="sid" value="<?php echo ($stu_info["id"]); ?>">
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label">电话：</label>
@@ -207,7 +207,7 @@
                         <div class="col-sm-6 b-r">
                             <h3 class="m-t-none m-b">重新校正基本信息</h3>
                             <div class="hr-line-dashed"></div>
-                            <form role="form" method="post" action="/index.php/personal/import_basic">
+                            <form role="form" method="post" action="/index.php/Personal/import_basic">
                                 <input type="hidden" name="stuNumber" value="<?php echo ($stu_info["xuehao"]); ?>">
                                 <input type="hidden" name="sid" value="<?php echo ($stu_info["id"]); ?>">
                                 <div class="form-group">

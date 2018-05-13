@@ -52,7 +52,7 @@
 
 <body class="bg-success" >
 
-    <form action="/index.php/Test/answ" method="post">
+    <form action="/index.php/Test/answ" method="post" onsubmit="return confirm('确定交卷吗？交卷后无法再进入考试')">
 
     <!-- 正文 -->
     <div class="container-fluid">
@@ -127,7 +127,7 @@
                                 </div>
                             </div>
                             <p class="text-danger">
-                                考生注意： 请在规定时间内作答完毕，点击右上角「提交考试」，未在规定时间内答题完毕系统将会自动提交试卷。若不小心关闭了本窗口或浏览器，请及时登录账号，并到回来继续进行考试，浪费的时间也算入倒计时中。
+                                考生注意： 请在规定时间内作答完毕，点击右上角「确认交卷」，未在规定时间内答题完毕系统将会自动提交试卷。若不小心关闭了本窗口或浏览器，请及时登录账号，并到回来继续进行考试，浪费的时间也算入倒计时中。
                             </p>
                         </div>
                         <!-- 单选题 -->

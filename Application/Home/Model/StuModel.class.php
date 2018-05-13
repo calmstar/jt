@@ -65,7 +65,6 @@ class StuModel extends Model{
 
 		}else{
 		     //模拟登陆并抓取注册
-
 			//与zhuaqu类保持统一变量
 			$_POST['xuehao'] = $data['xuehao'];
 			$_POST['pwd'] = $data['pwd'];
@@ -81,7 +80,8 @@ class StuModel extends Model{
 		        $data['last_ip'] = get_client_ip();
 		        $data['last_lgdate'] = time();                     
 		        $data['rgdate'] = time();  
-		        $data['lg_num'] = '1';                    
+		        $data['lg_num'] = '1';
+
 		        $id = D('Stu')->add($data);
 		        if($id){
 		        	$_SESSION['fg_id'] = $id;

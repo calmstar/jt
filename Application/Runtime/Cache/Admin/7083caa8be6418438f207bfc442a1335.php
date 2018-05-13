@@ -23,7 +23,7 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h3>公告列表<small> （置顶功能一般用于：长期提醒学生使用本系统的注意事项~）</small></h3>
+                        <h3>角色列表</h3>
                     </div>      
                     <div class="ibox-content table-responsive">
                         <div class="row">
@@ -34,7 +34,7 @@
                                        <i class="glyphicon glyphicon-trash" aria-hidden="true"></i> 批量删除
                                    </button>
                                    <button type="button" class="btn btn-outline btn-default" id="add">
-                                       <i class="glyphicon glyphicon-plus" aria-hidden="true" ></i> 发布公告
+                                       <i class="glyphicon glyphicon-plus" aria-hidden="true" ></i> 添加
                                    </button>           
                                </div>
                                </div>
@@ -44,36 +44,29 @@
                             <thead>
                                 <tr>    
                                     <th><input type="checkbox" title="全选" id="selectAll"> #</th>
-                                    <th>公告内容</th>
-                                    <th>发布者</th>
-                                    <th>发布日期</th>
-                                    <th>是否置顶</th>
+                                    <th>名字</th>
                                     <th>操作</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php if(is_array($data)): foreach($data as $key=>$v): ?><tr>
 
-                                    <td>
-                                        <input type="checkbox" value="<?php echo ($v["id"]); ?>"> <?php echo ($i++); ?>
+                                    <td id="box">
+                                    <input type="checkbox" value="<?php echo ($v["id"]); ?>"   <?php if($v[id] == 1): ?>disabled<?php endif; ?> >
+                                    <span><?php echo ($i++); ?></span>
                                     </td>
-                                    <td><?php echo (mb_substr(strip_tags(htmlspecialchars_decode($v["content"])),0,30,'utf-8')); ?></td>
-                                    <td><?php echo ($v["name"]); ?></td>
-                                    <td><?php echo (date('Y-m-d H:i:s',$v["pubdate"])); ?></td>
-                                    <td>
-                                        <?php if($v['top'] == 1): ?>是<?php else: ?>否<?php endif; ?>
-                                    </td>
+                                    <td id="tname"><?php echo ($v["name"]); ?></td>
                                     <td>
                                         <div class="btn-group btn-group-sm">
-                                            <button class="btn btn-default" title="编辑/查看" id="edit" value="<?php echo ($v["id"]); ?>">
+                                            <button class="btn btn-default" title="分配权限" id="distribute" value="<?php echo ($v["id"]); ?>">
+                                                <i class="glyphicon glyphicon-list-alt"></i>
+                                            </button>
+                                            <?php if($v[id] != 1): ?><button class="btn btn-default   " title="编辑" id="edit" value="<?php echo ($v["id"]); ?>">
                                                 <i class="glyphicon glyphicon-edit"></i>
                                             </button>
-                                            <button class="btn btn-default" title="删除" id="deleSingle" value="<?php echo ($v["id"]); ?>">
+                                            <button class="btn btn-default   " title="删除" id="deleSingle" value="<?php echo ($v["id"]); ?>">
                                                 <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
-                                            </button>
-                                            <button class="btn btn-default" title="置顶/取消置顶" id="top" value="<?php echo ($v["id"]); ?>">
-                                                <i class="glyphicon glyphicon-arrow-up" aria-hidden="true"></i>
-                                            </button>
+                                            </button><?php endif; ?>
                                         </div>
                                     </td>
                                 </tr><?php endforeach; endif; ?>
@@ -86,42 +79,101 @@
         </div>
     </div>
 
-    <!-- 全局js -->
     <script src="/Public/Admin/js/jquery.min.js"></script>
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
-    <!-- 自定义js -->
     <script src="/Public/Admin/js/content.js"></script>
     <script src="/Public/Admin/js/plugins/layer/layer.js"></script>
     <script type="text/javascript">
         $(function(){
+            //分配权限
+            $('body').on('click','#distribute',function(){
+                var id = $(this).attr('value');
+                location.href = '/manager.php/Role/distribute/id/'+id;
+            });
 
             //添加事件
             $('#add').on('click',function(){
-                window.location.href='/manager.php/Announce/add';
+                var name; 
+                layer.prompt(
+                    {
+                        title:'添加角色名称',
+                        maxlength: 10,
+                    },
+                    function(val, index){ 
+                        name = val;   
+                        layer.close(index);  
+                        
+                        $.ajax({ 
+                            url: "/manager.php/Role/add",
+                            data:{name:name},
+                            type:"POST",
+                            datatype:'text',
+                            success:function(data){  
+                                if(data['status'] == 1){  
+                                    layer.confirm('添加成功',{btn:['确定']},
+                                        function(index){
+                                            //克隆含有文本元素的第三个
+                                            var clone = $('tr:parent').eq(2).clone();
+                                            clone.find("td:first").html("<input type='checkbox' value='data[id]'>"+"<span>"+data['num']+"</span>").next().text(name);
+
+                                            clone.find('input').attr('value',data['id']);
+                                            clone.find('button').attr('value',data['id']);
+
+                                            clone.appendTo('tbody');
+                                            layer.close(index);
+                                        })
+                                }else{
+                                    layer.msg("添加失败");
+                                }
+                                 
+                            },
+                            error:function(){
+                                layer.msg("不知名异常！"); 
+                            }
+                        });
+                    }
+                );  
+
             });
 
-            
-            //编辑事件,由于是动态生成的所以要更改如下
+            //编辑事件
             $('body').on('click','#edit',function(){
-                var id = this.value;
-                window.location.href='/manager.php/Announce/edit/id/'+id;
-            });
+                 var nameGet = $(this).parents('tr').find("#tname");
+                 var id = this.value;
+                 var name = nameGet.text(); 
 
-            $('body').on('click','#top',function(){
-                var id = this.value;
-                window.location.href='/manager.php/Announce/top/id/'+id;
+                layer.prompt(
+                    {title:'编辑角色名称',maxlength:10,value:name},
+                    function(val,index){
+                        name = val;
+                        layer.close(index);
+                        $.post("/manager.php/Role/edit",{name:name,id:id},
+                            function(data){
+                                if(data['status'] == 1){
+                                     layer.msg('编辑成功');
+                                     nameGet.html(name);
+                                }else{
+                                    layer.msg('编辑失败');
+                                }
+                        });
+                    }
+                );
             });
-
 
             //删除单个记录
             $('body').on('click','#deleSingle',function(){
-                //alert($('#deleSingle/this').attr('value'));  alert(this.value);
+                var tr = $(this).parents('tr'); //必须先获取父节点
                 var value = this.value;
                 layer.confirm('确认删除?',{btn:['确定','取消']}, 
                     function(){
-                        $.post("/manager.php/Announce/dele",{ids:value},function(data){
+                        $.post("/manager.php/Role/dele",{ids:value},function(data){
                             if(data['status'] == 1){
-                                window.location.reload();
+                                tr.empty();
+                                var xuhao = $('tr:parent').children('#box').children('span');
+                                xuhao.each(function(i){
+                                     $(this).text(i+1);  
+                                });
+                                layer.msg('删除成功');
                             }else{
                                 layer.msg('删除失败');
                             }
@@ -133,7 +185,7 @@
             //全选和全不选
             $('#selectAll').on('click',function(){       
                 if(this.checked){   
-                    $(":checkbox").prop("checked", true);  
+                    $(":checkbox:enabled").prop("checked", true);  
                 }else{   
                     $(":checkbox").prop("checked", false);
                 }  
@@ -154,9 +206,12 @@
                 }else{
                     layer.confirm('确认删除？', {btn: ['确定', '取消']}, 
                         function(){   
-                            $.post("/manager.php/Announce/dele",{ids:id},
+                            //点击确定后的回调事件          
+                            //ajax异步传值
+                            $.post("/manager.php/Role/dele",{ids:id},
                                 function(data){
                                     if(data['status'] == 1){
+                                        //由于layer.alert无法暂停下面的刷新
                                         layer.confirm('批量删除成功',{btn: ['确定']},
                                             function(){
                                                 window.location.reload(); 
@@ -167,6 +222,9 @@
                                 }
                             );
                         },
+                        function(){
+                            //点击取消的回调事件
+                        }
                     );  
                 }
             });

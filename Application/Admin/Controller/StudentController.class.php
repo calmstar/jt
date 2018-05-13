@@ -112,8 +112,35 @@ class StudentController extends AccessController{
 			$this->assign('info',$info);
 			$this->display();
 		}
-
 	}
+
+	function import () {
+        if(!empty($_FILES['stu_file']['name'])){
+            $stu = new \Admin\Model\StuModel();
+            $all_path = $stu->deal_file($_FILES['stu_file']);
+            if(!$all_path){
+                $this->error('上传失败,请检查文件格式！');exit;
+            }
+
+            //上传文件成功后的操作
+            $data = excelToArray($all_path);
+            //处理excel中生成的二维数据
+            $check_data = $stu->deal_file_data($data);
+
+            if($check_data['status'] == '0'){
+                $this->error($check_data['msg']);exit;
+            }
+            //最后无误将改造后的数组addall
+            $res = $stu->addall($check_data);
+            if($res){
+                $this->success('导入数据库成功');
+            }else{
+                $this->error('导入数据库失败');
+            }
+        }else{
+            $this->error('未选择文件');
+        }
+    }
 
 
 }

@@ -132,5 +132,99 @@ class StuModel extends Model{
 		return $info;
 	}
 
+    function deal_file ($stu_file) {
+        $tmp_file = $stu_file['tmp_name'];
+        //将文件名拆分成一个数组，里面包含 名字和后缀名
+        $file_types = explode (".",$stu_file['name'] );
+        //取出后缀名
+        $file_type = $file_types[count($file_types )-1];
+        //判别是不是.xls文件，判别是不是excel文件
+        if(strtolower($file_type) != "xls" && strtolower($file_type) != "xlsx"){
+            return false;
+        }
+        //设置上传路径
+        $savePath = WORKING_PATH.UPLOAD_ROOT_PATH.'stu/';
+        //以时间来命名上传的文件
+        $str = date ( 'Y-m-d H_i_s' );
+        $file_name = $str . "." . $file_type;
+        $all_path = $savePath . $file_name ;
+        //是否上传成功
+        if(!copy($tmp_file,$all_path)){
+            return false;
+        }
+        return $all_path;
+    }
+
+    function deal_file_data ($data) {
+        $arr = array("数学",'物理','化学','文学','外语','生科','政法','地理','经管','电子','计算机','土木','美术','体育','音乐','教科');
+        foreach ($data as $k => $v) {
+            // 检查学院
+            switch ($v['3']) {
+                case '计算机学院':
+                    break;
+                case '数学学院':
+                    break;
+                case '物理与光信息科技学院':
+                    break;
+                case '化学与环境学院':
+                    break;
+                case '文学院':
+                    break;
+                case '外国语学院':
+                    break;
+                case '生命科学学院':
+                    break;
+                case '政法学院':
+                    break;
+                case '地理科学与旅游学院':
+                    break;
+                case '经济与管理学院':
+                    break;
+                case '电子信息工程学院':
+                    break;
+                case '土木工程学院':
+                    break;
+                case '美术学院':
+                    break;
+                case '体育学院':
+                    break;
+                case '音乐学院':
+                    break;
+                case '教育科学学院':
+                    break;
+                default:
+                    $info['status'] = 0;
+                    $info['msg'] = '学院错误';
+            }
+
+            // 检查班级
+            $xueyuan = mb_substr($v['4'],0,-5, 'utf-8');
+            if(!in_array($xueyuan,$arr)){
+                $info['status'] = 0;
+                $info['msg'] = '班级前缀错误';
+            }
+
+            $banji = mb_substr($v['4'],-5,5,'utf8');
+            if(!preg_match("/\d{4}班/",$banji)){
+                $info['status'] = 0;
+                $info['msg'] = '班级错误';
+            }
+
+            if ($info['status'] == '0') {
+                return $info;
+            }
+
+            // 封装进新的数组中，与数据字段一致
+            $check_data[$k]['xuehao'] = $v['0'];
+            $check_data[$k]['pwd'] = password_hash($v['1'],PASSWORD_BCRYPT);
+            $check_data[$k]['name'] = $v['2'];
+            $check_data[$k]['college'] = $v['3'];
+            $check_data[$k]['stu_class'] = $v['4'];
+            $check_data[$k]['major'] = $v['5'];
+        }
+        return $check_data;
+    }
+
+
 
 }
