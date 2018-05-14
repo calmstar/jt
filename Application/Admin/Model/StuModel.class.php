@@ -221,6 +221,7 @@ class StuModel extends Model{
             $check_data[$k]['college'] = $v['3'];
             $check_data[$k]['stu_class'] = $v['4'];
             $check_data[$k]['major'] = $v['5'];
+			$check_data[$k]['rgdate'] = time();
         }
         return $check_data;
     }
