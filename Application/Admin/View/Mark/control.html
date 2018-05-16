@@ -66,7 +66,7 @@
             if(idObj.length == 0){
                 layer.msg('没有选中数据');
             }else{
-                layer.confirm('将清空该考生在本场考试的相关记录，考生可在考试规定时间内再次进入答题，请谨慎操作。<br>(注：将保留考生缓存答案)', {btn: ['确定', '取消']},
+                layer.confirm('考生原来参加考试的题目和所做答案将不变，并修改进入考试的时间为当前时间，考生可在考试开放时间内再次进入答题。<br>(即：保留考生缓存答案和原有题目)', {btn: ['确定', '取消']},
                         function(){
                             var paper_id = {$paper_id}; //assign进来
                             var tester_id = idObj[0].tester_id;
