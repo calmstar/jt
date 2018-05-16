@@ -310,7 +310,6 @@
                 rules:{
                     phone:{
                         digits:true,
-                        isMobile:true,
                     },
                     mail:{
                         email:true,
