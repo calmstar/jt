@@ -234,8 +234,6 @@ class MarkController extends AccessController{
         $sid = I('get.tester_id');
         $pid = I('get.paper_id');
 
-        //事务
-        M()->startTrans();
         //开始清空相关记录
         // 清空score表
         $res1 = M('Stu_score')->where("paper_id=$pid and stu_id=$sid")->delete();
@@ -253,13 +251,9 @@ class MarkController extends AccessController{
         $res2 = $answ->where("paper_id=$pid and stu_id=$sid")->save($data);
 
         if($res1 && $res2){
-            //事务提交
-            M()->commit();
             $this->success('操作成功',U('control',array('paper_id'=>$pid)));
         }else{
-            //事务回滚
-            M()->rollback();
-            $this->error('操作失败');
+            $this->success('已清除相关数据');
         }
 
     }
