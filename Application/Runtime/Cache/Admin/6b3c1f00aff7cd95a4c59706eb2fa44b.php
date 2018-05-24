@@ -79,6 +79,31 @@
                                     <h4>提交试卷时间：<?php if($my_score["etime"] == '' ): ?>超时提交<?php else: echo ($my_score["etime"]); endif; ?>
                                     </h4>
                                 </div>
+                                <div class="col-sm-4 ">
+                                    <h4>学号：<?php echo ($stu_info["xuehao"]); ?>
+                                    </h4>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <h4>名字：<?php echo ($stu_info["name"]); ?>
+                                    </h4>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <h4>学院：<?php echo ($stu_info["college"]); ?>
+                                    </h4>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <h4>班级：<?php echo ($stu_info["stu_class"]); ?>
+                                    </h4>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <h4>电话：<?php echo ((isset($stu_info["telphone"]) && ($stu_info["telphone"] !== ""))?($stu_info["telphone"]):'未填写'); ?>
+                                    </h4>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <h4>邮箱：<?php echo ((isset($stu_info["email"]) && ($stu_info["email"] !== ""))?($stu_info["email"]):'未填写'); ?>
+                                    </h4>
+                                </div>
+
                             </div>
                             <p class="text-danger">
                                 注意：蓝色背景加粗部分为正确答案，选中的为考生答案。

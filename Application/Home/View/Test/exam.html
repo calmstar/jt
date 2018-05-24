@@ -52,7 +52,7 @@
 
 <body class="bg-success" >
 
-    <form action="__CONTROLLER__/answ" method="post" onsubmit="return confirm('确定交卷吗？交卷后无法再进入考试')">
+    <form action="__CONTROLLER__/answ" method="post"  id="sub">
 
     <!-- 正文 -->
     <div class="container-fluid">
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="col-sm-2 text-center">
-                        <input type="submit" id="finish" class="btn btn-danger btn-rounded" value="确认交卷">
+                        <input type="submit" id="finish" class="btn btn-danger btn-rounded" value="确认交卷" onclick="return confirm('确认交卷吗？一旦交卷将无法再次进入考试！')">
                     </div>
                 </div>
             </div>
@@ -280,8 +280,8 @@
                     hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
                     minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
                     second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
-                }else if(intDiff == 0 ){ 
-                      $('#finish').click();     
+                }else if(intDiff == 0 ){
+                    $('#sub').submit();
                 }
 
                 if (hour <= 9) hour = '0' + hour;

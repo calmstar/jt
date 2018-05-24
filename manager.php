@@ -6,7 +6,6 @@
  * Time: 14:16
  */
 header('Content-Type:text/html;charset=utf8');
-
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 
 define('APP_DEBUG',true);

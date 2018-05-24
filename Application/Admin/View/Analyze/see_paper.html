@@ -79,6 +79,31 @@
                                     <h4>提交试卷时间：<if condition="$my_score.etime == '' ">超时提交<else/>{$my_score.etime}</if>
                                     </h4>
                                 </div>
+                                <div class="col-sm-4 ">
+                                    <h4>学号：{$stu_info.xuehao}
+                                    </h4>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <h4>名字：{$stu_info.name}
+                                    </h4>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <h4>学院：{$stu_info.college}
+                                    </h4>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <h4>班级：{$stu_info.stu_class}
+                                    </h4>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <h4>电话：{$stu_info.telphone|default='未填写'}
+                                    </h4>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <h4>邮箱：{$stu_info.email|default='未填写'}
+                                    </h4>
+                                </div>
+
                             </div>
                             <p class="text-danger">
                                 注意：蓝色背景加粗部分为正确答案，选中的为考生答案。

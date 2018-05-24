@@ -131,6 +131,10 @@ class AnalyzeController extends AccessController{
 			$this->assign('each_ms',$each_ms);
 		}
 		
+		// 考生个人信息
+        $stu_info = M('Stu')->field('xuehao,name,college,stu_class,telphone,email')->find($sid);
+		$this->assign('stu_info',$stu_info);
+		
 		$this->display();
 	}
 
