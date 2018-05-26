@@ -119,7 +119,7 @@
                         <div class="answ">
                             <div class="radio">
                                 <label>
-                                    <input type="radio"  <if condition="$v['myansw'] == 1">checked='checked'</if> >
+                                    <input type="radio"  <if condition="$v['myansw'] == 1">checked='checked' </if> disabled>
                                     <if condition="$v[is_op1] == 1">
                                     <span class="bg-primary">{$v.op1}</span>
                                     <else/>{$v.op1}</if>
@@ -127,7 +127,7 @@
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" <if condition="$v['myansw'] == 2">checked='checked'</if> >
+                                    <input type="radio" <if condition="$v['myansw'] == 2">checked='checked' </if> disabled>
                                     <if condition="$v[is_op2] == 1">
                                     <span class="bg-primary">{$v.op2}</span>
                                     <else/>{$v.op2}</if>
@@ -135,7 +135,7 @@
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" <if condition="$v['myansw'] == 3">checked='checked'</if> >
+                                    <input type="radio" <if condition="$v['myansw'] == 3">checked='checked' </if> disabled>
                                     <if condition="$v[is_op3] == 1">
                                     <span class="bg-primary">{$v.op3}</span>
                                     <else/>{$v.op3}</if>
@@ -143,7 +143,7 @@
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" <if condition="$v['myansw'] == 4">checked='checked'</if> >
+                                    <input type="radio" <if condition="$v['myansw'] == 4">checked='checked' </if> disabled>
                                     <if condition="$v[is_op4] == 1">
                                     <span class="bg-primary">{$v.op4}</span>
                                     <else/>{$v.op4}</if>
@@ -166,7 +166,7 @@
                         <div class="answ">                              
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" <if condition="in_array(1,$v[myansw])">checked='checked'</if> >
+                                    <input type="checkbox" <if condition="in_array(1,$v[myansw])">checked='checked' </if> disabled>
                                     <if condition="$v[is_op1] == 1">
                                     <span class="bg-primary">{$v.op1}</span>
                                     <else/>{$v.op1}</if>
@@ -174,7 +174,7 @@
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" <if condition="in_array(2,$v['myansw'])">checked='checked'</if> >
+                                    <input type="checkbox" <if condition="in_array(2,$v['myansw'])">checked='checked' </if> disabled>
                                     <if condition="$v[is_op2] == 1">
                                     <span class="bg-primary">{$v.op2}</span>
                                     <else/>{$v.op2}</if>
@@ -182,7 +182,7 @@
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" <if condition="in_array(3,$v['myansw'])">checked='checked'</if>>
+                                    <input type="checkbox" <if condition="in_array(3,$v['myansw'])">checked='checked' </if> disabled>
                                     <if condition="$v[is_op3] == 1">
                                     <span class="bg-primary">{$v.op3}</span>
                                     <else/>{$v.op3}</if>
@@ -190,7 +190,7 @@
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" <if condition="in_array(4,$v['myansw'])">checked='checked'</if>>
+                                    <input type="checkbox" <if condition="in_array(4,$v['myansw'])">checked='checked' </if> disabled>
                                     <if condition="$v[is_op4] == 1">
                                     <span class="bg-primary">{$v.op4}</span>
                                     <else/>{$v.op4}</if>
@@ -213,7 +213,7 @@
                         <div class="answ">
                             <div class="radio">
                                 <label>
-                                    <input type="radio" <if condition="$v['myansw'] == 1">checked='checked'</if> >
+                                    <input type="radio" <if condition="$v['myansw'] == 1">checked='checked' </if> disabled>
 
                                     <if condition="$v[is_true] == 1">
                                     <span class="bg-primary"><i class="glyphicon glyphicon-ok"></i></span>
@@ -224,7 +224,7 @@
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" <if condition=" $v['myansw'] == '0' ">checked='checked'</if>>
+                                    <input type="radio" <if condition=" $v['myansw'] == '0' ">checked='checked' </if> disabled>
 
                                     <if condition="$v[is_false] == 1">
                                     <span class="bg-primary"><i class="glyphicon glyphicon-remove"></i></span>
