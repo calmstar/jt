@@ -89,15 +89,15 @@
                                         </div>
                                         <div class="form-group">
                                             <label>简单 * 单选题数量</label>
-                                            <input id="sin_easy_num" name="sin_easy_num" type="text" class="form-control required digits" max="100">
+                                            <input id="sin_easy_num" name="sin_easy_num" type="text" class="form-control required digits" >
                                         </div>
                                         <div class="form-group">
                                             <label>一般 * 单选题数量</label>
-                                            <input id="sin_com_num" name="sin_com_num" type="text" class="form-control required digits" max="100">
+                                            <input id="sin_com_num" name="sin_com_num" type="text" class="form-control required digits" >
                                         </div>
                                         <div class="form-group">
                                             <label>困难 * 单选题数量</label>
-                                            <input id="sin_diff_num" name="sin_diff_num" type="text" class="form-control required digits" max="100">
+                                            <input id="sin_diff_num" name="sin_diff_num" type="text" class="form-control required digits" >
                                         </div>
                                     </div>
 
@@ -108,15 +108,15 @@
                                         </div>
                                         <div class="form-group">
                                             <label>简单 * 双选题数量</label>
-                                            <input id="dou_easy_num" name="dou_easy_num" type="text" class="form-control required digits" max="100">
+                                            <input id="dou_easy_num" name="dou_easy_num" type="text" class="form-control required digits" >
                                         </div>
                                         <div class="form-group">
                                             <label>一般 * 双选题数量</label>
-                                            <input id="dou_com_num" name="dou_com_num" type="text" class="form-control required digits" max="100">
+                                            <input id="dou_com_num" name="dou_com_num" type="text" class="form-control required digits" >
                                         </div>
                                         <div class="form-group">
                                             <label>困难 * 双选题数量</label>
-                                            <input id="dou_diff_num" name="dou_diff_num" type="text" class="form-control required digits" max="100">
+                                            <input id="dou_diff_num" name="dou_diff_num" type="text" class="form-control required digits">
                                         </div>
                                     </div>
 
@@ -127,15 +127,15 @@
                                         </div>
                                         <div class="form-group">
                                             <label>简单 * 判断题数量</label>
-                                            <input id="jud_easy_num" name="jud_easy_num" type="text" class="form-control required digits" max="100">
+                                            <input id="jud_easy_num" name="jud_easy_num" type="text" class="form-control required digits" >
                                         </div>
                                         <div class="form-group">
                                             <label>一般 * 判断题数量</label>
-                                            <input id="jud_com_num" name="jud_com_num" type="text" class="form-control required digits" max="100">
+                                            <input id="jud_com_num" name="jud_com_num" type="text" class="form-control required digits" >
                                         </div>
                                         <div class="form-group">
                                             <label>困难 * 判断题数量</label>
-                                            <input id="jud_diff_num" name="jud_diff_num" type="text" class="form-control required digits" max="100">
+                                            <input id="jud_diff_num" name="jud_diff_num" type="text" class="form-control required digits" >
                                         </div>
                                     </div>
 
@@ -146,15 +146,15 @@
                                         </div>
                                         <div class="form-group">
                                             <label>简单 * 主观题数量</label>
-                                            <input id="sub_easy_num" name="sub_easy_num" type="text" class="form-control required digits" max="100">
+                                            <input id="sub_easy_num" name="sub_easy_num" type="text" class="form-control required digits" >
                                         </div>
                                         <div class="form-group">
                                             <label>一般 * 主观题数量</label>
-                                            <input id="sub_com_num" name="sub_com_num" type="text" class="form-control required digits" max="100">
+                                            <input id="sub_com_num" name="sub_com_num" type="text" class="form-control required digits" >
                                         </div>
                                         <div class="form-group">
                                             <label>困难 * 主观题数量</label>
-                                            <input id="sub_diff_num" name="sub_diff_num" type="text" class="form-control required digits" max="100">
+                                            <input id="sub_diff_num" name="sub_diff_num" type="text" class="form-control required digits" >
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
@@ -395,13 +395,31 @@
                     $('#sub').find(':input').val('0');
                 }
             });
-            
-           
-           
+
+            $("#course_id").change(function(){
+                var course_id = $("#course_id").val();
+                if (course_id != '') {
+                    $.post("__SELF__",{cou_id:course_id},function(data){
+                        $('#sin_easy_num').attr({placeholder:data['sin_eas'],max:data['sin_eas']});
+                        $('#sin_com_num').attr({placeholder:data['sin_com'],max:data['sin_com']});
+                        $('#sin_diff_num').attr({placeholder:data['sin_dif'],max:data['sin_dif']});
+
+                        $('#dou_easy_num').attr({placeholder:data['dou_eas'],max:data['dou_eas']});
+                        $('#dou_com_num').attr({placeholder:data['dou_com'],max:data['dou_com']});
+                        $('#dou_diff_num').attr({placeholder:data['dou_dif'],max:data['dou_dif']});
+
+                        $('#jud_easy_num').attr({placeholder:data['jud_eas'],max:data['jud_eas']});
+                        $('#jud_com_num').attr({placeholder:data['jud_com'],max:data['jud_com']});
+                        $('#jud_diff_num').attr({placeholder:data['jud_dif'],max:data['jud_dif']});
+
+                        $('#sub_easy_num').attr({placeholder:data['sub_eas'],max:data['sub_eas']});
+                        $('#sub_com_num').attr({placeholder:data['sub_com'],max:data['sub_com']});
+                        $('#sub_diff_num').attr({placeholder:data['sub_dif'],max:data['sub_dif']});
+                    });
+                }
+            });
         });
     </script>
-   
- 
 
 </body>
 

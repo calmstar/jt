@@ -27,6 +27,31 @@ class PaperController extends AccessController{
 	//随机出卷
 	function add_random(){
 		if(!empty($_POST)){
+		    // 异步得知所属课程名字
+            if (IS_AJAX) {
+                // 得到选中的课程
+                $cou_id = $_POST['cou_id'];
+                // 各类型题目数量
+                $data['sin_eas'] = M('Ques_single')->where("is_show=0 and difficulty=1 and course_id=$cou_id")->count();
+                $data['sin_com'] = M('Ques_single')->where("is_show=0 and difficulty=2 and course_id=$cou_id")->count();
+                $data['sin_dif'] = M('Ques_single')->where("is_show=0 and difficulty=3 and course_id=$cou_id")->count();
+
+                $data['dou_eas'] = M('Ques_double')->where("is_show=0 and difficulty=1 and course_id=$cou_id")->count();
+                $data['dou_com'] = M('Ques_double')->where("is_show=0 and difficulty=2 and course_id=$cou_id")->count();
+                $data['dou_dif'] = M('Ques_double')->where("is_show=0 and difficulty=3 and course_id=$cou_id")->count();
+
+                $data['jud_eas'] = M('Ques_judge')->where("is_show=0 and difficulty=1 and course_id=$cou_id")->count();
+                $data['jud_com'] = M('Ques_judge')->where("is_show=0 and difficulty=2 and course_id=$cou_id")->count();
+                $data['jud_dif'] = M('Ques_judge')->where("is_show=0 and difficulty=3 and course_id=$cou_id")->count();
+
+                $data['sub_eas'] = M('Ques_subj')->where("difficulty=1 and course_id=$cou_id")->count();
+                $data['sub_com'] = M('Ques_subj')->where("difficulty=2 and course_id=$cou_id")->count();
+                $data['sub_dif'] = M('Ques_subj')->where("difficulty=3 and course_id=$cou_id")->count();
+
+                $this->ajaxReturn($data);
+            }
+
+
 			$paper = new \Admin\Model\Paper_basicModel(); 
 			//数据是否合法
 			$data = $paper->create(); 
