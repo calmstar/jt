@@ -1,0 +1,10 @@
+[ 2018-05-31T22:11:21+08:00 ] 127.0.0.1 /index.php/Public/forgetpwd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002094s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `jt_stu` WHERE ( xuehao=151110213 ) LIMIT 1   [ RunTime:0.0007s ]
+

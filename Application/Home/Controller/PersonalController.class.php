@@ -17,8 +17,10 @@ class PersonalController extends HomeacceController {
     //重新从正方系统导入基础信息
     function import_basic(){
     	if(!empty($_POST['password'])){
+    	    $line = $_POST['line'];
     		$stu = D('Stu');
     		$data = $stu->field('id,xuehao,pwd')->create();
+    		$data['line'] = $line;
     		$res = $stu->deal_import_basic($data);
     		if($res){
     			$this->success('重新从正方系统导入成功');

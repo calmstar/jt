@@ -48,13 +48,57 @@
             </div>
 
             <div class="layui-form-item" >
-                <div style="float:left;"> <a id="about"> 关于注册 </a> </div>
+                <div style="float:left;"> <a data-toggle="modal" href="#reg"> 注册  </a> </div>
                 <div style="float:right;"><a data-toggle="modal" href="#forget"> 忘记密码>>  </a></div>
             </div>
 
         </form>
 
-    <!--弹出表单-->
+    <!--弹出注册表单-->
+    <div id="reg" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6 b-r">
+                            <h3 class="m-t-none m-b"> 注册</h3>
+                            <div class="hr-line-dashed"></div>
+                            <form role="form" method="post" action="/index.php/Public/register">
+                                <div class="form-group">
+                                    <label>正方学号：</label>
+                                    <input type="text" name="rnum">
+                                </div>
+                                <div class="form-group">
+                                    <label>正方密码：</label>
+                                    <input type="password" name="rpwd">
+                                </div>
+                                <div class="form-group" style="padding-left: 25px;">
+                                    <label>线路：</label>
+                                    <input type="radio" name="line" value="116" checked="checked">116 &nbsp;
+                                    <input type="radio" name="line" value="118" >118
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>确定</strong>
+                                    </button>
+                                </div>
+                            </form>
+                            <br>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>请注意</h4>
+                            <p>JMoocTest需要您提供正方学号及密码，用来<b>爬虫注册此系统</b>。</p>
+                            <h1 class="text-center">
+                                <span class="glyphicon glyphicon-exclamation-sign" style="color:#F33"></span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--弹出忘记密码表单-->
     <div id="forget" class="modal fade" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -72,6 +116,11 @@
                                     <label>正方密码：</label>
                                     <input type="password" name="fpwd">
                                 </div>
+                                <div class="form-group" style="padding-left: 25px;">
+                                    <label>线路：</label>
+                                    <input type="radio" name="line" value="116" checked="checked">116 &nbsp;
+                                    <input type="radio" name="line" value="118" >118
+                                </div>
                                 <div>
                                     <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>确定</strong>
                                     </button>
@@ -81,7 +130,6 @@
                         </div>
                         <div class="col-sm-6">
                             <h4>请注意</h4>
-							<p>此功能不适用于首次登录的账户</p>
                             <p>JMoocTest需要您提供正方学号及密码，用来<b>替换当前系统的密码</b>。</p>
                             <p>重置成功后，即可使用正方密码登录本系统。</p>
                             <h1 class="text-center">
@@ -90,10 +138,10 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-
 
     <script src="/Public/Admin/js/jquery.min.js?v=2.1.4"></script>
     <script src="/Public/Admin/js/bootstrap.min.js?v=3.3.6"></script>
@@ -113,7 +161,7 @@
 
             //登录按钮事件
             form.on('submit(login)', function (data) {
-                $.post('/index.php/Public/login', data.field, function (res) {
+                $.post('/index.php/Public/login.html', data.field, function (res) {
                     if (res.status == 1) {
                         window.location = '/index.php/index/index';
                     } else {
@@ -144,11 +192,6 @@
                 /^[\S]{6,16}$/
                 ,'密码必须6到16位'
               ] 
-            });
-
-            //关于注册的信息
-            $('#about').click(function(){
-                layer.alert('本系统无需注册，首次登录只需输入学校的正方系统账号密码即可。');
             });
 
         });

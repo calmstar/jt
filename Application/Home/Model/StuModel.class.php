@@ -28,22 +28,18 @@ class StuModel extends Model{
 
 	function deal_login($data){
 		$res['status'] = 0;
-		//搜索数据库看看有没有这个学号,有就在本地进行验证，无则进行模拟登陆并抓取注册
 		$where['xuehao'] = $data['xuehao'];
 		$z = $this->where($where)->find();
 		if($z){     
-
-			//本地验证   
+			//本地验证
 			if($z['status'] == 1){
 				$res['info'] = '您已被管理员禁用';
 				return $res;
 			}
 		    if(password_verify($data['pwd'], $z['pwd'])){
-
 		        $ip = get_client_ip();
 		        $timestamp = time(); 
 		        $lg_num = $z['lg_num']+1;
-
 		        //更改登录时间和ip还有 次数
 		        $sql = "UPDATE jt_stu SET last_lgdate='$timestamp',last_ip='$ip',lg_num='$lg_num' WHERE id='$z[id]' ";
 		        $zz = D()->execute($sql);
@@ -62,56 +58,25 @@ class StuModel extends Model{
 		    	$res['info'] = '账号或密码错误';
 		    	return $res;
 		    }
-
 		}else{
-		     //模拟登陆并抓取注册
-			//与zhuaqu类保持统一变量
-			$_POST['xuehao'] = $data['xuehao'];
-			$_POST['pwd'] = $data['pwd'];
-
-		    $url = 'http://210.38.162.117/default2.aspx'; //目标登录页面网址
-		    $cookie = dirname(__FILE__).'/cookie_oschina.txt';  //许多网站会在一些需要登录后才能访问的页面进行设置，检查cookie数据是否存在
-		    $zhuaqu = new \Tools\ZhuaQu($url,$cookie); 
-		    $res = $zhuaqu -> login();
-
-		    if(!empty($res['name'])){
-		        $data = $data+$res;
-		        $data['pwd'] = password_hash($data['pwd'],PASSWORD_BCRYPT);
-		        $data['last_ip'] = get_client_ip();
-		        $data['last_lgdate'] = time();                     
-		        $data['rgdate'] = time();  
-		        $data['lg_num'] = '1';
-
-		        $id = D('Stu')->add($data);
-		        if($id){
-		        	$_SESSION['fg_id'] = $id;
-		        	$res['status'] = 1;
-		        }else{
-		        	$res['info'] = '抓取的信息存入数据库失败';
-		    		$res['status'] = 0;
-		        }
-		        return $res;
-		    }else{
-		    	$res['info'] = '正方账号或密码错误';
-		    	$res['status'] = 0;
-		    	return $res;
-		    }            
+            $this->error('此账号还未注册');
 		}
-
 	}
 
 	function deal_import_basic($data){
-		$_POST = $data;
-		//重新从正方系统导出，更新数据库
-		$url = 'http://210.38.162.117/default2.aspx'; //目标登录页面网址
-		$cookie = dirname(__FILE__).'/cookie_oschina.txt';  //许多网站会在一些需要登录后才能访问的页面进行设置，检查cookie数据是否存在
-		$zhuaqu = new \Tools\ZhuaQu($url,$cookie);
-		$res = $zhuaqu -> login();
+        $url = "http://210.38.162.".$data['line'];
+
+        $g = new \Tools\ZF($data['xuehao'], $data['pwd'], $url);
+        $res = $g->login();
 
 		if(!empty($res['name'])){
-		    $_POST = $_POST+$res;  
-		    unset($_POST['pwd']);
-		    $z = D('Stu')->save($_POST); 
+            $new['id'] = $data['id'];
+            $new['xuehao'] = $data['xuehao'];
+            $new['name'] = $res['name'];
+            $new['college'] = $res['college'];
+            $new['major'] = $res['major'];
+            $new['stu_class'] = $res['class'];
+		    $z = D('Stu')->save($new);
 		    if($z !== false){
 		    	return true;
 		    }else{

@@ -214,6 +214,11 @@
                                     <label>正方密码：</label>
                                     <input type="password" name="password">
                                 </div>
+                                <div class="form-group" style="padding-left: 25px;">
+                                    <label>线路：</label>
+                                    <input type="radio" name="line" value="116" checked="checked">116 &nbsp;
+                                    <input type="radio" name="line" value="118" >118
+                                </div>
                                 <div>
                                     <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>确定</strong>
                                     </button>
