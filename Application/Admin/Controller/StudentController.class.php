@@ -118,7 +118,7 @@ class StudentController extends AccessController{
             $info['lg_num'] = $num[0]['num'];
 
             // 等于1时为首次登陆
-            if($info['lg_num'] != 1){
+            if($info['lg_num'] > 1){
                 // 该学生最大的登录时间
                 $sql = "select max(lgdate) as mdate  from jt_stu_log where sid=$sid";
                 $mdate = M()->query($sql);
@@ -133,7 +133,6 @@ class StudentController extends AccessController{
                 $info['last_lgdate'] = $log['lgdate'];
 
             } else {
-                $info['last_ip'] = ' ';
                 $info['last_lgdate'] = ' ';
             }
 

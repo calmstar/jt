@@ -977,3 +977,449 @@ SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0004s ]
 SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
 SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0002s ]
 
+[ 2018-06-03T19:27:43+08:00 ] 127.0.0.1 /manager.php/Student/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002705s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0246s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p D:\wamp\www\jmooctest\Application\Common\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `jt_stu` ORDER BY id desc  [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000617s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004830s ]
+
+[ 2018-06-03T19:33:52+08:00 ] 127.0.0.1 /manager.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001975s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000568s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002624s ]
+
+[ 2018-06-03T19:33:53+08:00 ] 127.0.0.1 /manager.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006070s ]
+
+[ 2018-06-03T19:34:02+08:00 ] 127.0.0.1 /manager.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+NOTIC: [8] Use of undefined constant code - assumed 'code' D:\wamp\www\jmooctest\Application\Admin\Controller\PublicController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0383s ]
+SQL: SELECT * FROM `jt_user` WHERE ( email='494025451@qq.com' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant password - assumed 'password' D:\wamp\www\jmooctest\Application\Admin\Controller\PublicController.class.php 第 14 行.
+NOTIC: [8] Use of undefined constant pwd - assumed 'pwd' D:\wamp\www\jmooctest\Application\Admin\Controller\PublicController.class.php 第 14 行.
+SQL: UPDATE `jt_user` SET `email`='494025451@qq.com',`pwd`='$2y$10$/tsKYctqQKNZt8B9RfvanulZtp02zcoppQiRxCGDjJOV5LejbmAle',`name`='陈文',`rgdate`='1501586745',`role_id`='0',`telphone`='17875511965',`course_ids`='',`status`='1',`last_ip`='127.0.0.1',`last_lgdate`='1528025642' WHERE `id` = 1 [ RunTime:0.0390s ]
+
+[ 2018-06-03T19:34:02+08:00 ] 127.0.0.1 /manager.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001978s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0222s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_authority` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `jt_authority` WHERE ( auth_level=0 and display=1 )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jt_authority` WHERE ( auth_level=1 and display=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000496s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003007s ]
+
+[ 2018-06-03T19:34:02+08:00 ] 127.0.0.1 /manager.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003161s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0264s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `jt_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0264s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 0  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: cou_name D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000434s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000831s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003280s ]
+
+[ 2018-06-03T19:34:05+08:00 ] 127.0.0.1 /manager.php/Mark/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002142s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.1060s ]
+SQL: SELECT `paper_id`,count(*) as mark_num FROM `jt_stu_score` WHERE ( mark_status=0 ) GROUP BY paper_id  [ RunTime:0.0033s ]
+SQL: SELECT `paper_id`,count(*) as sco_nums FROM `jt_stu_score` GROUP BY paper_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0273s ]
+SQL: SELECT `paper_id`,count(*) as join_num FROM `jt_stu_paper` GROUP BY paper_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0215s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 52 and etime != ''  ) LIMIT 1   [ RunTime:0.0344s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 53 and etime != ''  ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 54 and etime != ''  ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 55 and etime != ''  ) LIMIT 1   [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0227s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000568s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002094s ]
+
+[ 2018-06-03T19:34:06+08:00 ] 127.0.0.1 /manager.php/Mark/showlist.html?sort=xh&order=desc&limit=20&offset=0&_=1528025646050
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0303s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0401s ]
+SQL: SELECT `paper_id`,count(*) as mark_num FROM `jt_stu_score` WHERE ( mark_status=0 ) GROUP BY paper_id  [ RunTime:0.0018s ]
+SQL: SELECT `paper_id`,count(*) as sco_nums FROM `jt_stu_score` GROUP BY paper_id  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0279s ]
+SQL: SELECT `paper_id`,count(*) as join_num FROM `jt_stu_paper` GROUP BY paper_id  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0261s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 52 and etime != ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 53 and etime != ''  ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 54 and etime != ''  ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 55 and etime != ''  ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0255s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-06-03T19:34:07+08:00 ] 127.0.0.1 /manager.php/Student/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003898s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p D:\wamp\www\jmooctest\Application\Common\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `jt_stu` ORDER BY id desc  [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000661s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001986s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006429s ]
+
+[ 2018-06-03T19:34:10+08:00 ] 127.0.0.1 /manager.php/Student/edit/id/208
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002472s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\jmooctest\Application\Admin\Controller\StudentController.class.php 第 118 行.
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=208 [ RunTime:0.0002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select max(lgdate) as sdate  from jt_stu_log where sid=208 and lgdate<
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select max(lgdate) as sdate  from jt_stu_log where sid=208 and lgdate<
+
+[ 2018-06-03T19:34:20+08:00 ] 127.0.0.1 /manager.php/Student/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0281s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\wamp\www\jmooctest\Application\Common\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0219s ]
+SQL: SELECT * FROM `jt_stu` ORDER BY id desc  [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000508s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003582s ]
+
+[ 2018-06-03T19:34:22+08:00 ] 127.0.0.1 /manager.php/Student/edit/id/207
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001707s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0345s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 207 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=207 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\jmooctest\Application\Admin\Controller\StudentController.class.php 第 118 行.
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=207 [ RunTime:0.0002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select max(lgdate) as sdate  from jt_stu_log where sid=207 and lgdate<
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select max(lgdate) as sdate  from jt_stu_log where sid=207 and lgdate<
+
+[ 2018-06-03T19:35:23+08:00 ] 127.0.0.1 /manager.php/Student/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001952s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0354s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\wamp\www\jmooctest\Application\Common\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `jt_stu` ORDER BY id desc  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002701s ]
+
+[ 2018-06-03T19:35:23+08:00 ] 127.0.0.1 /manager.php/Student/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002392s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0235s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\wamp\www\jmooctest\Application\Common\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `jt_stu` ORDER BY id desc  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000338s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000588s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003208s ]
+
+[ 2018-06-03T19:35:25+08:00 ] 127.0.0.1 /manager.php/Student/edit/id/208
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0276s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\jmooctest\Application\Admin\Controller\StudentController.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\ee5939046e0ef9013e6696556073530a.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002020s ]
+
+[ 2018-06-03T19:35:40+08:00 ] 127.0.0.1 /manager.php/Student/edit/id/208
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002073s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\jmooctest\Application\Admin\Controller\StudentController.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000339s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000629s ]
+NOTIC: [8] Undefined index: last_lgdate D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\ee5939046e0ef9013e6696556073530a.php 第 121 行.
+NOTIC: [8] Undefined index: last_ip D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\ee5939046e0ef9013e6696556073530a.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002190s ]
+
+[ 2018-06-03T19:35:58+08:00 ] 127.0.0.1 /manager.php/Student/edit/id/208
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001750s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0271s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0273s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0008s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\jmooctest\Application\Admin\Controller\StudentController.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\ee5939046e0ef9013e6696556073530a.php 第 121 行.
+NOTIC: [8] Undefined index: last_ip D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\ee5939046e0ef9013e6696556073530a.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003015s ]
+
+[ 2018-06-03T19:36:50+08:00 ] 127.0.0.1 /manager.php/Student/edit/id/208
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002188s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0349s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0219s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\jmooctest\Application\Admin\Controller\StudentController.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000561s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\ee5939046e0ef9013e6696556073530a.php 第 121 行.
+NOTIC: [8] Undefined index: last_ip D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\ee5939046e0ef9013e6696556073530a.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002664s ]
+

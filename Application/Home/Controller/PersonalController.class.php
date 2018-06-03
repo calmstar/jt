@@ -14,7 +14,7 @@ class PersonalController extends HomeacceController {
         $stu_info['lg_num'] = $num[0]['num'];
 
         // 等于1时为首次登陆
-        if($stu_info['lg_num'] != 1){
+        if($stu_info['lg_num'] > 1){
             // 该学生最大的登录时间
             $sql = "select max(lgdate) as mdate  from jt_stu_log where sid=$fg_id";
             $mdate = M()->query($sql);
@@ -29,7 +29,6 @@ class PersonalController extends HomeacceController {
             $stu_info['last_lgdate'] = $log['lgdate'];
 
         } else {
-            $stu_info['last_ip'] = ' ';
             $stu_info['last_lgdate'] = ' ';
         }
     	$this->assign('stu_info',$stu_info);
