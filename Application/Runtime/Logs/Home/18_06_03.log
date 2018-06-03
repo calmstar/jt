@@ -1,0 +1,2408 @@
+[ 2018-06-03T09:57:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003529s ]
+NOTIC: [8] Undefined index: fg_id D:\wamp\www\jmooctest\Application\Tools\HomeacceController.class.php 第 13 行.
+
+[ 2018-06-03T09:57:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003095s ]
+NOTIC: [8] Undefined index: fg_id D:\wamp\www\jmooctest\Application\Tools\HomeacceController.class.php 第 13 行.
+
+[ 2018-06-03T09:57:42+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002698s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000411s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000751s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001907s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004275s ]
+
+[ 2018-06-03T09:57:42+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004236s ]
+
+[ 2018-06-03T10:30:19+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003721s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000576s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007484s ]
+
+[ 2018-06-03T10:30:19+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003915s ]
+
+[ 2018-06-03T10:30:30+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003786s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0422s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.1426s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1527993029','208') [ RunTime:0.0637s ]
+
+[ 2018-06-03T10:30:30+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003826s ]
+NOTIC: [8] Undefined index: fg_id D:\wamp\www\jmooctest\Application\Tools\HomeacceController.class.php 第 13 行.
+
+[ 2018-06-03T10:30:30+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002578s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000424s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000801s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003922s ]
+
+[ 2018-06-03T10:30:30+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003515s ]
+
+[ 2018-06-03T10:34:54+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000189s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005882s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000635s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002944s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012298s ]
+
+[ 2018-06-03T10:34:54+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009075s ]
+
+[ 2018-06-03T10:35:03+08:00 ] 127.0.0.1 /index.php/Public/verifyImg/0.2548283258074857
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002926s ]
+
+[ 2018-06-03T10:35:08+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006770s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0490s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0356s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1527993308','208') [ RunTime:0.0650s ]
+
+[ 2018-06-03T10:35:08+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004311s ]
+NOTIC: [8] Undefined index: fg_id D:\wamp\www\jmooctest\Application\Tools\HomeacceController.class.php 第 13 行.
+
+[ 2018-06-03T10:35:08+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003923s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000515s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000951s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004970s ]
+
+[ 2018-06-03T10:35:08+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003573s ]
+
+[ 2018-06-03T10:39:49+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000423s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000788s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004840s ]
+
+[ 2018-06-03T10:39:49+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003720s ]
+
+[ 2018-06-03T10:39:59+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003858s ]
+
+[ 2018-06-03T10:39:59+08:00 ] 127.0.0.1 /index.php/Public/verifyImg/0.02189483525832836
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002794s ]
+
+[ 2018-06-03T10:40:03+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004120s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0553s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0360s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1527993603','208') [ RunTime:0.0653s ]
+
+[ 2018-06-03T10:40:03+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002574s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0851s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0377s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000758s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003923s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004607s ]
+
+[ 2018-06-03T10:40:04+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003029s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0365s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0008s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000855s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003177s ]
+
+[ 2018-06-03T10:40:16+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003644s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0506s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000631s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001076s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004714s ]
+
+[ 2018-06-03T10:40:51+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003685s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0497s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000370s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000883s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003175s ]
+
+[ 2018-06-03T10:40:53+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003526s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0443s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000637s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001063s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003770s ]
+
+[ 2018-06-03T10:49:14+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003811s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0397s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0424s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000472s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000904s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004613s ]
+
+[ 2018-06-03T10:49:15+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003790s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0373s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0016s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000712s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004143s ]
+
+[ 2018-06-03T10:49:16+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003729s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0553s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0009s ]
+SQL: select *,max('lgdate') as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000922s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001667s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005820s ]
+
+[ 2018-06-03T10:49:43+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003543s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0453s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select *  from jt_stu_log group by sid having sid=208 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000822s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001579s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006454s ]
+
+[ 2018-06-03T10:50:10+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004138s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0418s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000363s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000715s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003757s ]
+
+[ 2018-06-03T10:50:10+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002876s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0389s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0008s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000665s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003384s ]
+
+[ 2018-06-03T10:50:11+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003493s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0362s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0008s ]
+SQL: select *  from jt_stu_log  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000577s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000933s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004004s ]
+
+[ 2018-06-03T10:51:00+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003269s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0011s ]
+SQL: select *,max('lgdate') as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000744s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001196s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005528s ]
+
+[ 2018-06-03T10:52:51+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003839s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0485s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0013s ]
+SQL: select *,max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000729s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001200s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004515s ]
+
+[ 2018-06-03T10:54:03+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003528s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0423s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000830s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001348s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002713s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004851s ]
+
+[ 2018-06-03T11:00:54+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004856s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0585s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0011s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0476s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1527993603 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000739s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001479s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002887s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004147s ]
+
+[ 2018-06-03T11:01:57+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004107s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0608s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0012s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1527993603 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000725s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001199s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003936s ]
+
+[ 2018-06-03T11:02:06+08:00 ] 127.0.0.1 /index.php/Public/loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000207s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003316s ]
+
+[ 2018-06-03T11:02:07+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000974s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001444s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006438s ]
+
+[ 2018-06-03T11:02:07+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002904s ]
+
+[ 2018-06-03T11:02:16+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003250s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0543s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0341s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1527994936','208') [ RunTime:0.0756s ]
+
+[ 2018-06-03T11:02:17+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003442s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0356s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0344s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000455s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000888s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002614s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006279s ]
+
+[ 2018-06-03T11:02:17+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003695s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0388s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0009s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002569s ]
+
+[ 2018-06-03T11:02:19+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005344s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0834s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0011s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.1498s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1527994936 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000711s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001218s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005203s ]
+
+[ 2018-06-03T11:05:21+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004068s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0547s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0980s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1527994936 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001011s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001623s ]
+NOTIC: [8] Undefined index: lg_num D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004437s ]
+
+[ 2018-06-03T11:07:04+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003712s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0467s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0008s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0431s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1527994936 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000679s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004023s ]
+
+[ 2018-06-03T11:07:13+08:00 ] 127.0.0.1 /index.php/Public/loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004114s ]
+
+[ 2018-06-03T11:07:13+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002673s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000709s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005269s ]
+
+[ 2018-06-03T11:07:13+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004123s ]
+
+[ 2018-06-03T11:07:23+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004325s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0389s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0285s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1527995243','208') [ RunTime:0.0749s ]
+
+[ 2018-06-03T11:07:23+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005135s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0274s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0315s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000420s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000847s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003782s ]
+
+[ 2018-06-03T11:07:23+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002875s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0298s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0009s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000683s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003301s ]
+
+[ 2018-06-03T11:07:26+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003351s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0451s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0012s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0454s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1527995243 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000628s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004920s ]
+
+[ 2018-06-03T11:15:35+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0439s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0015s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0007s ]
+ERR: 1054:Unknown column 'lgdate' in 'having clause'
+ [ SQL语句 ] : select max(lgdate) as sdate  from jt_stu_log group by sid having sid=208 and lgdate!=1527995243
+ERR: 1054:Unknown column 'lgdate' in 'having clause'
+ [ SQL语句 ] : select max(lgdate) as sdate  from jt_stu_log group by sid having sid=208 and lgdate!=1527995243
+
+[ 2018-06-03T11:17:07+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002049s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0002s ]
+ERR: 1054:Unknown column 'lgdate' in 'having clause'
+ [ SQL语句 ] : select max(lgdate) as sdate  from jt_stu_log group by sid having (sid=208 and lgdate != 1527995243)
+ERR: 1054:Unknown column 'lgdate' in 'having clause'
+ [ SQL语句 ] : select max(lgdate) as sdate  from jt_stu_log group by sid having (sid=208 and lgdate != 1527995243)
+
+[ 2018-06-03T14:45:24+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002006s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0333s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0004s ]
+ERR: 1054:Unknown column 'lgdate' in 'having clause'
+ [ SQL语句 ] : select max(lgdate) as sdate  from jt_stu_log group by sid having sid=208 and lgdate != 1527995243
+ERR: 1054:Unknown column 'lgdate' in 'having clause'
+ [ SQL语句 ] : select max(lgdate) as sdate  from jt_stu_log group by sid having sid=208 and lgdate != 1527995243
+
+[ 2018-06-03T14:46:40+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001780s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log group by sid having sid=208 [ RunTime:0.0003s ]
+SQL: select max(lgdate) as sdate  from jt_stu_log group by sid having sid=208  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1527995243 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000399s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000659s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001952s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003271s ]
+
+[ 2018-06-03T14:49:36+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001898s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=208 [ RunTime:0.0003s ]
+
+[ 2018-06-03T14:50:31+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001838s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=208 [ RunTime:0.0004s ]
+SQL: select max(lgdate) as sdate  from jt_stu_log where sid=208 and lgdate<1527995243 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1527994936 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000587s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002236s ]
+
+[ 2018-06-03T14:51:16+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002035s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0361s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0009s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=208 [ RunTime:0.0004s ]
+SQL: select max(lgdate) as sdate  from jt_stu_log where sid=208 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1527995243 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000388s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000656s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002872s ]
+
+[ 2018-06-03T14:51:37+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001909s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=208 [ RunTime:0.0005s ]
+SQL: select max(lgdate) as sdate  from jt_stu_log where sid=208 and lgdate<1527995243 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0211s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1527994936 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000390s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000653s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002773s ]
+
+[ 2018-06-03T14:51:50+08:00 ] 127.0.0.1 /index.php/Public/loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002150s ]
+
+[ 2018-06-03T14:51:50+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000419s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000700s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009938s ]
+
+[ 2018-06-03T14:51:50+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003995s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002422s ]
+
+[ 2018-06-03T14:52:02+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003013s ]
+
+[ 2018-06-03T14:52:02+08:00 ] 127.0.0.1 /index.php/Public/verifyImg/0.7449747059721477
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003462s ]
+
+[ 2018-06-03T14:52:08+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002705s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0296s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0257s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1528008728','208') [ RunTime:0.0472s ]
+
+[ 2018-06-03T14:52:08+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004212s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0258s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0257s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000430s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000829s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004810s ]
+
+[ 2018-06-03T14:52:09+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003187s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0557s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0008s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000746s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003032s ]
+
+[ 2018-06-03T14:52:11+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001929s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=208 [ RunTime:0.0003s ]
+SQL: select max(lgdate) as sdate  from jt_stu_log where sid=208 and lgdate<1528008728 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1527995243 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000536s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002478s ]
+
+[ 2018-06-03T14:52:26+08:00 ] 127.0.0.1 /index.php/Public/loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003453s ]
+
+[ 2018-06-03T14:52:26+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000448s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000767s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003546s ]
+
+[ 2018-06-03T14:52:26+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004851s ]
+
+[ 2018-06-03T14:52:35+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002582s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0379s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0242s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1528008755','208') [ RunTime:0.0730s ]
+
+[ 2018-06-03T14:52:36+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003079s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000570s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002663s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003715s ]
+
+[ 2018-06-03T14:52:36+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003281s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0563s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0008s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000479s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002880s ]
+
+[ 2018-06-03T14:52:38+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002521s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.1643s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0009s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=208 [ RunTime:0.0006s ]
+SQL: select max(lgdate) as sdate  from jt_stu_log where sid=208 and lgdate<1528008755 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.1918s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=208 and lgdate=1528008728 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000396s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002662s ]
+
+[ 2018-06-03T15:44:41+08:00 ] 127.0.0.1 /index.php/Public/loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002195s ]
+
+[ 2018-06-03T15:44:42+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000320s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000581s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003231s ]
+
+[ 2018-06-03T15:44:42+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002865s ]
+
+[ 2018-06-03T15:44:54+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001702s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0304s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '161110213' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0321s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1528011894','27') [ RunTime:0.0747s ]
+
+[ 2018-06-03T15:44:54+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003105s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0352s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0286s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000363s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000704s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003592s ]
+
+[ 2018-06-03T15:44:54+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004014s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0395s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0007s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002850s ]
+
+[ 2018-06-03T15:44:57+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002066s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.2260s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=27 [ RunTime:0.0517s ]
+SQL: select max(lgdate) as sdate  from jt_stu_log where sid=27 and lgdate<1528011894 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.1652s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `jt_stu_log` WHERE ( sid=27 and lgdate= ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `jt_stu_log` WHERE ( sid=27 and lgdate= ) LIMIT 1  
+
+[ 2018-06-03T15:54:24+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002143s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=27 [ RunTime:0.0003s ]
+SQL: select max(lgdate) as sdate  from jt_stu_log where sid=27 and lgdate<1528011894 [ RunTime:0.0002s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=27 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000385s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000661s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002939s ]
+
+[ 2018-06-03T15:56:58+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002963s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0324s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=27 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000474s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000779s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\2cca99cc89011e0de686cb1fcb176778.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004004s ]
+
+[ 2018-06-03T15:57:44+08:00 ] 127.0.0.1 /index.php/Public/loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003378s ]
+
+[ 2018-06-03T15:57:44+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002862s ]
+
+[ 2018-06-03T15:57:44+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003830s ]
+
+[ 2018-06-03T15:57:52+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001994s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0299s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '161110213' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0288s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1528012672','27') [ RunTime:0.0471s ]
+
+[ 2018-06-03T15:57:52+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002151s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0276s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000409s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000711s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001984s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004626s ]
+
+[ 2018-06-03T15:57:53+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003006s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0376s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0012s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000713s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004019s ]
+
+[ 2018-06-03T15:57:55+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001991s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0323s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0007s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=27 [ RunTime:0.0003s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=27 [ RunTime:0.0002s ]
+SQL: select max(lgdate) as sdate  from jt_stu_log where sid=27 and lgdate<1528012672 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=27 and lgdate=1528011894 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000652s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002466s ]
+
+[ 2018-06-03T15:58:36+08:00 ] 127.0.0.1 /index.php/Test/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate < 1528012716 and enddate > 1528012716 and  review_status=1 ) ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0271s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate > 1528012716 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( enddate < 1528012716 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000415s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001828s ]
+
+[ 2018-06-03T15:58:39+08:00 ] 127.0.0.1 /index.php/Paper/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002403s ]
+NOTIC: [2048] Declaration of Home\Controller\PaperController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0263s ]
+SQL: SELECT `id` FROM `jt_paper_basic` WHERE ( answ_status=1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: ids D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=27 and paper_id in(52,53,55) ) ORDER BY id desc  [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0272s ]
+SQL: SELECT `name`,`type` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_paper_ques_fixed` [ RunTime:0.0281s ]
+SQL: SELECT `whole_score`,`sub_score` FROM `jt_paper_ques_fixed` WHERE ( paper_id=52 ) LIMIT 1   [ RunTime:0.0104s ]
+SQL: SELECT `stime`,`etime` FROM `jt_stu_answ` WHERE ( stu_id=27 and paper_id=52 ) LIMIT 1   [ RunTime:0.0265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000426s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000709s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002717s ]
+
+[ 2018-06-03T15:58:40+08:00 ] 127.0.0.1 /index.php/Paper/show.html?sort=id&order=desc&limit=20&offset=0&_=1528012720180
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003187s ]
+NOTIC: [2048] Declaration of Home\Controller\PaperController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0347s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0389s ]
+SQL: SELECT `id` FROM `jt_paper_basic` WHERE ( answ_status=1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: ids D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0288s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=27 and paper_id in(52,53,55) ) ORDER BY id desc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0266s ]
+SQL: SELECT `name`,`type` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_paper_ques_fixed` [ RunTime:0.0277s ]
+SQL: SELECT `whole_score`,`sub_score` FROM `jt_paper_ques_fixed` WHERE ( paper_id=52 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `stime`,`etime` FROM `jt_stu_answ` WHERE ( stu_id=27 and paper_id=52 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-06-03T15:58:42+08:00 ] 127.0.0.1 /index.php/Paper/detail/id/52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001958s ]
+NOTIC: [2048] Declaration of Home\Controller\PaperController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0311s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0328s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=27 and paper_id=52 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0279s ]
+SQL: SELECT `answ_status` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0276s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0290s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_paper_ques_fixed` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `jt_paper_ques_fixed` WHERE ( paper_id=52 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `jt_stu_paper` WHERE ( paper_id=52 and stu_id=27 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0276s ]
+SQL: SELECT * FROM `jt_ques_single` WHERE ( id in (5,1,2,4,6,3) ) ORDER BY field(id,5,1,2,4,6,3)  [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0242s ]
+SQL: SELECT * FROM `jt_ques_double` WHERE ( id in (8,1,10,9,2,3,11,7,5,4,6) ) ORDER BY field(id,8,1,10,9,2,3,11,7,5,4,6)  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `jt_ques_judge` WHERE ( id in (4,3,2,1,6,5,7) ) ORDER BY field(id,4,3,2,1,6,5,7)  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0264s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE ( id in (4,1,2,3) ) ORDER BY field(id,4,1,2,3)  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0262s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `jt_stu_answ` WHERE ( stu_id=27 and paper_id=52 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=27 and paper_id=52 )  [ RunTime:0.0003s ]
+SQL: SELECT `name`,`type` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `whole_score`,`sub_score` FROM `jt_paper_ques_fixed` WHERE ( paper_id=52 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `stime`,`etime` FROM `jt_stu_answ` WHERE ( stu_id=27 and paper_id=52 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `each_ms` FROM `jt_stu_score` WHERE ( paper_id=52 and stu_id=27 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000622s ]
+NOTIC: [8] Use of undefined constant sin - assumed 'sin' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 115 行.
+NOTIC: [8] Use of undefined constant sin - assumed 'sin' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 115 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 122 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 129 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 136 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 143 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 122 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 129 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 136 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 143 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 122 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 129 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 136 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 143 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 122 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 129 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 136 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 143 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 122 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 129 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 136 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 143 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 122 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 129 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 136 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 143 行.
+NOTIC: [8] Use of undefined constant dou - assumed 'dou' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 156 行.
+NOTIC: [8] Use of undefined constant dou - assumed 'dou' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 156 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 162 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 163 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 170 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 177 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 184 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 162 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 163 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 170 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 177 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 184 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 162 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 163 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 170 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 177 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 184 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 162 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 163 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 170 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 177 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 184 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 162 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 163 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 170 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 177 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 184 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 162 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 163 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 170 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 177 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 184 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 162 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 163 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 170 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 177 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 184 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 162 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 163 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 170 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 177 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 184 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 162 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 163 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 170 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 177 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 184 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 162 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 163 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 170 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 177 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 184 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 162 行.
+NOTIC: [8] Use of undefined constant is_op1 - assumed 'is_op1' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 163 行.
+NOTIC: [8] Use of undefined constant is_op2 - assumed 'is_op2' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 170 行.
+NOTIC: [8] Use of undefined constant is_op3 - assumed 'is_op3' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 177 行.
+NOTIC: [8] Use of undefined constant is_op4 - assumed 'is_op4' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 184 行.
+NOTIC: [8] Use of undefined constant jud - assumed 'jud' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 197 行.
+NOTIC: [8] Use of undefined constant jud - assumed 'jud' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 197 行.
+NOTIC: [8] Use of undefined constant is_true - assumed 'is_true' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 205 行.
+NOTIC: [8] Use of undefined constant is_false - assumed 'is_false' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 214 行.
+NOTIC: [8] Use of undefined constant is_true - assumed 'is_true' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 205 行.
+NOTIC: [8] Use of undefined constant is_false - assumed 'is_false' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 214 行.
+NOTIC: [8] Use of undefined constant is_true - assumed 'is_true' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 205 行.
+NOTIC: [8] Use of undefined constant is_false - assumed 'is_false' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 214 行.
+NOTIC: [8] Use of undefined constant is_true - assumed 'is_true' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 205 行.
+NOTIC: [8] Use of undefined constant is_false - assumed 'is_false' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 214 行.
+NOTIC: [8] Use of undefined constant is_true - assumed 'is_true' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 205 行.
+NOTIC: [8] Use of undefined constant is_false - assumed 'is_false' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 214 行.
+NOTIC: [8] Use of undefined constant is_true - assumed 'is_true' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 205 行.
+NOTIC: [8] Use of undefined constant is_false - assumed 'is_false' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 214 行.
+NOTIC: [8] Use of undefined constant is_true - assumed 'is_true' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 205 行.
+NOTIC: [8] Use of undefined constant is_false - assumed 'is_false' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 214 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 228 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\f2fb043ccee9ed2684e8af4a87a929d0.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003265s ]
+
+[ 2018-06-03T15:58:48+08:00 ] 127.0.0.1 /index.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002188s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=27 [ RunTime:0.0003s ]
+SQL: select max(lgdate) as mdate  from jt_stu_log where sid=27 [ RunTime:0.0003s ]
+SQL: select max(lgdate) as sdate  from jt_stu_log where sid=27 and lgdate<1528012672 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `jt_stu_log` WHERE ( sid=27 and lgdate=1528011894 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000537s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003089s ]
+
+[ 2018-06-03T19:16:37+08:00 ] 127.0.0.1 /index.php/Public/loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001985s ]
+
+[ 2018-06-03T19:16:38+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000590s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003766s ]
+
+[ 2018-06-03T19:16:38+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002985s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006049s ]
+
+[ 2018-06-03T19:16:46+08:00 ] 127.0.0.1 /index.php/Public/verifyImg/0.6230784411952746
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003193s ]
+
+[ 2018-06-03T19:16:50+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002175s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0406s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0305s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1528024610','208') [ RunTime:0.0777s ]
+
+[ 2018-06-03T19:16:50+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002628s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0978s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.1492s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000556s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003706s ]
+
+[ 2018-06-03T19:16:51+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003310s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0399s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0007s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000618s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003169s ]
+
+[ 2018-06-03T19:19:17+08:00 ] 127.0.0.1 /index.php/Public/loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003134s ]
+
+[ 2018-06-03T19:19:18+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000567s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003500s ]
+
+[ 2018-06-03T19:19:18+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004280s ]
+
+[ 2018-06-03T19:19:27+08:00 ] 127.0.0.1 /index.php/Public/verifyImg/0.7697748324261733
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003127s ]
+
+[ 2018-06-03T19:19:31+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002248s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0431s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0316s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1528024771','208') [ RunTime:0.0815s ]
+
+[ 2018-06-03T19:19:31+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003745s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0295s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0309s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000662s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004613s ]
+
+[ 2018-06-03T19:19:32+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003624s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0425s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0008s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000694s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003038s ]
+
+[ 2018-06-03T19:19:56+08:00 ] 127.0.0.1 /index.php/Public/loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002121s ]
+
+[ 2018-06-03T19:19:56+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002802s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000315s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000575s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003265s ]
+
+[ 2018-06-03T19:19:56+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003538s ]
+
+[ 2018-06-03T19:20:04+08:00 ] 127.0.0.1 /index.php/Public/verifyImg/0.9172550195847331
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002783s ]
+
+[ 2018-06-03T19:20:07+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001934s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0276s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0309s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1528024807','208') [ RunTime:0.0649s ]
+
+[ 2018-06-03T19:20:08+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002264s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0325s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000658s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003552s ]
+
+[ 2018-06-03T19:20:08+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003589s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0341s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0007s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000608s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003049s ]
+

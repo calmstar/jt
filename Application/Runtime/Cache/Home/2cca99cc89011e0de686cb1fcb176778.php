@@ -91,7 +91,7 @@
                                 </div>
                             </div>  
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">首次登录日期：</label>
+                                <label class="col-sm-3 control-label">注册日期：</label>
                                 <div class="col-sm-8">
                                     <p class="form-control-static"><?php echo (date('Y-m-d H:i:s',$stu_info["rgdate"])); ?>
                                     </p>

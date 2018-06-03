@@ -7,6 +7,7 @@ class StudentController extends AccessController{
 	function showlist(){
 		$this->assign('i',icount());
 		$data = M('Stu')->order('id desc')->select();
+
 		$this->assign('data',$data);
 		$this->display();
 	}
@@ -108,7 +109,34 @@ class StudentController extends AccessController{
 			}
 		}else{
 			//原有信息
-			$info = M('Stu')->find(I('get.id'));
+            $sid = I('get.id');
+			$info = M('Stu')->find($sid);
+
+            //登录次数
+            $sql_num = "select count(*) as num from jt_stu_log group by sid having sid=$sid";
+            $num = M()->query($sql_num);
+            $info['lg_num'] = $num[0]['num'];
+
+            // 等于1时为首次登陆
+            if($info['lg_num'] != 1){
+                // 该学生最大的登录时间
+                $sql = "select max(lgdate) as mdate  from jt_stu_log where sid=$sid";
+                $mdate = M()->query($sql);
+                $mdate = $mdate[0]['mdate'];
+                // 该学生次大的登录时间
+                $sql2 = "select max(lgdate) as sdate  from jt_stu_log where sid=$sid and lgdate<$mdate";
+                $sdate = M()->query($sql2);
+                $sdate = $sdate[0]['sdate'];
+
+                $log = M('Stu_log')->where("sid=$sid and lgdate=$sdate")->find();
+                $info['last_ip'] = $log['lgip'];
+                $info['last_lgdate'] = $log['lgdate'];
+
+            } else {
+                $info['last_ip'] = ' ';
+                $info['last_lgdate'] = ' ';
+            }
+
 			$this->assign('info',$info);
 			$this->display();
 		}

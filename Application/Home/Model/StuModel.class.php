@@ -31,24 +31,19 @@ class StuModel extends Model{
 		$where['xuehao'] = $data['xuehao'];
 		$z = $this->where($where)->find();
 		if($z){     
-			//本地验证
 			if($z['status'] == 1){
 				$res['info'] = '您已被管理员禁用';
 				return $res;
 			}
 		    if(password_verify($data['pwd'], $z['pwd'])){
-		        $ip = get_client_ip();
-		        $timestamp = time(); 
-		        $lg_num = $z['lg_num']+1;
-		        //更改登录时间和ip还有 次数
-		        $sql = "UPDATE jt_stu SET last_lgdate='$timestamp',last_ip='$ip',lg_num='$lg_num' WHERE id='$z[id]' ";
-		        $zz = D()->execute($sql);
+		        $log['lgip'] = get_client_ip();
+		        $log['lgdate'] = time();
+		        $log['sid'] = $z['id'];
+		        //学生登录日志
+                $zz = M('Stu_log')->add($log);
 		        if($zz){
-		        	//记录上次登录的信息，使用的是$z
-		        	session('last_ip',$z['last_ip']);
-		        	session('last_lgdate',$z['last_lgdate']);
-		        	session('fg_id',$z['id']);
-		        	$res['status'] = 1;
+                    session('fg_id',$z['id']);
+                    $res['status'] = 1;
 		        	return $res;
 		        }else{
 		        	$res['info'] = '更新登录时间和IP出错';

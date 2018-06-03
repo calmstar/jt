@@ -7,8 +7,31 @@ class PersonalController extends HomeacceController {
     public function show(){
     	$fg_id = session('fg_id');
     	$stu_info = M('stu')->find($fg_id);
-    	$stu_info['last_ip'] = session('last_ip');
-        $stu_info['last_lgdate'] = session('last_lgdate');
+
+        //登录次数
+        $sql_num = "select count(*) as num from jt_stu_log group by sid having sid=$fg_id";
+        $num = M()->query($sql_num);
+        $stu_info['lg_num'] = $num[0]['num'];
+
+        // 等于1时为首次登陆
+        if($stu_info['lg_num'] != 1){
+            // 该学生最大的登录时间
+            $sql = "select max(lgdate) as mdate  from jt_stu_log where sid=$fg_id";
+            $mdate = M()->query($sql);
+            $mdate = $mdate[0]['mdate'];
+            // 该学生次大的登录时间
+            $sql2 = "select max(lgdate) as sdate  from jt_stu_log where sid=$fg_id and lgdate<$mdate";
+            $sdate = M()->query($sql2);
+            $sdate = $sdate[0]['sdate'];
+
+            $log = M('Stu_log')->where("sid=$fg_id and lgdate=$sdate")->find();
+            $stu_info['last_ip'] = $log['lgip'];
+            $stu_info['last_lgdate'] = $log['lgdate'];
+
+        } else {
+            $stu_info['last_ip'] = ' ';
+            $stu_info['last_lgdate'] = ' ';
+        }
     	$this->assign('stu_info',$stu_info);
     	
       	$this->display();
