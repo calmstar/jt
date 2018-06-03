@@ -63,7 +63,7 @@ class ZF
 
         curl_close($curl);
 
-        $src = dirname(__FILE__).'/verifyCode.gif';
+        $src = dirname(__FILE__).'/verifyCode/'.$this->stuId.'verifyCode.gif';
         $fp = fopen($src, 'w');
         fwrite($fp, $img);
         fclose($fp);

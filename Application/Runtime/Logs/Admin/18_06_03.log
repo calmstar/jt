@@ -1423,3 +1423,31 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002186s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002664s ]
 
+[ 2018-06-03T19:41:24+08:00 ] 127.0.0.1 /manager.php/Student/edit/id/208
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002060s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0263s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0007s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=208 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\jmooctest\Application\Admin\Controller\StudentController.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000475s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\ee5939046e0ef9013e6696556073530a.php 第 121 行.
+NOTIC: [8] Undefined index: last_ip D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\ee5939046e0ef9013e6696556073530a.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002529s ]
+
