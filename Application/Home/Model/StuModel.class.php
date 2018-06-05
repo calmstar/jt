@@ -54,7 +54,8 @@ class StuModel extends Model{
 		    	return $res;
 		    }
 		}else{
-            $this->error('此账号还未注册');
+            $res['info'] = '账号未注册';
+            return $res;
 		}
 	}
 

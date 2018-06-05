@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="__ADMIN__/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+</head>
+<body>
+<table class="table table-hover">
+    <th>#</th>
+    <th>登录日期</th>
+    <th>登录IP</th>
+    <th>名字</th>
+    <th>班级</th>
+    <foreach name="data" item="v">
+        <tr>
+            <td>{$i++}</td>
+            <td>{$v.lgdate|date='Y-m_d H:i:s',###}</td>
+            <td>{$v.lgip}</td>
+            <td>{$v.name}</td>
+            <td>{$v.stu_class}</td>
+        </tr>
+    </foreach>
+</table>
+
+<script src="__ADMIN__/js/jquery.min.js?v=2.1.4"></script>
+<script src="__ADMIN__/js/bootstrap.min.js?v=3.3.6"></script>
+
+</body>
+</html>

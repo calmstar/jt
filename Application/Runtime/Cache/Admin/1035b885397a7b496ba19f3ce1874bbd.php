@@ -32,7 +32,7 @@
                                 </button>
                             </div>
                         </div>
-                        <form class="form-horizontal m-t" id="sinAdd" action="/manager.php/Question/sin_edit/id/286" method="post">
+                        <form class="form-horizontal m-t" id="sinAdd" action="/manager.php/Question/sin_edit/id/28" method="post">
                             <div class="form-group">
                                 <input type="hidden" name="id" value="<?php echo ($info["id"]); ?>">
                                 <label class="col-sm-3 control-label">题目描述:

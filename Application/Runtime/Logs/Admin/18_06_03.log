@@ -1451,3 +1451,939 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002241s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002529s ]
 
+[ 2018-06-03T20:01:41+08:00 ] 127.0.0.1 /manager.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002582s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.1459s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0578s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_authority` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `jt_authority` WHERE ( auth_level=0 and display=1 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jt_authority` WHERE ( auth_level=1 and display=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003205s ]
+
+[ 2018-06-03T20:01:42+08:00 ] 127.0.0.1 /manager.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003090s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0328s ]
+SQL: SELECT * FROM `jt_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0310s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 0  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cou_name D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000401s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000753s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002835s ]
+
+[ 2018-06-03T20:01:44+08:00 ] 127.0.0.1 /manager.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002096s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0291s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0274s ]
+SQL: SELECT * FROM `jt_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0231s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 0  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cou_name D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000527s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002051s ]
+
+[ 2018-06-03T20:01:45+08:00 ] 127.0.0.1 /manager.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003502s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0242s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: select count(1) as sum,college from jt_stu group by college [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0232s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0235s ]
+ERR: 1054:Unknown column 'last_lgdate' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `jt_stu` WHERE ( last_lgdate > 1527955200 ) LIMIT 1  
+ERR: 1054:Unknown column 'last_lgdate' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `jt_stu` WHERE ( last_lgdate > 1527955200 ) LIMIT 1  
+
+[ 2018-06-03T20:03:21+08:00 ] 127.0.0.1 /manager.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001986s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0455s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `jt_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0211s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 0  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cou_name D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000548s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002267s ]
+
+[ 2018-06-03T20:03:22+08:00 ] 127.0.0.1 /manager.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002047s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(1) as sum,college from jt_stu group by college [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0217s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0232s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id!=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0222s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate<1528041600 && startdate>1527955200 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528041600 && enddate>1527955200 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( create_date<1528041600 && create_date>1527955200 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status!=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate>1528027402 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528027402 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate>1528027402 && startdate<1528027402 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0197s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_single qs join jt_course c on c.id=qs.course_id group by course_id  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select name,count(*) as num from jt_ques_double qd join jt_course c on c.id=qd.course_id group by course_id  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_judge qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0186s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: select name,count(*) as num from jt_ques_subj qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0021s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 167 行.
+SQL: SELECT sum(DATA_LENGTH)+sum(INDEX_LENGTH) as size
+				FROM information_schema.TABLES where TABLE_SCHEMA='jmooctest2'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000428s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000681s ]
+NOTIC: [8] Undefined index: tod_view D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 52 行.
+NOTIC: [8] Undefined index: tod_add D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 55 行.
+NOTIC: [8] Undefined index: hist_all D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003188s ]
+
+[ 2018-06-03T20:22:51+08:00 ] 127.0.0.1 /manager.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002219s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0373s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: select count(1) as sum,college from jt_stu group by college [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.2002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id!=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0238s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0209s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate<1528041600 && startdate>1527955200 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528041600 && enddate>1527955200 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( create_date<1528041600 && create_date>1527955200 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status!=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate>1528028571 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528028571 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate>1528028571 && startdate<1528028571 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_single qs join jt_course c on c.id=qs.course_id group by course_id  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_double qd join jt_course c on c.id=qd.course_id group by course_id  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select name,count(*) as num from jt_ques_judge qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0199s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_subj qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0020s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 167 行.
+SQL: SELECT sum(DATA_LENGTH)+sum(INDEX_LENGTH) as size
+				FROM information_schema.TABLES where TABLE_SCHEMA='jmooctest2'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000543s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000842s ]
+NOTIC: [8] Undefined index: tod_view D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 159 行.
+NOTIC: [8] Undefined index: tod_add D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 162 行.
+NOTIC: [8] Undefined index: hist_all D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003003s ]
+
+[ 2018-06-03T20:24:19+08:00 ] 127.0.0.1 /manager.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001975s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(1) as sum,college from jt_stu group by college [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0203s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id!=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0214s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate<1528041600 && startdate>1527955200 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528041600 && enddate>1527955200 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( create_date<1528041600 && create_date>1527955200 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status!=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate>1528028659 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528028659 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate>1528028659 && startdate<1528028659 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0227s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select name,count(*) as num from jt_ques_single qs join jt_course c on c.id=qs.course_id group by course_id  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select name,count(*) as num from jt_ques_double qd join jt_course c on c.id=qd.course_id group by course_id  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select name,count(*) as num from jt_ques_judge qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0204s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: select name,count(*) as num from jt_ques_subj qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0020s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 167 行.
+SQL: SELECT sum(DATA_LENGTH)+sum(INDEX_LENGTH) as size
+				FROM information_schema.TABLES where TABLE_SCHEMA='jmooctest2'  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000506s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000769s ]
+NOTIC: [8] Undefined index: tod_view D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 159 行.
+NOTIC: [8] Undefined index: tod_add D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 162 行.
+NOTIC: [8] Undefined index: hist_all D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003818s ]
+
+[ 2018-06-03T20:24:50+08:00 ] 127.0.0.1 /manager.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002347s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select count(1) as sum,college from jt_stu group by college [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0219s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0226s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id!=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0229s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0228s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate<1528041600 && startdate>1527955200 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528041600 && enddate>1527955200 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( create_date<1528041600 && create_date>1527955200 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status!=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate>1528028690 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528028690 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate>1528028690 && startdate<1528028690 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0232s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select name,count(*) as num from jt_ques_single qs join jt_course c on c.id=qs.course_id group by course_id  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0215s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_double qd join jt_course c on c.id=qd.course_id group by course_id  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0217s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_judge qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0215s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_subj qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0019s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 167 行.
+SQL: SELECT sum(DATA_LENGTH)+sum(INDEX_LENGTH) as size
+				FROM information_schema.TABLES where TABLE_SCHEMA='jmooctest2'  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000459s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000755s ]
+NOTIC: [8] Undefined index: tod_view D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 159 行.
+NOTIC: [8] Undefined index: tod_add D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 162 行.
+NOTIC: [8] Undefined index: hist_all D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003407s ]
+
+[ 2018-06-03T20:27:28+08:00 ] 127.0.0.1 /manager.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(1) as sum,college from jt_stu group by college [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id!=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0225s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0226s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate<1528041600 && startdate>1527955200 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528041600 && enddate>1527955200 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( create_date<1528041600 && create_date>1527955200 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status!=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate>1528028848 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528028848 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate>1528028848 && startdate<1528028848 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select name,count(*) as num from jt_ques_single qs join jt_course c on c.id=qs.course_id group by course_id  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select name,count(*) as num from jt_ques_double qd join jt_course c on c.id=qd.course_id group by course_id  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select name,count(*) as num from jt_ques_judge qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_subj qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0019s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 167 行.
+SQL: SELECT sum(DATA_LENGTH)+sum(INDEX_LENGTH) as size
+				FROM information_schema.TABLES where TABLE_SCHEMA='jmooctest2'  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000475s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] Undefined index: tod_view D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 159 行.
+NOTIC: [8] Undefined index: tod_add D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 162 行.
+NOTIC: [8] Undefined index: hist_all D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004477s ]
+
+[ 2018-06-03T20:33:25+08:00 ] 127.0.0.1 /manager.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: select count(1) as sum,college from jt_stu group by college [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0207s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0219s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id!=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.2270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0237s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate<1528041600 && startdate>1527955200 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528041600 && enddate>1527955200 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( create_date<1528041600 && create_date>1527955200 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status!=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate>1528029205 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528029205 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate>1528029205 && startdate<1528029205 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_single qs join jt_course c on c.id=qs.course_id group by course_id  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: select name,count(*) as num from jt_ques_double qd join jt_course c on c.id=qd.course_id group by course_id  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select name,count(*) as num from jt_ques_judge qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_subj qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0020s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 167 行.
+SQL: SELECT sum(DATA_LENGTH)+sum(INDEX_LENGTH) as size
+				FROM information_schema.TABLES where TABLE_SCHEMA='jmooctest2'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000401s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000618s ]
+NOTIC: [8] Undefined index: tod_view D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 164 行.
+NOTIC: [8] Undefined index: tod_add D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 167 行.
+NOTIC: [8] Undefined index: hist_all D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 172 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003371s ]
+
+[ 2018-06-03T20:34:11+08:00 ] 127.0.0.1 /manager.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002221s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(1) as sum,college from jt_stu group by college [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0179s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0204s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id!=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0204s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate<1528041600 && startdate>1527955200 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528041600 && enddate>1527955200 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( create_date<1528041600 && create_date>1527955200 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status!=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate>1528029251 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528029251 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate>1528029251 && startdate<1528029251 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select name,count(*) as num from jt_ques_single qs join jt_course c on c.id=qs.course_id group by course_id  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_double qd join jt_course c on c.id=qd.course_id group by course_id  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select name,count(*) as num from jt_ques_judge qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0195s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select name,count(*) as num from jt_ques_subj qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0020s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 167 行.
+SQL: SELECT sum(DATA_LENGTH)+sum(INDEX_LENGTH) as size
+				FROM information_schema.TABLES where TABLE_SCHEMA='jmooctest2'  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000477s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000723s ]
+NOTIC: [8] Undefined index: tod_view D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 169 行.
+NOTIC: [8] Undefined index: tod_add D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 172 行.
+NOTIC: [8] Undefined index: hist_all D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001885s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002160s ]
+
+[ 2018-06-03T20:35:40+08:00 ] 127.0.0.1 /manager.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002008s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(1) as sum,college from jt_stu group by college [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0212s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id!=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0219s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate<1528041600 && startdate>1527955200 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528041600 && enddate>1527955200 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( create_date<1528041600 && create_date>1527955200 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status!=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate>1528029340 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528029340 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate>1528029340 && startdate<1528029340 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0215s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select name,count(*) as num from jt_ques_single qs join jt_course c on c.id=qs.course_id group by course_id  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select name,count(*) as num from jt_ques_double qd join jt_course c on c.id=qd.course_id group by course_id  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0199s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_judge qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0189s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select name,count(*) as num from jt_ques_subj qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0021s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 168 行.
+SQL: SELECT sum(DATA_LENGTH)+sum(INDEX_LENGTH) as size
+				FROM information_schema.TABLES where TABLE_SCHEMA='jmooctest2'  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000490s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000759s ]
+NOTIC: [8] Undefined index: tod_view D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 169 行.
+NOTIC: [8] Undefined index: tod_add D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 172 行.
+NOTIC: [8] Undefined index: hist_all D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004892s ]
+
+[ 2018-06-03T20:59:17+08:00 ] 127.0.0.1 /manager.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002672s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select count(1) as sum,college from jt_stu group by college [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id!=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0222s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate<1528041600 && startdate>1527955200 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528041600 && enddate>1527955200 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( create_date<1528041600 && create_date>1527955200 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status!=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate>1528030757 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528030757 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate>1528030757 && startdate<1528030757 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0227s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select name,count(*) as num from jt_ques_single qs join jt_course c on c.id=qs.course_id group by course_id  [ RunTime:0.0021s ]
+SQL: select count(*) as deg_num,difficulty,name from jt_ques_single qs join jt_course c on c.id=qs.course_id  group by course_id,difficulty [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.1250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_double qd join jt_course c on c.id=qd.course_id group by course_id  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select name,count(*) as num from jt_ques_judge qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.3586s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select name,count(*) as num from jt_ques_subj qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0021s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 173 行.
+SQL: SELECT sum(DATA_LENGTH)+sum(INDEX_LENGTH) as size
+				FROM information_schema.TABLES where TABLE_SCHEMA='jmooctest2'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000565s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000835s ]
+NOTIC: [8] Undefined index: tod_view D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 169 行.
+NOTIC: [8] Undefined index: tod_add D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 172 行.
+NOTIC: [8] Undefined index: hist_all D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001887s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003601s ]
+
+[ 2018-06-03T21:00:38+08:00 ] 127.0.0.1 /manager.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001976s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: select count(1) as sum,college from jt_stu group by college [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0201s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_user` WHERE ( role_id!=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0214s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate<1528041600 && startdate>1527955200 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528041600 && enddate>1527955200 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( create_date<1528041600 && create_date>1527955200 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( review_status!=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( startdate>1528030837 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate<1528030837 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( enddate>1528030837 && startdate<1528030837 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_paper_basic` WHERE ( type=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select name,count(*) as num from jt_ques_single qs join jt_course c on c.id=qs.course_id group by course_id  [ RunTime:0.0020s ]
+SQL: select count(*) as deg_num,difficulty,name from jt_ques_single qs join jt_course c on c.id=qs.course_id  group by course_id,difficulty [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: select name,count(*) as num from jt_ques_double qd join jt_course c on c.id=qd.course_id group by course_id  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select name,count(*) as num from jt_ques_judge qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0209s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( difficulty=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select name,count(*) as num from jt_ques_subj qj join jt_course c on c.id=qj.course_id group by course_id  [ RunTime:0.0019s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 174 行.
+SQL: SELECT sum(DATA_LENGTH)+sum(INDEX_LENGTH) as size
+				FROM information_schema.TABLES where TABLE_SCHEMA='jmooctest2'  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000693s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001069s ]
+NOTIC: [8] Undefined index: tod_view D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 169 行.
+NOTIC: [8] Undefined index: tod_add D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 172 行.
+NOTIC: [8] Undefined index: hist_all D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\8d061dab183cef00fba3654e9e2a5904.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003990s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\jmooctest\ThinkPHP\Common\functions.php:850) D:\wamp\www\jmooctest\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\jmooctest\ThinkPHP\Common\functions.php:850) D:\wamp\www\jmooctest\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\jmooctest\ThinkPHP\Common\functions.php:850) D:\wamp\www\jmooctest\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010520s ]
+

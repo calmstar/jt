@@ -33,6 +33,9 @@
             height: 280px;
             overflow: auto;
         }
+        .tab-font {
+            font-size: 13px;
+        }
     </style>
 </head>
 
@@ -44,67 +47,23 @@
             <div class="col-sm-4">
                 <div class="panel panel-success">
                     <div class="panel-heading">
-                        数据统计
-                    </div>
-                    <div class="panel-body fix-height">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                今日访问学生：<span class="ss-number"><?php echo ($sjtj["tod_view"]); ?></span>
-                            </div>
-                            <div class="col-sm-6">
-                                今日新增学生：<span class="ss-number"><?php echo ($sjtj["tod_add"]); ?></span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                历史访问次数：<span class="ss-number"><?php echo ($sjtj["hist_all"]); ?></span>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <i class="fa fa-user-secret fa-2x"></i>
-                                管理员：<span class="ss-number"><?php echo ($sjtj["adm_num"]); ?></span>
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-user fa-2x"></i>
-                                教师用户：<span class="ss-number"><?php echo ($sjtj["tea_num"]); ?></span>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <i class="fa fa-users fa-2x"></i>
-                                学生：<span class="ss-number"><?php echo ($sjtj["stu_num"]); ?></span>
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-book fa-2x"></i>
-                                课程：<span class="ss-number"><?php echo ($sjtj["cou_num"]); ?></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="panel panel-success">
-                    <div class="panel-heading">
                         考试动态
                     </div>
                     <div class="panel-body fix-height">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                今日开始考试：<span class="number"><?php echo ($ksdt["tod_ing"]); ?></span>
-                            </div>
-                            <div class="col-sm-6">
-                                今日截止考试：<span class="number"><?php echo ($ksdt["tod_ed"]); ?></span>
-                            </div>
-                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 共有试卷：<span class="number"><?php echo ($ksdt["all_num"]); ?></span>
                             </div>
                             <div class="col-sm-6">
                                 今日新建试卷：<span class="number"><?php echo ($ksdt["new_paper"]); ?></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                今日开始考试：<span class="number"><?php echo ($ksdt["tod_ing"]); ?></span>
+                            </div>
+                            <div class="col-sm-6">
+                                今日截止考试：<span class="number"><?php echo ($ksdt["tod_ed"]); ?></span>
                             </div>
                         </div>
                         <hr>
@@ -117,7 +76,7 @@
                   
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         试题信息
@@ -129,12 +88,22 @@
                         不展示：<span class="ss-number"><?php echo ($info_sin["no_show"]); ?></span>
                         <br>
                         难度为简单：<span class="ss-number"><?php echo ($info_sin["easy"]); ?></span>，一般：<span class="ss-number"><?php echo ($info_sin["common"]); ?></span>，困难：<span class="ss-number"><?php echo ($info_sin["diff"]); ?></span>
-                        <table class="table table-hover">
+                        <table class="table table-hover tab-font">
                             <th>课程</th>
-                            <th>所含试题</th>
+                            <th>共有试题</th>
+                            <th>（ 简单</th>
+                            <th>一般</th>
+                            <th>困难 ）</th>
+                            <th>（ 展示到练习题</th>
+                            <th>不展示到练习题 ）</th>
                             <?php if(is_array($info_sin["table"])): foreach($info_sin["table"] as $key=>$v): ?><tr>
                                 <td><?php echo ($v["name"]); ?></td>
                                 <td><?php echo ($v["num"]); ?></td>
+                                <td>（ <?php echo ($v["eas_num"]); ?> </td>
+                                <td> <?php echo ($v["com_num"]); ?> </td>
+                                <td> <?php echo ($v["dif_num"]); ?> ）</td>
+                                <td>（ <?php echo ($v["yes"]); ?> </td>
+                                <td> <?php echo ($v["no"]); ?> ）</td>
                             </tr><?php endforeach; endif; ?>
                         </table>
 
@@ -148,11 +117,21 @@
                         难度为简单：<span class="ss-number"><?php echo ($info_dou["easy"]); ?></span>，一般：<span class="ss-number"><?php echo ($info_dou["common"]); ?></span>，困难：<span class="ss-number"><?php echo ($info_dou["diff"]); ?></span>
                         <table class="table table-hover">
                             <th>课程</th>
-                            <th>所含试题</th>
+                            <th>共有试题</th>
+                            <th>（ 简单</th>
+                            <th>一般</th>
+                            <th>困难 ）</th>
+                            <th>（ 展示到练习题</th>
+                            <th>不展示到练习题 ）</th>
                             <?php if(is_array($info_dou["table"])): foreach($info_dou["table"] as $key=>$v): ?><tr>
-                                <td><?php echo ($v["name"]); ?></td>
-                                <td><?php echo ($v["num"]); ?></td>
-                            </tr><?php endforeach; endif; ?>
+                                    <td><?php echo ($v["name"]); ?></td>
+                                    <td><?php echo ($v["num"]); ?></td>
+                                    <td>（ <?php echo ($v["eas_num"]); ?> </td>
+                                    <td> <?php echo ($v["com_num"]); ?> </td>
+                                    <td> <?php echo ($v["dif_num"]); ?> ）</td>
+                                    <td>（ <?php echo ($v["yes"]); ?> </td>
+                                    <td> <?php echo ($v["no"]); ?> ）</td>
+                                </tr><?php endforeach; endif; ?>
                         </table>
 
                         <hr>
@@ -165,11 +144,21 @@
                         难度为简单：<span class="ss-number"><?php echo ($info_jud["easy"]); ?></span>，一般：<span class="ss-number"><?php echo ($info_jud["common"]); ?></span>，困难：<span class="ss-number"><?php echo ($info_jud["diff"]); ?></span>
                         <table class="table table-hover">
                             <th>课程</th>
-                            <th>所含试题</th>
+                            <th>共有试题</th>
+                            <th>（ 简单</th>
+                            <th>一般</th>
+                            <th>困难 ）</th>
+                            <th>（ 展示到练习题</th>
+                            <th>不展示到练习题 ）</th>
                             <?php if(is_array($info_jud["table"])): foreach($info_jud["table"] as $key=>$v): ?><tr>
-                                <td><?php echo ($v["name"]); ?></td>
-                                <td><?php echo ($v["num"]); ?></td>
-                            </tr><?php endforeach; endif; ?>
+                                    <td><?php echo ($v["name"]); ?></td>
+                                    <td><?php echo ($v["num"]); ?></td>
+                                    <td>（ <?php echo ($v["eas_num"]); ?> </td>
+                                    <td> <?php echo ($v["com_num"]); ?> </td>
+                                    <td> <?php echo ($v["dif_num"]); ?> ）</td>
+                                    <td>（ <?php echo ($v["yes"]); ?> </td>
+                                    <td> <?php echo ($v["no"]); ?> ）</td>
+                                </tr><?php endforeach; endif; ?>
                         </table>
 
                         <hr>
@@ -179,10 +168,16 @@
                         难度为简单：<span class="ss-number"><?php echo ($info_sub["easy"]); ?></span>，一般：<span class="ss-number"><?php echo ($info_sub["common"]); ?></span>，困难：<span class="ss-number"><?php echo ($info_sub["diff"]); ?></span>
                         <table class="table table-hover">
                             <th>课程</th>
-                            <th>所含试题</th>
+                            <th>共有试题</th>
+                            <th>（ 简单</th>
+                            <th>一般</th>
+                            <th>困难 ）</th>
                             <?php if(is_array($info_sub["table"])): foreach($info_sub["table"] as $key=>$v): ?><tr>
                                 <td><?php echo ($v["name"]); ?></td>
                                 <td><?php echo ($v["num"]); ?></td>
+                                <td>（ <?php echo ($v["eas_num"]); ?> </td>
+                                <td> <?php echo ($v["com_num"]); ?> </td>
+                                <td> <?php echo ($v["dif_num"]); ?> ）</td>
                             </tr><?php endforeach; endif; ?>
                         </table>
 
@@ -192,40 +187,6 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-4">
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        管理员通讯录
-                    </div>
-                    <div class="panel-body fix-height" >
-                        <hr>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                罗予东
-                            </div>
-                            <div class="col-sm-9">
-                                手机：13751950588--650588
-                            </div>
-                            <div class="col-sm-9 col-sm-offset-3">
-                                邮箱：lyd@jyueka.com
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                陈文星
-                            </div>
-                            <div class="col-sm-9">
-                                手机：17875511965--691965
-                            </div>
-                            <div class="col-sm-9 col-sm-offset-3">
-                                邮箱：494025451@qq.com
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
             <div class="col-sm-4">
                 <div class="panel panel-success">
                     <div class="panel-heading">
@@ -306,6 +267,107 @@
             <div class="col-sm-4">
                 <div class="panel panel-success">
                     <div class="panel-heading">
+                        近七天访问量     <a href="#" onclick="seeFW()" style="color:white;"> （查看所有）</a>
+                    </div>
+                    <div class="panel-body fix-height" >
+                        <table class="table table-hover tab-font">
+                            <th>日期</th>
+                            <th>登录量</th>
+                            <?php if(is_array($fw)): foreach($fw as $key=>$v): ?><tr>
+                                    <td><?php echo ($v["logdate"]); ?></td>
+                                    <td><?php echo ($v["num"]); ?></td>
+                                </tr><?php endforeach; endif; ?>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        近七天注册量 <a href="#" onclick="seeZC()" style="color:white;">（查看所有）</a>
+                    </div>
+                    <div class="panel-body fix-height" >
+                        <table class="table table-hover tab-font">
+                            <th>日期</th>
+                            <th>注册量</th>
+                            <?php if(is_array($zc)): foreach($zc as $key=>$v): ?><tr>
+                                    <td><?php echo ($v["rgddate"]); ?></td>
+                                    <td><?php echo ($v["num"]); ?></td>
+                                </tr><?php endforeach; endif; ?>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        人员统计
+                    </div>
+                    <div class="panel-body fix-height">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <i class="fa fa-user-secret fa-2x"></i>
+                                管理员：<span class="ss-number"><?php echo ($sjtj["adm_num"]); ?></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-user fa-2x"></i>
+                                教师用户：<span class="ss-number"><?php echo ($sjtj["tea_num"]); ?></span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <i class="fa fa-users fa-2x"></i>
+                                学生：<span class="ss-number"><?php echo ($sjtj["stu_num"]); ?></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-book fa-2x"></i>
+                                课程：<span class="ss-number"><?php echo ($sjtj["cou_num"]); ?></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        管理员通讯录
+                    </div>
+                    <div class="panel-body fix-height" >
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                罗予东
+                            </div>
+                            <div class="col-sm-9">
+                                手机：13751950588--650588
+                            </div>
+                            <div class="col-sm-9 col-sm-offset-3">
+                                邮箱：lyd@jyueka.com
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                陈文星
+                            </div>
+                            <div class="col-sm-9">
+                                手机：17875511965--691965
+                            </div>
+                            <div class="col-sm-9 col-sm-offset-3">
+                                邮箱：494025451@qq.com
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
                         运行信息
                     </div>
                     <div class="panel-body fix-height" >
@@ -373,9 +435,31 @@
     <!-- 全局js -->
     <script src="/Public/Admin/js/jquery.min.js?v=2.1.4"></script>
     <script src="/Public/Admin/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/Public/Admin/js/plugins/layer/layer.js"></script>
     <!-- 自定义js -->
     <script src="/Public/Admin/js/content.js?v=1.0.0"></script>
-
+    <script>
+        function seeFW() {
+            layer.open({
+                title: '登录信息（显示前一百条）',
+                type: 2,
+                area: ['700px', '450px'],
+                fixed: false, //不固定
+                maxmin: true,
+                content: '/manager.php/Personal/visit_num',
+            });
+        }
+        function seeZC(){
+            layer.open({
+                title: '注册信息（显示前一百条）',
+                type: 2,
+                area: ['700px', '450px'],
+                fixed: false, //不固定
+                maxmin: true,
+                content: '/manager.php/Personal/regis_num',
+            });
+        }
+    </script>
 
 </body>
 

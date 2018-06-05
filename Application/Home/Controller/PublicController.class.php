@@ -12,6 +12,7 @@ class PublicController extends Controller {
 	    		$stu = D('Stu');
 	    		$data = $stu->field('xuehao,pwd')->create(); //完成字符映射,过滤非数据表字段
 				$res = $stu->deal_login($data);
+
 			}else{
 				$res['status'] = 0;
 				$res['info'] = '您输入的验证码错误';

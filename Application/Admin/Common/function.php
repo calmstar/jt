@@ -138,5 +138,66 @@ function export_excel(array $data=array(), array $table_head=array(),array $data
     header('Cache-Control: max-age=0');
     $objWriter = new PHPExcel_Writer_Excel5($objPHPExcel);
     $objWriter->save('php://output');
+}
 
+
+  // 系统信息
+function degToArray($shuzu,$deg){
+
+    $info['table'] = $shuzu;
+
+    foreach($info['table'] as $k=>&$v){
+        foreach($deg as $kk=>$vv){
+            if($v['course_id'] == $vv['course_id']){
+                if($vv['difficulty'] == 1){
+                    $v['eas_num'] = $vv['deg_num'];
+                    continue;
+                }
+                if($vv['difficulty'] == 2){
+                    $v['com_num'] = $vv['deg_num'];
+                    continue;
+                }
+                if($vv['difficulty'] == 3){
+                    $v['dif_num'] = $vv['deg_num'];
+                    continue;
+                }
+            }
+        }
+        if(!isset($v['eas_num'])){
+            $v['eas_num'] = 0;
+        }
+        if(!isset($v['com_num'])){
+            $v['com_num'] = 0;
+        }
+        if(!isset($v['dif_num'])){
+            $v['dif_num'] = 0;
+        }
+    }
+    unset($v);
+
+    return $info['table'];
+}
+
+function showToArray($shuzu,$show){
+    $info['table'] = $shuzu;
+    foreach($info['table'] as $k=>&$v){
+        foreach($show as $kk=>$vv){
+            if($v['course_id'] == $vv['course_id']){
+                if($vv['is_show'] == 0){
+                    $v['no'] = $vv['show_num'];
+                }
+                if($vv['is_show'] == 1){
+                    $v['yes'] = $vv['show_num'];
+                }
+            }
+        }
+        if(!isset($v['yes'])){
+            $v['yes'] = 0;
+        }
+        if(!isset($v['no'])){
+            $v['no'] = 0;
+        }
+    }
+    unset($v);
+    return $info['table'];
 }
