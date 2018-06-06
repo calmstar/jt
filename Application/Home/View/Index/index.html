@@ -71,7 +71,9 @@
                         <ul class="nav nav-second-level">
                             <foreach name="cou_info" item="v">
                             <li>
-                                <a class="J_menuItem" href="__MODULE__/Practice/sin_show/cou_id/{$v.id}">{$v.name}</a>
+                                <if condition=" $v.sin_status == 1 ">
+                                    <a class="J_menuItem" href="__MODULE__/Practice/sin_show/cou_id/{$v.id}">{$v.name}</a>
+                                </if>
                             </li>
                             </foreach>
                         </ul>
@@ -85,7 +87,9 @@
                         <ul class="nav nav-second-level">
                             <foreach name="cou_info" item="v">
                             <li>
-                                <a class="J_menuItem" href="__MODULE__/Practice/dou_show/cou_id/{$v.id}">{$v.name}</a>
+                                <if condition=" $v.dou_status == 1 ">
+                                    <a class="J_menuItem" href="__MODULE__/Practice/dou_show/cou_id/{$v.id}">{$v.name}</a>
+                                </if>
                             </li>
                             </foreach>
                         </ul>
@@ -99,7 +103,25 @@
                         <ul class="nav nav-second-level">
                             <foreach name="cou_info" item="v">
                             <li>
-                                <a class="J_menuItem" href="__MODULE__/Practice/jud_show/cou_id/{$v.id}">{$v.name}</a>
+                                <if condition=" $v.jud_status == 1 ">
+                                    <a class="J_menuItem" href="__MODULE__/Practice/jud_show/cou_id/{$v.id}">{$v.name}</a>
+                                </if>
+                            </li>
+                            </foreach>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pencil-square-o"></i>
+                            <span class="nav-label">练习主观题</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <foreach name="cou_info" item="v">
+                            <li>
+                                <if condition=" $v.sub_status == 1 ">
+                                    <a class="J_menuItem" href="__MODULE__/Practice/sub_show/cou_id/{$v.id}">{$v.name}</a>
+                                </if>
                             </li>
                             </foreach>
                         </ul>

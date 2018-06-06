@@ -23,7 +23,7 @@
 			<div class="col-sm-10 col-sm-offset-1">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h3>编辑主观题</h3>          
+                        <h3>添加主观题</h3>          
                     </div>
                     <div class="ibox-content">
                         <div class="form-group">
@@ -32,13 +32,12 @@
                                 </button>
                             </div>
                         </div>
-                        <form class="form-horizontal m-t" id="subAdd" action="/manager.php/Question/sub_edit/id/33" method="post">
-                            <input type="hidden" name="id" value="<?php echo ($info["id"]); ?>">
+                        <form class="form-horizontal m-t" id="subAdd" action="/manager.php/Question/sub_add" method="post">
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">题目描述:
                                 </label>
                                 <div class="col-sm-8">
-                                    <textarea id="descr" name="descr" style="height: 200px;width:100%;"><?php echo ($info["descr"]); ?></textarea>
+                                    <textarea id="descr" name="descr" style="height: 200px;width:100%;"></textarea>
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
@@ -46,7 +45,7 @@
                                 <label class="col-sm-3 control-label">参考答案:
                                 </label>
                                 <div class="col-sm-8">
-                                    <textarea id="right_answ" name="right_answ" style="height: 200px;width:100%;"><?php echo ($info["right_answ"]); ?></textarea>
+                                    <textarea id="right_answ" name="right_answ" style="height: 200px;width:100%;"></textarea>
                                 </div>
                             </div>
 							<div class="hr-line-dashed"></div>
@@ -54,7 +53,6 @@
                                 <label class="col-sm-3 control-label">所属课程：</label>
                                 <div class="col-sm-8">
                                     <select class="form-control" name="course_id">
-                                        <option value="<?php echo ($info["course_id"]); ?>"><?php echo ($info["course_name"]); ?></option>
                                         <?php if(is_array($cou_info)): foreach($cou_info as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
                                     </select>
                                 </div>
@@ -63,12 +61,11 @@
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">难度：</label>
                                 <div class="col-sm-8">
-                                    <select class="form-control" id="difficulty" name="difficulty" >
-                                        <option value="<?php echo ($info["difficulty"]); ?>"><?php echo ($info["diff_name"]); ?></option>
+                                    <select class="form-control" id="difficulty" name="difficulty">
                                         <option value="1">简单</option>
                                         <option value="2">一般</option>
                                         <option value="3">困难</option>
-                                    </select>
+                                    </select> 
                                 </div>   
                             </div>
 							<div class="hr-line-dashed"></div>

@@ -7,10 +7,7 @@ class PracticeController extends HomeacceController {
 	function sin_show(){
 		$cid = I('get.cou_id','','int');
 		$num = M('Ques_single')->where("course_id=$cid and is_show=1")->count();
-		if($num == '0'){
-			echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 还没有练习题 ʕ•͓͡•ʔ</h1> ';
-				exit;
-		}
+
         $r = M('Course')->where("id=$cid and display=1")->count();
         if($r == '0'){
             echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不设置有练习题 ʕ•͓͡•ʔ</h1> ';
@@ -68,10 +65,7 @@ class PracticeController extends HomeacceController {
 	function dou_show(){
 		$cid = I('get.cou_id','','int');
 		$num = M('Ques_double')->where("course_id=$cid and is_show=1")->count();
-		if($num == '0'){
-			echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 还没有练习题 ʕ•͓͡•ʔ</h1> ';
-				exit;
-		}
+
         $r = M('Course')->where("id=$cid and display=1")->count();
         if($r == '0'){
             echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不设置有练习题 ʕ•͓͡•ʔ</h1> ';
@@ -127,10 +121,7 @@ class PracticeController extends HomeacceController {
 	function jud_show(){
 		$cid = I('get.cou_id','','int');
 		$num = M('Ques_judge')->where("course_id=$cid and is_show=1")->count();
-		if($num == '0'){
-			echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 还没有练习题 ʕ•͓͡•ʔ</h1> ';
-				exit;
-		}
+
         $r = M('Course')->where("id=$cid and display=1")->count();
         if($r == '0'){
             echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不设置有练习题 ʕ•͓͡•ʔ</h1> ';
@@ -180,6 +171,47 @@ class PracticeController extends HomeacceController {
 	    	$this->ajaxReturn($data);
 		}
 	}
+	
+	function sub_show(){
+        $cid = I('get.cou_id','','int');
+        $num = M('Ques_subj')->where("course_id=$cid")->count();
+
+        $r = M('Course')->where("id=$cid and display=1")->count();
+        if($r == '0'){
+            echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不设置有练习题 ʕ•͓͡•ʔ</h1> ';
+            exit;
+        }
+
+        $page = new \Think\Page($num,1); //每页输出一条练习题,1为listRows
+        $page -> rollPage = 0; //分页数小于rollPage时，不显示首末页
+        $page -> lastSuffix = false;  //是否显示最后一页
+        $page -> setConfig('prev','上一道');
+        $page -> setConfig('next','下一道');
+        $page -> setConfig('last','末道');
+        $page -> setConfig('first','首道');
+
+        //添加bootstrap样式
+        $page->setConfig('header','<li class="disabled hwh-page-info"><a>共 <em>%TOTAL_ROW%</em> 道练习题  , <em>%NOW_PAGE%</em> / %TOTAL_PAGE% 道</a></li>');
+        $page->setConfig('theme','%HEADER% %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+        $page_show = bootstrap_page_style($page->show());
+        $this->assign('page_show',$page_show);//输出分页
+
+        $info = M('Ques_subj')->where("course_id=$cid")->limit($page -> firstRow , $page -> listRows )->select();
+        $this->assign('info',$info); //输出数据
+
+        //得到课程名称
+        $cou_info = M('Course')->find($cid);
+        $this->assign('cou_name',$cou_info['name']);
+
+        $p = I('get.p','','int');
+        if(!empty($p)){
+            $this->assign('p',$p);
+        }else{
+            $this->assign('p',1);
+        }
+
+        $this->display();
+    }
 
 
 

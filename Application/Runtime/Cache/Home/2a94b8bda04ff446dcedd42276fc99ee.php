@@ -70,7 +70,7 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <?php if(is_array($cou_info)): foreach($cou_info as $key=>$v): ?><li>
-                                <a class="J_menuItem" href="/index.php/Practice/sin_show/cou_id/<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a>
+                                <?php if( $v["sin_status"] == 1 ): ?><a class="J_menuItem" href="/index.php/Practice/sin_show/cou_id/<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a><?php endif; ?>
                             </li><?php endforeach; endif; ?>
                         </ul>
                     </li>
@@ -82,7 +82,7 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <?php if(is_array($cou_info)): foreach($cou_info as $key=>$v): ?><li>
-                                <a class="J_menuItem" href="/index.php/Practice/dou_show/cou_id/<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a>
+                                <?php if( $v["dou_status"] == 1 ): ?><a class="J_menuItem" href="/index.php/Practice/dou_show/cou_id/<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a><?php endif; ?>
                             </li><?php endforeach; endif; ?>
                         </ul>
                     </li>
@@ -94,7 +94,19 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <?php if(is_array($cou_info)): foreach($cou_info as $key=>$v): ?><li>
-                                <a class="J_menuItem" href="/index.php/Practice/jud_show/cou_id/<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a>
+                                <?php if( $v["jud_status"] == 1 ): ?><a class="J_menuItem" href="/index.php/Practice/jud_show/cou_id/<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a><?php endif; ?>
+                            </li><?php endforeach; endif; ?>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pencil-square-o"></i>
+                            <span class="nav-label">练习主观题</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <?php if(is_array($cou_info)): foreach($cou_info as $key=>$v): ?><li>
+                                <?php if( $v["sub_status"] == 1 ): ?><a class="J_menuItem" href="/index.php/Practice/sub_show/cou_id/<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a><?php endif; ?>
                             </li><?php endforeach; endif; ?>
                         </ul>
                     </li>
