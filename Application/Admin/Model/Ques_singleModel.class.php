@@ -32,6 +32,7 @@ class Ques_singleModel extends Model{
 			$data[$i]['xh'] = ++$k;
 			//由于是列表里输出，所以将编辑器里面存入的实体字符转化为html文字,并去除标签，还有截断（截断已采用css截断方法）
 			$data[$i]['descr'] = strip_tags(htmlspecialchars_decode($data[$i]['descr']));
+            $data[$i]['descr'] = msubstr($data[$i]['descr'],0,30);
 			//整合出right_answ信息
 			if($data[$i]['is_op1']){
 

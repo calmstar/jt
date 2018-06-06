@@ -29,7 +29,9 @@ class Ques_judgeModel extends Model{
 			$data[$i]['xh'] = ++$k;
 			//将编辑器里面存入的实体字符转化为html文字
 			$data[$i]['descr'] = strip_tags(htmlspecialchars_decode($data[$i]['descr']));
-			//整合出right_answ信息
+            $data[$i]['descr'] = msubstr($data[$i]['descr'],0,30);
+
+            //整合出right_answ信息
 			if($data[$i]['is_true'] == 1){
 				$data[$i]['right_answ'] = '正确';
 			}else{

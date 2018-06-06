@@ -23,7 +23,9 @@ class Ques_subjModel extends Model{
 			$data[$i]['xh'] = ++$k;
 			//将编辑器里面存入的实体字符转化为html文字
 			$data[$i]['descr'] = strip_tags(htmlspecialchars_decode($data[$i]['descr']));
-			$data[$i]['right_answ'] = $data[$i]['right_answ'];
+            $data[$i]['descr'] = msubstr($data[$i]['descr'],0,30);
+
+            $data[$i]['right_answ'] =  msubstr($data[$i]['right_answ'],0,25);
 
 			// 难度
 			if($data[$i]['difficulty'] == 1){

@@ -44,7 +44,9 @@ class Ques_doubleModel extends Model{
 			$data[$i]['xh'] = ++$k;
 			//将编辑器里面存入的实体字符转化为html文字
 			$data[$i]['descr'] = strip_tags(htmlspecialchars_decode($data[$i]['descr']));
-			//整合出right_answ信息
+            $data[$i]['descr'] = msubstr($data[$i]['descr'],0,30);
+
+            //整合出right_answ信息
 			if($data[$i]['is_op1']){
 				$right_answ[] = '< 1 >';
 			}
