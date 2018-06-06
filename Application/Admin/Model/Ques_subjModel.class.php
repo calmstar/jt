@@ -7,7 +7,7 @@ class Ques_subjModel extends Model{
 	protected $patchValidate = false; 
 	protected $_validate = array(
 		array('descr','require','题目描述必须填'),
-		array('descr','1,1000','题目描述必须在1000字符以内',0,'length'),
+		array('descr','1,4500','题目描述必须在4500字符以内',0,'length'),
 		array('right_answ','require','正确答案必须填写'),
 		array('right_answ','1,2500','题目描述必须在2500字符以内',0,'length'),
 	);
