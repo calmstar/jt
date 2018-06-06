@@ -75,10 +75,9 @@
                     <span id="tips"></span>
                 </div>
                 
-
                 <div class="hr-line-dashed"></div>
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-6">
+                    <div class="text-center">
                         <?php echo ($page_show); ?>
                     </div>
                 </div>

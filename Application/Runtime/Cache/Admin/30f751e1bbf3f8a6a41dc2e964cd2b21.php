@@ -106,17 +106,14 @@
                 ue.destroy();
             }else{
                 ue = UE.getEditor('descr', {
-                    toolbars: [
-                        ['fullscreen', 'source','bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist']
-                    ],
-                    maximumWords:800,
+                    maximumWords:4500,
                     enableAutoSave:false,
                 });
             }
             i++;
             //加载完再使用方法
             ue.ready(function() {
-                ue.setHeight(200);
+                ue.setHeight(400);
             });
         });
     </script>
