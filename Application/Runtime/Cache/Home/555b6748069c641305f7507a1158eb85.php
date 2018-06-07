@@ -77,7 +77,7 @@
 
                 <div class="hr-line-dashed"></div>
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-6">
+                    <div class="text-center">
                         <?php echo ($page_show); ?>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                 $('#tips').empty();
                 $.ajax({
                     type:"POST",
-                    url:"/index.php/practice/check_dou",
+                    url:"/index.php/Practice/check_dou",
                     data:$("form").serialize(), //获取表单的所有数据
 
                     success:function(data){

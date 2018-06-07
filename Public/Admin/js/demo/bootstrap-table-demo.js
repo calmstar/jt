@@ -641,6 +641,46 @@ $(function(){
     $('#myPaper').bootstrapTable('hideColumn','paper_id');
     $('#myPaper').bootstrapTable('hideColumn','stime');
 
+    $('#prac_sub').bootstrapTable({
+        showRefresh:true,  //刷新按钮
+        search:true,   //搜索框
+        showToggle:true, //与卡片视图的切换
+        showColumns:true, //是否显示 内容列下拉框选项
+        striped:true,  //隔行变色效果
+        // height:900,  //表格高度
+        sortName:'id', //默认的排序字段，默认顺序，可改sortOrder:desc
+        sortOrder:'desc',
+        clickToSelect:true, //最左边的选框 radio或checkbox由列决定
+        toolbar:"#toolbar", //调整工具栏的位置
+        cache: false, //设置为 false 禁用 AJAX 数据缓存
+
+        pagination: true,
+        pageSize: 20,    //每页的记录行数
+        pageNumber:1,  //初始化加载第一页，默认第一页
+        pageList: [20, 50, 100,500], //可供选择的每页的行数
+        columns:[{
+            radio:'true',
+        },{
+            field: 'id',
+            title: 'id',
+        },{
+            field: 'xh',
+            title: '#',
+            sortable: 'true', //此列可被排序
+        },{
+            field: 'keyword',
+            title: '关键字',
+        },{
+            field: 'descr',
+            title: '描述',
+        },{
+            field: 'difficulty',
+            title: '难度',
+        },]
+    });
+    $('#prac_sub').bootstrapTable('hideColumn','id');
+
+
 });
     
 

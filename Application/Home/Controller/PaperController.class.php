@@ -49,7 +49,6 @@ class PaperController extends HomeacceController {
 			exit;
 		}
 
-
 		// 查询 基本 信息
 		$basic_info = $basic->find($id);
 		$basic_info = $basic->deal_basic($basic_info);

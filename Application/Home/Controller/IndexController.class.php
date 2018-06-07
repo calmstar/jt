@@ -32,7 +32,7 @@ class IndexController extends HomeacceController {
                 $v['jud_status'] = 1;
             }
 
-            $sub_num = M('Ques_subj')->where("course_id={$v['id']}")->count();
+            $sub_num = M('Ques_subj')->where("course_id={$v['id']}  and is_show=1")->count();
             if($sub_num == 0){
                 $v['sub_status'] = 0;
             }else{
