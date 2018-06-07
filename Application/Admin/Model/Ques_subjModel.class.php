@@ -145,6 +145,21 @@ class Ques_subjModel extends Model{
 	    			}
 	    		}
 
+	    		if($kk == 4){
+	    		    if($vv != 0 && $vv != 1){
+                        $row = $k+1;
+                        $col = $kk+1;
+                        $info['status'] = '0';
+                        $info['msg'] = "失败！第 $row 行,第 $col 列中的数据只能为0或1！";
+                        return $info;
+                    }
+                    else{
+                        //转成int型
+                        $vv = intval($vv);
+                    }
+                }
+
+                $check_data[$k]['adddate'] = time();
 	    		//赋值到一个新的数组$check_data：
 	    		switch ($kk) {
 	    		case 0:
@@ -159,6 +174,9 @@ class Ques_subjModel extends Model{
 	    		case 3:
 	    			$check_data[$k]['difficulty'] = $vv;
 	    		    break;
+                case 4:
+                    $check_data[$k]['is_show'] = $vv;
+                    break;
 	    		}
 	    	}
 	    }
