@@ -71,6 +71,31 @@
                                     </select>
                                 </div>   
                             </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">关键字：</label>
+                                <div class="col-sm-8">
+                                    <input id="keyword" name="keyword" class="form-control" type="text" value="<?php echo ($info["keyword"]); ?>">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">是否展示到练习题:
+                                </label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" name="is_show">
+                                        <option value="1" <?php if($info["is_show"] == 1): ?>selected="selected"<?php endif; ?> >是</option>
+                                        <option value="0" <?php if($info["is_show"] == 0): ?>selected="selected"<?php endif; ?>  >否</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">添加日期：</label>
+                                <div class="col-sm-8">
+                                    <span class="help-block m-b-none"><?php echo (date('Y-m-d H:i:s',$info["adddate"])); ?></span>
+                                </div>
+                            </div>
 							<div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">

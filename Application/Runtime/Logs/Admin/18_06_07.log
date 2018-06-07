@@ -1,0 +1,2363 @@
+[ 2018-06-07T11:06:01+08:00 ] 127.0.0.1 /manager.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000384s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005818s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000632s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006425s ]
+
+[ 2018-06-07T11:06:03+08:00 ] 127.0.0.1 /manager.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000155s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005037s ]
+
+[ 2018-06-07T11:06:16+08:00 ] 127.0.0.1 /manager.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004553s ]
+NOTIC: [8] Use of undefined constant code - assumed 'code' D:\wamp\www\jmooctest\Application\Admin\Controller\PublicController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0472s ]
+SQL: SELECT * FROM `jt_user` WHERE ( email='494025451@qq.com' ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant password - assumed 'password' D:\wamp\www\jmooctest\Application\Admin\Controller\PublicController.class.php 第 14 行.
+NOTIC: [8] Use of undefined constant pwd - assumed 'pwd' D:\wamp\www\jmooctest\Application\Admin\Controller\PublicController.class.php 第 14 行.
+
+[ 2018-06-07T11:06:16+08:00 ] 127.0.0.1 /manager.php/Public/verifyImg/0.41353901299800455
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006680s ]
+
+[ 2018-06-07T11:06:28+08:00 ] 127.0.0.1 /manager.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005644s ]
+NOTIC: [8] Use of undefined constant code - assumed 'code' D:\wamp\www\jmooctest\Application\Admin\Controller\PublicController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0639s ]
+SQL: SELECT * FROM `jt_user` WHERE ( email='494025451@qq.com' ) LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant password - assumed 'password' D:\wamp\www\jmooctest\Application\Admin\Controller\PublicController.class.php 第 14 行.
+NOTIC: [8] Use of undefined constant pwd - assumed 'pwd' D:\wamp\www\jmooctest\Application\Admin\Controller\PublicController.class.php 第 14 行.
+SQL: UPDATE `jt_user` SET `email`='494025451@qq.com',`pwd`='$2y$10$/tsKYctqQKNZt8B9RfvanulZtp02zcoppQiRxCGDjJOV5LejbmAle',`name`='陈文',`rgdate`='1501586745',`role_id`='0',`telphone`='17875511965',`course_ids`='',`status`='1',`last_ip`='127.0.0.1',`last_lgdate`='1528340788' WHERE `id` = 1 [ RunTime:0.0506s ]
+
+[ 2018-06-07T11:06:28+08:00 ] 127.0.0.1 /manager.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009846s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0569s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0634s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0635s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_authority` [ RunTime:0.0575s ]
+SQL: SELECT * FROM `jt_authority` WHERE ( auth_level=0 and display=1 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `jt_authority` WHERE ( auth_level=1 and display=1 )  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000554s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007675s ]
+
+[ 2018-06-07T11:06:30+08:00 ] 127.0.0.1 /manager.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013779s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0632s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0662s ]
+SQL: SELECT * FROM `jt_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0722s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: cou_name D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000709s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019994s ]
+
+[ 2018-06-07T11:06:35+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009586s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0655s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0718s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.1039s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000660s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004431s ]
+
+[ 2018-06-07T11:06:37+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528340796389
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009269s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.1001s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0723s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0635s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-06-07T13:04:21+08:00 ] 127.0.0.1 /manager.php/Question/sub_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004672s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0447s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0407s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000570s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004471s ]
+
+[ 2018-06-07T13:07:36+08:00 ] 127.0.0.1 /manager.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004573s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0353s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0398s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0412s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_authority` [ RunTime:0.0389s ]
+SQL: SELECT * FROM `jt_authority` WHERE ( auth_level=0 and display=1 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `jt_authority` WHERE ( auth_level=1 and display=1 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000543s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018895s ]
+
+[ 2018-06-07T13:07:37+08:00 ] 127.0.0.1 /manager.php/Personal/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004614s ]
+NOTIC: [2048] Declaration of Admin\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0505s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0419s ]
+SQL: SELECT * FROM `jt_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0385s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: cou_name D:\wamp\www\jmooctest\Application\Admin\Controller\PersonalController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000665s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010541s ]
+
+[ 2018-06-07T13:07:40+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005960s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0592s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0468s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000761s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001432s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005542s ]
+
+[ 2018-06-07T13:07:41+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528348060980
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006638s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0555s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0402s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0434s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-06-07T13:07:43+08:00 ] 127.0.0.1 /manager.php/Question/sub_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004357s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.2966s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000589s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004475s ]
+
+[ 2018-06-07T13:08:36+08:00 ] 127.0.0.1 /manager.php/Question/sub_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004808s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0373s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0442s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000578s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005205s ]
+
+[ 2018-06-07T13:10:52+08:00 ] 127.0.0.1 /manager.php/Question/sub_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004476s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0419s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0461s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000738s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001487s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004017s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006034s ]
+
+[ 2018-06-07T13:11:08+08:00 ] 127.0.0.1 /manager.php/Question/sub_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005572s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0402s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0407s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2018-06-07T13:12:56+08:00 ] 127.0.0.1 /manager.php/Question/sub_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000266s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009502s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0354s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0385s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2018-06-07T13:16:04+08:00 ] 127.0.0.1 /manager.php/Question/sub_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004336s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0395s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0391s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `jt_ques_subj` (`descr`,`right_answ`,`course_id`,`difficulty`,`keyword`,`is_show`,`adddate`) VALUES ('111','222','147','1','测试','1','1528348564') [ RunTime:0.0885s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000397s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000969s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004765s ]
+
+[ 2018-06-07T13:16:06+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004937s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0452s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0462s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000645s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004063s ]
+
+[ 2018-06-07T13:16:08+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528348567411
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000410s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005208s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0448s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0741s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-06-07T13:17:47+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005217s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0441s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0417s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000662s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004663s ]
+
+[ 2018-06-07T13:18:12+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004493s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0381s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0385s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0422s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000634s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006408s ]
+
+[ 2018-06-07T13:21:19+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004999s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0377s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0392s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000830s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001453s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006034s ]
+
+[ 2018-06-07T13:21:33+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004513s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0488s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0356s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0358s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000635s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005236s ]
+
+[ 2018-06-07T13:21:45+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008819s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0425s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0351s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0435s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000640s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003638s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007542s ]
+
+[ 2018-06-07T13:23:04+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004125s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0453s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0374s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000756s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001437s ]
+
+[ 2018-06-07T13:23:49+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005786s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0444s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0385s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0402s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000731s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001434s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008786s ]
+
+[ 2018-06-07T13:24:46+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004525s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0419s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0409s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0389s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000732s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001415s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005265s ]
+
+[ 2018-06-07T13:25:11+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006556s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0525s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0395s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0402s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000718s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005331s ]
+
+[ 2018-06-07T13:25:26+08:00 ] 127.0.0.1 /manager.php/Student/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004200s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0432s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\wamp\www\jmooctest\Application\Common\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `jt_stu` ORDER BY id desc  [ RunTime:0.0069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001663s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006288s ]
+
+[ 2018-06-07T13:25:32+08:00 ] 127.0.0.1 /manager.php/Student/edit/id/207
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004263s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0369s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0407s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 207 LIMIT 1   [ RunTime:0.0014s ]
+SQL: select count(*) as num from jt_stu_log group by sid having sid=207 [ RunTime:0.0013s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\jmooctest\Application\Admin\Controller\StudentController.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000725s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001288s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\ee5939046e0ef9013e6696556073530a.php 第 121 行.
+NOTIC: [8] Undefined index: last_ip D:\wamp\www\jmooctest\Application\Runtime\Cache\Admin\ee5939046e0ef9013e6696556073530a.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005400s ]
+
+[ 2018-06-07T13:26:21+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004499s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0448s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0428s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0438s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000769s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001444s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006738s ]
+
+[ 2018-06-07T13:26:23+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528349183325
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005042s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0991s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0472s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0452s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-06-07T13:26:26+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001957s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004119s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0626s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0358s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003996s ]
+
+[ 2018-06-07T13:27:17+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004332s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0532s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0450s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2018-06-07T13:27:59+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006538s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0412s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.1020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `jt_ques_subj` SET `descr`='111',`right_answ`='222',`course_id`='147',`difficulty`='1',`keyword`='测试22',`is_show`='1' WHERE `id` = 35 [ RunTime:0.1600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000456s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004141s ]
+
+[ 2018-06-07T13:28:01+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004556s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0422s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0447s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0379s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000763s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001455s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002990s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004205s ]
+
+[ 2018-06-07T13:28:03+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528349282400
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005479s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0546s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0514s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0438s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-06-07T13:28:06+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004246s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0415s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0391s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000643s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004933s ]
+
+[ 2018-06-07T13:30:19+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004630s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0376s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0386s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0404s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000638s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004783s ]
+
+[ 2018-06-07T13:30:20+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528349419710
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012074s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0431s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0814s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-06-07T13:32:11+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004532s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0539s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0432s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0427s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000653s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005079s ]
+
+[ 2018-06-07T13:32:13+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528349532105
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005363s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0396s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0405s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0436s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-06-07T13:32:25+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015749s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0725s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0495s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0549s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000713s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010208s ]
+
+[ 2018-06-07T13:32:28+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528349547561
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000325s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004584s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0405s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0419s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0387s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-06-07T13:32:48+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009696s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0467s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0495s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0822s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000769s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001642s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005250s ]
+
+[ 2018-06-07T13:32:50+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528349569878
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004615s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0374s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0392s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-06-07T13:34:37+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004890s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0409s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.1136s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0460s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000784s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001443s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006110s ]
+
+[ 2018-06-07T13:34:41+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528349679453
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000196s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005138s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0406s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0432s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-06-07T13:35:55+08:00 ] 127.0.0.1 /manager.php/Mark/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004953s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0447s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0393s ]
+SQL: SELECT `paper_id`,count(*) as mark_num FROM `jt_stu_score` WHERE ( mark_status=0 ) GROUP BY paper_id  [ RunTime:0.0093s ]
+SQL: SELECT `paper_id`,count(*) as sco_nums FROM `jt_stu_score` GROUP BY paper_id  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0403s ]
+SQL: SELECT `paper_id`,count(*) as join_num FROM `jt_stu_paper` GROUP BY paper_id  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0427s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 52 and etime != ''  ) LIMIT 1   [ RunTime:0.0056s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 53 and etime != ''  ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 54 and etime != ''  ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 55 and etime != ''  ) LIMIT 1   [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0481s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000603s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005339s ]
+
+[ 2018-06-07T13:35:58+08:00 ] 127.0.0.1 /manager.php/Mark/showlist.html?sort=xh&order=desc&limit=20&offset=0&_=1528349757621
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009604s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0434s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0425s ]
+SQL: SELECT `paper_id`,count(*) as mark_num FROM `jt_stu_score` WHERE ( mark_status=0 ) GROUP BY paper_id  [ RunTime:0.0015s ]
+SQL: SELECT `paper_id`,count(*) as sco_nums FROM `jt_stu_score` GROUP BY paper_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0408s ]
+SQL: SELECT `paper_id`,count(*) as join_num FROM `jt_stu_paper` GROUP BY paper_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0411s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 52 and etime != ''  ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 53 and etime != ''  ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 54 and etime != ''  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant paper_id - assumed 'paper_id' D:\wamp\www\jmooctest\Application\Admin\Controller\MarkController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_stu_answ` WHERE ( paper_id = 55 and etime != ''  ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0397s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`startdate`,`enddate` FROM `jt_paper_basic` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-06-07T13:35:58+08:00 ] 127.0.0.1 /manager.php/Paper/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005036s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0378s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0458s ]
+SQL: SELECT * FROM `jt_paper_basic`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0477s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0439s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000655s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002943s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005130s ]
+
+[ 2018-06-07T13:36:00+08:00 ] 127.0.0.1 /manager.php/Paper/showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528349759503
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005876s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0427s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0404s ]
+SQL: SELECT * FROM `jt_paper_basic`  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0405s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0907s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-06-07T13:36:01+08:00 ] 127.0.0.1 /manager.php/Paper/add_random
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004203s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0575s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0493s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0435s ]
+SQL: SELECT * FROM `jt_user` WHERE ( role_id=1 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001897s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005651s ]
+
+[ 2018-06-07T13:37:51+08:00 ] 127.0.0.1 /manager.php/Paper/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005466s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0381s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0387s ]
+SQL: SELECT * FROM `jt_paper_basic`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0446s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000696s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005068s ]
+
+[ 2018-06-07T13:37:53+08:00 ] 127.0.0.1 /manager.php/Paper/showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528349873020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008069s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0455s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0409s ]
+SQL: SELECT * FROM `jt_paper_basic`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0387s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0407s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-06-07T13:37:55+08:00 ] 127.0.0.1 /manager.php/Paper/edit/id/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004536s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0393s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0418s ]
+SQL: SELECT * FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_paper_limit` [ RunTime:0.0411s ]
+SQL: SELECT * FROM `jt_paper_limit` WHERE ( paper_id=55 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_paper_ques_random` [ RunTime:0.0376s ]
+SQL: SELECT * FROM `jt_paper_ques_random` WHERE ( paper_id=55 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jt_user` WHERE ( role_id=1 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001526s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005039s ]
+
+[ 2018-06-07T13:46:39+08:00 ] 127.0.0.1 /manager.php/Paper/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005494s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0457s ]
+SQL: SELECT * FROM `jt_paper_basic`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0472s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0408s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000672s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004282s ]
+
+[ 2018-06-07T13:46:41+08:00 ] 127.0.0.1 /manager.php/Paper/showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528350400386
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000952s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005072s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0501s ]
+SQL: SELECT * FROM `jt_paper_basic`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0543s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0499s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-06-07T13:46:50+08:00 ] 127.0.0.1 /manager.php/Paper/add_random
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004973s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0529s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0428s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.1612s ]
+SQL: SELECT * FROM `jt_user` WHERE ( role_id=1 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001939s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002555s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006442s ]
+
+[ 2018-06-07T13:46:56+08:00 ] 127.0.0.1 /manager.php/Paper/add_random
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006276s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0461s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0497s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 and difficulty=1 and course_id=157 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 and difficulty=2 and course_id=157 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 and difficulty=3 and course_id=157 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0612s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 and difficulty=1 and course_id=157 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 and difficulty=2 and course_id=157 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 and difficulty=3 and course_id=157 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 and difficulty=1 and course_id=157 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 and difficulty=2 and course_id=157 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 and difficulty=3 and course_id=157 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0699s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( is_show=0 and difficulty=1 and course_id=157 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( is_show=0 and difficulty=2 and course_id=157 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( is_show=0 and difficulty=3 and course_id=157 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-06-07T13:47:33+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004757s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0467s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0418s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0442s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000655s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004216s ]
+
+[ 2018-06-07T13:47:34+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528350454218
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006488s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0654s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0455s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0463s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-06-07T13:47:41+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004274s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0516s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0374s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0389s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000719s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001384s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007216s ]
+
+[ 2018-06-07T13:47:49+08:00 ] 127.0.0.1 /manager.php/Question/sub_edit/id/33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004277s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0403s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0412s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `jt_ques_subj` SET `descr`='&lt;p&gt;问题描述&lt;/p&gt;&lt;p&gt;        Fibonacci数列的递推公式为：Fn=Fn-1+Fn-2，其中F1=F2=1。&lt;/p&gt;&lt;p&gt;        当n比较大时，Fn也非常大，现在我们想知道，Fn除以10007的余数是多少。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;输入格式&lt;/p&gt;&lt;p&gt;        输入包含一个整数n。&lt;/p&gt;&lt;p&gt;输出格式&lt;/p&gt;&lt;p&gt;        输出一行，包含一个整数，表示Fn除以10007的余数。&lt;/p&gt;&lt;p&gt;        说明：在本题中，答案是要求Fn除以10007的余数，因此我们只要能算出这个余数即可，而不需要先计算出Fn的准确值，再将计算的结果除以10007取余数，直接计算余数往往比先算出原数再取余简单。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;样例输入&lt;/p&gt;&lt;p&gt;        10&lt;/p&gt;&lt;p&gt;样例输出&lt;/p&gt;&lt;p&gt;        55&lt;/p&gt;&lt;p&gt;样例输入&lt;/p&gt;&lt;p&gt;        22&lt;/p&gt;&lt;p&gt;样例输出&lt;/p&gt;&lt;p&gt;        7704&lt;/p&gt;&lt;p&gt;数据规模与约定&lt;/p&gt;&lt;p&gt;        1 &lt;= n &lt;= 1,000,000。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`right_answ`='未填写',`course_id`='157',`difficulty`='1',`keyword`='',`is_show`='1' WHERE `id` = 33 [ RunTime:0.0641s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000396s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000982s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003960s ]
+
+[ 2018-06-07T13:47:53+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004309s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0459s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0391s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0394s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000618s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003826s ]
+
+[ 2018-06-07T13:47:54+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528350473874
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006953s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0404s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0432s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0424s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-06-07T13:47:59+08:00 ] 127.0.0.1 /manager.php/Paper/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004383s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0434s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0401s ]
+SQL: SELECT * FROM `jt_paper_basic`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0394s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000665s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003980s ]
+
+[ 2018-06-07T13:48:00+08:00 ] 127.0.0.1 /manager.php/Paper/showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528350480327
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000203s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009860s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0578s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0476s ]
+SQL: SELECT * FROM `jt_paper_basic`  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0568s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0628s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-06-07T13:48:02+08:00 ] 127.0.0.1 /manager.php/Paper/add_random
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004300s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0469s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0454s ]
+SQL: SELECT * FROM `jt_course`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0432s ]
+SQL: SELECT * FROM `jt_user` WHERE ( role_id=1 )  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001896s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006985s ]
+
+[ 2018-06-07T13:48:07+08:00 ] 127.0.0.1 /manager.php/Paper/add_random
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005741s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0459s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0440s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 and difficulty=1 and course_id=157 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 and difficulty=2 and course_id=157 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( is_show=0 and difficulty=3 and course_id=157 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0403s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 and difficulty=1 and course_id=157 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 and difficulty=2 and course_id=157 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( is_show=0 and difficulty=3 and course_id=157 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0377s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 and difficulty=1 and course_id=157 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 and difficulty=2 and course_id=157 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( is_show=0 and difficulty=3 and course_id=157 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0385s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( is_show=0 and difficulty=1 and course_id=157 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( is_show=0 and difficulty=2 and course_id=157 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( is_show=0 and difficulty=3 and course_id=157 ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-06-07T13:48:21+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026840s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0531s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.1045s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0595s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000797s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.036216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.036862s ]
+
+[ 2018-06-07T13:48:24+08:00 ] 127.0.0.1 /manager.php/Question/sub_showlist.html?sort=id&order=desc&limit=20&offset=0&_=1528350503559
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005811s ]
+SQL: SHOW COLUMNS FROM `jt_role` [ RunTime:0.0429s ]
+SQL: SELECT * FROM `jt_role` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0802s ]
+SQL: SELECT * FROM `jt_ques_subj`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0862s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 155 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 156 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+

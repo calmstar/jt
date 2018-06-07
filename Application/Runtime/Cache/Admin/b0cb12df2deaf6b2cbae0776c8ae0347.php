@@ -68,7 +68,25 @@
                                     </select> 
                                 </div>   
                             </div>
-							<div class="hr-line-dashed"></div>
+                            <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">关键字：</label>
+                                    <div class="col-sm-8">
+                                        <input id="keyword" name="keyword" class="form-control" type="text">
+                                    </div>
+                                </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">是否展示到练习题:
+                                </label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" name="is_show">
+                                        <option value="1">是</option>
+                                        <option value="0">否</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">
                                     <button class="btn btn-primary" type="submit">提交</button>

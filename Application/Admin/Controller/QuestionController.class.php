@@ -477,6 +477,7 @@ class QuestionController extends AccessController{
 			$sub = new \Admin\Model\Ques_subjModel(); 
 			$data = $sub->create(); 
 			if($data){
+			    $data['adddate'] = time();
 				$res = $sub->add($data);
 				if($res){
 					$this->success('添加成功',U('Question/sub_showlist'));
@@ -526,7 +527,7 @@ class QuestionController extends AccessController{
 			$sub = new \Admin\Model\Ques_subjModel();
 			$data = $sub->create();
 			if($data){
-				$res = $sub->save($data); 
+				$res = $sub->save($data);
 				if($res !== false){
 					$this->success('修改成功',U('Question/sub_showlist'));
 				}else{

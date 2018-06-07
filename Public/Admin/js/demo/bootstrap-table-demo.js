@@ -235,6 +235,11 @@ $(function(){
             title: '难度',
             sortable: 'true',
             
+        },{
+            field: 'is_show',
+            title: '展示',
+            sortable: 'true',
+
         }],
     });
     $('#sub_table').bootstrapTable('hideColumn','id');

@@ -411,15 +411,11 @@
                         $('#sub_easy_num').attr({placeholder:data['sub_eas'],max:data['sub_eas']});
                         $('#sub_com_num').attr({placeholder:data['sub_com'],max:data['sub_com']});
                         $('#sub_diff_num').attr({placeholder:data['sub_dif'],max:data['sub_dif']});
-
                     });
                 }
             });
-           
         });
     </script>
-   
- 
 
 </body>
 

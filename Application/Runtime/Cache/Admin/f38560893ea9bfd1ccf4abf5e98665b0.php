@@ -32,7 +32,7 @@
 <body class="gray-bg">
     <div class="wrapper wrapper-content animated fadeInRight">
         <!-- 基本信息 -->
-        <form action="/manager.php/Paper/edit/id/52" method="post" id="basic">
+        <form action="/manager.php/Paper/edit/id/55" method="post" id="basic">
         <div class="row">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
@@ -90,7 +90,7 @@
                 <div class="row">
                     <!-- 考试限制对象 -->
                     <div class="col-sm-12">
-                        <form action="/manager.php/Paper/edit/id/52" method="post" enctype="multipart/form-data" id="limit">
+                        <form action="/manager.php/Paper/edit/id/55" method="post" enctype="multipart/form-data" id="limit">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
                                 <h5>试卷限制对象 <small>以下皆为选填</small></h5>
@@ -133,7 +133,7 @@
                     </div>
                     <!-- 试题信息 -->
                     <div class="col-sm-12">
-                        <form action="/manager.php/Paper/edit/id/52" method="post" id="ques">
+                        <form action="/manager.php/Paper/edit/id/55" method="post" id="ques">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
                                 <h5>试题信息 <small>每项必填</small></h5>
@@ -479,7 +479,7 @@
                 layer.confirm('清空后，限制学生功能将不启用',{btn: ['确定', '取消']},
                     function(){ 
                         // 清空该试卷的学生名单，修改limit_stu_status,全面修改
-                        $.post("/manager.php/Paper/edit/id/52",{'clear_stu':1,'paper_id':paper_id},function(data){
+                        $.post("/manager.php/Paper/edit/id/55",{'clear_stu':1,'paper_id':paper_id},function(data){
                                 if(data){
                                     window.location.reload();
                                 }else{

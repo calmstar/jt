@@ -44,13 +44,12 @@ class PaperController extends AccessController{
                 $data['jud_com'] = M('Ques_judge')->where("is_show=0 and difficulty=2 and course_id=$cou_id")->count();
                 $data['jud_dif'] = M('Ques_judge')->where("is_show=0 and difficulty=3 and course_id=$cou_id")->count();
 
-                $data['sub_eas'] = M('Ques_subj')->where("difficulty=1 and course_id=$cou_id")->count();
-                $data['sub_com'] = M('Ques_subj')->where("difficulty=2 and course_id=$cou_id")->count();
-                $data['sub_dif'] = M('Ques_subj')->where("difficulty=3 and course_id=$cou_id")->count();
+                $data['sub_eas'] = M('Ques_subj')->where("is_show=0 and difficulty=1 and course_id=$cou_id")->count();
+                $data['sub_com'] = M('Ques_subj')->where("is_show=0 and difficulty=2 and course_id=$cou_id")->count();
+                $data['sub_dif'] = M('Ques_subj')->where("is_show=0 and difficulty=3 and course_id=$cou_id")->count();
 
                 $this->ajaxReturn($data);
             }
-
 
 			$paper = new \Admin\Model\Paper_basicModel(); 
 			//数据是否合法

@@ -128,14 +128,9 @@ class Paper_basicModel extends Model{
  		if($ques_num != 0){
  			$num = $ques_num;
 
- 			//主观题没有is_show字段
- 			if($table == 'Ques_subj'){
- 				$ques = M("$table")->field('id')->where("course_id=$cid and difficulty=$diff")->select();
- 			}else{
- 				//随机题目筛选要求：①符合所选课程题目 ② 属性为‘没有在练习题中展示’  ③ 各难度的题目数量 和 所填符合
- 				$ques = M("$table")->field('id')->where("course_id=$cid and is_show=0 and difficulty=$diff")->select();
- 			}
- 			
+            //随机题目筛选要求：①符合所选课程题目 ② 属性为‘没有在练习题中展示’  ③ 各难度的题目数量 和 所填符合
+            $ques = M("$table")->field('id')->where("course_id=$cid and is_show=0 and difficulty=$diff")->select();
+
  			//化为一维数组
  			foreach($ques as $k => $v){
  				$se[] = $v['id'];

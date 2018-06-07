@@ -9,7 +9,7 @@ class Ques_subjModel extends Model{
 		array('descr','require','题目描述必须填'),
 		array('descr','1,4500','题目描述必须在4500字符以内',0,'length'),
 		array('right_answ','require','正确答案必须填写'),
-		array('right_answ','1,2500','题目描述必须在2500字符以内',0,'length'),
+		array('right_answ','1,2500','参考答案必须在2500字符以内',0,'length'),
 	);
 
 	function deal_sub_show($data){
@@ -35,11 +35,17 @@ class Ques_subjModel extends Model{
 			}else{
 				$data[$i]['difficulty'] = "困难";
 			}
-			
+
+//			展示
+			if($data[$i]['is_show'] == 1){
+                $data[$i]['is_show'] = '是';
+            }else{
+                $data[$i]['is_show'] = '否';
+            }
+
 		}
 		return $data;
 	}
-
 
 	function sub_edit_original($info){
 		$info['descr'] = htmlspecialchars_decode($info['descr']);
