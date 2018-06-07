@@ -184,6 +184,7 @@ class Ques_judgeModel extends Model{
 		    			}
 		    		}
 
+                    $check_data[$k]['adddate'] = time();
 		    		//赋值到一个新的数组$check_data：
 		    		switch ($kk) {
 		    		case 0:

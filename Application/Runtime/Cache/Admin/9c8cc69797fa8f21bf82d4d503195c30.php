@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <head>
@@ -9,11 +9,11 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-    <link rel="shortcut icon" href="__PUBLIC__/favicon.ico"> 
-	<link href="__ADMIN__/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-    <link href="__ADMIN__/css/font-awesome.css?v=4.4.0" rel="stylesheet">
-    <link href="__ADMIN__/css/animate.css" rel="stylesheet">
-    <link href="__ADMIN__/css/style.css?v=4.1.0" rel="stylesheet">
+    <link rel="shortcut icon" href="/Public/favicon.ico"> 
+	<link href="/Public/Admin/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/Public/Admin/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="/Public/Admin/css/animate.css" rel="stylesheet">
+    <link href="/Public/Admin/css/style.css?v=4.1.0" rel="stylesheet">
 
 </head>
 
@@ -23,7 +23,7 @@
 			<div class="col-sm-10 col-sm-offset-1">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h3>修改双选题</h3>          
+                        <h3>添加双选题</h3>          
                     </div>
                     <div class="ibox-content">
                         <div class="form-group">
@@ -32,82 +32,69 @@
                                 </button>
                             </div>
                         </div>
-                        <form class="form-horizontal m-t" id="sinAdd" action="__SELF__" method="post">
+                        <form class="form-horizontal m-t" id="douAdd" action="/manager.php/Question/dou_add" method="post">
                             <div class="form-group">
-                                <input type="hidden" name="id" value="{$info.id}">
                                 <label class="col-sm-3 control-label">题目描述:
                                 </label>
                                 <div class="col-sm-8">
-                                    <textarea id="descr" name="descr" style="height: 200px;width:100%;">{$info.descr}</textarea>
+                                    <textarea id="descr" name="descr" style="height: 200px;width:100%;"></textarea>
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">选项一：
-                                </label>
+                                <label class="col-sm-3 control-label">选项一：</label>
                                 <div class="col-sm-8">
-                                    <input id="op1" name="op1" class="form-control" type="text" 
-                                    value="{$info.op1}" >   
+                                    <input id="op1" name="op1" class="form-control" type="text">   
                                 </div>   
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">选项二：</label>
                                 <div class="col-sm-8">
-                                    <input id="op2" name="op2" class="form-control" type="text" value="{$info.op2}">   
+                                    <input id="op2" name="op2" class="form-control" type="text">   
                                 </div>   
                             </div>
                             <div class="hr-line-dashed"></div>
                            <div class="form-group">
                                <label class="col-sm-3 control-label">选项三：</label>
                                <div class="col-sm-8">
-                                   <input id="op3" name="op3" class="form-control" type="text" value="{$info.op3}">   
+                                   <input id="op3" name="op3" class="form-control" type="text">   
                                </div>   
                            </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">选项四：</label>
                                 <div class="col-sm-8">
-                                    <input id="op4" name="op4" class="form-control" type="text" value="{$info.op4}">   
+                                    <input id="op4" name="op4" class="form-control" type="text">   
                                 </div>   
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">正确选项：</label>
-                                {//$info.right_op 后面要有空格,或改成中括号形式}
                                 <div class="col-sm-8">
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" value="is_op1" id="right_answ" name="right_answ[]"
-                                        <if condition="in_array('is_op1',$info.right_op )">checked='checked'</if>  > 选项一 &nbsp;&nbsp;&nbsp;
+                                        <input type="checkbox" value="is_op1" id="right_answ" name="right_answ[]"> 选项一 &nbsp;&nbsp;&nbsp;
                                     </label>
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" value="is_op2" id="right_answ" name="right_answ[]" 
-                                        <if condition="in_array('is_op2', $info.right_op )">checked='checked'</if>
-                                        > 选项二 &nbsp;&nbsp;&nbsp;
+                                        <input type="checkbox" value="is_op2" id="right_answ" name="right_answ[]"> 选项二 &nbsp;&nbsp;&nbsp;
                                     </label>
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" value="is_op3" id="right_answ" name="right_answ[]" 
-                                        <if condition="in_array('is_op3',$info.right_op )">checked='checked'</if>
-                                        > 选项三 &nbsp;&nbsp;&nbsp;
+                                        <input type="checkbox" value="is_op3" id="right_answ" name="right_answ[]"> 选项三 &nbsp;&nbsp;&nbsp;
                                     </label>
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" value="is_op4" id="right_answ" name="right_answ[]" 
-                                        <if condition="in_array('is_op4',$info.right_op )">checked='checked'</if>
-                                        > 选项四 &nbsp;&nbsp;&nbsp;
+                                        <input type="checkbox" value="is_op4" id="right_answ" name="right_answ[]"> 选项四 &nbsp;&nbsp;&nbsp;
                                     </label>
                                     <span class="help-block m-b-none">
                                     <i class="fa fa-info-circle"></i>请勾选两个选项</span>
                                 </div>
                             </div>
+
 							<div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">所属课程：</label>
                                 <div class="col-sm-8">
                                     <select class="form-control" name="course_id">
-                                        <option value="{$info.course_id}">{$info.course_name}</option>
-                                        <foreach name="cou_info" item="v">
-                                        <option value="{$v.id}">{$v.name}</option>
-                                        </foreach>
+                                        <?php if(is_array($cou_info)): foreach($cou_info as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
                                     </select>
                                 </div>
                             </div>
@@ -116,7 +103,6 @@
                                 <label class="col-sm-3 control-label">是否展示到练习题：</label>
                                 <div class="col-sm-8">
                                     <select class="form-control" name="is_show">
-                                        <option value="{$info.is_show}">{$info.show_name}</option>
                                         <option value="1">是</option>
                                         <option value="0">否</option>
                                     </select>
@@ -126,20 +112,12 @@
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">难度：</label>
                                 <div class="col-sm-8">
-                                    <select class="form-control" id="difficulty" name="difficulty" >
-                                        <option value="{$info.difficulty}">{$info.diff_name}</option>
+                                    <select class="form-control" id="difficulty" name="difficulty">
                                         <option value="1">简单</option>
                                         <option value="2">一般</option>
                                         <option value="3">困难</option>
                                     </select>
                                 </div>   
-                            </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">添加日期：</label>
-                                <div class="col-sm-8">
-                                    <span class="help-block m-b-none">{$info.adddate|date='Y-m-d H:i:s',###}</span>
-                                </div>
                             </div>
 							<div class="hr-line-dashed"></div>
                             <div class="form-group">
@@ -157,18 +135,18 @@
     </div>
 
     <!-- 全局js -->
-    <script src="__ADMIN__/js/jquery.min.js?v=2.1.4"></script>
-    <script src="__ADMIN__/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/Public/Admin/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/Public/Admin/js/bootstrap.min.js?v=3.3.6"></script>
     <!-- 自定义js -->
-    <script src="__ADMIN__/js/content.js?v=1.0.0"></script>
+    <script src="/Public/Admin/js/content.js?v=1.0.0"></script>
     <!-- jQuery Validation plugin javascript-->
-    <script src="__ADMIN__/js/plugins/validate/jquery.validate.min.js"></script>
-    <script src="__ADMIN__/js/plugins/validate/messages_zh.min.js"></script> <!--validate的提示信息转换成中文插件-->
-	<script src="__ADMIN__/js/demo/form-validate-demo.js"></script>
+    <script src="/Public/Admin/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="/Public/Admin/js/plugins/validate/messages_zh.min.js"></script> <!--validate的提示信息转换成中文插件-->
+	<script src="/Public/Admin/js/demo/form-validate-demo.js"></script>
     <!--ueditor config一定要放在最前面-->
-    <script src="__ADMIN__/js/plugins/ueditor/ueditor.config.js"></script>
-    <script src="__ADMIN__/js/plugins/ueditor/ueditor.all.js"></script>
-    <script src="__ADMIN__/js/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script src="/Public/Admin/js/plugins/ueditor/ueditor.config.js"></script>
+    <script src="/Public/Admin/js/plugins/ueditor/ueditor.all.js"></script>
+    <script src="/Public/Admin/js/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
     <script type="text/javascript">
         var i = 1; 
         // 启用/禁用编辑器

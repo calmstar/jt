@@ -250,6 +250,7 @@ class Ques_doubleModel extends Model{
 		    		}
 
 
+                    $check_data[$k]['adddate'] = time();
 		    		//赋值到一个新的数组$check_data：
 		    		//(由于没有修改键名的方法，所以另起一个数组)
 		    		switch ($kk) {

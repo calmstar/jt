@@ -32,7 +32,7 @@
                                 </button>
                             </div>
                         </div>
-                        <form class="form-horizontal m-t" id="sinAdd" action="/manager.php/Question/sin_edit/id/28" method="post">
+                        <form class="form-horizontal m-t" id="sinAdd" action="/manager.php/Question/sin_edit/id/104" method="post">
                             <div class="form-group">
                                 <input type="hidden" name="id" value="<?php echo ($info["id"]); ?>">
                                 <label class="col-sm-3 control-label">题目描述:
@@ -117,6 +117,13 @@
                                         <option value="3">困难</option>
                                     </select> 
                                 </div>   
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">添加日期：</label>
+                                <div class="col-sm-8">
+                                    <span class="help-block m-b-none"><?php echo (date('Y-m-d H:i:s',$info["adddate"])); ?></span>
+                                </div>
                             </div>
 							<div class="hr-line-dashed"></div>
                             <div class="form-group">

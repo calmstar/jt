@@ -38,6 +38,7 @@ class QuestionController extends AccessController{
 			//所有我在deal_data方法中将变化的字段赋到post中，create方法没有参数，自动调用POST参数
 			$data = $sin->create();  
 			if($data){
+                $data['adddate'] = time();
 				$res = $sin->add($data);
 				if($res){
 					$this->success('添加成功',U('Question/sin_showlist'));
@@ -186,6 +187,7 @@ class QuestionController extends AccessController{
 			$data = $dou->create(); 
 
 			if($data){
+                $data['adddate'] = time();
 				$res = $dou->add($data);
 				if($res){
 					$this->success('添加成功',U('Question/dou_showlist'));
@@ -333,6 +335,7 @@ class QuestionController extends AccessController{
 			$jud->deal_jud_add($_POST);
 			$data = $jud->create(); 
 			if($data){
+			    $data['adddate'] = time();
 				$res = $jud->add($data);
 				if($res){
 					$this->success('添加成功',U('Question/jud_showlist'));
