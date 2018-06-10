@@ -76,7 +76,6 @@ $(function(){
         showToggle:true, //与卡片视图的切换
         showColumns:true, //是否显示 内容列下拉框选项
         striped:true,  //隔行变色效果
-        // height:900,  //表格高度
         sortName:'id', //默认的排序字段，默认顺序，可改sortOrder:desc
         sortOrder:'desc',
         clickToSelect:true, //最左边的选框 radio或checkbox由列决定
@@ -349,7 +348,6 @@ $(function(){
         },{
             field: 'time',
             title: '考试时间段',
-            //class: "col-xs-2",
         },{
             field: 'join_num',
             title: '参加考试',
@@ -582,11 +580,8 @@ $(function(){
         showToggle:true, //与卡片视图的切换
         showColumns:true, //是否显示 内容列下拉框选项
         striped:true,  //隔行变色效果
-        // height:900,  //表格高度
         sortName:'id', //默认的排序字段，默认顺序，可改sortOrder:desc
         sortOrder:'desc',
-        clickToSelect:true, //最左边的选框 radio或checkbox由列决定
-        toolbar:"#toolbar", //调整工具栏的位置
         cache: false, //设置为 false 禁用 AJAX 数据缓存
 
         pagination: true, 
@@ -595,14 +590,13 @@ $(function(){
         pageList: [20, 50, 100,500], //可供选择的每页的行数
 
         columns: [{
-            radio:'true',
-        },{
             field: 'paper_id',
             title: 'paper_id',
         },{
             field: 'xh',
             title: '#',
-            sortable: 'true', //此列可被排序
+            class: "col-xs-1",
+            sortable: 'true',
         },{
             field: 'paper_name',
             title: '试卷名称',
@@ -611,6 +605,7 @@ $(function(){
             field: 'whole_score',
             title: '试卷总分',
             sortable: 'true',
+            visible: false,
         },{
             field: 'single_score',
             title: '单选题得分',
@@ -636,31 +631,54 @@ $(function(){
             title: '进入考试时间',
             class: "col-xs-2",
             sortable: 'true',
+        },{
+            field: 'operate',
+            title: '操作',
+            align: 'center',
+            class: "col-xs-1",
+            events: "operateEvents",
+            formatter: operateFormatter
         }],
     });
     $('#myPaper').bootstrapTable('hideColumn','paper_id');
     $('#myPaper').bootstrapTable('hideColumn','stime');
 
-    $('#prac_sub').bootstrapTable({
-        showRefresh:true,  //刷新按钮
-        search:true,   //搜索框
-        showToggle:true, //与卡片视图的切换
-        showColumns:true, //是否显示 内容列下拉框选项
-        striped:true,  //隔行变色效果
-        // height:900,  //表格高度
-        sortName:'id', //默认的排序字段，默认顺序，可改sortOrder:desc
-        sortOrder:'desc',
-        clickToSelect:true, //最左边的选框 radio或checkbox由列决定
-        toolbar:"#toolbar", //调整工具栏的位置
-        cache: false, //设置为 false 禁用 AJAX 数据缓存
 
+    $('#prac_sub').bootstrapTable({
+        showRefresh:true,
+        search:true,
+        showToggle:true,
+        showColumns:true,
+        striped:true,
+        cache: false, //设置为 false 禁用 AJAX 数据缓存
+        undefinedText: '无',
+
+        sidePagination: 'server',
+        method: 'post',
+        contentType: "application/x-www-form-urlencoded",
+        dataField: "rows", //这是返回的json数据数组的key.默认是"rows".这里只有前后端约定好就行
         pagination: true,
-        pageSize: 20,    //每页的记录行数
-        pageNumber:1,  //初始化加载第一页，默认第一页
-        pageList: [20, 50, 100,500], //可供选择的每页的行数
+        pageList: [20, 50, 100], //可供选择的每页的行数
+        pageSize: 10,    //每页的记录行数，
+        pageNumber: 1,  //初始化加载第一页，默认第一页
+        sortName:'id',
+        sortOrder:'desc',
+
+        //查询参数组织方式,默认为limit，返回参数必须包含limit, offset, sort, order, search（参数依次默认为20,0,id,desc）
+        // 设置请求类型为limit就不需要包含:pageSize, pageNumber, sortName, sortOrder, searchText
+        queryParamsType:'',
+        queryParams:function queryParams(params) { //请求服务器时所传的参数，直接调用下面的方法
+            var params = {
+                limit: params.pageSize,   // 每页多少条数据
+                pageNo: params.pageNumber,  // 偏移量从0开始
+                sort: params.sortName,
+                order: params.sortOrder,
+                text: params.searchText,
+            };
+            return params;
+        },
+
         columns:[{
-            radio:'true',
-        },{
             field: 'id',
             title: 'id',
         },{
@@ -676,23 +694,23 @@ $(function(){
         },{
             field: 'difficulty',
             title: '难度',
-        },]
+            sortable: 'true'
+        },{
+            field: 'adddate',
+            title: '添加日期',
+            sortable: 'true'
+        },{
+            field: 'operate',
+            title: '操作',
+            align: 'center',
+            class: "col-xs-1",
+            events: "operateEvents",
+            formatter: operateFormatter
+        }]
     });
     $('#prac_sub').bootstrapTable('hideColumn','id');
 
 
+
+
 });
-    
-
-    // showPaginationSwitch:true, //   是否显示数据条数选择框，分页信息等
-    // 表参数：showHeader:false, //是否显示列头
-
-    //列参数与上面搭配使用 switchable，默认为true，false为不可被取消
-    //visible="false" 一开始不在列表中显示
-
-   // detailView:true, // 设置为 true可以显示详细页面模式。
-   // searchOnEnterKey:true, 
-            //设置为 true时，按回车触发搜索方法，否则自动触发搜索方法
-   // queryParams:"queryParams", 不懂
-   //可发送给服务端的参数：limit->pageSize,offset->pageNumber,
-        //search->searchText,sort->sortName(字段),order->sortOrder('asc'或'desc')  

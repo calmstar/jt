@@ -10,7 +10,7 @@ class PracticeController extends HomeacceController {
 
         $r = M('Course')->where("id=$cid and display=1")->count();
         if($r == '0'){
-            echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不设置有练习题 ʕ•͓͡•ʔ</h1> ';
+            echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不开放练习题 ʕ•͓͡•ʔ</h1> ';
             exit;
         }
 
@@ -68,7 +68,7 @@ class PracticeController extends HomeacceController {
 
         $r = M('Course')->where("id=$cid and display=1")->count();
         if($r == '0'){
-            echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不设置有练习题 ʕ•͓͡•ʔ</h1> ';
+            echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不开放练习题 ʕ•͓͡•ʔ</h1> ';
             exit;
         }
 
@@ -124,7 +124,7 @@ class PracticeController extends HomeacceController {
 
         $r = M('Course')->where("id=$cid and display=1")->count();
         if($r == '0'){
-            echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不设置有练习题 ʕ•͓͡•ʔ</h1> ';
+            echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不开放练习题 ʕ•͓͡•ʔ</h1> ';
             exit;
         }
 
@@ -174,25 +174,45 @@ class PracticeController extends HomeacceController {
 	
 	function sub_show(){
         $cid = I('get.cou_id','','int');
-        $num = M('Ques_subj')->where("course_id=$cid  and is_show=1")->count();
-
         $r = M('Course')->where("id=$cid and display=1")->count();
         if($r == '0'){
-            echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不设置有练习题 ʕ•͓͡•ʔ</h1> ';
+            echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 此课程不开放练习题 ʕ•͓͡•ʔ</h1> ';
             exit;
         }
         //得到课程名称
         $cou_info = M('Course')->find($cid);
         $this->assign('cou_name',$cou_info['name']);
         $this->assign('cid',$cid);
-        //输出数据
-        $info = M('Ques_subj')->where("course_id=$cid and is_show=1")->select();
-        $subj = new \Home\Model\Ques_subjModel();
-        $info = $subj->deal_info($info);
+
+        //输出数据,得到表格请求的参数
         if(IS_AJAX){
-            $this->ajaxReturn($info);
+            $limit = I('post.limit','','int'); //显示多少条数据
+            $pageNo = I('post.pageNo','','int');  // 第几页
+            $offset = ($pageNo-1)*$limit;   //算出偏移量
+            $sort = I('post.sort');
+            if($sort == 'xh'){
+                $sort = 'id';
+            }
+            $order = I('post.order');
+            $text = I('post.text');
+
+            if(!empty($text)){
+                $info = M('Ques_subj')->where("course_id=$cid and is_show=1 and (descr like '%{$text}%' or keyword like '%{$text}%' ) ")->limit($offset,$limit)->order($sort.' '.$order)->select();
+                $num = M('Ques_subj')->where("course_id=$cid and is_show=1 and (descr like '%{$text}%' or keyword like '%{$text}%' ) ")->count();
+            }else{
+                $info = M('Ques_subj')->where("course_id=$cid and is_show=1")->limit($offset,$limit)->order($sort.' '.$order)->select();
+                $num = M('Ques_subj')->where("course_id=$cid and is_show=1")->count();
+
+            }
+            $subj = new \Home\Model\Ques_subjModel();
+            $info = $subj->deal_info($info,$offset,$limit);
+            $data['rows'] = $info;
+            $data['total'] = $num;
+
+            $this->ajaxReturn($data);
         }
-	    $this->display();
+
+        $this->display();
     }
 
 

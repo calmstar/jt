@@ -15,17 +15,6 @@
     <link href="/Public/Admin/css/animate.css" rel="stylesheet">
     <link href="/Public/Admin/css/style.css" rel="stylesheet">
     <link href="/Public/Admin/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
-    <style type="text/css">
-        /*将多出来的字以省略号形式表示*/
-        table{
-            table-layout:fixed;
-        }
-        td{  
-            overflow:hidden;
-            text-overflow:ellipsis;
-            white-space:nowrap;
-        }
-    </style>
 </head>
 
 <body class="gray-bg">
@@ -37,12 +26,6 @@
             <div class="ibox-content">
                 <div class="row row-lg">
                     <div class="col-sm-12">
-                        <div id="toolbar" class="btn-group">
-                            <button id="detail" type="button" class="btn btn-default" title="查看试卷">
-                                <i class="glyphicon glyphicon-file"></i> 查看试卷
-                            </button>
-                        </div>
-                        <!--使用了data-toggle='table' id就没效果-->
                         <table id="myPaper" data-url="/index.php/Paper/show.html"></table>
                     </div>
                 </div>
@@ -53,36 +36,26 @@
     <script src="/Public/Admin/js/jquery.min.js"></script>
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
     <script src="/Public/Admin/js/content.js"></script>
-    <script src="/Public/Admin/js/plugins/layer/layer.js"></script>
     <!-- bootstrap-table -->
     <script src="/Public/Admin/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
     <script src="/Public/Admin/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
-    <!--bootstrap-table-demo-->
     <script src="/Public/Admin/js/demo/bootstrap-table-demo.js"></script>
     <script type="text/javascript">
         $(function(){
-
-            //查看试卷
-            $('#detail').on('click',function(){
-                //整理数据
-                var idObj = $("#myPaper").bootstrapTable('getSelections');
-                if(idObj.length == 0){
-                    layer.msg('没有选中数据');
-                }else if(idObj.length > 1){
-                    layer.msg('只能选中一条数据');
-                }else{
-                    var id = idObj[0].paper_id;
-                    // location.href='/index.php/Paper/detail/id/'+id;
-                    //打开新窗口
-                    window.open("/index.php/Paper/detail/id/"+id);
-                }
-                
-            });
-
             // 删除工具栏中的id
             $("input[data-field='paper_id']").parents("ul").find('li').eq(0).empty();
-
         });
+        function operateFormatter(value, row, index) {
+            return [
+                '<button type="button" class="see btn btn-default">查看</button>',
+            ].join('');
+        }
+        window.operateEvents = {
+            'click .see': function (e, value, row, index) {
+                var id = row['paper_id'];
+                window.open("/index.php/Paper/detail/id/"+id);
+            }
+        };
     </script>
 
 </body>

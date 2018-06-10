@@ -32,11 +32,14 @@
 
 <body class="gray-bg" >
 <div class="container-fluid">
-
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1 animated fadeInUp" style="background: white;">
             <div class="page-header text-success">
-                <h3>【主观题】<small><?php echo ($data["cname"]); ?> --- <?php echo ($data["keyword"]); ?></small></h3>
+                <h3>【主观题】
+                    <small>
+                        <?php echo ($data["cname"]); ?> --- <?php echo ((isset($data["keyword"]) && ($data["keyword"] !== ""))?($data["keyword"]):'无'); ?> （<a href="javascript:history.go(-1)">返回上一步</a>）
+                    </small>
+                </h3>
             </div>
             <div class="bg-danger bg">
                 &nbsp;&nbsp;<?php echo (htmlspecialchars_decode($data["descr"])); ?>

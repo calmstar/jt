@@ -24,12 +24,7 @@
                 <h3>【主观题】<small>{$cou_name}</small></h3>
             </div>
             <div>
-                <div id="toolbar" class="btn-group">
-                    <button id="see" type="button" class="btn btn-default" title="进入试题">
-                        <i class="glyphicon glyphicon-file"></i> 查看试题
-                    </button>
-                </div>
-                <table id="prac_sub" data-url="__SELF__"></table>
+                <table id="prac_sub" data-url="__ACTION__/cou_id/{$cid}"></table>
             </div>
             <hr>
             <div class="text-center"><h3><i class="fa fa-copyright"></i>EKA 2017</h3> </div>
@@ -39,7 +34,6 @@
 
     <script src="__ADMIN__/js/jquery.min.js?v=2.1.4"></script>
     <script src="__ADMIN__/js/bootstrap.min.js?v=3.3.6"></script>
-    <script src="__ADMIN__/js/plugins/layer/layer.js"></script>
     <!-- bootstrap-table -->
     <script src="__ADMIN__/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
     <script src="__ADMIN__/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
@@ -47,21 +41,19 @@
     <script src="__ADMIN__/js/demo/bootstrap-table-demo.js"></script>
     <script>
         $(function(){
-            $('#see').on('click',function(){
-                //整理数据
-                var idObj = $("#prac_sub").bootstrapTable('getSelections');
-                if(idObj.length == 0){
-                    layer.msg('没有选中数据');
-                }else if(idObj.length > 1){
-                    layer.msg('只能选中一条数据');
-                }else{
-                    var id = idObj[0].id;
-                    location.href="__CONTROLLER__/sub_detail/cid/{$cid}/id/"+id;
-                }
-            });
-            // 删除工具栏中的id
             $("input[data-field='id']").parents("ul").find('li').eq(0).empty();
         });
+        function operateFormatter(value, row, index) {
+            return [
+                '<button type="button" class="see btn btn-default">查看</button>',
+            ].join('');
+        }
+        window.operateEvents = {
+            'click .see': function (e, value, row, index) {
+               var id = row['id'];
+               location.href="__CONTROLLER__/sub_detail/cid/{$cid}/id/"+id;
+            }
+        };
     </script>
 
 </body>

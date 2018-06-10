@@ -31,7 +31,6 @@
                             <a data-toggle="dropdown" class="dropdown-toggle" href="##">
                                 <span class="clear">
                                     <span class="block m-t-xs" style="font-size:20px;">
-                                        <i class="fa fa-area-chart"></i>
                                         <strong class="font-bold">JmoocTest</strong>
                                     </span>
                                 </span>
@@ -56,9 +55,23 @@
                             <span class="nav-label">个人资料</span>
                         </a>
                     </li>
-
                     <li class="line dk"></li>
-
+                    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                        <span class="ng-scope">我的考务</span>
+                    </li>
+                    <li>
+                        <a class="J_menuItem" href="<?php echo U('Test/show');?>">
+                            <i class="fa fa-hourglass-half"></i>
+                            <span class="nav-label">在线考试</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="J_menuItem" href="<?php echo U('Paper/show');?>">
+                            <i class="fa fa-search"></i>
+                            <span class="nav-label">分数查询</span>
+                        </a>
+                    </li>
+                    <li class="line dk"></li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
                         <span class="ng-scope">自我测试</span>
                     </li>
@@ -110,25 +123,6 @@
                             </li><?php endforeach; endif; ?>
                         </ul>
                     </li>
-
-                    <li class="line dk"></li>
-
-                    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-                        <span class="ng-scope">我的考务</span>
-                    </li>
-                    <li>
-                        <a class="J_menuItem" href="<?php echo U('Test/show');?>">
-                            <i class="fa fa-hourglass-half"></i>
-                            <span class="nav-label">在线考试</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="J_menuItem" href="<?php echo U('Paper/show');?>">
-                            <i class="fa fa-search"></i>
-                            <span class="nav-label">分数查询</span>
-                        </a>
-                    </li>
-
                 </ul>
             </div>
         </nav>
@@ -138,12 +132,10 @@
 			<!--右上部分开始-->
             <div class="row border-bottom">
                 <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-                    <div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-info " href="#"><i class="fa fa-bars"></i> </a>
-                        <form role="search" class="navbar-form-custom" method="post" action="#">
-                            <div class="form-group">
-                                <input type="text" placeholder="请输入您需要查找的内容 …" class="form-control" name="top-search" id="top-search">
-                            </div>
-                        </form>
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-info " href="#">
+                            <sapn class="glyphicon glyphicon-home"></sapn>
+                        </a>
                     </div>
                     <ul class="nav navbar-top-links navbar-right">	
                         <li> 欢迎你，<?php echo ($stu["name"]); ?>（<?php echo ($stu["xuehao"]); ?>）</li>&nbsp;&nbsp;    
@@ -166,18 +158,15 @@
 		<!--上面部分结束-->
         
     </div>
-
     <!-- 全局js -->
     <script src="/Public/Admin/js/jquery.min.js?v=2.1.4"></script>  <!--？后面表示 避免客户端缓存脚本,导致无法更新-->
     <script src="/Public/Admin/js/bootstrap.min.js?v=3.3.6"></script>
     <script src="/Public/Admin/js/plugins/metisMenu/jquery.metisMenu.js"></script> <!-- 导航栏的插件 -->
     <script src="/Public/Admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script> <!--滚动条插件 -->
     <script src="/Public/Admin/js/plugins/layer/layer.js"></script> <!--弹出框插件 -->
-
     <!-- 自定义js -->
     <script src="/Public/Admin/js/hAdmin.js?v=4.1.0"></script>
     <script type="text/javascript" src="/Public/Admin/js/index.js"></script>
-
     <!-- 第三方插件 -->
     <script src="/Public/Admin/js/plugins/pace/pace.min.js"></script> <!--进度条插件-->
 
