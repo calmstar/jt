@@ -1,27 +1,26 @@
 $(function(){
 
     $('#sin_table').bootstrapTable({
-        showRefresh:true,  //刷新按钮
-        search:true,   //搜索框
-        showToggle:true, //与卡片视图的切换
-        showColumns:true, //是否显示 内容列下拉框选项
-        striped:true,  //隔行变色效果
-        // height:900,  //表格高度
-        sortName:'id', //默认的排序字段，默认顺序，可改sortOrder:desc
-        sortOrder:'desc',
-        clickToSelect:true, //最左边的选框 radio或checkbox由列决定
-        toolbar:"#toolbar", //调整工具栏的位置
-        cache: false, //设置为 false 禁用 AJAX 数据缓存
+        showRefresh:true,
+        search:true,
+        showToggle:true,
+        showColumns:true,
+        striped:true,
+        clickToSelect:true,
+        toolbar:"#toolbar",
+        cache: false,
 
-        //服务端分页
-        //客户端分页
-        pagination: true, 
-        pageSize: 20,    //每页的记录行数
-        pageNumber:1,  //初始化加载第一页，默认第一页
-        pageList: [20,50,100,500], //可供选择的每页的行数
-        
+        sidePagination: 'server',
+        method: 'post',
+        contentType: "application/x-www-form-urlencoded",
+        pagination: true,
+        pageList: [20, 50, 100],
+        pageSize: 20,
+        pageNumber: 1,
+        sortName:'id',
+        sortOrder:'desc',
+
         columns: [{
-            //只是用来做选框的列
             checkbox:'true',
         },{
             field: 'id',
@@ -29,10 +28,10 @@ $(function(){
         },{
             field: 'xh',
             title: '#',
-            sortable: 'true', //此列可被排序
+            sortable: true,
         },{
             field: 'course_name',
-            title: '所属课程'
+            title: '所属课程',
         }, {
             field: 'descr',
             title: '题目描述',
@@ -63,32 +62,33 @@ $(function(){
             sortable: 'true',
             
         }],
-        
     });
     $('#sin_table').bootstrapTable('hideColumn','id');
 
 
-    //-----------双选题---------------------------------------------
+    //-----------双选题-------------------
 
     $('#dou_table').bootstrapTable({
-        showRefresh:true,  //刷新按钮
-        search:true,   //搜索框
-        showToggle:true, //与卡片视图的切换
-        showColumns:true, //是否显示 内容列下拉框选项
-        striped:true,  //隔行变色效果
-        sortName:'id', //默认的排序字段，默认顺序，可改sortOrder:desc
-        sortOrder:'desc',
-        clickToSelect:true, //最左边的选框 radio或checkbox由列决定
-        toolbar:"#toolbar", //调整工具栏的位置
-        cache: false, //设置为 false 禁用 AJAX 数据缓存
+        showRefresh:true,
+        search:true,
+        showToggle:true,
+        showColumns:true,
+        striped:true,
+        clickToSelect:true,
+        toolbar:"#toolbar",
+        cache: false,
 
-        pagination: true, 
-        pageSize: 20,    //每页的记录行数
-        pageNumber:1,  //初始化加载第一页，默认第一页
-        pageList: [20, 50, 100,500], //可供选择的每页的行数
+        sidePagination: 'server',
+        method: 'post',
+        contentType: "application/x-www-form-urlencoded",
+        pagination: true,
+        pageList: [20, 50, 100],
+        pageSize: 20,
+        pageNumber: 1,
+        sortName:'id',
+        sortOrder:'desc',
         
         columns: [{
-            //只是用来做选框的列
             checkbox:'true',
         },{
             field: 'id',
@@ -96,7 +96,7 @@ $(function(){
         },{
             field: 'xh',
             title: '#',
-            sortable: 'true', //此列可被排序
+            sortable: 'true',
         },{
             field: 'course_name',
             title: '所属课程'
@@ -134,28 +134,28 @@ $(function(){
     $('#dou_table').bootstrapTable('hideColumn','id');
 
 
-
     // ------- 判断题 -----------
     $('#jud_table').bootstrapTable({
-        showRefresh:true,  //刷新按钮
-        search:true,   //搜索框
-        showToggle:true, //与卡片视图的切换
-        showColumns:true, //是否显示 内容列下拉框选项
-        striped:true,  //隔行变色效果
-        // height:900,  //表格高度
-        sortName:'id', //默认的排序字段，默认顺序，可改sortOrder:desc
-        sortOrder:'desc',
-        clickToSelect:true, //最左边的选框 radio或checkbox由列决定
-        toolbar:"#toolbar", //调整工具栏的位置
-        cache: false, //设置为 false 禁用 AJAX 数据缓存
+        showRefresh:true,
+        search:true,
+        showToggle:true,
+        showColumns:true,
+        striped:true,
+        clickToSelect:true,
+        toolbar:"#toolbar",
+        cache: false,
 
-        pagination: true, 
-        pageSize: 20,    //每页的记录行数
-        pageNumber:1,  //初始化加载第一页，默认第一页
-        pageList: [20, 50, 100,500], //可供选择的每页的行数
+        sidePagination: 'server',
+        method: 'post',
+        contentType: "application/x-www-form-urlencoded",
+        pagination: true,
+        pageList: [20, 50, 100],
+        pageSize: 20,
+        pageNumber: 1,
+        sortName:'id',
+        sortOrder:'desc',
         
         columns: [{
-            //只是用来做选框的列
             checkbox:'true',
         },{
             field: 'id',
@@ -163,7 +163,7 @@ $(function(){
         },{
             field: 'xh',
             title: '#',
-            sortable: 'true', //此列可被排序
+            sortable: 'true',
         },{
             field: 'course_name',
             title: '所属课程'
@@ -191,25 +191,26 @@ $(function(){
 
     // ------- 主观题 -----------
     $('#sub_table').bootstrapTable({
-        showRefresh:true,  //刷新按钮
-        search:true,   //搜索框
-        showToggle:true, //与卡片视图的切换
-        showColumns:true, //是否显示 内容列下拉框选项
-        striped:true,  //隔行变色效果
-        // height:900,  //表格高度
-        sortName:'id', //默认的排序字段，默认顺序，可改sortOrder:desc
-        sortOrder:'desc',
-        clickToSelect:true, //最左边的选框 radio或checkbox由列决定
-        toolbar:"#toolbar", //调整工具栏的位置
-        cache: false, //设置为 false 禁用 AJAX 数据缓存
+        showRefresh:true,
+        search:true,
+        showToggle:true,
+        showColumns:true,
+        striped:true,
+        clickToSelect:true,
+        toolbar:"#toolbar",
+        cache: false,
 
-        pagination: true, 
-        pageSize: 20,    //每页的记录行数
-        pageNumber:1,  //初始化加载第一页，默认第一页
-        pageList: [20, 50, 100,500], //可供选择的每页的行数
+        sidePagination: 'server',
+        method: 'post',
+        contentType: "application/x-www-form-urlencoded",
+        pagination: true,
+        pageList: [20, 50, 100],
+        pageSize: 20,
+        pageNumber: 1,
+        sortName:'id',
+        sortOrder:'desc',
         
         columns: [{
-            //只是用来做选框的列
             checkbox:'true',
         },{
             field: 'id',
@@ -217,7 +218,7 @@ $(function(){
         },{
             field: 'xh',
             title: '#',
-            sortable: 'true', //此列可被排序
+            sortable: 'true',
         },{
             field: 'course_name',
             title: '所属课程'
@@ -246,25 +247,23 @@ $(function(){
 
      // ------- 试卷 -----------
     $('#paper_table').bootstrapTable({
-        showRefresh:true,  //刷新按钮
-        search:true,   //搜索框
-        showToggle:true, //与卡片视图的切换
-        showColumns:true, //是否显示 内容列下拉框选项
-        striped:true,  //隔行变色效果
-        // height:900,  //表格高度
-        sortName:'id', //默认的排序字段，默认顺序，可改sortOrder:desc
+        showRefresh:true,
+        search:true,
+        showToggle:true,
+        showColumns:true,
+        striped:true,
+        sortName:'id',
         sortOrder:'desc',
-        clickToSelect:true, //最左边的选框 radio或checkbox由列决定
-        toolbar:"#toolbar", //调整工具栏的位置
-        cache: false, //设置为 false 禁用 AJAX 数据缓存
+        clickToSelect:true,
+        toolbar:"#toolbar",
+        cache: false,
 
         pagination: true, 
-        pageSize: 20,    //每页的记录行数
-        pageNumber:1,  //初始化加载第一页，默认第一页
-        pageList: [20, 50, 100,500], //可供选择的每页的行数
+        pageSize: 20,
+        pageNumber:1,
+        pageList: [20, 50, 100,500],
         
         columns: [{
-            //只是用来做选框的列
             checkbox:'true',
         },{
             field: 'id',
@@ -272,7 +271,7 @@ $(function(){
         },{
             field: 'xh',
             title: '#',
-            sortable: 'true', //此列可被排序
+            sortable: 'true',
         },{
             field: 'type',
             title: '出卷规则',
@@ -314,22 +313,22 @@ $(function(){
 
     // ----批改主观题---
     $('#mark_subj').bootstrapTable({
-        showRefresh:true,  //刷新按钮
-        search:true,   //搜索框
-        showToggle:true, //与卡片视图的切换
-        showColumns:true, //是否显示 内容列下拉框选项
-        striped:true,  //隔行变色效果
+        showRefresh:true,
+        search:true,
+        showToggle:true,
+        showColumns:true,
+        striped:true,
 
-        sortName:'xh', //默认的排序字段，默认顺序，可改sortOrder:desc
+        sortName:'xh',
         sortOrder:'desc',
-        clickToSelect:true, //最左边的选框 radio或checkbox由列决定
-        toolbar:"#toolbar", //调整工具栏的位置
-        cache: false, //设置为 false 禁用 AJAX 数据缓存
+        clickToSelect:true,
+        toolbar:"#toolbar",
+        cache: false,
 
         pagination: true, 
-        pageSize: 20,    //每页的记录行数
-        pageNumber:1,  //初始化加载第一页，默认第一页
-        pageList: [20, 50, 100,500], //可供选择的每页的行数
+        pageSize: 20,
+        pageNumber:1,
+        pageList: [20, 50, 100,500],
 
         columns: [{
             //只是用来做选框的列
@@ -340,7 +339,7 @@ $(function(){
         },{
             field: 'xh',
             title: '#',
-            sortable: 'true', //此列可被排序
+            sortable: 'true',
         },{
             field: 'paper_name',
             title: '试卷名称',
@@ -375,25 +374,24 @@ $(function(){
 
     //---监控考生
     $('#tester_list').bootstrapTable({
-        showRefresh:true,  //刷新按钮
-        search:true,   //搜索框
-        showToggle:true, //与卡片视图的切换
-        showColumns:true, //是否显示 内容列下拉框选项
-        striped:true,  //隔行变色效果
+        showRefresh:true,
+        search:true,
+        showToggle:true,
+        showColumns:true,
+        striped:true,
 
-        sortName:'xh', //默认的排序字段，默认顺序，可改sortOrder:desc
+        sortName:'xh',
         sortOrder:'desc',
-        clickToSelect:true, //最左边的选框 radio或checkbox由列决定
-        toolbar:"#toolbar", //调整工具栏的位置
-        cache: false, //设置为 false 禁用 AJAX 数据缓存
+        clickToSelect:true,
+        toolbar:"#toolbar",
+        cache: false,
 
         pagination: true,
-        pageSize: 20,    //每页的记录行数
-        pageNumber:1,  //初始化加载第一页，默认第一页
-        pageList: [20, 50, 100,500], //可供选择的每页的行数
+        pageSize: 20,
+        pageNumber:1,
+        pageList: [20, 50, 100,500],
 
         columns: [{
-            //只是用来做选框的列
             radio:'true',
         },{
             field: 'tester_id',
@@ -459,7 +457,6 @@ $(function(){
         pageList: [20, 50, 100,500], //可供选择的每页的行数
 
         columns: [{
-            //只是用来做选框的列
             radio:'true',
         },{
             field: 'paper_id',
@@ -509,22 +506,22 @@ $(function(){
 
        // ----考生列表---
     $('#stu_list').bootstrapTable({
-        showRefresh:true,  //刷新按钮
-        search:true,   //搜索框
-        showToggle:true, //与卡片视图的切换
-        showColumns:true, //是否显示 内容列下拉框选项
-        striped:true,  //隔行变色效果
+        showRefresh:true,
+        search:true,
+        showToggle:true,
+        showColumns:true,
+        striped:true,
 
-        sortName:'xh', //默认的排序字段，默认顺序，可改sortOrder:desc
+        sortName:'xh',
         sortOrder:'desc',
-        clickToSelect:true, //最左边的选框 radio或checkbox由列决定
-        toolbar:"#toolbar", //调整工具栏的位置
-        cache: false, //设置为 false 禁用 AJAX 数据缓存
+        clickToSelect:true,
+        toolbar:"#toolbar",
+        cache: false,
 
         pagination: true, 
-        pageSize: 20,    //每页的记录行数
-        pageNumber:1,  //初始化加载第一页，默认第一页
-        pageList: [20, 50, 100,500], //可供选择的每页的行数
+        pageSize: 20,
+        pageNumber:1,
+        pageList: [20, 50, 100,500],
 
         columns: [{
             //只是用来做选框的列
@@ -575,19 +572,19 @@ $(function(){
 
     //------ 前台-我的试卷 ----------
     $('#myPaper').bootstrapTable({
-        showRefresh:true,  //刷新按钮
-        search:true,   //搜索框
-        showToggle:true, //与卡片视图的切换
-        showColumns:true, //是否显示 内容列下拉框选项
-        striped:true,  //隔行变色效果
-        sortName:'id', //默认的排序字段，默认顺序，可改sortOrder:desc
+        showRefresh:true,
+        search:true,
+        showToggle:true,
+        showColumns:true,
+        striped:true,
+        sortName:'id',
         sortOrder:'desc',
-        cache: false, //设置为 false 禁用 AJAX 数据缓存
+        cache: false,
 
         pagination: true, 
-        pageSize: 20,    //每页的记录行数
-        pageNumber:1,  //初始化加载第一页，默认第一页
-        pageList: [20, 50, 100,500], //可供选择的每页的行数
+        pageSize: 20,
+        pageNumber:1,
+        pageList: [20, 50, 100,500],
 
         columns: [{
             field: 'paper_id',
@@ -637,7 +634,11 @@ $(function(){
             align: 'center',
             class: "col-xs-1",
             events: "operateEvents",
-            formatter: operateFormatter
+            formatter: function operateFormatter(value, row, index) {
+                return [
+                    '<button type="button" class="see btn btn-default">查看</button>',
+                ].join('');
+            },
         }],
     });
     $('#myPaper').bootstrapTable('hideColumn','paper_id');
@@ -650,7 +651,7 @@ $(function(){
         showToggle:true,
         showColumns:true,
         striped:true,
-        cache: false, //设置为 false 禁用 AJAX 数据缓存
+        cache: false,
         undefinedText: '无',
 
         sidePagination: 'server',
@@ -660,17 +661,19 @@ $(function(){
         pagination: true,
         pageList: [20, 50, 100], //可供选择的每页的行数
         pageSize: 10,    //每页的记录行数，
-        pageNumber: 1,  //初始化加载第一页，默认第一页
+        pageNumber: 1,  //默认第一页
         sortName:'id',
         sortOrder:'desc',
 
-        //查询参数组织方式,默认为limit，返回参数必须包含limit, offset, sort, order, search（参数依次默认为20,0,id,desc）
-        // 设置请求类型为limit就不需要包含:pageSize, pageNumber, sortName, sortOrder, searchText
+        //查询参数组织方式,默认为limit，默认包含返回参数limit, offset, sort, order, search
+        // 分别与参数 pageSize, pageNumber, sortName, sortOrder, searchText 对应起来
+        // 其中 pageNumber、pageSize 自动计算出offset的值传递给后台) ，请看sin_table例子
+        // 下面由于自定义了页码参数，所以offset需要自己在后台计算
         queryParamsType:'',
-        queryParams:function queryParams(params) { //请求服务器时所传的参数，直接调用下面的方法
+        queryParams:function queryParams(params) {
             var params = {
-                limit: params.pageSize,   // 每页多少条数据
-                pageNo: params.pageNumber,  // 偏移量从0开始
+                limit: params.pageSize,
+                pageNo: params.pageNumber,
                 sort: params.sortName,
                 order: params.sortOrder,
                 text: params.searchText,
@@ -684,7 +687,7 @@ $(function(){
         },{
             field: 'xh',
             title: '#',
-            sortable: 'true', //此列可被排序
+            sortable: 'true',
         },{
             field: 'keyword',
             title: '关键字',
@@ -705,11 +708,14 @@ $(function(){
             align: 'center',
             class: "col-xs-1",
             events: "operateEvents",
-            formatter: operateFormatter
+            formatter: function operateFormatter(value, row, index) {
+                return [
+                    '<button type="button" class="see btn btn-default">查看</button>',
+                ].join('');
+            },
         }]
     });
     $('#prac_sub').bootstrapTable('hideColumn','id');
-
 
 
 

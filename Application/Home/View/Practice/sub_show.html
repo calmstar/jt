@@ -43,11 +43,6 @@
         $(function(){
             $("input[data-field='id']").parents("ul").find('li').eq(0).empty();
         });
-        function operateFormatter(value, row, index) {
-            return [
-                '<button type="button" class="see btn btn-default">查看</button>',
-            ].join('');
-        }
         window.operateEvents = {
             'click .see': function (e, value, row, index) {
                var id = row['id'];

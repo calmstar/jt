@@ -5,7 +5,7 @@ use Think\Model;
 
 class Ques_subjModel extends Model{
 
-    public function deal_info($info,$offset,$limit){
+    public function deal_info($info,$offset){
         foreach($info as $k => &$v){
             $v['xh'] = $offset+$k+1;
             $v['adddate'] = date('Y-m-d',$v['adddate']);

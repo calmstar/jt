@@ -197,15 +197,19 @@ class PracticeController extends HomeacceController {
             $text = I('post.text');
 
             if(!empty($text)){
-                $info = M('Ques_subj')->where("course_id=$cid and is_show=1 and (descr like '%{$text}%' or keyword like '%{$text}%' ) ")->limit($offset,$limit)->order($sort.' '.$order)->select();
+                // 模糊查询返回数据
+                $info = M('Ques_subj')
+                    ->where("course_id=$cid and is_show=1 and (descr like '%{$text}%' or keyword like '%{$text}%' ) ")
+                    ->limit($offset,$limit)
+                    ->order($sort.' '.$order)
+                    ->select();
                 $num = M('Ques_subj')->where("course_id=$cid and is_show=1 and (descr like '%{$text}%' or keyword like '%{$text}%' ) ")->count();
             }else{
                 $info = M('Ques_subj')->where("course_id=$cid and is_show=1")->limit($offset,$limit)->order($sort.' '.$order)->select();
                 $num = M('Ques_subj')->where("course_id=$cid and is_show=1")->count();
-
             }
             $subj = new \Home\Model\Ques_subjModel();
-            $info = $subj->deal_info($info,$offset,$limit);
+            $info = $subj->deal_info($info,$offset);
             $data['rows'] = $info;
             $data['total'] = $num;
 

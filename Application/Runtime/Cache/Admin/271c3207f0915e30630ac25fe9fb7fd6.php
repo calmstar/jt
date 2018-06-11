@@ -104,12 +104,12 @@
             //编辑事件
             $('body').on('click','#edit',function(){
                 var id = $(this).attr('value');
-                location.href='/manager.php/admin/edit/id/'+id;
+                location.href='/manager.php/Admin/edit/id/'+id;
             });
 
             //添加事件
             $('#add').on('click',function(){
-                location.href='/manager.php/admin/add';
+                location.href='/manager.php/Admin/add';
             });
 
             //启用、禁用
@@ -117,7 +117,7 @@
                 var status = $(this).parents('tr').find('#status');
                 var selfButton = $(this);
                 var id = $(this).attr('value');
-                $.post('/manager.php/admin/isable',{"id":id},function(data){
+                $.post('/manager.php/Admin/isable',{"id":id},function(data){
                     if(data==1){
                         status.html('<i class="glyphicon glyphicon-ok"></i>');
                         selfButton.html('<i class="glyphicon glyphicon-remove"></i>');
@@ -139,7 +139,7 @@
                 layer.confirm('密码将重置为“ 123456 ”，确认重置？', {btn: ['确定', '取消']}, 
                     function(index){
                         layer.close(index);
-                        $.post('/manager.php/admin/reset',{"id":id},function(data){
+                        $.post('/manager.php/Admin/reset',{"id":id},function(data){
                             if(data['status'] == 1){
                                 layer.msg('重置密码成功');
                             }else{
@@ -156,7 +156,7 @@
                 layer.confirm('确认删除？', {btn: ['确定', '取消']},
                     function(index){
                         layer.close(index);
-                        location.href='/manager.php/admin/dele/ids/'+id;
+                        location.href='/manager.php/Admin/dele/ids/'+id;
                     }
                 );
                 
@@ -188,7 +188,7 @@
                         function(){   
                             //点击确定后的回调事件          
                             //ajax异步传值
-                            $.post("/manager.php/admin/dele",{ids:id},
+                            $.post("/manager.php/Admin/dele",{ids:id},
                                 function(data){
                                     if(data['status'] == 1){
                                         //由于layer.alert无法暂停下面的刷新

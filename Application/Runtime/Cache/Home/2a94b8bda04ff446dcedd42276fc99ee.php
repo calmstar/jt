@@ -159,7 +159,7 @@
         
     </div>
     <!-- 全局js -->
-    <script src="/Public/Admin/js/jquery.min.js?v=2.1.4"></script>  <!--？后面表示 避免客户端缓存脚本,导致无法更新-->
+    <script src="/Public/Admin/js/jquery.min.js?v=2.1.4"></script>
     <script src="/Public/Admin/js/bootstrap.min.js?v=3.3.6"></script>
     <script src="/Public/Admin/js/plugins/metisMenu/jquery.metisMenu.js"></script> <!-- 导航栏的插件 -->
     <script src="/Public/Admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script> <!--滚动条插件 -->

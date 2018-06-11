@@ -27,7 +27,7 @@ class Ques_doubleModel extends Model{
 	}
 
 
-	function deal_dou_show($data){
+	function deal_dou_show($data,$offset){
 		$cou = M('Course');
 		$k = 0;
 		for($i=0 ; $i<count($data); $i++){
@@ -41,7 +41,7 @@ class Ques_doubleModel extends Model{
 				$data[$i]['is_show'] = '否';
 			}
 			//改变id为序号
-			$data[$i]['xh'] = ++$k;
+			$data[$i]['xh'] = $offset+(++$k);
 			//将编辑器里面存入的实体字符转化为html文字
 			$data[$i]['descr'] = strip_tags(htmlspecialchars_decode($data[$i]['descr']));
             $data[$i]['descr'] = msubstr($data[$i]['descr'],0,30);

@@ -5,24 +5,69 @@ use Tools\AccessController;
 class QuestionController extends AccessController{
 
 	function sin_showlist(){
-		$sin = new \Admin\Model\Ques_singleModel();
-		
-		//判断角色
-		$role_id = session('role_id');
-		$uid = session('bg_id');
-		if($role_id == 1){
-			//教师，展现自己所教课程的题目
-			$course_ids = M('User')->field('course_ids')->find($uid);
-			$course_ids = $course_ids['course_ids'];
-			$data = $sin->where("course_id in($course_ids)")->select();
-		}else{
-			//管理员，所有课程的单选题展示
-			$data = $sin->select();
-		}
+        if(IS_AJAX){
+            // 取得bt发过来的分页信息
+            $sort = I('post.sort');
+            if($sort == 'xh'){
+                $sort = 'id';
+            }
+            $order = I('post.order');
+            $limit = I('post.limit');
+            $offset = I('post.offset');
+            $search = I('post.search');
+            //判断角色
+            $role_id = session('role_id');
+            $uid = session('bg_id');
 
-		$data = $sin->deal_sin_show($data);
-		if(IS_AJAX){
-			$this->ajaxReturn($data);
+            $sin = new \Admin\Model\Ques_singleModel();
+            if($role_id == 1){
+                //教师，展现自己所教课程的题目
+                $course_ids = M('User')->field('course_ids')->find($uid);
+                $course_ids = $course_ids['course_ids'];
+
+                if(!empty($search)){
+                    // 模糊查询
+                    $data = $sin
+                        ->join('jt_course c ON c.id = course_id')
+                        ->field('name,descr,op1,op2,op3,op4,is_show,difficulty,jt_ques_single.id,course_id,is_op1,is_op2,is_op3,is_op4')
+                        ->where( "course_id in($course_ids) and (descr like '%{$search}%' or name like '%{$search}%') ")
+                        ->limit($offset,$limit)
+                        ->order($sort.' '.$order)
+                        ->select();
+                    $total = $sin
+                        ->join('jt_course c ON c.id = course_id')
+                        ->where( "course_id in($course_ids) and (descr like '%{$search}%' or name like '%{$search}%') ")
+                        ->count();
+                }else{
+                    $data = $sin->where("course_id in($course_ids)")->limit($offset,$limit)->order($sort.' '.$order)->select();
+                    $total = $sin->where("course_id in($course_ids)")->count();
+                }
+
+            }else{
+                //管理员，所有课程的单选题展示
+                if(!empty($search)){
+                    // 模糊查询
+                    $data = $sin
+                        ->join('jt_course c ON c.id = course_id')
+                        ->field('name,descr,op1,op2,op3,op4,is_show,difficulty,jt_ques_single.id,course_id,is_op1,is_op2,is_op3,is_op4')
+                        ->where( "descr like '%{$search}%' or name like '%{$search}%' ")
+                        ->limit($offset,$limit)
+                        ->order($sort.' '.$order)
+                        ->select();
+
+                    $total = $sin
+                        ->join('jt_course c ON c.id = course_id')
+                        ->where( "descr like '%{$search}%' or name like '%{$search}%' ")
+                        ->count();
+                }else{
+                    $data = $sin->limit($offset,$limit)->order($sort.' '.$order)->select();
+                    $total = $sin->count();
+                }
+            }
+            $data = $sin->deal_sin_show($data,$offset);
+            $info['rows'] = $data;
+            $info['total'] = $total;
+			$this->ajaxReturn($info);
 		}
 		$this->display();
 	}
@@ -157,25 +202,69 @@ class QuestionController extends AccessController{
 
 	//--------- 双选题 ---------------
 	function dou_showlist(){
-		$dou = new \Admin\Model\Ques_doubleModel();
+        if(IS_AJAX){
+            // 取得bt发过来的分页信息
+            $sort = I('post.sort');
+            if($sort == 'xh'){
+                $sort = 'id';
+            }
+            $order = I('post.order');
+            $limit = I('post.limit');
+            $offset = I('post.offset');
+            $search = I('post.search');
+            //判断角色
+            $role_id = session('role_id');
+            $uid = session('bg_id');
 
-		//判断角色
-		$role_id = session('role_id');
-		$uid = session('bg_id');
-		if($role_id == 1){
-			//教师，展现自己所教课程的题目
-			$course_ids = M('User')->field('course_ids')->find($uid);
-			$course_ids = $course_ids['course_ids'];
-			$data = $dou->where("course_id in($course_ids)")->select();
-		}else{
-			//管理员，所有课程的题展示
-			$data = $dou->select();
-		}
+            $dou = new \Admin\Model\Ques_doubleModel();
+            if($role_id == 1){
+                //教师，展现自己所教课程的题目
+                $course_ids = M('User')->field('course_ids')->find($uid);
+                $course_ids = $course_ids['course_ids'];
 
-		
-		$data = $dou->deal_dou_show($data);
-		if(IS_AJAX){
-			$this->ajaxReturn($data);
+                if(!empty($search)){
+                    // 模糊查询
+                    $data = $dou
+                        ->join('jt_course c ON c.id = course_id')
+                        ->field('name,descr,op1,op2,op3,op4,is_show,difficulty,jt_ques_double.id,course_id,is_op1,is_op2,is_op3,is_op4')
+                        ->where( "course_id in($course_ids) and (descr like '%{$search}%' or name like '%{$search}%') ")
+                        ->limit($offset,$limit)
+                        ->order($sort.' '.$order)
+                        ->select();
+                    $total = $dou
+                        ->join('jt_course c ON c.id = course_id')
+                        ->where( "course_id in($course_ids) and (descr like '%{$search}%' or name like '%{$search}%') ")
+                        ->count();
+                }else{
+                    $data = $dou->where("course_id in($course_ids)")->limit($offset,$limit)->order($sort.' '.$order)->select();
+                    $total = $dou->where("course_id in($course_ids)")->count();
+                }
+
+            }else{
+                //管理员，所有课程的单选题展示
+                if(!empty($search)){
+                    // 模糊查询
+                    $data = $dou
+                        ->join('jt_course c ON c.id = course_id')
+                        ->field('name,descr,op1,op2,op3,op4,is_show,difficulty,jt_ques_double.id,course_id,is_op1,is_op2,is_op3,is_op4')
+                        ->where( "descr like '%{$search}%' or name like '%{$search}%' ")
+                        ->limit($offset,$limit)
+                        ->order($sort.' '.$order)
+                        ->select();
+
+                    $total = $dou
+                        ->join('jt_course c ON c.id = course_id')
+                        ->where( "descr like '%{$search}%' or name like '%{$search}%' ")
+                        ->count();
+                }else{
+                    $data = $dou->limit($offset,$limit)->order($sort.' '.$order)->select();
+                    $total = $dou->count();
+                }
+            }
+            $data = $dou->deal_dou_show($data,$offset);
+            $info['rows'] = $data;
+            $info['total'] = $total;
+			$this->ajaxReturn($info);
 		}
 		$this->display();
 	}
@@ -306,24 +395,70 @@ class QuestionController extends AccessController{
 
 	//----- 判断题 -----------
 	function jud_showlist(){
-		$jud = new \Admin\Model\Ques_judgeModel();
+        if(IS_AJAX){
+            // 取得bt发过来的分页信息
+            $sort = I('post.sort');
+            if($sort == 'xh'){
+                $sort = 'id';
+            }
+            $order = I('post.order');
+            $limit = I('post.limit');
+            $offset = I('post.offset');
+            $search = I('post.search');
+            //判断角色
+            $role_id = session('role_id');
+            $uid = session('bg_id');
 
-		//判断角色
-		$role_id = session('role_id');
-		$uid = session('bg_id');
-		if($role_id == 1){
-			//教师，展现自己所教课程的题目
-			$course_ids = M('User')->field('course_ids')->find($uid);
-			$course_ids = $course_ids['course_ids'];
-			$data = $jud->where("course_id in($course_ids)")->select();
-		}else{
-			//管理员，所有课程的题展示
-			$data = $jud->select();
-		}
+            $jud = new \Admin\Model\Ques_judgeModel();
+            if($role_id == 1){
+                //教师，展现自己所教课程的题目
+                $course_ids = M('User')->field('course_ids')->find($uid);
+                $course_ids = $course_ids['course_ids'];
 
-		$data = $jud->deal_jud_show($data);
-		if(IS_AJAX){
-			$this->ajaxReturn($data);
+                if(!empty($search)){
+                    // 模糊查询
+                    $data = $jud
+                        ->join('jt_course c ON c.id = course_id')
+                        ->field('name,descr,is_show,difficulty,jt_ques_judge.id,course_id,is_true,is_false')
+                        ->where( "course_id in($course_ids) and (descr like '%{$search}%' or name like '%{$search}%') ")
+                        ->limit($offset,$limit)
+                        ->order($sort.' '.$order)
+                        ->select();
+                    $total = $jud
+                        ->join('jt_course c ON c.id = course_id')
+                        ->where( "course_id in($course_ids) and (descr like '%{$search}%' or name like '%{$search}%') ")
+                        ->count();
+                }else{
+                    $data = $jud->where("course_id in($course_ids)")->limit($offset,$limit)->order($sort.' '.$order)->select();
+                    $total = $jud->where("course_id in($course_ids)")->count();
+                }
+
+            }else{
+                //管理员，所有课程的单选题展示
+                if(!empty($search)){
+                    // 模糊查询
+                    $data = $jud
+                        ->join('jt_course c ON c.id = course_id')
+                        ->field('name,descr,is_show,difficulty,jt_ques_judge.id,course_id,is_true,is_false')
+                        ->where( "descr like '%{$search}%' or name like '%{$search}%' ")
+                        ->limit($offset,$limit)
+                        ->order($sort.' '.$order)
+                        ->select();
+
+                    $total = $jud
+                        ->join('jt_course c ON c.id = course_id')
+                        ->where( "descr like '%{$search}%' or name like '%{$search}%' ")
+                        ->count();
+                }else{
+                    $data = $jud->limit($offset,$limit)->order($sort.' '.$order)->select();
+                    $total = $jud->count();
+                }
+            }
+
+            $data = $jud->deal_jud_show($data,$offset);
+            $info['rows'] = $data;
+            $info['total'] = $total;
+			$this->ajaxReturn($info);
 		}
 		$this->display();
 	}
@@ -453,24 +588,70 @@ class QuestionController extends AccessController{
 
 	// 主观题
 	function sub_showlist(){
-		$sub = new \Admin\Model\Ques_subjModel();
+        if(IS_AJAX){
+            // 取得bt发过来的分页信息
+            $sort = I('post.sort');
+            if($sort == 'xh'){
+                $sort = 'id';
+            }
+            $order = I('post.order');
+            $limit = I('post.limit');
+            $offset = I('post.offset');
+            $search = I('post.search');
+            //判断角色
+            $role_id = session('role_id');
+            $uid = session('bg_id');
 
-		//判断角色
-		$role_id = session('role_id');
-		$uid = session('bg_id');
-		if($role_id == 1){
-			//教师，展现自己所教课程的题目
-			$course_ids = M('User')->field('course_ids')->find($uid);
-			$course_ids = $course_ids['course_ids'];
-			$data = $sub->where("course_id in($course_ids)")->select();
-		}else{
-			//管理员，所有课程的题展示
-			$data = $sub->select();
-		}
+            $sub = new \Admin\Model\Ques_subjModel();
+            if($role_id == 1){
+                //教师，展现自己所教课程的题目
+                $course_ids = M('User')->field('course_ids')->find($uid);
+                $course_ids = $course_ids['course_ids'];
 
-		$data = $sub->deal_sub_show($data);
-		if(IS_AJAX){
-			$this->ajaxReturn($data);
+                if(!empty($search)){
+                    // 模糊查询
+                    $data = $sub
+                        ->join('jt_course c ON c.id = course_id')
+                        ->field('name,descr,is_show,difficulty,jt_ques_subj.id,course_id,right_answ')
+                        ->where( "course_id in($course_ids) and (descr like '%{$search}%' or name like '%{$search}%') ")
+                        ->limit($offset,$limit)
+                        ->order($sort.' '.$order)
+                        ->select();
+                    $total = $sub
+                        ->join('jt_course c ON c.id = course_id')
+                        ->where( "course_id in($course_ids) and (descr like '%{$search}%' or name like '%{$search}%') ")
+                        ->count();
+                }else{
+                    $data = $sub->where("course_id in($course_ids)")->limit($offset,$limit)->order($sort.' '.$order)->select();
+                    $total = $sub->where("course_id in($course_ids)")->count();
+                }
+
+            }else{
+                //管理员，所有课程的单选题展示
+                if(!empty($search)){
+                    // 模糊查询
+                    $data = $sub
+                        ->join('jt_course c ON c.id = course_id')
+                        ->field('name,descr,is_show,difficulty,jt_ques_subj.id,course_id,right_answ')
+                        ->where( "descr like '%{$search}%' or name like '%{$search}%' ")
+                        ->limit($offset,$limit)
+                        ->order($sort.' '.$order)
+                        ->select();
+
+                    $total = $sub
+                        ->join('jt_course c ON c.id = course_id')
+                        ->where( "descr like '%{$search}%' or name like '%{$search}%' ")
+                        ->count();
+                }else{
+                    $data = $sub->limit($offset,$limit)->order($sort.' '.$order)->select();
+                    $total = $sub->count();
+                }
+            }
+
+            $data = $sub->deal_sub_show($data,$offset);
+            $info['rows'] = $data;
+            $info['total'] = $total;
+            $this->ajaxReturn($info);
 		}
 		$this->display();
 	}
