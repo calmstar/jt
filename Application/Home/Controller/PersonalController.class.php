@@ -38,6 +38,7 @@ class PersonalController extends HomeacceController {
 
     //重新从正方系统导入基础信息
     function import_basic(){
+        $info['status'] = 0;
     	if(!empty($_POST['password'])){
     	    $line = $_POST['line'];
     		$stu = D('Stu');
@@ -45,12 +46,15 @@ class PersonalController extends HomeacceController {
     		$data['line'] = $line;
     		$res = $stu->deal_import_basic($data);
     		if($res){
-    			$this->success('重新从正方系统导入成功');
+    		    $info['status'] = 1;
+    		    $info['info'] = '重新从正方系统导入成功';
     		}else{
-    			$this->error('重新导入失败');
+                $info['info'] = '重新导入失败';
     		}
+            $this->ajaxReturn($info);
     	}else{
-            $this->error('请输入正方密码');
+            $info['info'] = '请输入正方密码';
+            $this->ajaxReturn($info);
 		}
     }
 

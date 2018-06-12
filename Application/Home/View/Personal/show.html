@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <title> - 个人资料</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -195,7 +194,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <!--弹出表单-->
@@ -207,9 +205,11 @@
                         <div class="col-sm-6 b-r">
                             <h3 class="m-t-none m-b">重新校正基本信息</h3>
                             <div class="hr-line-dashed"></div>
-                            <form role="form" method="post" action="__CONTROLLER__/import_basic">
+                            <form  id="import_form" method="post" onkeydown="if(event.keyCode==13) return false;" >
                                 <input type="hidden" name="stuNumber" value="{$stu_info.xuehao}">
                                 <input type="hidden" name="sid" value="{$stu_info.id}">
+                                <div style="text-align: center;height: 30px;display: none;" id="deal">
+                                </div>
                                 <div class="form-group">
                                     <label>正方密码：</label>
                                     <input type="password" name="password">
@@ -220,7 +220,7 @@
                                     <input type="radio" name="line" value="118" >118
                                 </div>
                                 <div>
-                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>确定</strong>
+                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" id="import_butt" type="button"><strong>确定</strong>
                                     </button>
                                 </div>
                             </form>
@@ -243,10 +243,41 @@
     <script src="__ADMIN__/js/bootstrap.min.js?v=3.3.6"></script>
     <!-- 自定义js -->
     <script src="__ADMIN__/js/content.js?v=1.0.0"></script>
+    <script src="__ADMIN__/js/plugins/layer/layer.js"></script>
     <!-- jQuery Validation plugin javascript-->
     <script src="__ADMIN__/js/plugins/validate/jquery.validate.min.js"></script>
     <script src="__ADMIN__/js/plugins/validate/messages_zh.min.js"></script> <!--validate的提示信息转换成中文插件-->
 	<script src="__ADMIN__/js/demo/form-validate-demo.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#import_butt').on('click',function(){
+                $('#deal').css({display:'block'});
+                var xhr = $.ajax({
+                    type:"POST",
+                    url:"__CONTROLLER__/import_basic",
+                    data:$("#import_form").serialize(),
+                    timeout:8000,
+                    beforeSend:function (){
+                        $('#deal').html('<span class="badge badge-danger">...处理中,请稍候...</span>');
+                    },
+                    success:function(data){
+                        if(data['status'] == 1){
+                            $('#deal').html('<span class="badge badge-success">'+data['info']+'</span>');
+                        }else{
+                            $('#deal').html('<span class="badge badge-danger">'+data['info']+'</span>');
+                        }
+                    },
+                    complete: function (XMLHttpRequest,status) {
+                        if(status == 'timeout') {
+                            xhr.abort();    // 超时后中断请求
+                            $('#deal').html('<span class="badge badge-danger">...请求超时,请稍后重试或更换线路...</span>');
+                        }
+                    }
+                });
+
+            });
+        });
+    </script>
 
 </body>
 

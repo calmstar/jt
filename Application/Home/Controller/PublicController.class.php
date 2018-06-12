@@ -42,13 +42,17 @@ class PublicController extends Controller {
 	}
 
 	public function register(){
+        $res['status'] = 0;
         $post = I('post.');
+
         if(!is_numeric($post['rnum']) || $post['rpwd'] == '' ){
-            $this->error('输入内容有误');exit;
+            $res['info'] = '输入内容有误';
+            $this->ajaxReturn($res);
         }
         $z = M('Stu')->where('xuehao='.$post['rnum'])->find();
         if($z){
-            $this->error('此账号已注册');
+            $res['info'] = '此账号已注册';
+            $this->ajaxReturn($res);
         }else{
             $line = $post['line'];
             $url = "http://210.38.162.$line";
@@ -57,7 +61,8 @@ class PublicController extends Controller {
             $res = $g->login();
 
             if($res['name'] == ''){
-                $this->error('正方账号或密码错误');
+                $res['info'] = '正方账号或密码错误';
+                $this->ajaxReturn($res);
             }else{
                 $data['xuehao'] = $post['rnum'];
                 $data['pwd'] = password_hash($post['rpwd'],PASSWORD_BCRYPT);
@@ -66,13 +71,14 @@ class PublicController extends Controller {
                 $data['major'] = $res['major'];
                 $data['stu_class'] = $res['class'];
                 $data['rgdate'] = time();
-
                 $zz = M('Stu')->add($data);
                 if($zz){
-                    $this->success('注册成功');
+                    $res['status'] = 1;
+                    $res['info'] = '注册成功,请进行登录';
                 }else{
-                    $this->error('注册失败');
+                    $res['info'] = '注册失败';
                 }
+                $this->ajaxReturn($res);
             }
         }
     }

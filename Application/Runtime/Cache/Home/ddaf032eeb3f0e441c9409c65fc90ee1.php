@@ -63,7 +63,8 @@
                         <div class="col-sm-6 b-r">
                             <h3 class="m-t-none m-b"> 注册</h3>
                             <div class="hr-line-dashed"></div>
-                            <form role="form" method="post" action="/index.php/Public/register">
+                            <form  method="post" id="reg_form" onkeydown="if(event.keyCode==13) return false;">
+                                <div style="text-align: center;height: 30px;display: none;" id="reg_deal"></div>
                                 <div class="form-group">
                                     <label>正方学号：</label>
                                     <input type="text" name="rnum">
@@ -78,7 +79,7 @@
                                     <input type="radio" name="line" value="118" >118
                                 </div>
                                 <div>
-                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>确定</strong>
+                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="button" id="reg_butt"><strong>确定</strong>
                                     </button>
                                 </div>
                             </form>
@@ -107,7 +108,8 @@
                         <div class="col-sm-6 b-r">
                             <h3 class="m-t-none m-b"> 重置为正方密码</h3>
                             <div class="hr-line-dashed"></div>
-                            <form role="form" method="post" action="/index.php/Public/forgetpwd">
+                            <form  method="post" id="for_form" onkeydown="if(event.keyCode==13) return false;">
+                                <div style="text-align: center;height: 30px;display: none;" id="for_deal"></div>
                                 <div class="form-group">
                                     <label>正方学号：</label>
                                     <input type="text" name="fnumb">
@@ -122,7 +124,7 @@
                                     <input type="radio" name="line" value="118" >118
                                 </div>
                                 <div>
-                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>确定</strong>
+                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="button" id="for_butt"><strong>确定</strong>
                                     </button>
                                 </div>
                             </form>
@@ -161,7 +163,7 @@
 
             //登录按钮事件
             form.on('submit(login)', function (data) {
-                $.post('/index.php/Public/login', data.field, function (res) {
+                $.post('/index.php/Public/login.html', data.field, function (res) {
                     if (res.status == 1) {
                         window.location = '/index.php/index/index';
                     } else {
@@ -193,8 +195,65 @@
                 ,'密码必须6到16位'
               ] 
             });
-
         });
+
+        $(function(){
+            //注册
+            $('#reg_butt').on('click',function(){
+                $('#reg_deal').css({display:'block'});
+                var xhr = $.ajax({
+                    type:"POST",
+                    url:"/index.php/Public/register",
+                    data:$("#reg_form").serialize(),
+                    timeout:8000,
+                    beforeSend:function (){
+                        $('#reg_deal').html('<span class="badge badge-danger">...处理中,请稍候...</span>');
+                    },
+                    success:function(data){
+                        if(data['status'] == 1){
+                            $('#reg_deal').html('<span class="badge badge-success">'+data['info']+'</span>');
+                        }else{
+                            $('#reg_deal').html('<span class="badge badge-danger">'+data['info']+'</span>');
+                        }
+                    },
+                    complete: function (XMLHttpRequest,status) {
+                        if(status == 'timeout') {
+                            xhr.abort();    // 超时后中断请求
+                            $('#reg_deal').html('<span class="badge badge-danger">...请求超时,请稍后重试或更换线路...</span>');
+                        }
+                    }
+                });
+            });
+
+            // 忘记密码
+            $('#for_butt').on('click',function(){
+                $('#for_deal').css({display:'block'});
+                var xhr = $.ajax({
+                    type:"POST",
+                    url:"/index.php/Public/forgetpwd",
+                    data:$("#for_form").serialize(),
+                    timeout:8000,
+                    beforeSend:function (){
+                        $('#for_deal').html('<span class="badge badge-danger">...处理中,请稍候...</span>');
+                    },
+                    success:function(data){
+                        if(data['status'] == 1){
+                            $('#for_deal').html('<span class="badge badge-success">'+data['info']+'</span>');
+                        }else{
+                            $('#for_deal').html('<span class="badge badge-danger">'+data['info']+'</span>');
+                        }
+                    },
+                    complete: function (XMLHttpRequest,status) {
+                        if(status == 'timeout') {
+                            xhr.abort();    // 超时后中断请求
+                            $('#for_deal').html('<span class="badge badge-danger">...请求超时,请稍后重试或更换线路...</span>');
+                        }
+                    }
+                });
+            });
+        });
+
+
     </script>
 
 </body>
