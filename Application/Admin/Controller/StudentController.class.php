@@ -5,10 +5,42 @@ use Tools\AccessController;
 class StudentController extends AccessController{
 
 	function showlist(){
-		$this->assign('i',icount());
-		$data = M('Stu')->order('id desc')->select();
+	    if(IS_AJAX){
+            $sort = I('post.sort');
+            $order = I('post.order');
+            $limit = I('post.limit');
+            $offset = I('post.offset');
+            $search = I('post.search');
+            if($sort == 'xh'){
+                $sort = 'id';
+            }
+            if(!empty($search)){
+                $data = M('Stu')
+                    ->where("xuehao like '%{$search}%' or name like '%{$search}%' or stu_class like '%{$search}%' ")
+                    ->limit($offset,$limit)
+                    ->order($sort.' '.$order)
+                    ->select();
+                $total = M('Stu')
+                    ->where("xuehao like '%{$search}%' or name like '%{$search}%' or stu_class like '%{$search}%' ")
+                    ->count();
+            }else{
+                $data = M('Stu')
+                    ->limit($offset,$limit)
+                    ->order($sort.' '.$order)
+                    ->select();
+                $total = M('Stu')->count();
+            }
 
-		$this->assign('data',$data);
+            foreach ($data as $k=>&$v){
+                $v['xh'] = $offset+(++$k);
+                $v['rgdate'] = date('Y-m-d H:i:s',$v['rgdate']);
+            }
+            unset($v);
+
+            $info['rows'] = $data;
+            $info['total'] = $total;
+            $this->ajaxReturn($info);
+        }
 		$this->display();
 	}
 

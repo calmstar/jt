@@ -28,7 +28,7 @@
                         <h3>修改学生</h3>          
                     </div>
                     <div class="ibox-content">
-                        <form class="form-horizontal m-t" id="stu" action="/manager.php/Student/edit/id/207" method="post">
+                        <form class="form-horizontal m-t" id="stu" action="/manager.php/Student/edit/id/42" method="post">
                             <input type="hidden" value="<?php echo ($info["id"]); ?>" name="sid">
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">学号：</label>

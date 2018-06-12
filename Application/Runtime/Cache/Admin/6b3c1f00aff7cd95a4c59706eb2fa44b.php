@@ -120,28 +120,28 @@
                         <div class="answ">
                             <div class="radio">
                                 <label>
-                                    <input type="radio"  <?php if($v['myansw'] == 1): ?>checked='checked'<?php endif; ?> >
+                                    <input type="radio"  <?php if($v['myansw'] == 1): ?>checked='checked'<?php endif; ?> disabled >
                                     <?php if($v[is_op1] == 1): ?><span class="bg-primary"><?php echo ($v["op1"]); ?></span>
                                     <?php else: echo ($v["op1"]); endif; ?>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" <?php if($v['myansw'] == 2): ?>checked='checked'<?php endif; ?> >
+                                    <input type="radio" <?php if($v['myansw'] == 2): ?>checked='checked'<?php endif; ?> disabled>
                                     <?php if($v[is_op2] == 1): ?><span class="bg-primary"><?php echo ($v["op2"]); ?></span>
                                     <?php else: echo ($v["op2"]); endif; ?>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" <?php if($v['myansw'] == 3): ?>checked='checked'<?php endif; ?> >
+                                    <input type="radio" <?php if($v['myansw'] == 3): ?>checked='checked'<?php endif; ?> disabled>
                                     <?php if($v[is_op3] == 1): ?><span class="bg-primary"><?php echo ($v["op3"]); ?></span>
                                     <?php else: echo ($v["op3"]); endif; ?>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" <?php if($v['myansw'] == 4): ?>checked='checked'<?php endif; ?> >
+                                    <input type="radio" <?php if($v['myansw'] == 4): ?>checked='checked'<?php endif; ?> disabled>
                                     <?php if($v[is_op4] == 1): ?><span class="bg-primary"><?php echo ($v["op4"]); ?></span>
                                     <?php else: echo ($v["op4"]); endif; ?>
                                 </label>
@@ -161,28 +161,28 @@
                         <div class="answ">                              
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" <?php if(in_array(1,$v[myansw])): ?>checked='checked'<?php endif; ?> >
+                                    <input type="checkbox" <?php if(in_array(1,$v[myansw])): ?>checked='checked'<?php endif; ?> disabled>
                                     <?php if($v[is_op1] == 1): ?><span class="bg-primary"><?php echo ($v["op1"]); ?></span>
                                     <?php else: echo ($v["op1"]); endif; ?>
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" <?php if(in_array(2,$v['myansw'])): ?>checked='checked'<?php endif; ?> >
+                                    <input type="checkbox" <?php if(in_array(2,$v['myansw'])): ?>checked='checked'<?php endif; ?> disabled >
                                     <?php if($v[is_op2] == 1): ?><span class="bg-primary"><?php echo ($v["op2"]); ?></span>
                                     <?php else: echo ($v["op2"]); endif; ?>
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" <?php if(in_array(3,$v['myansw'])): ?>checked='checked'<?php endif; ?>>
+                                    <input type="checkbox" <?php if(in_array(3,$v['myansw'])): ?>checked='checked'<?php endif; ?> disabled>
                                     <?php if($v[is_op3] == 1): ?><span class="bg-primary"><?php echo ($v["op3"]); ?></span>
                                     <?php else: echo ($v["op3"]); endif; ?>
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" <?php if(in_array(4,$v['myansw'])): ?>checked='checked'<?php endif; ?>>
+                                    <input type="checkbox" <?php if(in_array(4,$v['myansw'])): ?>checked='checked'<?php endif; ?> disabled>
                                     <?php if($v[is_op4] == 1): ?><span class="bg-primary"><?php echo ($v["op4"]); ?></span>
                                     <?php else: echo ($v["op4"]); endif; ?>
                                 </label>
@@ -202,7 +202,7 @@
                         <div class="answ">
                             <div class="radio">
                                 <label>
-                                    <input type="radio" <?php if($v['myansw'] == 1): ?>checked='checked'<?php endif; ?> >
+                                    <input type="radio" <?php if($v['myansw'] == 1): ?>checked='checked'<?php endif; ?> disabled >
 
                                     <?php if($v[is_true] == 1): ?><span class="bg-primary"><i class="glyphicon glyphicon-ok"></i></span>
                                     <?php else: ?>
@@ -211,7 +211,7 @@
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" <?php if( $v['myansw'] == '0' ): ?>checked='checked'<?php endif; ?>>
+                                    <input type="radio" <?php if( $v['myansw'] == '0' ): ?>checked='checked'<?php endif; ?> disabled>
 
                                     <?php if($v[is_false] == 1): ?><span class="bg-primary"><i class="glyphicon glyphicon-remove"></i></span>
                                     <?php else: ?>

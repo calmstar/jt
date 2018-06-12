@@ -126,9 +126,7 @@ class StuModel extends Model{
 					$info['qi'] = $v['sum'];
 					break;
 			}
-
 		}
-
 		return $info;
 	}
 
@@ -158,6 +156,13 @@ class StuModel extends Model{
     function deal_file_data ($data) {
         $arr = array("数学",'物理','化学','文学','外语','生科','政法','地理','经管','电子','计算机','土木','美术','体育','音乐','教科');
         foreach ($data as $k => $v) {
+            // 检查是否有重复的学号
+            $rep = $this->where("xuehao=$v[0]")->count();
+            if($rep > 0){
+                $info['status'] = 0;
+                $info['msg'] = ($k+1).'行的学号已存在';
+            }
+
             // 检查学院
             switch ($v['3']) {
                 case '计算机学院':
@@ -225,7 +230,6 @@ class StuModel extends Model{
         }
         return $check_data;
     }
-
 
 
 }

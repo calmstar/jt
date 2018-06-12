@@ -172,3 +172,308 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004081s ]
 INFO: [ app_end ] --END-- [ RunTime:0.004649s ]
 
+[ 2018-06-11T20:52:03+08:00 ] 127.0.0.1 /index.php/Public/loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003975s ]
+
+[ 2018-06-11T20:52:03+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004594s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000745s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007042s ]
+
+[ 2018-06-11T20:52:03+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004887s ]
+
+[ 2018-06-11T20:52:21+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006216s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0536s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0488s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1528721541','23') [ RunTime:0.0473s ]
+
+[ 2018-06-11T20:52:22+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004824s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0429s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0501s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0435s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=147 and is_show=1 ) LIMIT 1   [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0485s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=147 and is_show=1 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0531s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=147 and is_show=1 ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0494s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=147  and is_show=1 ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=148 and is_show=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=148 and is_show=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=148 and is_show=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=148  and is_show=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=155  and is_show=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=157  and is_show=1 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000678s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007167s ]
+
+[ 2018-06-11T20:52:23+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009070s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.1633s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0018s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000499s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006672s ]
+
+[ 2018-06-11T20:52:25+08:00 ] 127.0.0.1 /index.php/Public/loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003819s ]
+
+[ 2018-06-11T20:52:25+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006416s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000819s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005942s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015261s ]
+
+[ 2018-06-11T20:52:25+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005405s ]
+
+[ 2018-06-11T20:54:34+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006369s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000713s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022380s ]
+
+[ 2018-06-11T20:54:34+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000168s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005763s ]
+
+[ 2018-06-11T20:54:45+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004626s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0491s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-06-11T20:54:45+08:00 ] 127.0.0.1 /index.php/Public/verifyImg/0.02643585747627286
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005806s ]
+
+[ 2018-06-11T20:54:58+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006082s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0522s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0477s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1528721698','23') [ RunTime:0.0525s ]
+
+[ 2018-06-11T20:54:59+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006073s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0438s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0466s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0511s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=147 and is_show=1 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0471s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=147 and is_show=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0538s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=147 and is_show=1 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0473s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=147  and is_show=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=148 and is_show=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=148 and is_show=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=148 and is_show=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=148  and is_show=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=155  and is_show=1 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=157  and is_show=1 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000781s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001657s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015299s ]
+
+[ 2018-06-11T20:55:00+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014330s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0913s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0014s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000496s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007984s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006329s ]
+

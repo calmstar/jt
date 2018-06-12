@@ -14,6 +14,7 @@
     <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
     <link href="/Public/Admin/css/animate.css" rel="stylesheet">
     <link href="/Public/Admin/css/style.css" rel="stylesheet">
+    <link href="/Public/Admin/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
 
 </head>
 
@@ -27,72 +28,21 @@
                     </div>      
                     <div class="ibox-content table-responsive">
                         <div class="row">
-                           <div class="col-sm-4">
-                               <div class="btn-toolbar">
-                                   <div class="btn-group">
-                                       <button type="button" class="btn btn-outline btn-default" id="deleAll">
-                                           <i class="glyphicon glyphicon-trash" aria-hidden="true"></i> 批量删除
-                                       </button>
-                                       <button type="button" class="btn btn-outline btn-default" id="add">
-                                           <i class="glyphicon glyphicon-plus" aria-hidden="true" ></i> 添加
-                                       </button>
-                                       <button type="button" class="btn btn-outline btn-default" data-toggle="modal" href="#inputFile">
-                                           <i class="glyphicon glyphicon-import" aria-hidden="true" ></i> EXCEL导入
-                                       </button>
-                                   </div>
+                           <div class="col-sm-12">
+                               <div id="toolbar" class="btn-group">
+                                   <button type="button" class="btn btn-outline btn-default" id="deleAll">
+                                       <i class="glyphicon glyphicon-trash" aria-hidden="true"></i> 批量删除
+                                   </button>
+                                   <button type="button" class="btn btn-outline btn-default" id="add">
+                                       <i class="glyphicon glyphicon-plus" aria-hidden="true" ></i> 添加
+                                   </button>
+                                   <button type="button" class="btn btn-outline btn-default" data-toggle="modal" href="#inputFile">
+                                       <i class="glyphicon glyphicon-import" aria-hidden="true" ></i> EXCEL导入
+                                   </button>
                                </div>
-                           </div>           
+                               <table id="stu" data-url="/manager.php/Student/showlist.html"></table>
+                           </div>
                         </div>
-                        <table class="table table-striped table-hover table-responsive">
-                            <thead>
-                                <tr>    
-                                    <th><input type="checkbox" title="全选" id="selectAll"> #</th>
-                                    <th>名字</th>
-                                    <th>学号</th>
-                                    <th>班级</th>
-                                    <th>专业</th>
-                                    <th>电话</th>
-                                    <th>邮箱</th>
-                                    <th>状态</th>
-                                    <th>操作</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php if(is_array($data)): foreach($data as $key=>$v): ?><tr>
-                                    <td><input type="checkbox" value="<?php echo ($v["id"]); ?>"> <?php echo ($i++); ?></td>
-                                    <td><?php echo ($v["name"]); ?></td>
-                                    <td><?php echo ($v["xuehao"]); ?></td>
-                                    <td><?php echo ($v["stu_class"]); ?></td>
-                                    <td><?php echo ($v["major"]); ?></td>
-                                    <td><?php echo ($v["telphone"]); ?></td>
-                                    <td><?php echo ($v["email"]); ?></td>
-                                    <td id="status">
-                                        <?php if($v["status"] == 0): ?><i class="glyphicon glyphicon-ok"></i>
-                                        <?php else: ?>
-                                        <i class="glyphicon glyphicon-remove"></i><?php endif; ?>
-                                    </td>
-                                    <td>
-                                        <div class="btn-group btn-group-sm">
-                                            <button class="btn btn-default" title="编辑/查看" id="edit" value="<?php echo ($v["id"]); ?>">
-                                                <i class="glyphicon glyphicon-edit"></i>
-                                            </button>
-                                            <button class="btn btn-default" title="启用/禁用" id="isAble" value="<?php echo ($v["id"]); ?>">
-                                                <?php if($v["status"] == 0): ?><i class="glyphicon glyphicon-remove"></i>
-                                                <?php else: ?>
-                                                <i class="glyphicon glyphicon-ok"></i><?php endif; ?>
-                                            </button>
-                                            <button class="btn btn-default" title="重置密码" id="reset" value="<?php echo ($v["id"]); ?>">
-                                                <i class="glyphicon glyphicon-retweet"></i>
-                                            </button>
-                                            <button class="btn btn-default" title="删除" id="deleSingle" value="<?php echo ($v["id"]); ?>">
-                                                <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr><?php endforeach; endif; ?>
-                            </tbody>
-                        </table>
-
                     </div>
                 </div>
             </div>
@@ -122,7 +72,7 @@
                         <div class="col-sm-6">
                             <h4>请注意</h4>
                             <p>此功能一般用于系统的爬虫注册功能失效后使用！正常情况下，请尽量让学生通过爬虫注册登录本系统！</p>
-                            <p>上传前，请确保格式正确！并仔细校对学生信息！</p>
+                            <p>上传前，请确保格式正确！并仔细校对学生信息！确保学生未在此系统注册过！</p>
                             <h1 class="text-center">
                                 <span class="glyphicon glyphicon-exclamation-sign" style="color:#F33"></span>
                             </h1>
@@ -137,47 +87,80 @@
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
     <script src="/Public/Admin/js/content.js"></script>
     <script src="/Public/Admin/js/plugins/layer/layer.js"></script>
+    <!-- bootstrap-table -->
+    <script src="/Public/Admin/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="/Public/Admin/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <script src="/Public/Admin/js/demo/bootstrap-table-demo1.js"></script>
     <script type="text/javascript">
         $(function(){
-            //编辑事件
-            $('body').on('click','#edit',function(){
-                var id = $(this).attr('value');
-                location.href='/manager.php/Student/edit/id/'+id;
-            });
+            //删除工具栏中的id
+            $("input[data-field='id']").parents("ul").find('li').eq(0).empty();
 
             //添加事件
             $('#add').on('click',function(){
                 location.href='/manager.php/Student/add';
             });
 
-            //启用、禁用
-            $('body').on('click','#isAble',function(){
-                var status = $(this).parents('tr').find('#status');
-                var selfButton = $(this);
-                var id = $(this).attr('value');
+            // 批量删除
+            $('#deleAll').on('click',function(){
+                //整理数据
+                var idObj = $("#stu").bootstrapTable('getSelections');
+                var id = '';
+                for(var i = 0; i < idObj.length; i++){
+                    id += idObj[i].id + ',';
+                }
+                id = id.substring(0,id.length-1);
 
+                if(id == ''){
+                    layer.msg('没有选中数据');
+                }else{
+                    layer.confirm('确认删除？', {btn: ['确定', '取消']},
+                        function(){
+                            $.post("/manager.php/Student/dele",{ids:id},
+                                function(data){
+                                    if(data['status'] == 1){
+                                        layer.confirm('批量删除成功',{btn: ['确定']},
+                                            function(){
+                                                window.location.reload();
+                                            })
+                                    }else{
+                                        layer.msg('删除失败');
+                                    }
+                                }
+                            );
+                        }
+                    );
+                }
+            });
+        });
+
+        window.operateEvents = {
+            //编辑
+            'click .edit': function (e, value, row, index) {
+                var id = row['id'];
+                location.href='/manager.php/Student/edit/id/'+id;
+            },
+            // 状态
+            'click .isAble': function (e, value, row, index) {
+                var id = row['id'];
+                var status = $(this).parents('tr').find('td').eq(5);
                 $.post('/manager.php/Student/isable',{"id":id},function(data){
                     if(data==1){
-                        status.html('<i class="glyphicon glyphicon-remove"></i>');
-                        selfButton.html('<i class="glyphicon glyphicon-ok"></i>');
+                        status.html('<i class="glyphicon glyphicon-remove">');
                         layer.msg('状态已更改为禁用');
-
                     }else if(data==2){
-                        status.html('<i class="glyphicon glyphicon-ok"></i>');
-                        selfButton.html('<i class="glyphicon glyphicon-remove"></i>');
+                        status.html('<i class="glyphicon glyphicon-ok">');
                         layer.msg('状态已更改为启用');
                     }else{
                         layer.msg('状态更改失败');
                     }
-                    
                 });
-            });
-
-            //重置密码
-            $('body').on('click','#reset',function(){
-                var id = $(this).attr('value');
-                layer.confirm('密码将重置为“ 123456 ”，确认重置？', {btn: ['确定', '取消']}, 
-                    function(index){
+            },
+            // 重置密码
+            'click .reset': function (e, value, row, index) {
+                var id = row['id'];
+                layer.confirm('密码将重置为“ 123456 ”，确认重置？', {btn: ['确定', '取消']},
+                    function(){
                         $.post('/manager.php/Student/reset',{"id":id},function(data){
                             if(data['status'] == 1){
                                 layer.msg('重置密码成功');
@@ -187,67 +170,17 @@
                         });
                     }
                 );
-            });
-         
-
-            //删除单个记录
-            $('body').on('click','#deleSingle',function(){
-                var id = $(this).attr('value');
+            },
+            //删除
+            'click .deleSingle': function (e, value, row, index) {
+                var id = row['id'];
                 layer.confirm('确认删除？', {btn: ['确定', '取消']},
                     function(index){
                         location.href='/manager.php/Student/dele/ids/'+id;
                     }
                 );
-            });
-
-            //全选和全不选
-            $('#selectAll').on('click',function(){       
-                if(this.checked){   
-                    $(":checkbox").prop("checked", true);  
-                }else{   
-                    $(":checkbox").prop("checked", false);
-                }  
-            });
-
-            //选中批量删除事件
-            $('#deleAll').on('click',function(){
-                //整理数据
-                var idObj = $('input:checked');
-                var id = '';
-                for(var i = 0; i < idObj.length; i++){
-                    id += idObj[i].value + ',';
-                }
-                id = id.substring(0,id.length-1);
-
-                if(id == ''){
-                    layer.msg('没有选中数据');
-                }else{
-                    layer.confirm('确认删除？', {btn: ['确定', '取消']}, 
-                        function(){   
-                            //点击确定后的回调事件          
-                            //ajax异步传值
-                            $.post("/manager.php/Student/dele",{ids:id},
-                                function(data){
-                                    if(data['status'] == 1){
-                                        //由于layer.alert无法暂停下面的刷新
-                                        layer.confirm('批量删除成功',{btn: ['确定']},
-                                            function(){
-                                                window.location.reload(); 
-                                            })
-                                    }else{
-                                        layer.msg('删除失败');
-                                    }     
-                                }
-                            );
-                        },
-                        function(){
-                            //点击取消的回调事件
-                        }
-                    );  
-                }
-            });
-
-        });
+            },
+        };
     </script>
   
 </body>
