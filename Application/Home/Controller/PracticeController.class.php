@@ -235,7 +235,7 @@ class PracticeController extends HomeacceController {
         $this->assign('data',$data);
 
         // 显示其余题目
-        $ids = M('Ques_subj')->field('id')->order('id desc')->where('course_id='.$cid)->select();
+        $ids = M('Ques_subj')->field('id')->order('id desc')->where('course_id='.$cid.' and is_show=1')->select();
         foreach($ids as $k => $v){
             $id_arr[] = $v['id'];
         }
@@ -244,7 +244,7 @@ class PracticeController extends HomeacceController {
 
         if($num <= 20){
             // 取出所有id
-            $other = M('Ques_subj')->field('id,keyword,course_id,descr')->order('id desc')->where('course_id='.$cid)->select();
+            $other = M('Ques_subj')->field('id,keyword,course_id,descr')->order('id desc')->where('course_id='.$cid.' and is_show=1')->select();
         }else{
             // 取出部分id
             // 往前取出最多十条；没有十条就往前取完
@@ -264,7 +264,7 @@ class PracticeController extends HomeacceController {
                 $id_str .= $id_arr[$i].',';
             }
             $id_str = rtrim($id_str,',');
-            $other = M('Ques_subj')->field('id,keyword,course_id,descr')->order('id desc')->where("course_id=$cid and id in ($id_str)")->select();
+            $other = M('Ques_subj')->field('id,keyword,course_id,descr')->order('id desc')->where("course_id=$cid and id in ($id_str) and is_show=1")->select();
 
         }
         $this->assign('other',$other);
