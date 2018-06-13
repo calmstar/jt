@@ -37,22 +37,58 @@
             <div class="page-header text-success">
                 <h3>【主观题】
                     <small>
-                        {$data.cname} --- {$data.keyword|default='无'} （<a href="javascript:history.go(-1)">返回上一步</a>）
+                        {$data.cname} --- {$data.keyword|default='无'}
+                        (难度：
+                        <if condition="$data['difficulty'] == '1'">*
+                        <elseif condition="$data['difficulty'] == 2" /> **
+                        <else/>***
+                        </if>
+                        )
+                        &nbsp;&nbsp;[ <a href="javascript:history.go(-1)">返回上一步</a> ]
                     </small>
                 </h3>
             </div>
             <div class="bg-danger bg">
+                题目描述：
+                <hr>
                 &nbsp;&nbsp;{$data.descr|htmlspecialchars_decode}
             </div>
             <div class="bg-warning bg answ" id="answ">
-                参考答案：{$data.right_answ}
+                参考答案：
+                <hr>
+                    {$data.right_answ}
             </div>
             <div style="float:right;margin-right: 5px;">
                 <button class="btn btn-danger" id="see">查看答案</button>
             </div>
             <div style="clear: both;"></div>
             <hr>
-            <div class="text-center"><h3><i class="fa fa-copyright"></i>EKA 2017</h3> </div>
+            推荐题目：
+            <hr style="margin-top:5px; ">
+            <div style="padding:5px 20px;">
+                <foreach name="other"  item="v">
+                <div style="height:30px;margin:10px;float:left; ">
+                    <a href="__CONTROLLER__/sub_detail/cid/{$v['course_id']}/id/{$v['id']}">
+
+                        <if condition="$v['id'] == $data['id'] ">
+                            <span class="badge badge-primary">
+                            <else/>
+                            <span class="badge badge-danger">
+                        </if>
+
+                                <if condition="$v['keyword']!='' " >
+                                      {$v['keyword']}
+                                    <else/>
+                                    {$v['descr']|htmlspecialchars_decode|strip_tags|msubstr=0,15,'utf-8',false}
+                                </if>
+                            </span>
+                    </a>
+                </div>
+                </foreach>
+                <div style="clear: both;"></div>
+            </div>
+            <hr>
+            <div class="text-center"><h3><i class="fa fa-copyright"></i> EKA 2017</h3> </div>
         </div>
     </div>
 </div>

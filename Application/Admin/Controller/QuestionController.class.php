@@ -12,9 +12,10 @@ class QuestionController extends AccessController{
                 $sort = 'id';
             }
             $order = I('post.order');
-            $limit = I('post.limit');
-            $offset = I('post.offset');
-            $search = I('post.search');
+            $limit = I('post.limit','','int');
+            $offset = I('post.offset','','int');
+            $search =   str_replace('\'',' ',htmlspecialchars(I('post.search')));
+
             //判断角色
             $role_id = session('role_id');
             $uid = session('bg_id');
@@ -209,9 +210,10 @@ class QuestionController extends AccessController{
                 $sort = 'id';
             }
             $order = I('post.order');
-            $limit = I('post.limit');
-            $offset = I('post.offset');
-            $search = I('post.search');
+            $limit = I('post.limit','','int');
+            $offset = I('post.offset','','int');
+            $search =   str_replace('\'',' ',htmlspecialchars(I('post.search')));
+
             //判断角色
             $role_id = session('role_id');
             $uid = session('bg_id');
@@ -402,9 +404,9 @@ class QuestionController extends AccessController{
                 $sort = 'id';
             }
             $order = I('post.order');
-            $limit = I('post.limit');
-            $offset = I('post.offset');
-            $search = I('post.search');
+            $limit = I('post.limit','','int');
+            $offset = I('post.offset','','int');
+            $search =   str_replace('\'',' ',htmlspecialchars(I('post.search')));
             //判断角色
             $role_id = session('role_id');
             $uid = session('bg_id');
@@ -595,9 +597,9 @@ class QuestionController extends AccessController{
                 $sort = 'id';
             }
             $order = I('post.order');
-            $limit = I('post.limit');
-            $offset = I('post.offset');
-            $search = I('post.search');
+            $limit = I('post.limit','','int');
+            $offset = I('post.offset','','int');
+            $search =   str_replace('\'',' ',htmlspecialchars(I('post.search')));
             //判断角色
             $role_id = session('role_id');
             $uid = session('bg_id');

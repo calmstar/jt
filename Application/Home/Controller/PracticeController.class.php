@@ -194,7 +194,7 @@ class PracticeController extends HomeacceController {
                 $sort = 'id';
             }
             $order = I('post.order');
-            $text = I('post.text');
+            $text = str_replace('\'',' ',htmlspecialchars(I('post.text')));
 
             if(!empty($text)){
                 // 模糊查询返回数据
@@ -221,8 +221,8 @@ class PracticeController extends HomeacceController {
 
 
     function sub_detail(){
-        $id = I('get.id');
-        $cid = I('get.cid');
+        $id = I('get.id','','int');
+        $cid = I('get.cid','','int');
 
         $r = M('Ques_subj')->field('is_show')->find($id);
         if($r['is_show'] == '0'){
@@ -233,6 +233,41 @@ class PracticeController extends HomeacceController {
         $cou_info = M('Course')->field('name')->find($cid);
         $data['cname'] = $cou_info['name'];
         $this->assign('data',$data);
+
+        // 显示其余题目
+        $ids = M('Ques_subj')->field('id')->order('id desc')->where('course_id='.$cid)->select();
+        foreach($ids as $k => $v){
+            $id_arr[] = $v['id'];
+        }
+        $offset = array_search($id,$id_arr);
+        $num = count($id_arr);
+
+        if($num <= 20){
+            // 取出所有id
+            $other = M('Ques_subj')->field('id,keyword,course_id,descr')->order('id desc')->where('course_id='.$cid)->select();
+        }else{
+            // 取出部分id
+            // 往前取出最多十条；没有十条就往前取完
+            if(($offset-10) >= 0){
+                $p = $offset-10;
+            }else{
+                $p = 0;
+            }
+            // 往后取出最多十条，不够就往后取完
+            if(($offset+10) <= $num){
+                $n = $offset+10;
+            }else{
+                $n = $num;
+            }
+            // 得到所有id
+            for($i=$p;$i<=$n;$i++){
+                $id_str .= $id_arr[$i].',';
+            }
+            $id_str = rtrim($id_str,',');
+            $other = M('Ques_subj')->field('id,keyword,course_id,descr')->order('id desc')->where("course_id=$cid and id in ($id_str)")->select();
+
+        }
+        $this->assign('other',$other);
 
         $this->display();
     }

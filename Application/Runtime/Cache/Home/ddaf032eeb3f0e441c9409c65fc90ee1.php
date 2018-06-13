@@ -163,7 +163,7 @@
 
             //登录按钮事件
             form.on('submit(login)', function (data) {
-                $.post('/index.php/Public/login.html', data.field, function (res) {
+                $.post('/index.php/Public/login', data.field, function (res) {
                     if (res.status == 1) {
                         window.location = '/index.php/index/index';
                     } else {
