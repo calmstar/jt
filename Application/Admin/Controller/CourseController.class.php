@@ -96,7 +96,7 @@ class CourseController extends AccessController{
             }
             $this->ajaxReturn($res);
         }
-        
+
     }
 
     function ques_no(){

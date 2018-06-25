@@ -48,7 +48,7 @@
 
 </head>
 
-<body class="gray-bg" >
+<body class="gray-bg">
     
     <!-- 正文 -->
     <div class="container-fluid">

@@ -38,7 +38,7 @@ class TestController extends HomeacceController {
 			//判断当前学生是否考过本试卷
 			$res = M('Stu_score')->where("paper_id=$id and stu_id=$sid")->find();
 			if($res){
-				echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 你已参加过本场考试 ʕ•͓͡•ʔ</h1> ';
+				echo ' <h1 style="width:800px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 【HaveTested】你已参加过本场考试 ʕ•͓͡•ʔ</h1> ';
 				exit;
 			}
 			
@@ -70,7 +70,7 @@ class TestController extends HomeacceController {
 		$now = time();
 		$res = M('Paper_basic')->field('startdate,enddate,review_status')->find($id);
 		if($res['startdate']>$now || $res['enddate']<$now || $res['review_status']==0){
-			echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 不是进行中的考试或试卷未审核ʕ•͓͡•ʔ</h1> ';
+			echo ' <h1 style="width:800px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 【NoIng】不是进行中的考试或试卷未审核ʕ•͓͡•ʔ</h1> ';
 			exit;
 		}
 
@@ -83,7 +83,7 @@ class TestController extends HomeacceController {
 		//判断当前学生是否考过本试卷
 		$res = M('Stu_score')->where("paper_id=$id and stu_id=$sid")->find();
 		if($res){
-			echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 你已参加过本场考试 ʕ•͓͡•ʔ</h1> ';
+			echo ' <h1 style="width:800px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 【Tested】你已参加过本场考试 ʕ•͓͡•ʔ</h1> ';
 			exit;
 		}
 
@@ -92,7 +92,7 @@ class TestController extends HomeacceController {
 		$xx['paper_id'] = $id;
 		$res = $answ->check_finish($xx); //与原方法参数相符
 		if(!$res){
-			echo ' <h1 style="width:600px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 无法进入试卷，考试时间已用完，已为你自动提交 ʕ•͓͡•ʔ</h1> ';
+			echo ' <h1 style="width:800px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 【Overtime】无法进入试卷，考试时间已用完，已为你自动提交 ʕ•͓͡•ʔ</h1> ';
 			exit;
 		}
 
@@ -118,14 +118,14 @@ class TestController extends HomeacceController {
 				$stu_ques['stu_id'] = $sid;
 				$res = M('Stu_paper')->add($stu_ques);
 				if(!$res){
-					$this->error('试题存入到学生试卷中失败,请重试');exit;
+					$this->error('【Error】试题存入到学生试卷中失败,请重试');exit;
 				}
 
 				//存入stu_answ中，必须两个都能同时存入---事务
 				$stu_ques['stime'] = time();
 				$res = M('Stu_answ')->add($stu_ques);
 				if(!$res){
-					$this->error('开始时间 存入到学生答卷中失败,请重试');exit;
+					$this->error('【Error】开始时间 存入到学生答卷中失败,请重试');exit;
 				}
 
 			}else{
@@ -152,14 +152,14 @@ class TestController extends HomeacceController {
 				$stu_ques['stu_id'] = $sid;
 				$res = M('Stu_paper')->add($stu_ques);
 				if(!$res){
-					$this->error('试题存入到学生试卷中失败,请重试');exit;
+					$this->error('【Error】试题存入到学生试卷中失败,请重试');exit;
 				}
 
 				//存入stu_answ中，必须两个都能同时存入---事务
 				$stu_ques['stime'] = time();
 				$res = M('Stu_answ')->add($stu_ques);
 				if(!$res){
-					$this->error('开始时间 存入到学生答卷中失败,请重试');exit;
+					$this->error('【Error】开始时间 存入到学生答卷中失败,请重试');exit;
 				}
 
 			}else{
@@ -248,14 +248,14 @@ class TestController extends HomeacceController {
 			//提交时间检验，防止超时提交，禁用js下后端判断
 			$res = $answ->check_finish($post);
 			if(!$res){
-				echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 无法提交试卷，你已超时提交 ʕ•͓͡•ʔ</h1> ';
+				echo ' <h1 style="width:800px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 【OverTime】无法提交试卷，你已超时提交 ʕ•͓͡•ʔ</h1> ';
 				exit;
 			}
 
 			// 防止重复提交判断
 			$res = $answ->check_post($post);
 			if($res){
-				echo ' <h1 style="width:500px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 无法重复提交 ʕ•͓͡•ʔ</h1> ';
+				echo ' <h1 style="width:800px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 【NoRepeat】无法重复提交 ʕ•͓͡•ʔ</h1> ';
 				exit;
 			}
 
@@ -281,7 +281,7 @@ class TestController extends HomeacceController {
 			//stu_score 计算分数单 双 判 题的分数，并存入数据库中
 			$res = $answ->deal_add_score($post,$right_sin,$right_dou,$right_jud);
 			if(!$res){
-				$this->error('考生分数提交失败，请重新提交或与管理员联系');exit;
+				$this->error('【Error】考生分数提交失败，请重新提交或与管理员联系');exit;
 			}
 
 			//stu_answ,将该表里其他字段值save进去
@@ -289,13 +289,13 @@ class TestController extends HomeacceController {
 			//0代表 考生提交试卷 时调用此方法
 			$res = $answ->deal_save_answ($post,0);
 			if(!$res){
-				$this->error('考生答案提交失败，请与管理员联系');exit;
+				$this->error('【Error】考生答案提交失败，请与管理员联系');exit;
 			}else{
 
 				//各项数据都提交成功，删除考生临时答题表
 				M('Stu_answ_cache')->where("stu_id=$sid and paper_id=$paperid")->delete();
 
-				echo ' <h1 style="width:600px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 试卷提交成功，请关闭此页面 ʕ•͓͡•ʔ</h1> ';
+				echo ' <h1 style="width:800px;margin:0 auto;text-align:center;">ʕ•͓͡•ʔ 【Success】试卷提交成功，请关闭此页面 ʕ•͓͡•ʔ</h1> ';
 				exit;
 			}
 		}

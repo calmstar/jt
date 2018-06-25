@@ -50,7 +50,7 @@
 
 </head>
 
-<body class="bg-success" >
+<body class="bg-success"  onselectstart="return false" onpaste="return false" oncontextmenu="return false" oncopy="return false" oncut="return false" >
 
     <form action="/index.php/Test/answ" method="post"  id="sub">
 
@@ -260,7 +260,6 @@
         var intDiff = parseInt(exam_time);//倒计时总秒数,将获得的字符串变为数字型
 
         function timer(intDiff){
-
             window.setInterval(function(){
                 var hour=00,
                     minute=00,
@@ -287,7 +286,6 @@
 
             },1000);//一秒执行一次
         }
-
 
         // 每隔十秒发送答案到数据库中
         function time_post(){
