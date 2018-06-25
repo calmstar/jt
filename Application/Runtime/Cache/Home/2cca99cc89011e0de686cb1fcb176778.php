@@ -194,7 +194,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <!--弹出表单-->
@@ -250,7 +249,6 @@
     <script src="/Public/Admin/js/plugins/validate/messages_zh.min.js"></script> <!--validate的提示信息转换成中文插件-->
 	<script src="/Public/Admin/js/demo/form-validate-demo.js"></script>
     <script type="text/javascript">
-
         $(function(){
             $('#import_butt').on('click',function(){
                 $('#deal').css({display:'block'});
@@ -272,7 +270,7 @@
                     complete: function (XMLHttpRequest,status) {
                         if(status == 'timeout') {
                             xhr.abort();    // 超时后中断请求
-                            $('#deal').html('<span class="badge badge-danger">...请求超时,请稍后重试...</span>');
+                            $('#deal').html('<span class="badge badge-danger">...请求超时,请稍后重试或更换线路...</span>');
                         }
                     }
                 });

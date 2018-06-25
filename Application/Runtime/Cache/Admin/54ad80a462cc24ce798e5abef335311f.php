@@ -46,7 +46,7 @@
                                     <th><input type="checkbox" title="全选" id="selectAll"> #</th>
                                     <th>名字</th>
                                     <th>创建日期</th>
-                                    <th>展示课程到练习题中</th>
+                                    <th>课程展示到练习题中</th>
                                     <th>操作</th>
                                 </tr>
                             </thead>
@@ -59,13 +59,19 @@
                                     <td>
                                         <div class="btn-group btn-group-sm">
                                             <button class="btn btn-default" title="编辑" id="edit" value="<?php echo ($v["id"]); ?>">
-                                                <i class="glyphicon glyphicon-edit"></i>
+                                                编辑
                                             </button>
                                             <button class="btn btn-default" title="删除" id="deleSingle" value="<?php echo ($v["id"]); ?>">
-                                                <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
+                                                删除
                                             </button>
                                             <button class="btn btn-default" title="是否展示课程到练习题中" value="<?php echo ($v["id"]); ?>" id="display">
-                                                <i class="glyphicon glyphicon-eye-open"></i>
+                                                课程展示状态
+                                            </button>
+                                            <button class="btn btn-default" value="<?php echo ($v["id"]); ?>" id="ques_show">
+                                                展示所有题目
+                                            </button>
+                                            <button class="btn btn-default" value="<?php echo ($v["id"]); ?>" id="ques_no">
+                                                不展示所有题目
                                             </button>
                                         </div>
                                     </td>
@@ -139,7 +145,6 @@
                 );  
             });
 
-            
             //编辑事件,由于是动态生成的所以要更改如下
             $('body').on('click','#edit',function(){
                 // $('#edit').on('click',function(){ 无法用于动态生成的节点
@@ -248,7 +253,7 @@
             $('body').on('click','#display',function(){
                 var dis = $(this).parents('tr').find("#dis");
                 var id = this.value;
-                layer.confirm('修改后该课程的所有练习题将（展示/不展示）到前台中的自我测试模块',{btn:['确定','取消']},
+                layer.confirm('修改后，该课程将（展示/不展示）到前台中的自我测试模块',{btn:['确定','取消']},
                         function(){
                             $.post("/manager.php/Course/disp",{id:id},function(data){
                                 if(data['status'] != 0){
@@ -263,6 +268,38 @@
                                 }
                             });
                         }
+                )
+            });
+
+            //展示所有题目
+            $('body').on('click','#ques_show',function(){
+                var id = this.value;
+                layer.confirm('修改后，该课程所有的练习题状态将置为【展示】到自我测试中。（包括单选、双选、判断、主观题）',{btn:['确定','取消']},
+                    function(){
+                        $.post("/manager.php/Course/ques_show",{id:id},function(data){
+                            if(data['status'] == 1){
+                                layer.msg('已置为展示');
+                            }else{
+                                layer.msg('修改失败');
+                            }
+                        });
+                    }
+                )
+            });
+
+            //不展示所有题目
+            $('body').on('click','#ques_no',function(){
+                var id = this.value;
+                layer.confirm('修改后，该课程所有的练习题状态将置为【不展示】到自我测试中。（包括单选、双选、判断、主观题）',{btn:['确定','取消']},
+                    function(){
+                        $.post("/manager.php/Course/ques_no",{id:id},function(data){
+                            if(data['status'] == 1){
+                                layer.msg('已置为不展示');
+                            }else{
+                                layer.msg('修改失败');
+                            }
+                        });
+                    }
                 )
             });
 

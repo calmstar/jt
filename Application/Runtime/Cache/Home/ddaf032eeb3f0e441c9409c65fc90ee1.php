@@ -88,6 +88,7 @@
                         <div class="col-sm-6">
                             <h4>请注意</h4>
                             <p>JMoocTest需要您提供正方学号及密码，用来<b>爬虫注册此系统</b>。</p>
+                            <p>注册成功后，即可使用正方账号和正方密码登录本系统</p>
                             <h1 class="text-center">
                                 <span class="glyphicon glyphicon-exclamation-sign" style="color:#F33"></span>
                             </h1>
@@ -132,7 +133,7 @@
                         </div>
                         <div class="col-sm-6">
                             <h4>请注意</h4>
-                            <p>JMoocTest需要您提供正方学号及密码，用来<b>替换当前系统的密码</b>。</p>
+                            <p>JMoocTest需要您提供正方学号及密码，用来<b>验证并替换当前系统的密码</b>。</p>
                             <p>重置成功后，即可使用正方密码登录本系统。</p>
                             <h1 class="text-center">
                                 <span class="glyphicon glyphicon-exclamation-sign" style="color:#F33"></span>
@@ -163,7 +164,7 @@
 
             //登录按钮事件
             form.on('submit(login)', function (data) {
-                $.post('/index.php/Public/login', data.field, function (res) {
+                $.post('/index.php/Public/login.html', data.field, function (res) {
                     if (res.status == 1) {
                         window.location = '/index.php/index/index';
                     } else {

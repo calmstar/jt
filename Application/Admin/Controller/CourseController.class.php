@@ -78,6 +78,45 @@ class CourseController extends AccessController{
         }
 	}
 
+    function ques_show(){
+        if(IS_AJAX){
+            $id = I('post.id');
+            $data['is_show'] = 1;
+            M()->startTrans();
+            $r1 = M('Ques_single')->where("course_id=$id")->save($data);
+            $r2 = M('Ques_double')->where("course_id=$id")->save($data);
+            $r3 = M('Ques_judge')->where("course_id=$id")->save($data);
+            $r4 = M('Ques_subj')->where("course_id=$id")->save($data);
+            if($r1 && $r2 && $r3 && $r4){
+                $res['status'] = 1;
+                M()->commit();
+            }else{
+                $res['status'] = 0;
+                M()->rollback();
+            }
+            $this->ajaxReturn($res);
+        }
+        
+    }
 
+    function ques_no(){
+        if(IS_AJAX){
+            $id = I('post.id');
+            $data['is_show'] = 0;
+            M()->startTrans();
+            $r1 = M('Ques_single')->where("course_id=$id")->save($data);
+            $r2 = M('Ques_double')->where("course_id=$id")->save($data);
+            $r3 = M('Ques_judge')->where("course_id=$id")->save($data);
+            $r4 = M('Ques_subj')->where("course_id=$id")->save($data);
+            if($r1 && $r2 && $r3 && $r4){
+                $res['status'] = 1;
+                M()->commit();
+            }else{
+                $res['status'] = 0;
+                M()->rollback();
+            }
+            $this->ajaxReturn($res);
+        }
+    }
 
 }
