@@ -133,7 +133,11 @@ class Ques_judgeModel extends Model{
 		    $check_field = array(2,3,4);
 		    //for循环验证数据格式
 		    foreach($data as $k => $v){
+                if($k == 0){
+                    continue;
+                }
 		    	foreach ($v as $kk => $vv) {
+                    // 从第二行开始判断并取得数据
 		    		//将课程名字转化为对应的id
 		    		if($kk == 0){
 		    			$cou_info = $cou->field('id')->where("name='$vv'")->find();
@@ -184,26 +188,26 @@ class Ques_judgeModel extends Model{
 		    			}
 		    		}
 
-                    $check_data[$k]['adddate'] = time();
+                    $check_data[$k-1]['adddate'] = time();
 		    		//赋值到一个新的数组$check_data：
 		    		switch ($kk) {
 		    		case 0:
-		    			$check_data[$k]['course_id'] = $vv;
+		    			$check_data[$k-1]['course_id'] = $vv;
 		    		    break;
 		    		case 1:
-		    			$check_data[$k]['descr'] = $vv;
+		    			$check_data[$k-1]['descr'] = $vv;
 		    		    break;
 		    		case 2:
-		    			$check_data[$k]['is_true'] = $vv;
+		    			$check_data[$k-1]['is_true'] = $vv;
 		    		    break;
 		    		case 3:
-		    			$check_data[$k]['is_false'] = $vv;
+		    			$check_data[$k-1]['is_false'] = $vv;
 		    		    break;
 		    		case 4:
-		    			$check_data[$k]['is_show'] = $vv;
+		    			$check_data[$k-1]['is_show'] = $vv;
 		    		    break;
 	    		    case 5:
-	    		    	$check_data[$k]['difficulty'] = $vv;
+	    		    	$check_data[$k-1]['difficulty'] = $vv;
 	    		        break;
 		    		}
 		    	}

@@ -47,7 +47,7 @@
                             <button id="edit" type="button" class="btn btn-default" title="编辑/查看题目">
                                 <i class="glyphicon glyphicon-edit"></i> 编辑/查看
                             </button>
-                            <a id="import" type="button" class="btn btn-default" title="导入判断题" data-toggle="modal" href="#inputFile">
+                            <a id="import" type="button" class="btn btn-default" title="导入判断题" onclick="import_sub()">
                                 <i class="glyphicon glyphicon-import"></i> EXCEL导入
                             </a>
                         </div>
@@ -59,39 +59,6 @@
         </div>
     </div>
 
-
-    <!--弹出表单-->
-    <div id="inputFile" class="modal fade" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-sm-6 b-r">
-                            <h3 class="m-t-none m-b">请上传文件</h3>
-                            <div class="hr-line-dashed"></div>
-                            <form role="form" method="post" action="/manager.php/Question/sub_import"  enctype="multipart/form-data">
-                                <div class="form-group">
-                                    <label>请选择：</label>
-                                    <input type="file" name="sub_file">
-                                </div>
-                                <div>
-                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>确定</strong>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-sm-6">
-                            <h4>请注意</h4>
-                            <p>上传前，请确保数据格式正确，只能上传自己所教课程的题目，否则系统将报错！</p>
-                            <h1 class="text-center">
-                                <span class="glyphicon glyphicon-exclamation-sign" style="color:#F33"></span>
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="/Public/Admin/js/jquery.min.js"></script>
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
@@ -161,6 +128,17 @@
             $("input[data-field='id']").parents("ul").find('li').eq(0).empty();
             
         });
+
+        function import_sub() {
+            layer.open({
+                title: '导入主观题',
+                type: 2,
+                area: ['900px', '600px'],
+                fixed: false, //不固定
+                maxmin: true,
+                content: '/manager.php/Question/sub_import',
+            });
+        }
     </script>
 
 </body>

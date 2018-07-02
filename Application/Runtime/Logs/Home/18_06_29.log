@@ -1,0 +1,1813 @@
+[ 2018-06-29T09:33:06+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023717s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000888s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001525s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021218s ]
+
+[ 2018-06-29T09:33:07+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004284s ]
+
+[ 2018-06-29T09:33:45+08:00 ] 127.0.0.1 /index.php/Personal/sys_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004163s ]
+NOTIC: [2048] Declaration of Home\Controller\PersonalController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PersonalController.class.php 第 5 行.
+NOTIC: [8] Undefined index: fg_id D:\wamp\www\jmooctest\Application\Tools\HomeacceController.class.php 第 13 行.
+
+[ 2018-06-29T09:33:47+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005897s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000860s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001459s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007239s ]
+
+[ 2018-06-29T09:33:48+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024051s ]
+
+[ 2018-06-29T09:34:01+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004500s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0256s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110213' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0267s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1530236041','23') [ RunTime:0.0599s ]
+
+[ 2018-06-29T09:34:01+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005600s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0246s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0257s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0227s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=155  and is_show=1 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=157  and is_show=1 ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000846s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001481s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013083s ]
+
+[ 2018-06-29T09:34:02+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003769s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0247s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0216s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000450s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004977s ]
+
+[ 2018-06-29T09:34:21+08:00 ] 127.0.0.1 /index.php/Practice/sub_show/cou_id/157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004354s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` WHERE ( id=157 and display=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000446s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003849s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004603s ]
+
+[ 2018-06-29T09:34:22+08:00 ] 127.0.0.1 /index.php/Practice/sub_show/cou_id/157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008531s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0252s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_course` WHERE ( id=157 and display=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jt_course` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE ( course_id=157 and is_show=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0213s ]
+
+[ 2018-06-29T09:34:28+08:00 ] 127.0.0.1 /index.php/Paper/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004693s ]
+NOTIC: [2048] Declaration of Home\Controller\PaperController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0216s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0178s ]
+SQL: SELECT `id` FROM `jt_paper_basic` WHERE ( answ_status=1 )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: ids D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=23 and paper_id in(52,53) ) ORDER BY id desc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0203s ]
+SQL: SELECT `name`,`type` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_paper_ques_fixed` [ RunTime:0.0212s ]
+SQL: SELECT `whole_score`,`sub_score` FROM `jt_paper_ques_fixed` WHERE ( paper_id=52 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `stime`,`etime` FROM `jt_stu_answ` WHERE ( stu_id=23 and paper_id=52 ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000480s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005032s ]
+
+[ 2018-06-29T09:34:29+08:00 ] 127.0.0.1 /index.php/Paper/show.html?sort=id&order=desc&limit=20&offset=0&_=1530236068779
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009568s ]
+NOTIC: [2048] Declaration of Home\Controller\PaperController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0349s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0200s ]
+SQL: SELECT `id` FROM `jt_paper_basic` WHERE ( answ_status=1 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: ids D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=23 and paper_id in(52,53) ) ORDER BY id desc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0211s ]
+SQL: SELECT `name`,`type` FROM `jt_paper_basic` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_paper_ques_fixed` [ RunTime:0.0215s ]
+SQL: SELECT `whole_score`,`sub_score` FROM `jt_paper_ques_fixed` WHERE ( paper_id=52 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `stime`,`etime` FROM `jt_stu_answ` WHERE ( stu_id=23 and paper_id=52 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-06-29T09:34:33+08:00 ] 127.0.0.1 /index.php/Test/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004895s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate < 1530236073 and enddate > 1530236073 and  review_status=1 ) ORDER BY id desc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0203s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate > 1530236073 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( enddate < 1530236073 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000607s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005660s ]
+
+[ 2018-06-29T09:35:21+08:00 ] 127.0.0.1 /index.php/Test/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004362s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate < 1530236121 and enddate > 1530236121 and  review_status=1 ) ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0190s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate > 1530236121 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( enddate < 1530236121 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000604s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004237s ]
+
+[ 2018-06-29T09:36:00+08:00 ] 127.0.0.1 /index.php/Test/exam/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005704s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0305s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.1330s ]
+SQL: SELECT `startdate`,`enddate`,`review_status` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0241s ]
+SQL: SELECT `xuehao`,`stu_class` FROM `jt_stu` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_paper_limit` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `jt_paper_limit` WHERE ( paper_id=56 ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000403s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004019s ]
+
+[ 2018-06-29T09:36:38+08:00 ] 127.0.0.1 /index.php/Test/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004374s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0262s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate < 1530236198 and enddate > 1530236198 and  review_status=1 ) ORDER BY id desc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0236s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate > 1530236198 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( enddate < 1530236198 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000766s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001450s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004498s ]
+
+[ 2018-06-29T09:36:46+08:00 ] 127.0.0.1 /index.php/Test/exam/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005040s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.1172s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.1249s ]
+SQL: SELECT `startdate`,`enddate`,`review_status` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0220s ]
+SQL: SELECT `xuehao`,`stu_class` FROM `jt_stu` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_paper_limit` [ RunTime:0.0247s ]
+SQL: SELECT * FROM `jt_paper_limit` WHERE ( paper_id=56 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0202s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0189s ]
+SQL: SELECT `stime` FROM `jt_stu_answ` WHERE ( stu_id=23 and paper_id=56 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0231s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0216s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_paper_ques_random` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `jt_paper_ques_random` WHERE ( paper_id=56 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `jt_stu_paper` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `course_id` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0207s ]
+SQL: SELECT `id` FROM `jt_ques_single` WHERE ( course_id=147 and is_show=0 and difficulty=1 )  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: ques_ids D:\wamp\www\jmooctest\Application\Home\Model\Paper_basicModel.class.php 第 154 行.
+SQL: SELECT `id` FROM `jt_ques_single` WHERE ( course_id=147 and is_show=0 and difficulty=2 )  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: ques_ids D:\wamp\www\jmooctest\Application\Home\Model\Paper_basicModel.class.php 第 154 行.
+SQL: SELECT `id` FROM `jt_ques_single` WHERE ( course_id=147 and is_show=0 and difficulty=3 )  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: ques_ids D:\wamp\www\jmooctest\Application\Home\Model\Paper_basicModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0237s ]
+SQL: SELECT `id` FROM `jt_ques_double` WHERE ( course_id=147 and is_show=0 and difficulty=1 )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: ques_ids D:\wamp\www\jmooctest\Application\Home\Model\Paper_basicModel.class.php 第 154 行.
+SQL: SELECT `id` FROM `jt_ques_double` WHERE ( course_id=147 and is_show=0 and difficulty=2 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: ques_ids D:\wamp\www\jmooctest\Application\Home\Model\Paper_basicModel.class.php 第 154 行.
+SQL: SELECT `id` FROM `jt_ques_double` WHERE ( course_id=147 and is_show=0 and difficulty=3 )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: ques_ids D:\wamp\www\jmooctest\Application\Home\Model\Paper_basicModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0214s ]
+SQL: SELECT `id` FROM `jt_ques_judge` WHERE ( course_id=147 and is_show=0 and difficulty=1 )  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: ques_ids D:\wamp\www\jmooctest\Application\Home\Model\Paper_basicModel.class.php 第 154 行.
+SQL: SELECT `id` FROM `jt_ques_judge` WHERE ( course_id=147 and is_show=0 and difficulty=2 )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: ques_ids D:\wamp\www\jmooctest\Application\Home\Model\Paper_basicModel.class.php 第 154 行.
+SQL: SELECT `id` FROM `jt_ques_judge` WHERE ( course_id=147 and is_show=0 and difficulty=3 )  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: ques_ids D:\wamp\www\jmooctest\Application\Home\Model\Paper_basicModel.class.php 第 154 行.
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0218s ]
+SQL: SELECT `id` FROM `jt_ques_subj` WHERE ( course_id=147 and is_show=0 and difficulty=2 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: ques_ids D:\wamp\www\jmooctest\Application\Home\Model\Paper_basicModel.class.php 第 154 行.
+SQL: SELECT `id` FROM `jt_ques_subj` WHERE ( course_id=147 and is_show=0 and difficulty=3 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: ques_ids D:\wamp\www\jmooctest\Application\Home\Model\Paper_basicModel.class.php 第 154 行.
+SQL: INSERT INTO `jt_stu_paper` (`single_ids`,`double_ids`,`judge_ids`,`subj_ids`,`paper_id`,`stu_id`) VALUES ('34,39,41,43,45,46,48,51,52,53,54,55,59,60,61,63,64,65,67,73,74,77,79,81,84,88,89,90,91,92','56,57,61,62,63,66,69,71,74,75','32,33,34,35,36,38,40,44,46,47,48,49,50,51,52,54,56,62,63,66,69,70,71,72,74,76,79,81,82,86','32,39,40,41','56','23') [ RunTime:0.1977s ]
+SQL: INSERT INTO `jt_stu_answ` (`paper_id`,`stu_id`,`stime`) VALUES ('56','23','1530236205') [ RunTime:0.0459s ]
+SQL: SELECT * FROM `jt_ques_single` WHERE ( id in (34,39,41,43,45,46,48,51,52,53,54,55,59,60,61,63,64,65,67,73,74,77,79,81,84,88,89,90,91,92) ) ORDER BY field(id,34,39,41,43,45,46,48,51,52,53,54,55,59,60,61,63,64,65,67,73,74,77,79,81,84,88,89,90,91,92)  [ RunTime:0.0139s ]
+SQL: SELECT * FROM `jt_ques_double` WHERE ( id in (56,57,61,62,63,66,69,71,74,75) ) ORDER BY field(id,56,57,61,62,63,66,69,71,74,75)  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `jt_ques_judge` WHERE ( id in (32,33,34,35,36,38,40,44,46,47,48,49,50,51,52,54,56,62,63,66,69,70,71,72,74,76,79,81,82,86) ) ORDER BY field(id,32,33,34,35,36,38,40,44,46,47,48,49,50,51,52,54,56,62,63,66,69,70,71,72,74,76,79,81,82,86)  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE ( id in (32,39,40,41) ) ORDER BY field(id,32,39,40,41)  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( stu_id=23 and paper_id=56 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `stime` FROM `jt_stu_answ` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001004s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001773s ]
+NOTIC: [8] Use of undefined constant sin - assumed 'sin' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 138 行.
+NOTIC: [8] Use of undefined constant sin - assumed 'sin' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 138 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 144 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 150 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 155 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 160 行.
+NOTIC: [8] Use of undefined constant dou - assumed 'dou' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 172 行.
+NOTIC: [8] Use of undefined constant dou - assumed 'dou' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 172 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant jud - assumed 'jud' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 205 行.
+NOTIC: [8] Use of undefined constant jud - assumed 'jud' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 205 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 211 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 217 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 230 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 230 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 234 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 234 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 234 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 234 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 234 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 234 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 234 行.
+NOTIC: [8] Undefined index: myansw D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 234 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.216927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.217565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007547s ]
+
+[ 2018-06-29T09:36:57+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004836s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0296s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: INSERT INTO `jt_stu_answ_cache` (`single_answ`,`double_answ`,`judge_answ`,`subj_answ`,`stu_id`,`paper_id`) VALUES ('x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x','x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x','x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x','xx@%@xx@%@xx@%@xx','23','56') [ RunTime:0.0782s ]
+
+[ 2018-06-29T09:37:07+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004081s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0242s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0229s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`double_answ`='x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x',`judge_answ`='x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`subj_answ`='xx@%@xx@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.2550s ]
+
+[ 2018-06-29T09:37:17+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004538s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0214s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`double_answ`='x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x',`judge_answ`='x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`subj_answ`='xx@%@xx@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.0994s ]
+
+[ 2018-06-29T09:37:27+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005085s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0188s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`double_answ`='x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x',`judge_answ`='x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`subj_answ`='xx@%@xx@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.1156s ]
+
+[ 2018-06-29T09:37:37+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004090s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0199s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`double_answ`='x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x',`judge_answ`='x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`subj_answ`='xx@%@xx@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.1314s ]
+
+[ 2018-06-29T09:37:47+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004075s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0245s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0188s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`double_answ`='x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x',`judge_answ`='x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`subj_answ`='xx@%@xx@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.1152s ]
+
+[ 2018-06-29T09:37:57+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004069s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0261s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0181s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`double_answ`='x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x',`judge_answ`='x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`subj_answ`='xx@%@xx@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.1297s ]
+
+[ 2018-06-29T09:38:07+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004893s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0648s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0246s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0322s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`double_answ`='x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x',`judge_answ`='x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`subj_answ`='xx@%@xx@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.0750s ]
+
+[ 2018-06-29T09:38:17+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004258s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0331s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0197s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`double_answ`='x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x',`judge_answ`='x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`subj_answ`='xx@%@xx@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.1200s ]
+
+[ 2018-06-29T09:38:27+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004775s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0351s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0183s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`double_answ`='x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x',`judge_answ`='x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`subj_answ`='xx@%@xx@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.1109s ]
+
+[ 2018-06-29T09:38:37+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004813s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0214s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,3,3',`double_answ`='2-4,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x,x-x',`judge_answ`='x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`subj_answ`='xx@%@xx@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.0984s ]
+
+[ 2018-06-29T09:38:47+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004426s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0207s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,3,3',`double_answ`='2-4,2-4,x-x,x-x,x-x,x-x,x-x,x-x,x-x,2-4',`judge_answ`='0,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x',`subj_answ`='xx@%@xx@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.1356s ]
+
+[ 2018-06-29T09:38:57+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004064s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0356s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0237s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0248s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,3,3',`double_answ`='2-4,2-4,x-x,x-x,x-x,x-x,x-x,x-x,x-x,2-4',`judge_answ`='0,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,0',`subj_answ`='111@%@222@%@333@%@444' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.0906s ]
+
+[ 2018-06-29T09:39:07+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004246s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0183s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='3,3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,3,3',`double_answ`='2-4,2-4,x-x,x-x,x-x,x-x,x-x,x-x,x-x,2-4',`judge_answ`='0,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,0',`subj_answ`='111@%@222@%@333@%@444' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.0922s ]
+
+[ 2018-06-29T09:39:23+08:00 ] 127.0.0.1 /index.php/Test/answ
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005636s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0336s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0218s ]
+SQL: SELECT `type` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_paper_ques_random` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `jt_paper_ques_random` WHERE ( paper_id = 56 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0243s ]
+SQL: SELECT `stime` FROM `jt_stu_answ` WHERE ( stu_id=23 and paper_id=56 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `limittime` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=23 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `jt_stu_paper` WHERE ( stu_id=23 and paper_id=56 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `jt_ques_single` WHERE ( id in (34,39,41,43,45,46,48,51,52,53,54,55,59,60,61,63,64,65,67,73,74,77,79,81,84,88,89,90,91,92) ) ORDER BY field(id,34,39,41,43,45,46,48,51,52,53,54,55,59,60,61,63,64,65,67,73,74,77,79,81,84,88,89,90,91,92)  [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0211s ]
+SQL: SELECT * FROM `jt_ques_double` WHERE `id` IN ('56','57','61','62','63','66','69','71','74','75') ORDER BY field(id,56,57,61,62,63,66,69,71,74,75)  [ RunTime:0.0115s ]
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 143 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 143 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 143 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 143 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 143 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 143 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 143 行.
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `jt_ques_judge` WHERE `id` IN ('32','33','34','35','36','38','40','44','46','47','48','49','50','51','52','54','56','62','63','66','69','70','71','72','74','76','79','81','82','86') ORDER BY field(id,32,33,34,35,36,38,40,44,46,47,48,49,50,51,52,54,56,62,63,66,69,70,71,72,74,76,79,81,82,86)  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: xx D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 171 行.
+SQL: INSERT INTO `jt_stu_score` (`stu_id`,`paper_id`,`single_score`,`double_score`,`judge_score`,`all_score`) VALUES ('23','56','1','0','1','2') [ RunTime:0.1919s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: UPDATE `jt_stu_answ` SET `single_answ`='3,3,3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,3,3,3',`double_answ`='2-4,2-4,x-x,x-x,x-x,x-x,x-x,x-x,x-x,2-4',`judge_answ`='0,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,0',`subj_answ`='111@%@222@%@333@%@444',`etime`='1530236363' WHERE ( paper_id=56 and stu_id=23 ) [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0176s ]
+SQL: DELETE FROM `jt_stu_answ_cache` WHERE ( stu_id=23 and paper_id=56 ) [ RunTime:0.1014s ]
+
+[ 2018-06-29T16:43:58+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000858s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001466s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007666s ]
+
+[ 2018-06-29T16:43:59+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005930s ]
+
+[ 2018-06-29T20:48:36+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007683s ]
+
+[ 2018-06-29T20:48:36+08:00 ] 127.0.0.1 /index.php/Public/verifyImg/0.009189795620937247
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000354s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005445s ]
+
+[ 2018-06-29T20:48:38+08:00 ] 127.0.0.1 /index.php/Public/verifyImg/0.901703493595936
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005478s ]
+
+[ 2018-06-29T20:48:43+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004967s ]
+
+[ 2018-06-29T20:48:43+08:00 ] 127.0.0.1 /index.php/Public/verifyImg/0.6381688413053797
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006998s ]
+
+[ 2018-06-29T20:48:51+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007471s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0264s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: telphone D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\jmooctest\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `jt_stu` WHERE `xuehao` = '151110297' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_stu_log` [ RunTime:0.0487s ]
+SQL: INSERT INTO `jt_stu_log` (`lgip`,`lgdate`,`sid`) VALUES ('127.0.0.1','1530276531','158') [ RunTime:0.0968s ]
+
+[ 2018-06-29T20:48:52+08:00 ] 127.0.0.1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008644s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `jt_stu` WHERE `id` = 158 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `jt_course` WHERE ( display=1 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0231s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=155 and is_show=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0258s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=155  and is_show=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_single` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_double` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_judge` WHERE ( course_id=157 and is_show=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jt_ques_subj` WHERE ( course_id=157  and is_show=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000834s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001554s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022873s ]
+
+[ 2018-06-29T20:48:53+08:00 ] 127.0.0.1 /index.php/Announce/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000461s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008224s ]
+NOTIC: [2048] Declaration of Home\Controller\AnnounceController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\AnnounceController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_announce` [ RunTime:0.0274s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=1 ) ORDER BY id desc  [ RunTime:0.0025s ]
+SQL: SELECT a.*,u.name as pubname FROM jt_announce a inner join jt_user as u on a.pub_id=u.id  WHERE ( top=0 ) ORDER BY id desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007606s ]
+
+[ 2018-06-29T20:48:57+08:00 ] 127.0.0.1 /index.php/Paper/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003970s ]
+NOTIC: [2048] Declaration of Home\Controller\PaperController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0185s ]
+SQL: SELECT `id` FROM `jt_paper_basic` WHERE ( answ_status=1 )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: ids D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0182s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=158 and paper_id in(52,53) ) ORDER BY id desc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000445s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001021s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005096s ]
+
+[ 2018-06-29T20:48:58+08:00 ] 127.0.0.1 /index.php/Paper/show.html?sort=id&order=desc&limit=20&offset=0&_=1530276538307
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000923s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004082s ]
+NOTIC: [2048] Declaration of Home\Controller\PaperController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0289s ]
+SQL: SELECT `id` FROM `jt_paper_basic` WHERE ( answ_status=1 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: ids D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0227s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=158 and paper_id in(52,53) ) ORDER BY id desc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0212s ]
+
+[ 2018-06-29T20:49:00+08:00 ] 127.0.0.1 /index.php/Test/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006363s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0413s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate < 1530276540 and enddate > 1530276540 and  review_status=1 ) ORDER BY id desc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0233s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate > 1530276540 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( enddate < 1530276540 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000640s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001820s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004997s ]
+
+[ 2018-06-29T20:50:10+08:00 ] 127.0.0.1 /index.php/Test/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004561s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.1005s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate < 1530276610 and enddate > 1530276610 and  review_status=1 ) ORDER BY id desc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0548s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate > 1530276610 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( enddate < 1530276610 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000575s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003986s ]
+
+[ 2018-06-29T20:50:37+08:00 ] 127.0.0.1 /index.php/Test/exam/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004938s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0261s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0195s ]
+SQL: SELECT `startdate`,`enddate`,`review_status` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0207s ]
+SQL: SELECT `xuehao`,`stu_class` FROM `jt_stu` WHERE `id` = 158 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_paper_limit` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `jt_paper_limit` WHERE ( paper_id=56 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=158 ) LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-06-29T20:59:30+08:00 ] 127.0.0.1 /index.php/Test/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005048s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0252s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate < 1530277170 and enddate > 1530277170 and  review_status=1 ) ORDER BY id desc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0202s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate > 1530277170 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( enddate < 1530277170 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000572s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004091s ]
+
+[ 2018-06-29T20:59:40+08:00 ] 127.0.0.1 /index.php/Test/exam/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005016s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0259s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0232s ]
+SQL: SELECT `startdate`,`enddate`,`review_status` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0216s ]
+SQL: SELECT `xuehao`,`stu_class` FROM `jt_stu` WHERE `id` = 158 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_paper_limit` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `jt_paper_limit` WHERE ( paper_id=56 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0288s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=158 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0702s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0214s ]
+SQL: SELECT `stime` FROM `jt_stu_answ` WHERE ( stu_id=158 and paper_id=56 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `limittime` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_course` [ RunTime:0.0217s ]
+SQL: SELECT `name` FROM `jt_course` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0228s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `jt_paper_ques_random` [ RunTime:0.0238s ]
+SQL: SELECT * FROM `jt_paper_ques_random` WHERE ( paper_id=56 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `jt_stu_paper` WHERE ( paper_id=56 and stu_id=158 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0237s ]
+SQL: SELECT * FROM `jt_ques_single` WHERE ( id in (35,36,39,41,43,45,48,50,51,52,55,57,58,61,62,63,65,67,69,71,74,75,76,77,80,82,86,87,88,91) ) ORDER BY field(id,35,36,39,41,43,45,48,50,51,52,55,57,58,61,62,63,65,67,69,71,74,75,76,77,80,82,86,87,88,91)  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `jt_ques_double` WHERE ( id in (57,58,59,63,65,67,70,71,72,73) ) ORDER BY field(id,57,58,59,63,65,67,70,71,72,73)  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `jt_ques_judge` WHERE ( id in (28,29,32,34,35,36,39,41,42,43,48,50,51,52,55,56,58,59,61,66,68,70,71,73,75,77,79,82,84,85) ) ORDER BY field(id,28,29,32,34,35,36,39,41,42,43,48,50,51,52,55,56,58,59,61,66,68,70,71,73,75,77,79,82,84,85)  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_ques_subj` [ RunTime:0.0219s ]
+SQL: SELECT * FROM `jt_ques_subj` WHERE ( id in (28,37,40,41) ) ORDER BY field(id,28,37,40,41)  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0241s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( stu_id=158 and paper_id=56 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0226s ]
+SQL: SELECT `stime` FROM `jt_stu_answ` WHERE ( paper_id=56 and stu_id=158 ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000966s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001524s ]
+NOTIC: [8] Use of undefined constant sin - assumed 'sin' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 138 行.
+NOTIC: [8] Use of undefined constant sin - assumed 'sin' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 138 行.
+NOTIC: [8] Use of undefined constant dou - assumed 'dou' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 172 行.
+NOTIC: [8] Use of undefined constant dou - assumed 'dou' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 172 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 178 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 183 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 188 行.
+NOTIC: [8] Use of undefined constant myansw - assumed 'myansw' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant jud - assumed 'jud' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 205 行.
+NOTIC: [8] Use of undefined constant jud - assumed 'jud' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 205 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 230 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' D:\wamp\www\jmooctest\Application\Runtime\Cache\Home\b82fae0efcf3d735200d80cb9d6039f7.php 第 230 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011818s ]
+
+[ 2018-06-29T20:59:51+08:00 ] 127.0.0.1 /index.php/Test/exam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004634s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0339s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=158 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0217s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0233s ]
+SQL: SELECT * FROM `jt_stu_answ_cache` WHERE ( paper_id=56 and stu_id=158 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: UPDATE `jt_stu_answ_cache` SET `single_answ`='1,1,2,1,1,2,1,1,2,4,1,2,1,4,2,3,1,1,2,3,4,3,1,2,4,1,4,1,1,1',`double_answ`='4-1,4-3,2-3,2-3,2-1,4-3,2-3,2-3,2-1,4-3',`judge_answ`='0,1,0,1,1,1,1,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,0,1,0',`subj_answ`='网络安全的含义是指：通过网络系统中的软件、硬件及信息资源、使之免受偶然或恶意的破坏纂改和泄露，保证网络系统的正常运行、网络服务不中断。@%@网络安全学习心得网络安全学习心得 篇一：通信网络安全学习心得 网络安全学习心得 通信网络安全涉及到各行各业千家万户，尤其是我们一线工程师规范 施工是万不可掉以轻心的，它不仅关系到我们自身的利益，也关系到 公司的利益。随着通信行业的迅猛发展，厂家和运营商客户对网络建 设与维护的要求越来越高，安全生产的重要性越来越高。这就要求我 们在平时的工作中增强自己的安全规范意识，认清安全生产的对工程 安全的重要性。 近几年，集团公司、公司对安全环保工作越来越重 视，要求也越来越严，可以说，在当前形势下，安全是政治、是大局、 是稳定、是和谐，更是一种不可推卸的责任，因此，作为基层员工要 充分认识到这一点，不断提高对安全环保工作的认识，增强抓好网络 安全工作的紧迫感和责任意识。深刻理解“安全是否决性指标，经营 是计划性指标，节能降耗是约束性指标”，从自身的角度出发，切实 抓好安全建设工作 针对目前公司工程增多，管理不到位，诱发高危事件，漳州区域每周 都召集全区域职工开例会，对发生的事故，进行深入思考，查找原因。 作为个人，虽从未触碰工程建设的高压线，但更应该从前车之鉴中汲 取教训，勉励自己。 工作中应先明确操作流程规范，以及潜在的风险影响，做好风险规避 措施，严格明确的按照执行方案去执行工作。对于工程师来说，流程 规范和制度是最重要，但也是最容易出问题的地方。这就要求我们重 视平时对安全生产的学习，把安全生产规范养成习惯，在工作开始的 前把施工流程再看一遍，把工作内容再认真看一次，多点责任心，认 认真真的去执行，从根源上避免安全生产事故的发生。警钟长鸣，时 时刻刻多想想这些操作会带来什么样的后果，我们的预警措施做好了 没有等等，在做之前多考虑一些，将安全生产放在第一位，我们的工 作才会做的更好。 安全生产另一个重要的方面是人身安全，发生人身安全事故的影响性 远大于设备安全事故，所以在工作中更要加强人身安全的防范措施， 一定要严格按照工程施工规范一步一步的操作，不能轻视任何细微的 工作，这是对工作的负责也是对自己生命的负责。 在完善安全制度 的同时，更要加强我们的安全意识和责任心,从根本上杜绝安全事故 的发生。篇二：学习网络安全之小结 学习网络安全之 小结 对于网络安全，相对于我来说，在未接触这门课程之前，可以说是一 个漏洞，一片空白，网络安全的意识也是很是淡薄。之前也是听说过 网络攻击，盗取情报，窃取密码，查看个人隐私等一些迫害网络安全 秩序的不法行为，这也让我对网络产生一种惧怕感。这次有幸接触网 络安全这门课程，也让我对于网络安全有了新的认识，更多的了解， 也让我从中受益很多。 网络安全从其本质上讲就是网络上的信息安 全．指网络系统硬件、软件及其系统中数据的安全。网络信息的传输、 存储、处理和使用都要求处于安全状态可见．网络安全至少应包括静 态安全和动态安全两种静态安全是指信息在没有传输和处理的状态 下信息内容的秘密性、完整性和真实性：动态安全是指信息在传输过 程中不被篡改、窃取、遗失和破坏。实际上计算机网络安全的具体含 义会随着使用者的变化而变化，使用者不同，对网络安全的认识和要 求也就不同。例如从普通使用者的角度来说，可能仅仅希望个人隐私 或机密信息在网络上传输时受到保护，避免被窃听、篡改和伪造；而 网络提供商除了关心这些网络信息安全外，还要考虑如何应付突发的 自然灾害、军事打击等对网络硬件的破坏，以及在网络出现异常时如 何恢复网络通信，保持网络通信的连续性。网络安全既有技术方面的 问题，也有管理方面的问题，两方面相互补充，缺一不可。随着互联 网的大规模普及和应用，网络安全问题也随之呈现在我们面前。病毒 渗透、系统漏洞和黑客攻击等威胁层出不穷，已经严重地影响到网络 的正常运行。网络规模的日益庞大，给网络安全防范人员提出了更加 严峻的挑战。人力、物力和财力的有限性决定了不可能完全地依赖手 工方式进行安全分析防范所以如何采取更加快捷方便而且行之有效 的方法进行攻击分析已经成为网络安全的重要课题。随着计算机技术 的飞速发展，信息网络已经成为社会发展的重要保证。有很多是敏感 信息，甚至是国家机密。所以难免会吸引来自世界各地的各种人为攻 击。同时，网络实体还要经受诸如水灾、火灾、地震、电磁辐射等方 面的考验。计算机犯罪案件也急剧上升，计算机犯罪已经成为普遍的 国际性问题。据美国联邦调查局的报告，计算机犯罪是商业犯罪中最 大的犯罪类型之一。 计算机网络安全存在的威胁严重的威胁。由于计算机网络计算机网络 组成形式多样性、终端分布广和网络的开放性、互联性等特征，致使 网络容易受到来自黑客、恶意软件和其它种种攻击。常见的计算机网 络安全威胁主要有：信息泄露、完整性破坏、拒绝服务、网络滥用。 信息泄露：信息泄露破坏了系统的保密性，他是指信息被透漏给非授 权的实体。 常见的，能够导致信息泄露的威胁有： 网络监听、业务 流分析、电磁、射频截获、人员的有意或无意、媒体清理、漏洞利用、 授权侵犯、物理侵入、病毒、木马、后门、流氓软件、网络钓鱼。 完整性破坏：可以通过漏洞利用、物理侵犯、授权侵犯、病毒，木马， 漏洞来等方式实现。 拒绝服务攻击：对信息或资源可以合法的访问却被非法的拒绝或者推 迟与时间密切相关的操作。 网络滥用：合法的用户滥用网络，引入不必要的安全威胁，包括非法 外联、非法内联、移动风险、设备滥用、业务滥用。 常见的计算机网络络安全威胁的表现形式主要有：窃听、重传、伪造、 篡改、拒绝服务攻击、行为否认、电子欺骗、非授权访问、传播病毒。 窃听：攻击者通过监视网络数据的手段获得重要的信息，从而导致网 络信息的泄密。 重传：攻击者事先获得部分或全部信息，以后将此 信息发送给接收者。 篡改：攻击者对合法用户之间的通讯信息进行修改、删除、插入， 再将伪造的信息发送给接收者，这就是纯粹的信息破坏，这样的网络 侵犯者被称为积极侵犯者。积极侵犯者的破坏作用最大。 拒绝服务攻击：攻击者通过某种方法使系统响应减慢甚至瘫痪，阻止 合法用户获得服务。 行为否认：通讯实体否认已经发生的行为。 电子欺骗：通过假冒合法用户的身份来进行网络攻击，从而达到掩盖 攻击者真实身份，嫁祸他人的目的. 非授权访问：没有预先经过同意，就使用网络或计算机资源被看作非 授权访问。 传播病毒：通过网络传播计算机病毒，其破坏性非常高， 而且用户很难防范。 常见的网络攻击有：特洛伊木马，邮件炸弹，过载攻击，淹没攻击， ping 攻击等。 所以，网络安全是一项动态、整体的系统工程，从技 术上来说，网络安全有安全的操作系统、应用系统、防病毒、防火墙、 入侵检测、网络监控、信息审计、通信加密、灾难恢复、安全扫描等 多个安全组件组成，一个单独的组件是无法确保信息网络的安全性。@%@xx@%@xx' WHERE ( paper_id=56 and stu_id=158 ) [ RunTime:0.1066s ]
+
+[ 2018-06-29T20:59:58+08:00 ] 127.0.0.1 /index.php/Test/answ
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004346s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0242s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0220s ]
+SQL: SELECT `type` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `jt_paper_ques_random` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `jt_paper_ques_random` WHERE ( paper_id = 56 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0218s ]
+SQL: SELECT `stime` FROM `jt_stu_answ` WHERE ( stu_id=158 and paper_id=56 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `limittime` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=158 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `jt_stu_paper` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `jt_stu_paper` WHERE ( stu_id=158 and paper_id=56 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `jt_ques_single` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `jt_ques_single` WHERE ( id in (35,36,39,41,43,45,48,50,51,52,55,57,58,61,62,63,65,67,69,71,74,75,76,77,80,82,86,87,88,91) ) ORDER BY field(id,35,36,39,41,43,45,48,50,51,52,55,57,58,61,62,63,65,67,69,71,74,75,76,77,80,82,86,87,88,91)  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `jt_ques_double` [ RunTime:0.0184s ]
+SQL: SELECT * FROM `jt_ques_double` WHERE `id` IN ('57','58','59','63','65','67','70','71','72','73') ORDER BY field(id,57,58,59,63,65,67,70,71,72,73)  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `jt_ques_judge` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `jt_ques_judge` WHERE `id` IN ('28','29','32','34','35','36','39','41','42','43','48','50','51','52','55','56','58','59','61','66','68','70','71','73','75','77','79','82','84','85') ORDER BY field(id,28,29,32,34,35,36,39,41,42,43,48,50,51,52,55,56,58,59,61,66,68,70,71,73,75,77,79,82,84,85)  [ RunTime:0.0021s ]
+SQL: INSERT INTO `jt_stu_score` (`stu_id`,`paper_id`,`single_score`,`double_score`,`judge_score`,`all_score`) VALUES ('158','56','22','12','24','58') [ RunTime:0.0948s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined index: single_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: zz D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: double_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 217 行.
+NOTIC: [8] Undefined index: judge_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 232 行.
+NOTIC: [8] Undefined index: subj_answ D:\wamp\www\jmooctest\Application\Home\Model\Stu_answModel.class.php 第 238 行.
+SQL: UPDATE `jt_stu_answ` SET `single_answ`='1,1,2,1,1,2,1,1,2,4,1,2,1,4,2,3,1,1,2,3,4,3,1,2,4,1,4,1,1,1',`double_answ`='4-1,4-3,2-3,2-3,2-1,4-3,2-3,2-3,2-1,4-3',`judge_answ`='0,1,0,1,1,1,1,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,0,1,0',`subj_answ`='网络安全的含义是指：通过网络系统中的软件、硬件及信息资源、使之免受偶然或恶意的破坏纂改和泄露，保证网络系统的正常运行、网络服务不中断。@%@网络安全学习心得网络安全学习心得 篇一：通信网络安全学习心得 网络安全学习心得 通信网络安全涉及到各行各业千家万户，尤其是我们一线工程师规范 施工是万不可掉以轻心的，它不仅关系到我们自身的利益，也关系到 公司的利益。随着通信行业的迅猛发展，厂家和运营商客户对网络建 设与维护的要求越来越高，安全生产的重要性越来越高。这就要求我 们在平时的工作中增强自己的安全规范意识，认清安全生产的对工程 安全的重要性。 近几年，集团公司、公司对安全环保工作越来越重 视，要求也越来越严，可以说，在当前形势下，安全是政治、是大局、 是稳定、是和谐，更是一种不可推卸的责任，因此，作为基层员工要 充分认识到这一点，不断提高对安全环保工作的认识，增强抓好网络 安全工作的紧迫感和责任意识。深刻理解“安全是否决性指标，经营 是计划性指标，节能降耗是约束性指标”，从自身的角度出发，切实 抓好安全建设工作 针对目前公司工程增多，管理不到位，诱发高危事件，漳州区域每周 都召集全区域职工开例会，对发生的事故，进行深入思考，查找原因。 作为个人，虽从未触碰工程建设的高压线，但更应该从前车之鉴中汲 取教训，勉励自己。 工作中应先明确操作流程规范，以及潜在的风险影响，做好风险规避 措施，严格明确的按照执行方案去执行工作。对于工程师来说，流程 规范和制度是最重要，但也是最容易出问题的地方。这就要求我们重 视平时对安全生产的学习，把安全生产规范养成习惯，在工作开始的 前把施工流程再看一遍，把工作内容再认真看一次，多点责任心，认 认真真的去执行，从根源上避免安全生产事故的发生。警钟长鸣，时 时刻刻多想想这些操作会带来什么样的后果，我们的预警措施做好了 没有等等，在做之前多考虑一些，将安全生产放在第一位，我们的工 作才会做的更好。 安全生产另一个重要的方面是人身安全，发生人身安全事故的影响性 远大于设备安全事故，所以在工作中更要加强人身安全的防范措施， 一定要严格按照工程施工规范一步一步的操作，不能轻视任何细微的 工作，这是对工作的负责也是对自己生命的负责。 在完善安全制度 的同时，更要加强我们的安全意识和责任心,从根本上杜绝安全事故 的发生。篇二：学习网络安全之小结 学习网络安全之 小结 对于网络安全，相对于我来说，在未接触这门课程之前，可以说是一 个漏洞，一片空白，网络安全的意识也是很是淡薄。之前也是听说过 网络攻击，盗取情报，窃取密码，查看个人隐私等一些迫害网络安全 秩序的不法行为，这也让我对网络产生一种惧怕感。这次有幸接触网 络安全这门课程，也让我对于网络安全有了新的认识，更多的了解， 也让我从中受益很多。 网络安全从其本质上讲就是网络上的信息安 全．指网络系统硬件、软件及其系统中数据的安全。网络信息的传输、 存储、处理和使用都要求处于安全状态可见．网络安全至少应包括静 态安全和动态安全两种静态安全是指信息在没有传输和处理的状态 下信息内容的秘密性、完整性和真实性：动态安全是指信息在传输过 程中不被篡改、窃取、遗失和破坏。实际上计算机网络安全的具体含 义会随着使用者的变化而变化，使用者不同，对网络安全的认识和要 求也就不同。例如从普通使用者的角度来说，可能仅仅希望个人隐私 或机密信息在网络上传输时受到保护，避免被窃听、篡改和伪造；而 网络提供商除了关心这些网络信息安全外，还要考虑如何应付突发的 自然灾害、军事打击等对网络硬件的破坏，以及在网络出现异常时如 何恢复网络通信，保持网络通信的连续性。网络安全既有技术方面的 问题，也有管理方面的问题，两方面相互补充，缺一不可。随着互联 网的大规模普及和应用，网络安全问题也随之呈现在我们面前。病毒 渗透、系统漏洞和黑客攻击等威胁层出不穷，已经严重地影响到网络 的正常运行。网络规模的日益庞大，给网络安全防范人员提出了更加 严峻的挑战。人力、物力和财力的有限性决定了不可能完全地依赖手 工方式进行安全分析防范所以如何采取更加快捷方便而且行之有效 的方法进行攻击分析已经成为网络安全的重要课题。随着计算机技术 的飞速发展，信息网络已经成为社会发展的重要保证。有很多是敏感 信息，甚至是国家机密。所以难免会吸引来自世界各地的各种人为攻 击。同时，网络实体还要经受诸如水灾、火灾、地震、电磁辐射等方 面的考验。计算机犯罪案件也急剧上升，计算机犯罪已经成为普遍的 国际性问题。据美国联邦调查局的报告，计算机犯罪是商业犯罪中最 大的犯罪类型之一。 计算机网络安全存在的威胁严重的威胁。由于计算机网络计算机网络 组成形式多样性、终端分布广和网络的开放性、互联性等特征，致使 网络容易受到来自黑客、恶意软件和其它种种攻击。常见的计算机网 络安全威胁主要有：信息泄露、完整性破坏、拒绝服务、网络滥用。 信息泄露：信息泄露破坏了系统的保密性，他是指信息被透漏给非授 权的实体。 常见的，能够导致信息泄露的威胁有： 网络监听、业务 流分析、电磁、射频截获、人员的有意或无意、媒体清理、漏洞利用、 授权侵犯、物理侵入、病毒、木马、后门、流氓软件、网络钓鱼。 完整性破坏：可以通过漏洞利用、物理侵犯、授权侵犯、病毒，木马， 漏洞来等方式实现。 拒绝服务攻击：对信息或资源可以合法的访问却被非法的拒绝或者推 迟与时间密切相关的操作。 网络滥用：合法的用户滥用网络，引入不必要的安全威胁，包括非法 外联、非法内联、移动风险、设备滥用、业务滥用。 常见的计算机网络络安全威胁的表现形式主要有：窃听、重传、伪造、 篡改、拒绝服务攻击、行为否认、电子欺骗、非授权访问、传播病毒。 窃听：攻击者通过监视网络数据的手段获得重要的信息，从而导致网 络信息的泄密。 重传：攻击者事先获得部分或全部信息，以后将此 信息发送给接收者。 篡改：攻击者对合法用户之间的通讯信息进行修改、删除、插入， 再将伪造的信息发送给接收者，这就是纯粹的信息破坏，这样的网络 侵犯者被称为积极侵犯者。积极侵犯者的破坏作用最大。 拒绝服务攻击：攻击者通过某种方法使系统响应减慢甚至瘫痪，阻止 合法用户获得服务。 行为否认：通讯实体否认已经发生的行为。 电子欺骗：通过假冒合法用户的身份来进行网络攻击，从而达到掩盖 攻击者真实身份，嫁祸他人的目的. 非授权访问：没有预先经过同意，就使用网络或计算机资源被看作非 授权访问。 传播病毒：通过网络传播计算机病毒，其破坏性非常高， 而且用户很难防范。 常见的网络攻击有：特洛伊木马，邮件炸弹，过载攻击，淹没攻击， ping 攻击等。 所以，网络安全是一项动态、整体的系统工程，从技 术上来说，网络安全有安全的操作系统、应用系统、防病毒、防火墙、 入侵检测、网络监控、信息审计、通信加密、灾难恢复、安全扫描等 多个安全组件组成，一个单独的组件是无法确保信息网络的安全性。@%@xx@%@xx',`etime`='1530277197' WHERE ( paper_id=56 and stu_id=158 ) [ RunTime:0.0522s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ_cache` [ RunTime:0.0238s ]
+SQL: DELETE FROM `jt_stu_answ_cache` WHERE ( stu_id=158 and paper_id=56 ) [ RunTime:0.0923s ]
+
+[ 2018-06-29T21:00:05+08:00 ] 127.0.0.1 /index.php/Paper/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008122s ]
+NOTIC: [2048] Declaration of Home\Controller\PaperController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0343s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0225s ]
+SQL: SELECT `id` FROM `jt_paper_basic` WHERE ( answ_status=1 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: ids D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=158 and paper_id in(52,53) ) ORDER BY id desc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004621s ]
+
+[ 2018-06-29T21:00:06+08:00 ] 127.0.0.1 /index.php/Paper/show.html?sort=id&order=desc&limit=20&offset=0&_=1530277206492
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005899s ]
+NOTIC: [2048] Declaration of Home\Controller\PaperController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0439s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0259s ]
+SQL: SELECT `id` FROM `jt_paper_basic` WHERE ( answ_status=1 )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: ids D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=158 and paper_id in(52,53) ) ORDER BY id desc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0247s ]
+
+[ 2018-06-29T21:00:08+08:00 ] 127.0.0.1 /index.php/Test/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004305s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate < 1530277208 and enddate > 1530277208 and  review_status=1 ) ORDER BY id desc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0230s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate > 1530277208 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( enddate < 1530277208 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000579s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009555s ]
+
+[ 2018-06-29T21:00:10+08:00 ] 127.0.0.1 /index.php/Test/exam/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010637s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0546s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0217s ]
+SQL: SELECT `startdate`,`enddate`,`review_status` FROM `jt_paper_basic` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `jt_stu` [ RunTime:0.0213s ]
+SQL: SELECT `xuehao`,`stu_class` FROM `jt_stu` WHERE `id` = 158 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jt_paper_limit` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `jt_paper_limit` WHERE ( paper_id=56 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( paper_id=56 and stu_id=158 ) LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-06-29T21:25:20+08:00 ] 127.0.0.1 /index.php/Test/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004806s ]
+NOTIC: [2048] Declaration of Home\Controller\TestController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\TestController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate < 1530278720 and enddate > 1530278720 and  review_status=1 ) ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `jt_user` [ RunTime:0.0226s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( startdate > 1530278720 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `jt_paper_basic` WHERE ( enddate < 1530278720 and review_status=1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `jt_user` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000576s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004640s ]
+
+[ 2018-06-29T21:25:24+08:00 ] 127.0.0.1 /index.php/Paper/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004061s ]
+NOTIC: [2048] Declaration of Home\Controller\PaperController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0875s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.1716s ]
+SQL: SELECT `id` FROM `jt_paper_basic` WHERE ( answ_status=1 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: ids D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.1653s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=158 and paper_id in(52,53) ) ORDER BY id desc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.1648s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000491s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004091s ]
+
+[ 2018-06-29T21:25:25+08:00 ] 127.0.0.1 /index.php/Paper/show.html?sort=id&order=desc&limit=20&offset=0&_=1530278724865
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005619s ]
+NOTIC: [2048] Declaration of Home\Controller\PaperController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0249s ]
+SQL: SHOW COLUMNS FROM `jt_paper_basic` [ RunTime:0.0229s ]
+SQL: SELECT `id` FROM `jt_paper_basic` WHERE ( answ_status=1 )  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: ids D:\wamp\www\jmooctest\Application\Home\Controller\PaperController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `jt_stu_score` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `jt_stu_score` WHERE ( stu_id=158 and paper_id in(52,53) ) ORDER BY id desc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `jt_stu_answ` [ RunTime:0.0215s ]
+
+[ 2018-06-29T21:35:06+08:00 ] 127.0.0.1 /index.php/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007242s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000847s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001445s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008420s ]
+
+[ 2018-06-29T21:35:07+08:00 ] 127.0.0.1 /index.php/Public/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006673s ]
+

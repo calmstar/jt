@@ -103,6 +103,9 @@ class Ques_subjModel extends Model{
 	    $cou = M('Course');
 	    //for循环验证数据格式
 	    foreach($data as $k => $v){
+            if($k == 0){
+                continue;
+            }
 	    	foreach ($v as $kk => $vv) {
 	    		//将课程名字转化为对应的id
 	    		if($kk == 0){
@@ -159,23 +162,23 @@ class Ques_subjModel extends Model{
                     }
                 }
 
-                $check_data[$k]['adddate'] = time();
+                $check_data[$k-1]['adddate'] = time();
 	    		//赋值到一个新的数组$check_data：
 	    		switch ($kk) {
 	    		case 0:
-	    			$check_data[$k]['course_id'] = $vv;
+	    			$check_data[$k-1]['course_id'] = $vv;
 	    		    break;
 	    		case 1:
-	    			$check_data[$k]['descr'] = $vv;
+	    			$check_data[$k-1]['descr'] = $vv;
 	    		    break;
 	    		case 2:
-	    			$check_data[$k]['right_answ'] = $vv;
+	    			$check_data[$k-1]['right_answ'] = $vv;
 	    		    break;
 	    		case 3:
-	    			$check_data[$k]['difficulty'] = $vv;
+	    			$check_data[$k-1]['difficulty'] = $vv;
 	    		    break;
                 case 4:
-                    $check_data[$k]['is_show'] = $vv;
+                    $check_data[$k-1]['is_show'] = $vv;
                     break;
 	    		}
 	    	}

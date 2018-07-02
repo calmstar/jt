@@ -385,6 +385,7 @@ $(function(){
         clickToSelect:true,
         toolbar:"#toolbar",
         cache: false,
+        height:"600",
 
         pagination: true,
         pageSize: 20,
@@ -517,6 +518,7 @@ $(function(){
         clickToSelect:true,
         toolbar:"#toolbar",
         cache: false,
+        height:"600",
 
         pagination: true, 
         pageSize: 20,

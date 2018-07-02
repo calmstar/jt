@@ -22,8 +22,8 @@ function excelToArray($filePath){
     //取得一共有多少行  
     $allRow = $currentSheet->getHighestRow();  
      
-    $excelData = array(); 
-    for($currentRow = 1;$currentRow<=$allRow;$currentRow++){  
+    $excelData = array();
+    for($currentRow = 1;$currentRow<=$allRow;$currentRow++){
         for($currentColumn='A';$currentColumn<=$allColumn;$currentColumn++){  
             $address = $currentColumn.$currentRow;  
             $excelData[$currentRow-1][] =  $currentSheet->getCell($address)->getValue();  

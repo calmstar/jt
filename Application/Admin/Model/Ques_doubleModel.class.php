@@ -198,6 +198,10 @@ class Ques_doubleModel extends Model{
 		    $check_field = array(3,5,7,9,10);
 		    //for循环验证数据格式
 		    foreach($data as $k => $v){
+		        // 从第二行开始判断并取得数据
+		        if($k == 0){
+		            continue;
+                }
 		    	foreach ($v as $kk => $vv) {
 		    		//将课程名字转化为对应的id
 		    		if($kk == 0){
@@ -249,46 +253,45 @@ class Ques_doubleModel extends Model{
 		    			}
 		    		}
 
-
-                    $check_data[$k]['adddate'] = time();
+                    $check_data[$k-1]['adddate'] = time();
 		    		//赋值到一个新的数组$check_data：
 		    		//(由于没有修改键名的方法，所以另起一个数组)
 		    		switch ($kk) {
 		    		case 0:
-		    			$check_data[$k]['course_id'] = $vv;
+		    			$check_data[$k-1]['course_id'] = $vv;
 		    		    break;
 		    		case 1:
-		    			$check_data[$k]['descr'] = $vv;
+		    			$check_data[$k-1]['descr'] = $vv;
 		    		    break;
 		    		case 2:
-		    			$check_data[$k]['op1'] = $vv;
+		    			$check_data[$k-1]['op1'] = $vv;
 		    		    break;
 		    		case 3:
-		    			$check_data[$k]['is_op1'] = $vv;
+		    			$check_data[$k-1]['is_op1'] = $vv;
 		    		    break;
 		    		case 4:
-		    			$check_data[$k]['op2'] = $vv;
+		    			$check_data[$k-1]['op2'] = $vv;
 		    		    break;
 	    		    case 5:
-	    		    	$check_data[$k]['is_op2'] = $vv;
+	    		    	$check_data[$k-1]['is_op2'] = $vv;
 	    		        break;
 			        case 6:
-			        	$check_data[$k]['op3'] = $vv;
+			        	$check_data[$k-1]['op3'] = $vv;
 			            break;
 		            case 7:
-		            	$check_data[$k]['is_op3'] = $vv;
+		            	$check_data[$k-1]['is_op3'] = $vv;
 		                break;
 	                case 8:
-	                	$check_data[$k]['op4'] = $vv;
+	                	$check_data[$k-1]['op4'] = $vv;
 	                    break;
 	                case 9:
-	                	$check_data[$k]['is_op4'] = $vv;
+	                	$check_data[$k-1]['is_op4'] = $vv;
 	                    break;
 	                case 10:
-	                	$check_data[$k]['is_show'] = $vv;
+	                	$check_data[$k-1]['is_show'] = $vv;
 	                    break;
 	                case 11:
-	                	$check_data[$k]['difficulty'] = $vv;
+	                	$check_data[$k-1]['difficulty'] = $vv;
 	                    break;
 		    		}
 		    	}

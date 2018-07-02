@@ -197,7 +197,7 @@ class QuestionController extends AccessController{
 		    	$this->error('导入数据库失败');
 		    }
 		}else{
-			$this->error('未选择文件');
+			$this->display();
 		}
 	}
 
@@ -376,14 +376,16 @@ class QuestionController extends AccessController{
 			}
 		   //上传文件成功后的操作
 		    $data = excelToArray($all_path);
-		    //处理excel中生成的二维数据
+
+            //处理excel中生成的二维数据
 		    $check_data = $dou->deal_file_data($data);
 		    //错误时返回一个 一维的错误信息数组，正确时返回一个二维数组数据
 		    //必须为字符 0 ,而不能是数字0！后者意味着找不到,就和前面的匹配了
 		    if($check_data['status'] == '0'){ 
 		    	$this->error($check_data['msg']);exit;
 		    }
-		    //最后无误将改造后的数组addall	
+
+		    //最后无误将改造后的数组addall
 		    $res = $dou->addall($check_data);
 		    if($res){
 		    	$this->success('导入数据库成功');
@@ -391,7 +393,7 @@ class QuestionController extends AccessController{
 		    	$this->error('导入数据库失败');
 		    }
 		}else{
-			$this->error('未选择文件');
+			$this->display();
 		}
 	}
 
@@ -584,7 +586,7 @@ class QuestionController extends AccessController{
 		    	$this->error('导入数据库失败');
 		    }
 		}else{
-			$this->error('未选择文件');
+			$this->display();
 		}
 	}
 
@@ -770,9 +772,10 @@ class QuestionController extends AccessController{
 		    	$this->error('导入数据库失败');
 		    }
 		}else{
-			$this->error('未选择文件');
+			$this->display();
 		}
 	}
+
 
 	
 }
