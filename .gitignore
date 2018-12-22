@@ -1,0 +1,10 @@
+php_errors.log
+.idea/
+Application/Runtime/
+Public/Upload/limit_stu/
+Public/Upload/ques_double/
+Public/Upload/ques_judge/
+Public/Upload/ques_single/
+Public/Upload/ques_subj/
+Public/Upload/stu/
+Application/Tools/verifyCode/

@@ -50,13 +50,21 @@
 
 </head>
 
-<body class="bg-success"  onselectstart="return false" onpaste="return false" oncontextmenu="return false" oncopy="return false" oncut="return false" >
+<body class="bg-success"  onselectstart="return false"
+      onpaste="return false" oncontextmenu="return false"
+      oncopy="return false"
+      oncut="return false"
+      ondragstart="return false"
+      draggable="false"
+      ondragenter="event.dataTransfer.dropEffect='none'; event.stopPropagation(); event.preventDefault();"
+      ondragover="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();"
+      ondrop="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();"
+>
 
     <form action="__CONTROLLER__/answ" method="post"  id="sub">
 
     <!-- 正文 -->
     <div class="container-fluid">
-
         <nav class="navbar navbar-default navbar-fixed-top animated fadeInDown">
             <div class="container">
                 <div class="row">
@@ -309,6 +317,12 @@
         $(function(){
             timer(intDiff);
             time_post();
+            $('textarea').bind('input propertychange', function(){
+                var len = $(this).val().length;
+                if(len >= 1000){
+                    layer.alert('内容不许超过一千个字符，请选中多余内容后删除！');
+                }
+            });
         });
         
 
