@@ -8,3 +8,5 @@ Public/Upload/ques_single/
 Public/Upload/ques_subj/
 Public/Upload/stu/
 Application/Tools/verifyCode/
+.htacces
+.user.ini

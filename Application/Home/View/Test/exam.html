@@ -145,7 +145,7 @@
 
                        <foreach name="info[sin]"  item="v">
                         <div class="bg-warning bg">
-                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                            {$i++}. {$v.descr}
                         </div>
                         <div class="answ">
                             <div class="radio">
@@ -181,7 +181,7 @@
                        
                        <foreach name="info[dou]" item="v">
                         <div class="bg-warning bg" >
-                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                            {$i++}. {$v.descr}
                         </div>
                         <div class="answ">                              
                             <div class="checkbox">
@@ -216,7 +216,7 @@
                        
                         <foreach name="info[jud]" item="v">
                         <div class="bg-warning bg" >
-                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                            {$i++}. {$v.descr}
                         </div>
                         <div class="answ">
                             <div class="radio">
@@ -243,7 +243,7 @@
                         
                         <foreach name="info[sub]" item="v">
                         <div class="bg-warning bg" >
-                            {$i++}. {$v.descr|htmlspecialchars_decode|strip_tags}
+                            {$i++}. {$v.descr}
                         </div>
                         <div style="padding-left: 25px">
                             <textarea class="form-control" style="height:250px; border:1px solid #ddd;" name="{$i-1}"><if condition="$v['myansw'] != 'xx' ">{$v['myansw']}</if></textarea>

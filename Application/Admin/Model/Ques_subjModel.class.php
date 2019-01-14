@@ -169,10 +169,10 @@ class Ques_subjModel extends Model{
 	    			$check_data[$k-1]['course_id'] = $vv;
 	    		    break;
 	    		case 1:
-	    			$check_data[$k-1]['descr'] = $vv;
+	    			$check_data[$k-1]['descr'] = htmlspecialchars($vv);
 	    		    break;
 	    		case 2:
-	    			$check_data[$k-1]['right_answ'] = $vv;
+	    			$check_data[$k-1]['right_answ'] = htmlspecialchars($vv);
 	    		    break;
 	    		case 3:
 	    			$check_data[$k-1]['difficulty'] = $vv;

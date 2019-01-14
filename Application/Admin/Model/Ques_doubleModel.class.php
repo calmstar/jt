@@ -261,28 +261,28 @@ class Ques_doubleModel extends Model{
 		    			$check_data[$k-1]['course_id'] = $vv;
 		    		    break;
 		    		case 1:
-		    			$check_data[$k-1]['descr'] = $vv;
+		    			$check_data[$k-1]['descr'] = htmlspecialchars($vv);
 		    		    break;
 		    		case 2:
-		    			$check_data[$k-1]['op1'] = $vv;
+		    			$check_data[$k-1]['op1'] = htmlspecialchars($vv);
 		    		    break;
 		    		case 3:
 		    			$check_data[$k-1]['is_op1'] = $vv;
 		    		    break;
 		    		case 4:
-		    			$check_data[$k-1]['op2'] = $vv;
+		    			$check_data[$k-1]['op2'] = htmlspecialchars($vv);
 		    		    break;
 	    		    case 5:
 	    		    	$check_data[$k-1]['is_op2'] = $vv;
 	    		        break;
 			        case 6:
-			        	$check_data[$k-1]['op3'] = $vv;
+			        	$check_data[$k-1]['op3'] = htmlspecialchars($vv);
 			            break;
 		            case 7:
 		            	$check_data[$k-1]['is_op3'] = $vv;
 		                break;
 	                case 8:
-	                	$check_data[$k-1]['op4'] = $vv;
+	                	$check_data[$k-1]['op4'] = htmlspecialchars($vv);
 	                    break;
 	                case 9:
 	                	$check_data[$k-1]['is_op4'] = $vv;

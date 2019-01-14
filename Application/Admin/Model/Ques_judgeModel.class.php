@@ -195,7 +195,7 @@ class Ques_judgeModel extends Model{
 		    			$check_data[$k-1]['course_id'] = $vv;
 		    		    break;
 		    		case 1:
-		    			$check_data[$k-1]['descr'] = $vv;
+		    			$check_data[$k-1]['descr'] = htmlspecialchars($vv);
 		    		    break;
 		    		case 2:
 		    			$check_data[$k-1]['is_true'] = $vv;

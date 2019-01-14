@@ -147,6 +147,38 @@ class PaperController extends AccessController{
 	}
 
 	function edit(){
+
+		if (IS_AJAX && ($_GET['sin'] || $_GET['dou'] || $_GET['jud'] || $_GET['sub']) ) { 
+			// paper_ques_fixed
+			$id = I('get.id');
+			$ques_info = M('paper_ques_fixed')->where("paper_id=$id")->find();
+			//paper_ques_fixed 中的 limit_题型
+
+			if($_GET['sin']){
+				$sin = new \Admin\Model\Ques_singleModel();
+				$table_sin = $sin->select($ques_info['limit_sin']);
+				$info['rows'] = $sin->deal_sin_show($table_sin);
+			}
+			if($_GET['dou']){
+				$dou = new \Admin\Model\Ques_doubleModel();
+				$table_dou = $dou->select($ques_info['limit_dou']);
+				$info['rows'] = $dou->deal_dou_show($table_dou);
+			}
+			if($_GET['jud']){
+				$jud = new \Admin\Model\Ques_judgeModel();
+				$table_jud = $jud->select($ques_info['limit_jud']);
+				$info['rows'] = $jud->deal_jud_show($table_jud);
+			}
+			if($_GET['sub']){
+				$sub = new \Admin\Model\Ques_subjModel();
+				$table_sub = $sub->select($ques_info['limit_sub']);
+				$info['rows'] = $sub->deal_sub_show($table_sub);
+			}
+			// 返回给bootstraptable插件必须是一个数组，键名必须为rows和total
+			$info['total'] = count($info['rows']);
+			$this->ajaxReturn($info);
+		}
+
 		if(!empty($_POST)){
 
 			$paper = new \Admin\Model\Paper_basicModel(); 
@@ -270,40 +302,9 @@ class PaperController extends AccessController{
 			if($basic_info['type'] == 1){
 				// paper_ques_random
 				$ques_info = M('paper_ques_random')->where("paper_id=$id")->find();
-
 			}else{
 				// paper_ques_fixed
 				$ques_info = M('paper_ques_fixed')->where("paper_id=$id")->find();
-				//paper_ques_fixed 中的 limit_题型
-				$sin = new \Admin\Model\Ques_singleModel();
-				$table_sin = $sin->select($ques_info['limit_sin']);
-				$table_sin = $sin->deal_sin_show($table_sin);
-
-				$dou = new \Admin\Model\Ques_doubleModel();
-				$table_dou = $dou->select($ques_info['limit_dou']);
-				$table_dou = $dou->deal_dou_show($table_dou);
-
-				$jud = new \Admin\Model\Ques_judgeModel();
-				$table_jud = $jud->select($ques_info['limit_jud']);
-				$table_jud = $jud->deal_jud_show($table_jud);
-
-				$sub = new \Admin\Model\Ques_subjModel();
-				$table_sub = $sub->select($ques_info['limit_sub']);
-				$table_sub = $sub->deal_sub_show($table_sub);
-
-				//在table中的data-url加上sin等标示请求数据
-				if($_GET['sin']){
-					$this->ajaxReturn($table_sin);
-				}
-				if($_GET['dou']){
-					$this->ajaxReturn($table_dou);
-				}
-				if($_GET['jud']){
-					$this->ajaxReturn($table_jud);
-				}
-				if($_GET['sub']){
-					$this->ajaxReturn($table_sub);
-				}
 			}
 			$this->assign('ques_info',$ques_info);
 
@@ -382,8 +383,47 @@ class PaperController extends AccessController{
 
 	//分配指定题目
 	function fixed_ques(){
+
+		// ajax请求的方法一般放前面，避免过多无谓的数据运算。
+		// 各类型的题目通过前端插件的异步post方式来请求获得，其请求的连接中含有sin dou等参数
+		if (IS_AJAX && ($_GET['sin'] || $_GET['dou'] || $_GET['jud'] || $_GET['sub']) ) { //提交的post方法也为异步的post
+			//将paper_id转为course_id，name
+			$paper_id = I('get.paper_id');
+			$info = M('Paper_basic')->field('course_id')->find($paper_id);
+			$this->assign('info',$info); //赋到各类型题请求的URL中
+			// 可分配到的试卷题目 与 试卷所属课程绑定即可。而不管角色
+			$course_id = $info['course_id'];
+
+			//在table中的data-url加上sin等标示请求数据
+			if($_GET['sin']){
+				$sin = new \Admin\Model\Ques_singleModel();
+				$table_sin = $sin->where("course_id='$course_id'")->select();
+				$info['rows'] = $sin->deal_sin_show($table_sin);
+			}
+			if($_GET['dou']){
+				$dou = new \Admin\Model\Ques_doubleModel();
+				$table_dou = $dou->where("course_id='$course_id'")->select();
+				$info['rows'] = $dou->deal_dou_show($table_dou);
+			}
+			if($_GET['jud']){
+				$jud = new \Admin\Model\Ques_judgeModel();
+				$table_jud = $jud->where("course_id='$course_id'")->select();
+				$info['rows'] = $jud->deal_jud_show($table_jud);
+			}
+			if($_GET['sub']){
+				$sub = new \Admin\Model\Ques_subjModel();
+				$table_sub = $sub->where("course_id='$course_id'")->select();
+				$info['rows'] = $sub->deal_sub_show($table_sub);
+			}
+			// 返回给bootstraptable插件必须是一个数组，键名必须为rows和total
+			$info['total'] = count($info['rows']);
+			$this->ajaxReturn($info);
+		}
+
 		if(!empty($_POST)){
-			
+
+			// ------------------------
+			// 选中答案，点击提交按钮的处理
 			$post = I('post.');
 
 			//通过逗号计算各类题目个数，不为空才进行计算，否则下面加1就会出错
@@ -425,40 +465,7 @@ class PaperController extends AccessController{
 			$paper_id = I('get.paper_id');
 			$info = M('Paper_basic')->field('course_id,name,id')->find($paper_id);
 			$this->assign('info',$info); //赋到各类型题请求的URL中
-
-			// 可分配到的试卷题目 与 试卷所属课程绑定即可。而不管角色
-			$course_id = $info['course_id'];
-
-			$sin = new \Admin\Model\Ques_singleModel();
-			$table_sin = $sin->where("course_id='$course_id'")->select();
-			$table_sin = $sin->deal_sin_show($table_sin);
-
-			$dou = new \Admin\Model\Ques_doubleModel();
-			$table_dou = $dou->where("course_id='$course_id'")->select();
-			$table_dou = $dou->deal_dou_show($table_dou);
-
-			$jud = new \Admin\Model\Ques_judgeModel();
-			$table_jud = $jud->where("course_id='$course_id'")->select();
-			$table_jud = $jud->deal_jud_show($table_jud);
-
-			$sub = new \Admin\Model\Ques_subjModel();
-			$table_sub = $sub->where("course_id='$course_id'")->select();
-			$table_sub = $sub->deal_sub_show($table_sub);
-
-			//在table中的data-url加上sin等标示请求数据
-			if($_GET['sin']){
-				$this->ajaxReturn($table_sin);
-			}
-			if($_GET['dou']){
-				$this->ajaxReturn($table_dou);
-			}
-			if($_GET['jud']){
-				$this->ajaxReturn($table_jud);
-			}
-			if($_GET['sub']){
-				$this->ajaxReturn($table_sub);
-			}
-
+			
 			$this->display();
 		}
 		
