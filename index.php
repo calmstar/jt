@@ -9,5 +9,6 @@ define('APP_PATH','./Application/');
 //解决上传到服务器时U方法失效
 define('_PHP_FILE_',$_SERVER['SCRIPT_NAME']);
 
+
 require './ThinkPHP/ThinkPHP.php';
 
